@@ -1,5 +1,13 @@
 activate :directory_indexes
 
+activate :i18n do |i18n|
+  i18n.path = "/:locale/"
+  i18n.langs = [:en, :de, :ja]
+  i18n.lang_map = { :en => :en, :de => :de, :ja => :ja }
+  i18n.templates_dir = "content"
+  i18n.mount_at_root = false
+end
+
 set :css_dir, 'assets/css'
 set :js_dir, 'assets/js'
 set :images_dir, 'assets/images'
