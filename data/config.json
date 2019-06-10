@@ -1,3 +1,13 @@
 {
-  "mailto": "mail@dskobe.org"
+  "site_name": "DSK International",
+  "mailto": "mail@dskobe.org",
+  "google": {
+    "site-verification": "Hd4uf1DcsW07ExTeXGIscOFiBM9dhZmE_FI3AgD-bQ8"
+  },
+  "twitter": {
+    "image": "",
+    "title": "",
+    "card": "summary",
+    "description": ""
+  }
 }
