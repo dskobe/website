@@ -5,3 +5,26 @@ keywords: []
 url:
   legacy: "/about-us/school-calendar/"
 ---
+
+<div class="container-fluid p-0">
+  <%= image_tag 'banners/3_header_thin.jpg', alt: data.config.site_name, class: 'img-fluid d-block w-100' %>
+</div>
+
+<div class="container mt-5 mb-5">
+  <div class="row">
+    <div class="col-12">
+      <h1>DSKI Calendars</h1>
+
+      <h2 class="mt-4">DSKI Event Calendar</h2>
+      <p class="mt-4">Please <%= link_to 'click here to view', '/media/calendars/Events-2019-2020.pdf' %> the events calendar.</p>
+
+      <h2 class="mt-4">2018/2019 School Calendar (2019/2020 Calendar is below)</h2>
+      <%= image_tag '/media/calendars/DSKI-2018-19-School-Calendar_final.png', alt: '2018/2019 School Calendar', class: 'img-fluid d-block w-100' %>
+
+      <h2 class="mt-4">2019/2020 School Calendar</h2>
+      <%= image_tag '/media/calendars/DSKI-2019-20-School-Calendar.png', alt: '2019/2020 School Calendar', class: 'img-fluid d-block w-100' %>
+
+      <p><%= link_to 'Please click here to download the calendar.', '/media/calendars/DSKI-2019-20-School-Calendar.pdf' %></p>
+    </div>
+  </div>
+</div>
