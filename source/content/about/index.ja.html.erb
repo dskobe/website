@@ -5,3 +5,120 @@ keywords: []
 url:
   legacy: "/about-us-jpn/?lang=ja"
 ---
+
+<div class="container-fluid p-0">
+  <%= image_tag 'banners/5_header_thin.jpg', alt: data.config.site_name, class: 'img-fluid d-block w-100' %>
+</div>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-7">
+      <h1>当学院について</h1>
+
+      <p>神戸ドイツ学院ヨーロピアンスクール（DSKI）は2歳から11歳のお子様を対象とした海外ドイツ人学校でありIBカリキュラム校です。DSKIではドイツの伝統を軸に、学習者と世界の豊かな多様性を受け入れている優れた革新的な教育を提供しています。学生が知的、道徳的、身体的に学ぶことを確実にするため、全人的な教育アプローチをしています。</p>
+      <p>私たちの任務は、ドイツの歴史や伝統とヨーロッパの価値観と信念に基づいています。 学校のコミュニティとして、私たちは本物の、有意義な学習経験を通して刺激鼓舞された生涯に渡る尋問者になるよう努めています。 優れた教育を提供することに全力で取り組み、国際性、客観性、多様性を重んじ、誠実さと思いやりをもって行動する意欲を育てます。</p>
+    </div>
+
+    <div class="col-4 offset-md-1">
+      <h3 class="mt-5">関連ページ</h3>
+      <ul class="list-unstyled">
+        <li><%= link_to 'キャンパス', local_path('about/school-campus') %></li>
+        <li><%= link_to '授業料', local_path('about/school-fees') %></li>
+        <li><%= link_to 'カレンダー', local_path('about/school-calendar') %></li>
+        <li><%= link_to 'スポンサー', local_path('about/sponsors') %></li>
+        <li><%= link_to '歴史', local_path('about/school-history') %></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron jumbotron-fluid mt-5 p-0" style="margin-bottom:0;">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-3 p-5">
+        <% link_to local_path('about/what-we-offer'), class: 'stretched-link' do %>
+          <%= image_tag 'icons/offer.png', alt: data.config.site_name, class: 'rounded img-fluid mb-2', style: 'height:120px;' %>
+          <p class="lead">提供するもの</p>
+        <% end %>
+      </div>
+      <div class="col-md-3 p-5">
+        <% link_to local_path('programmes'), class: 'stretched-link' do %>
+          <%= image_tag 'icons/programmes_2.png', alt: data.config.site_name, class: 'rounded img-fluid mb-2', style: 'height:120px;' %>
+          <p class="lead">プログラム</p>
+        <% end %>
+      </div>
+      <div class="col-md-3 p-5">
+        <% link_to local_path('about/principals-welcome'), class: 'stretched-link' do %>
+          <%= image_tag 'icons/welcome.png', alt: data.config.site_name, class: 'rounded img-fluid mb-2', style: 'height:120px;' %>
+          <p class="lead">校長挨拶</p>
+        <% end %>
+      </div>
+      <div class="col-md-3 p-5">
+        <% link_to local_path('about/languages-at-dski'), class: 'stretched-link' do %>
+          <%= image_tag 'icons/languages.png', alt: data.config.site_name, class: 'rounded img-fluid mb-2', style: 'height:120px;' %>
+          <p class="lead">DSKIの言語</p>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-12">
+      <h2>Some things we offer at DSKI...</h2>
+      <p><%= link_to '詳細はこちら', local_path('about/what-we-offer'), class: 'stretched-link' %></p>
+    </div>
+  </div>
+
+  <div class="row align-items-center mb-5">
+    <div class="col-6">
+      <h3>1人の生徒 – 3言語</h3>
+      <p>DSKIでは英語、ドイツ語と日本語の3言語でのプログラムを全生徒に提供できることを誇りに思っています。我が校は正真正銘の多言語教育校であり、外国語としての日本語(JFL)と国語(母国語としての日本語)を提供する日本で唯一の小学校です</p>
+      <p><%= link_to '詳細はこちら', local_path('about/languages-at-dski'), class: 'stretched-link' %></p>
+    </div>
+    <div class="col-6">
+      <%= image_tag 'photos/about_1_800px.jpg', alt: 'Learn Three Languages at DSKI', class: 'img-fluid d-block w-100' %>
+    </div>
+  </div>
+
+  <div class="row align-items-center mb-5">
+    <div class="col-6">
+      <%= image_tag 'photos/about_3_800px.jpg', alt: '', class: 'img-fluid d-block w-100' %>
+    </div>
+    <div class="col-6">
+      <h3>DSKIでの水泳レッスン</h3>
+      <p>DSKIでは10歳までの全生徒が水泳レッスンを受けています。水泳は生涯においてのスキルであり、水中での安全と楽しさを学ぶことを重視しています。水泳レッスンは時間割に組み込まれており、日々のレッスンの一部となっていきます。</p>
+    </div>
+  </div>
+
+  <div class="row align-items-center mb-5">
+    <div class="col-6">
+      <h3>音楽プログラムを通して楽器を学ぶ</h3>
+      <p>DSKIでは生徒が創造性と自己表現の力を付けるために、クラシック楽器を学ぶ機会があります。音楽はお子様の学習経験を豊かにする可能性を持ち、我が校でこのようなプログラムを設けていることを嬉しく思っています。幼稚部学生はピアノ、初等部学生はピアノとバイオリンレッスンがあります。</p>
+    </div>
+    <div class="col-6">
+      <%= image_tag 'photos/about_2_800px.jpg', alt: '', class: 'img-fluid d-block w-100' %>
+    </div>
+  </div>
+
+  <div class="row text-center mb-5">
+    <div class="col-8 offset-md-2">
+      <h3 class="mt-4">DSKI on Facebook</h3>
+      <p>学校での活動や新着情報についてFacebookに投稿していきます。頻繁に更新しており、あなたがフォロワーになってくれることを歓迎します。Facebookでお会いしましょう！</p>
+      <a href="https://www.facebook.com/dskobe.org">
+        <p>DSKIのFacebookページへ</p>
+        <%= image_tag 'fb_logo.png', alt: 'DSKI on Facebook' %>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron jumbotron-fluid text-center bg-warning" style="margin-bottom:0;">
+  <div class="container">
+    <p>ご質問がありましたらいつでもご連絡下さい。</p>
+    <p>
+      <%= link_to 'お問い合わせ »', local_path('contact'), class: 'btn btn-lg btn-primary', role: 'button' %>
+    </p>
+  </div>
+</div>

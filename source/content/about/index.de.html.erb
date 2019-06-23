@@ -5,3 +5,122 @@ keywords: []
 url:
   legacy: "/about-us-de/?lang=de"
 ---
+
+<div class="container-fluid p-0">
+  <%= image_tag 'banners/5_header_thin.jpg', alt: data.config.site_name, class: 'img-fluid d-block w-100' %>
+</div>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-7">
+      <h1>Über uns</h1>
+
+      <p>Die Deutsche Schule Kobe International ist eine Deutsche Auslandsschule und eine IB World School für Kinder von 2-11 Jahren. An der DSKI bieten wir Ihnen eine außergewöhnliche, innovative Bildung gegründet auf unserem deutschen Erbe und mit einem anerkannten Programm das die Verschiedenartigkeit unserer Lernenden und unserer Welt in den Mittelpunkt rückt.</p>
+      <p>Unsere Schule gründet sich auf ihr deutsches Erbe sowie europäische Werte und Überzeugungen. Als Schulgemeinschaft wollen wir lebenslang lernen und uns von authentischen bedeutungsvollen Lernerfahrungen inspirieren und herausfordern lassen. Unsere Schulgemeinschaft fördert internationale Aufgeschlossenheit, kritisches Denken, Inklusion, Respekt für Vielfalt und die Bereitschaft mit Rechtschaffenheit und Mitgefühl zu handeln.</p>
+    </div>
+
+    <div class="col-4 offset-md-1">
+      <h3 class="mt-5">Weitere Seiten</h3>
+      <ul class="list-unstyled">
+        <li><%= link_to 'Schulchronik', local_path('about/school-history') %></li>
+        <li><%= link_to 'Schulkalender', local_path('about/school-calendar') %></li>
+        <li><%= link_to 'Mitarbeiter', local_path('about/staff') %></li>
+        <li><%= link_to 'Schulgebühren', local_path('about/school-fees') %></li>
+        <li><%= link_to 'Gemeinschaft', local_path('community') %></li>
+        <li><%= link_to 'Karrieremöglichkeiten', local_path('about/career-opportunities') %></li>
+        <li><%= link_to 'Unsere Sponsoren', local_path('about/sponsors') %></li>
+        <li><%= link_to 'Vorstand', local_path('about/board') %></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron jumbotron-fluid mt-5 p-0" style="margin-bottom:0;">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-3 p-5">
+        <% link_to local_path('about/what-we-offer'), class: 'stretched-link' do %>
+          <%= image_tag 'icons/offer.png', alt: data.config.site_name, class: 'rounded img-fluid mb-2', style: 'height:120px;' %>
+          <p class="lead">Unser Angebot</p>
+        <% end %>
+      </div>
+      <div class="col-md-3 p-5">
+        <% link_to local_path('programmes'), class: 'stretched-link' do %>
+          <%= image_tag 'icons/programmes_2.png', alt: data.config.site_name, class: 'rounded img-fluid mb-2', style: 'height:120px;' %>
+          <p class="lead">Unsere Programme</p>
+        <% end %>
+      </div>
+      <div class="col-md-3 p-5">
+        <% link_to local_path('about/principals-welcome'), class: 'stretched-link' do %>
+          <%= image_tag 'icons/welcome.png', alt: data.config.site_name, class: 'rounded img-fluid mb-2', style: 'height:120px;' %>
+          <p class="lead">Willkommensgruß des Schulleiters</p>
+        <% end %>
+      </div>
+      <div class="col-md-3 p-5">
+        <% link_to local_path('about/languages-at-dski'), class: 'stretched-link' do %>
+          <%= image_tag 'icons/languages.png', alt: data.config.site_name, class: 'rounded img-fluid mb-2', style: 'height:120px;' %>
+          <p class="lead">Sprachen an der DSKI</p>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-12">
+      <h2>Einige Angebote der DSKI...</h2>
+    </div>
+  </div>
+
+  <div class="row align-items-center mb-5">
+    <div class="col-6">
+      <h3>Lerne drei Sprachen an der DSKI</h3>
+      <p>An der DSKI haben alle Schüler die Möglichkeit, drei Sprachen zu lernen: Deutsch, Englisch und Japanisch. Geben Sie ihrem Kind einen Vorsprung für sein zukünftiges Leben.</p>
+      <p><%= link_to 'Mehr Informationen', local_path('about/languages-at-dski'), class: 'stretched-link' %></p>
+    </div>
+    <div class="col-6">
+      <%= image_tag 'photos/about_1_800px.jpg', alt: 'Learn Three Languages at DSKI', class: 'img-fluid d-block w-100' %>
+    </div>
+  </div>
+
+  <div class="row align-items-center mb-5">
+    <div class="col-6">
+      <%= image_tag 'photos/about_3_800px.jpg', alt: '', class: 'img-fluid d-block w-100' %>
+    </div>
+    <div class="col-6">
+      <h3>Schwimmunterricht an der DSKI</h3>
+      <p>An der DSKI erhalten alle Schüler bis 10 Jahre Schwimmunterricht. Schwimmen ist eine lebenswichtige Fertigkeit und wir legen Wert auf Sicherheit und Spaß im Wasser.</p>
+    </div>
+  </div>
+
+  <div class="row align-items-center mb-5">
+    <div class="col-6">
+      <h3>Lerne ein Instrument an der DSKI</h3>
+      <p>An der DSKI haben die Schüler die Möglichkeit ein Instrument zu erlernen, wodurch sie ihre Kreativität und ihre Ausdrucksfähigkeit stärken können. Musik kann die Bildung eines Kindes bereichern und wir sind stolz, dies an der DSKI zu ermöglichen.</p>
+    </div>
+    <div class="col-6">
+      <%= image_tag 'photos/about_2_800px.jpg', alt: '', class: 'img-fluid d-block w-100' %>
+    </div>
+  </div>
+
+  <div class="row text-center mb-5">
+    <div class="col-8 offset-md-2">
+      <h3 class="mt-4">DSKI auf Facebook</h3>
+      <p>Für regelmäßige Updates über unsere Schule besuchen Sie uns bitte auf unserer Facebook Seite. Wir sind dort sehr aktiv und würden Sie gerne als einen unserer Follower begrüßen. Wir sehen uns auf Facebook!</p>
+      <a href="https://www.facebook.com/dskobe.org">
+        <p>Zu unserer DSKI Facebook Seite</p>
+        <%= image_tag 'fb_logo.png', alt: 'DSKI on Facebook' %>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron jumbotron-fluid text-center bg-warning" style="margin-bottom:0;">
+  <div class="container">
+    <p>If you have any questions please get in touch.</p>
+    <p>
+      <%= link_to 'Get in touch »', local_path('contact'), class: 'btn btn-lg btn-primary', role: 'button' %>
+    </p>
+  </div>
+</div>
