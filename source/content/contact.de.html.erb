@@ -5,3 +5,68 @@ keywords: []
 url:
   legacy: "/contact-de/?lang=de"
 ---
+
+<div class="container-fluid p-0">
+  <%= image_tag 'banners/school_01.jpg', alt: data.config.site_name, class: 'img-fluid d-block w-100' %>
+</div>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-7">
+      <h1>Kontakt</h1>
+
+      <p>Die Deutschen Schule Kobe International ist leicht mit dem Auto oder Zug zu erreichen (Rokko Liner, Island Center Station), ca. 20 Minuten von Sannomiya (Innenstadt von Kobe) und 35 Minuten von Umeda (Innenstadt Osaka) entfernt.</p>
+
+      <h2>Anmeldung</h2>
+
+      <p>Bitte senden Sie eine E-Mail an <%= mail_to data.config.mailto, data.config.mailto %>
+        oder rufen Sie uns unter <strong>+81 <a href="tel:078 857 9777">(0)78-857-9777</a></strong>
+        an, um mit einem unserer Büroangestellten über die Anmeldung zu sprechen.</p>
+      <p>Bitte besuchen Sie unseren <%= link_to 'Anmeldebereich', local_path('admissions') %> auf der Webseite für weitere Details.</p>
+
+      <h2 class="mt-4">Schulführung</h2>
+
+      <p>DSKI bietet geführte Rundgänge an, die an einem normalen Schultag einen Einblick in die Schule geben.</p>
+      <p>Für eine Schulführung sind Buchungen erforderlich und wir bitten Sie, folgende Buchung vorzunehmen:</p>
+      <p><%= mail_to data.config.mailto + '?subject=Schulführung', 'Eine Schulführung buchen »', class: 'btn btn-lg btn-info', role: 'button' %></p>
+
+      <h2 class="mt-4">Offene Veranstaltungen</h2>
+
+      <p>Unsere Open Events bieten eine unterhaltsame und einzigartige Gelegenheit, um Zeit mit aktuellen Schülern, Eltern, Lehrern und Mitarbeitern zu verbringen. Wir haben eine Vielzahl von offenen Veranstaltungen in unserer Schule und die Teilnahme ist kostenlos und Buchungen sind in der Regel nicht erforderlich. <%= link_to 'Hier', local_path('events') %> können Sie eine Liste unserer Veranstaltungen ansehen.</p>
+
+      <h2 class="mt-4">Tag der offenen Tür</h2>
+
+      <p>Unsere Schule hat jedes Jahr zwei Tage der offenen Tür: einen im März und einen im November. Dies ist eine der besten Gelegenheiten, unsere Schule zu besuchen, die Mitarbeiter zu treffen und ein Gefühl dafür zu bekommen, wie das Leben bei DSKI aussieht. Details zum nächsten Tag der offenen Tür werden in Kürze auf der Veranstaltungsseite verfügbar sein. Wenn Sie Ihren Platz am Tag der offenen Tür buchen möchten, kontaktieren Sie uns bitte hier:</p>
+      <p><%= mail_to data.config.mailto + '?Subject=Tag der offenen Tür', 'Tag der offenen Tür »', class: 'btn btn-lg btn-info', role: 'button' %></p>
+
+      <h2 class="mt-4">Allgemeine Anfragen</h2>
+
+      <p>Wenn Sie weitere Fragen oder Fragen zu unserer Schule haben, wenden Sie sich bitte jederzeit an uns. Sie können mit uns jederzeit über alles per Email in Verbindung treten.</p>
+      <p class="mb-5"><%= mail_to data.config.mailto + '?Subject=Allgemeine Anfrage', 'Allgemeine Anfrage »', class: 'btn btn-lg btn-info', role: 'button' %></p>
+    </div>
+    <div class="col-4 offset-md-1">
+      <h3>Adresse</h3>
+      <ul class="list-unstyled">
+        <li>Deutsche Schule Kobe International</li>
+        <li>Insel Rokko 3-2-8 Koyochonaka</li>
+        <li>Higashinada-ku Kobe Stadt</li>
+      </ul>
+
+      <h3 class="mt-4">Schulempfang</h3>
+      <ul class="list-unstyled">
+        <li>Yasuyo Masada, Büroleiterin</li>
+        <li><i class="icon ion-md-call"></i> <%= data.config.phone %></li>
+        <li><i class="icon ion-md-paper"></i> <%= data.config.fax %></li>
+        <li><i class="icon ion-md-mail"></i> <%= mail_to data.config.mailto, data.config.mailto %></li>
+      </ul>
+
+      <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=135.26561915874484%2C34.68514302273645%2C135.27429878711703%2C34.68908646655704&amp;layer=transportmap&amp;marker=34.68711476812728%2C135.2699589729309" style="border: 1px solid gray"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=34.68711&amp;mlon=135.26996#map=18/34.68711/135.26996&amp;layers=T">Größere Karte ansehen</a></small>
+
+      <h3 class="mt-4">DSKI auf Facebook</h3>
+      <p>Für alles Soziale und für Neuigkeiten an unserer Schule, können Sie unserer Facebook-Seite folgen. Wir sind sehr aktiv und würden Sie gern als Follower haben. Wir sehen uns auf Facebook!</p>
+      <a href="https://www.facebook.com/dskobe.org">
+        <%= image_tag 'fb_logo.png', alt: 'DSKI aud Facebook' %>
+      </a>
+    </div>
+  </div>
+</div>

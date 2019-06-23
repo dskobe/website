@@ -6,30 +6,180 @@ url:
   legacy: "/?lang=ja"
 ---
 
-<h1>Hello World</h1>
-
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Launch demo modal
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+<div id="topCarousel" class="carousel slide pointer-event" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#topCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#topCarousel" data-slide-to="1" class=""></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <%= image_tag 'carousel/img_01.jpg', alt: data.config.site_name, class: 'd-block w-100' %>
+      <div class="container">
+        <div class="carousel-caption text-left">
+          <h1>共に知的、道徳的、身体的に学ぶ</h1>
+          <p><%= link_to 'さらに詳しく', local_path('about'), class: 'btn btn-lg btn-primary', role: 'button' %></p>
+        </div>
       </div>
     </div>
+    <div class="carousel-item">
+      <%= image_tag 'carousel/img_02.jpg', alt: data.config.site_name, class: 'd-block w-100' %>
+      <div class="container">
+        <div class="carousel-caption text-left">
+          <h1>私たちのプログラム</h1>
+          <p><%= link_to 'さらに詳しく', local_path('programmes'), class: 'btn btn-lg btn-primary', role: 'button' %></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#topCarousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">前</span>
+  </a>
+  <a class="carousel-control-next" href="#topCarousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">次</span>
+  </a>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <h2>私たちの使命</h2>
+      <p>私たちの任務は、ドイツの歴史や伝統とヨーロッパの価値観と信念に基づいています。 学校のコミュニティとして、有意義な真の学習経験を通して刺激鼓舞された生涯に渡る探求者になれるよう努めています。</p>
+      <p><%= link_to 'さらに詳しく', local_path('about'), class: 'stretched-link' %></p>
+    </div>
+    <div class="col-md-4">
+      <h2>1人の生徒 – 3言語</h2>
+      <p>神戸ドイツ学院ヨーロピアンスクールは2歳から11歳までの学習者に独自の多言語教育を提供しています。学習者それぞれのニーズを満たすために、2つのプログラムでは英語、ドイツ語、日本語の3言語でカリキュラムを提供しています。</p>
+      <p><%= link_to 'さらに詳しく', local_path('about/languages-at-dski'), class: 'stretched-link' %></p>
+    </div>
+    <div class="col-md-4">
+      <h2>真のコミュニティ</h2>
+      <p>教育とは、生徒の両親や更に広いコミュニティと共有する課題です。私たちは学習者に国際性と客観性、誠実さと思いやりをもって行動する生涯の探求心を育成することを目指します。私たちのコミュニティに敬意を表します。</p>
+      <p><%= link_to 'さらに詳しく', local_path('community'), class: 'stretched-link' %></p>
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="row mb-5">
+    <div class="col-md-9">
+      <h2>なぜ神戸ドイツ学院を選ぶのか？</h2>
+      <p class="lead">2-11歳の学習者のための神戸にある国際バカロレア認定校<br>
+        生徒と教員の優れた人数比率:教員1人当たり6-15人のクラス編成</p>
+      <p>私たちは、あらゆる年齢や文化的な背景や経験を持っている子供たちの学問的、感情的、社会的、身体的、創造的な成長を育む環境を提供します。国際バカロレア認定校として、生涯学習への情熱と世界に良い変化を起こす強い意志を喚起するよう努めています。3つの言語(英語、ドイツ語、日本語)、国際カリキュラム(PYP)、ドイツ語(チューリンゲン)、個々へのサポートを可能にする少人数授業、質の高い音楽プログラム、水泳レッスンと素敵なコミュニティを提供します。</p>
+      <p>校長からの歓迎の挨拶は<%= link_to 'こちらをクリックしてください', local_path('about/principals-welcome'), class: 'stretched-link' %></p>
+    </div>
+    <div class="col-md-3 text-center">
+      <%= image_tag 'ib-world-school-logo.png', alt: data.config.site_name %>
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron jumbotron-fluid bg-dark" style="padding-bottom:0;padding-top:2rem;">
+  <div class="container">
+    <h2 class="text-light d-sm-none d-md-block">元学生からのコメント</h2>
+    <div id="myCarousel" class="carousel slide pointer-event" data-ride="carousel" style="margin-bottom:0px;">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+        <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+        <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item" style="height: 28rem;">
+          <div class="container">
+            <div class="carousel-caption text-left">
+               <%= image_tag 'people/Natalia.png', alt: data.config.site_name, style: 'float:right;' %>
+              <h3>ナタリア</h3>
+              <p>『素晴らしい学校です。素敵な友達と学校で最高の思い出をたくさん作ることができました。あの頃に戻れたらなぁ。』</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" style="height: 28rem;">
+          <div class="container">
+            <div class="carousel-caption text-left">
+              <%= image_tag 'people/Yoona.png', alt: data.config.site_name, style: 'float:right;' %>
+              <h3>ユナ</h3>
+            <p>『神戸ドイツ学院ヨーロピアンスクールは我が家にいるような気持ちになれました。そして、友達や学校にいる皆は私の家族のようでした。とても居心地の良い場所で、いつも学校に行くことが楽しみでした。また、小さな学校なので先生に質問しやすく、たくさんのことを学ぶことができました。』</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item active" style="height: 28rem;">
+          <div class="container">
+            <div class="carousel-caption text-right">
+                <%= image_tag 'people/Dianne.png', alt: data.config.site_name, style: 'float:left;' %>
+                <h3>ダイアン</h3>
+              <p>『DSKIは学ぶことのインスピレーションを受けた学校です。伝えたいことはたくさんありますが、私が最も強調したいのは、子供たちが自立した学習者であることを探求の単元と呼ばれる授業を通してどのように先生達がサポートしているかです。この教育スタイルの意義は、子供たちがとても熱心に楽しみながら学び、知識を深め、アイディアを創出し、解決策を模索していることです。』</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">前</span>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">次</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row mt-5 mb-5">
+    <div class="col-md-6 text-center">
+      <%= image_tag 'home_image_prog.jpg', alt: data.config.site_name, class: 'rounded' %>
+    </div>
+
+    <div class="col-md-5 offset-md-1">
+      <h2>私たちの提供プログラム</h2>
+      <p>神戸ドイツ学院ヨーロピアンスクールでは、2-11歳にプレイグループ、早期教育、初等教育(PYP)の3つのプログラムを提供しています。</p>
+      <p><%= link_to '詳細はこちら', local_path('programmes'), class: 'stretched-link' %></p>
+    </div>
+  </div>
+</div>
+
+<div class="container mb-5">
+  <%= image_tag 'program_chart.png', alt: data.config.site_name, class: 'rounded img-fluid' %>
+</div>
+
+<div class="container mb-5">
+  <hr class="featurette-divider">
+
+  <div class="row text-center">
+    <div class="col-md-3 p-5">
+      <% link_to local_path('about/what-we-offer'), class: 'stretched-link' do %>
+        <%= image_tag 'icons/programmes.png', alt: data.config.site_name, class: 'rounded img-fluid mb-2', style: 'height:120px;' %>
+        <p class="lead">当校がご提供すること</p>
+      <% end %>
+    </div>
+    <div class="col-md-3 p-5">
+      <% link_to local_path('about/admissions'), class: 'stretched-link' do %>
+        <%= image_tag 'icons/admissions.png', alt: data.config.site_name, class: 'rounded img-fluid mb-2', style: 'height:120px;' %>
+        <p class="lead">入学</p>
+      <% end %>
+    </div>
+    <div class="col-md-3 p-5">
+      <% link_to local_path('about/school-campus'), class: 'stretched-link' do %>
+        <%= image_tag 'icons/campus.png', alt: data.config.site_name, class: 'rounded img-fluid mb-2', style: 'height:120px;' %>
+        <p class="lead">キャンパス</p>
+      <% end %>
+    </div>
+    <div class="col-md-3 p-5">
+      <% link_to local_path('contact'), class: 'stretched-link' do %>
+        <%= image_tag 'icons/contact.png', alt: data.config.site_name, class: 'rounded img-fluid mb-2', style: 'height:120px;' %>
+        <p class="lead">お問い合わせ</p>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron jumbotron-fluid text-center bg-warning" style="margin-bottom:0;">
+  <div class="container">
+    <p>より詳細を知りたい方や学校見学の予約の際はご連絡ください。</p>
+    <p>
+      <%= link_to 'お問い合わせ »', local_path('contact'), class: 'btn btn-lg btn-primary', role: 'button' %>
+    </p>
   </div>
 </div>

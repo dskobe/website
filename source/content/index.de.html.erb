@@ -6,30 +6,176 @@ url:
   legacy: "/?lang=de"
 ---
 
-<h1>Hello World</h1>
-
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Launch demo modal
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+<div id="topCarousel" class="carousel slide pointer-event" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#topCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#topCarousel" data-slide-to="1" class=""></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <%= image_tag 'carousel/img_01.jpg', alt: data.config.site_name, class: 'd-block w-100' %>
+      <div class="container">
+        <div class="carousel-caption text-left">
+          <h1>Lebenslanges Lernen</h1>
+          <p><%= link_to 'Klicken Sie hier', local_path('about'), class: 'btn btn-lg btn-primary', role: 'button' %></p>
+        </div>
       </div>
     </div>
+    <div class="carousel-item">
+      <%= image_tag 'carousel/img_02.jpg', alt: data.config.site_name, class: 'd-block w-100' %>
+      <div class="container">
+        <div class="carousel-caption text-left">
+          <h1>Unsere Programme</h1>
+          <p><%= link_to 'Klicken Sie hier', local_path('programmes'), class: 'btn btn-lg btn-primary', role: 'button' %></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#topCarousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Zurück</span>
+  </a>
+  <a class="carousel-control-next" href="#topCarousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Weiter</span>
+  </a>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <h2>Unser <br>Leitbild</h2>
+      <p>Unsere Schule gründet sich auf ihr deutsches Erbe sowie europäische Werte und Überzeugungen. Als Schulgemeinschaft wollen wir lebenslang lernen und uns von authentischen bedeutungsvollen Lernerfahrungen inspirieren und herausfordern lassen.</p>
+      <p><%= link_to 'Weitere Infos', local_path('about'), class: 'stretched-link' %></p>
+    </div>
+    <div class="col-md-4">
+      <h2>Zwei Abteilungen - <br>Drei Sprachen</h2>
+      <p>Die Deutsche Schule Kobe International bietet für Schüler zwischen 2 und 11 Jahren eine einmalige, multilinguale Lernumgebung an. Um den anspruchsvollen Bedürfnissen unserer Schüler gerecht zu werden, bietet unsere Schule Lehrpläne in drei Sprachen an: Englisch, Deutsch und Japanisch.</p>
+      <p><%= link_to 'Weitere Infos', local_path('about/languages-at-dski'), class: 'stretched-link' %></p>
+    </div>
+    <div class="col-md-4">
+      <h2>Eine einzigartige <br>Community</h2>
+      <p>Bildung ist eine gemeinsame Aufgabe, die wir uns mit den Eltern und einer großen Gemeinschaft stellen. Uns verbindet das Ziel Schüler zu fördern, die Dinge stets kritisch hinterfragen, international veranlagt und eifrig sind mit Rechtschaffenheit und Leidenschaft zu handeln. Wir stehen als eine Gemeinschaft.</p>
+      <p><%= link_to 'Weitere Infos', local_path('community'), class: 'stretched-link' %></p>
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="row mb-5">
+    <div class="col-md-9">
+      <h2>Wieso ist die Deutsche Schule Kobe International die richtige Schule für Ihr Kind?</h2>
+      <p class="lead">Eine Internationale IB-Schule in Kobe für Schüler von 2-11 Jahren<br>
+        Hervorragende Schüler-Lehrer- Relation: Klassengrößen von 6-16 Schülern</p>
+      <p>Wir bieten eine Lernumgebung, welche die akademische, emotionale, soziale, physische und kreative Entwicklung aller Kinder gleich welchen Alters, kulturellen Hintergrunds und Erfahrungen fördert. Als IB-World School streben wir danach, die Leidenschaft für das lebenslange Lernen und das Verlangen, die Welt positiv zu verändern, zu entfachen. Wir bieten 3 Sprachen (Englisch, Deutsch, Japanisch), ein internationales Curriculum (PYP), ein deutsches Curriculum (Thüringer Lehrplan), kleine Klassen welche individualisiertes Lernen ermöglichen, ein sehr gutes Musikprogramm, Schwimmunterricht und eine fantastische Schulgemeinschaft.</p>
+      <p>Für das Grußwort des Schulleiters <%= link_to 'klicken Sie bitte hier', local_path('about/principals-welcome'), class: 'stretched-link' %>.</p>
+    </div>
+    <div class="col-md-3 text-center">
+      <%= image_tag 'ib-world-school-logo.png', alt: data.config.site_name %>
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron jumbotron-fluid bg-dark" style="padding-bottom:0;padding-top:2rem;">
+  <div class="container">
+    <h2 class="text-light d-sm-none d-md-block">Stimmen von ehemaligen Schülern</h2>
+    <div id="myCarousel" class="carousel slide pointer-event" data-ride="carousel" style="margin-bottom:0px;">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+        <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+        <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item" style="height: 28rem;">
+          <div class="container">
+            <div class="carousel-caption text-left">
+               <%= image_tag 'people/Natalia.png', alt: data.config.site_name, style: 'float:right;' %>
+              <h3>Natalia</h3>
+              <p>“Fantastische Schule. Ich habe dort viele gute Freunde gefunden und ein paar der besten Erinnerungen meiner Schulzeit gemacht. Ich wünsche mir wirklich, ich könnte zurückkommen.”</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" style="height: 28rem;">
+          <div class="container">
+            <div class="carousel-caption text-left">
+              <%= image_tag 'people/Yoona.png', alt: data.config.site_name, style: 'float:right;' %>
+              <h3>Yoona</h3>
+            <p>“Die Deutsche Schule Kobe International war für mich immer wie ein Zuhause und alle meine Freunde und alle anderen waren wie meine Familie. Es ist ein sehr schöner Ort und ich hatte immer Spaß daran, zur Schule zu gehe. Da es eine kleine Schule ist, konnte ich meinen Lehrern oft Fragen stellen, welche mir halfen, mein Wissen zu erweitern.”</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item active" style="height: 28rem;">
+          <div class="container">
+            <div class="carousel-caption text-right">
+                <%= image_tag 'people/Dianne.png', alt: data.config.site_name, style: 'float:left;' %>
+                <h3>Dianne</h3>
+              <p>“DSKI ist wirklich eine inspirierende Schule zum Lernen. Es gibt so viel zu erzählen, aber was ich gerne hervorheben möchte ist, wie die Lehrer die Schüler in dem Fach “Unit of Inquiry” darin unterstützen, eigenständig zu lernen. Das Besondere an dieser Art zu Unterrichten ist, dass die Kinder sehr motiviert und erpicht darauf sind zu lernen, sich Wissen anzueignen, eigene Ideen zu entwickeln und nach Lösungsansätzen zu suchen.”</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Zurück</span>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Weiter</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row mt-5 mb-5">
+    <div class="col-md-6 text-center">
+      <%= image_tag 'home_image_prog.jpg', alt: data.config.site_name, class: 'rounded' %>
+    </div>
+
+    <div class="col-md-5 offset-md-1">
+      <h2>Unsere Programmes</h2>
+      <p>Die Deutsche Schule Kobe International bietet drei Programme für die Kinder von 2-11 Jahren: Spielgruppe, Kindergarten, Grundschulprogramm (PYP).</p>
+      <p><%= link_to 'Klicken Sie bitte hier für eine Übersicht der Programme', local_path('programmes'), class: 'stretched-link' %></p>
+    </div>
+  </div>
+</div>
+
+<div class="container mb-5">
+  <hr class="featurette-divider">
+
+  <div class="row text-center">
+    <div class="col-md-3 p-5">
+      <% link_to local_path('about'), class: 'stretched-link' do %>
+        <%= image_tag 'icons/dsk.png', alt: data.config.site_name, class: 'rounded img-fluid mb-2', style: 'height:120px;' %>
+        <p class="lead">Über uns</p>
+      <% end %>
+    </div>
+    <div class="col-md-3 p-5">
+      <% link_to local_path('about/what-we-offer'), class: 'stretched-link' do %>
+        <%= image_tag 'icons/programmes.png', alt: data.config.site_name, class: 'rounded img-fluid mb-2', style: 'height:120px;' %>
+        <p class="lead">Unser Angebot</p>
+      <% end %>
+    </div>
+    <div class="col-md-3 p-5">
+      <% link_to local_path('about/admissions'), class: 'stretched-link' do %>
+        <%= image_tag 'icons/admissions.png', alt: data.config.site_name, class: 'rounded img-fluid mb-2', style: 'height:120px;' %>
+        <p class="lead">Aufnahme</p>
+      <% end %>
+    </div>
+    <div class="col-md-3 p-5">
+      <% link_to local_path('about/school-history'), class: 'stretched-link' do %>
+        <%= image_tag 'icons/history.png', alt: data.config.site_name, class: 'rounded img-fluid mb-2', style: 'height:120px;' %>
+        <p class="lead">Geschichte</p>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron jumbotron-fluid text-center bg-warning" style="margin-bottom:0;">
+  <div class="container">
+    <p>Bitte kontaktieren Sie uns für weitere Informationen oder um eine Schultour zu buchen.</p>
+    <p>
+      <%= link_to 'Kontakt aufnehmen »', local_path('contact'), class: 'btn btn-lg btn-primary', role: 'button' %>
+    </p>
   </div>
 </div>

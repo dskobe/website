@@ -16,6 +16,14 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
+helpers do
+  # Returns a localized path with leading language code
+  def local_path(path, options={})
+    lang = options[:language] ? options[:language] : I18n.locale.to_s
+    "/#{lang}/#{path}"
+  end
+end
+
 activate :external_pipeline,
   name: :webpack,
   command: build? ? 'npm run build' : 'npm run watch',

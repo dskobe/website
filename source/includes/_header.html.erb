@@ -1,0 +1,32 @@
+<nav class="navbar navbar-expand-xl navbar-light sticky-top">
+  <div class="container">
+    <% link_to local_path(''), class: 'navbar-brand' do %>
+      <%= image_tag 'logo_header.png', alt: data.config.site_name %>
+    <% end %>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse flex-column ml-lg-0 ml-0" id="navbarCollapse">
+      <ul class="navbar-nav d-flex flex-row ml-auto">
+        <li class="nav-item">
+          <%= link_to t('menu.contact-us'), local_path('contact'), class: 'nav-link' %>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="language-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Language</a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="language-dropdown">
+            <%= link_to 'English', '/en', class: 'dropdown-item' %>
+            <%= link_to 'Deutsch', '/de', class: 'dropdown-item' %>
+            <%= link_to '日本語',   '/ja', class: 'dropdown-item' %>
+          </div>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav flex-row d-flex flex-row ml-auto mb-2">
+        <%= partial "includes/" + I18n.locale.to_s + "/header_menu" %>
+      </ul>
+    </div>
+  </div>
+</nav>

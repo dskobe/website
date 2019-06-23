@@ -5,10 +5,16 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <%= stylesheet_link_tag "site" %>
+    <%= stylesheet_link_tag "site", "https://unpkg.com/ionicons@4.5.10-1/dist/css/ionicons.min.css" %>
   </head>
   <body>
-    <%= yield %>
+    <%= partial "includes/header" %>
+
+    <main role="main">
+      <%= yield %>
+    </main>
+
+    <%= partial "includes/footer" %>
     <%= javascript_include_tag "site" %>
   </body>
 </html>

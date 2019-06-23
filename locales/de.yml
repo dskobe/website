@@ -1,3 +1,20 @@
 ---
 de:
   title: ""
+  address: "DSK International, Rokko Island 3-2-8, Koyochonaka, Higashinada-ku, Kobe city"
+
+  footer:
+    school: "DSK International<br>Deutsche Schule Kobe International"
+    address: "Rokko Island 3-2-8 Koyochonaka<br>Higashinada-ku Kobe city"
+    backtotop: "Zurück nach oben"
+
+  menu:
+    about-us: "Über uns"
+    what-we-offer: "Unser Angebot"
+    admissions: "Aufnahme"
+    programmes: "Unsere Programme"
+    saturday: "Samstagsschule"
+    holidays: "Sommer Schule"
+    community: "Gemeinschaft"
+    contact-us: "Kontakt"
+    language: "Sprache"
