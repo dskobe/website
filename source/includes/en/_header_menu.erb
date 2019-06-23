@@ -1,35 +1,50 @@
 <li class="nav-item dropdown">
-  <a class="nav-link dropdown-toggle font-weight-bolder" href="#" id="about-dropdown" aria-haspopup="true" aria-expanded="false"><%= t('menu.about-us') %></a>
+  <a class="nav-link dropdown-toggle font-weight-bolder" href="<%= local_path('about') %>" id="about-dropdown" aria-haspopup="true" aria-expanded="false"><%= t('menu.about-us') %></a>
   <div class="dropdown-menu" aria-labelledby="about-dropdown">
-    <%= link_to 'English', '/', class: 'dropdown-item' %>
+    <%= link_to "Principal's Welcome", 'about/pricipals-welcome', class: 'dropdown-item' %>
+    <%= link_to 'What We Offer', 'about/what-we-offer', class: 'dropdown-item' %>
+    <%= link_to 'Languages at DSKI', 'about/languages-at-dski', class: 'dropdown-item' %>
+    <%= link_to 'Clubs', 'about/clubs', class: 'dropdown-item' %>
+    <%= link_to 'Staff', 'about/staff', class: 'dropdown-item' %>
+    <%= link_to 'School Campus', 'about/school-campus', class: 'dropdown-item' %>
+    <%= link_to 'School Fees', 'about/school-fees', class: 'dropdown-item' %>
+    <%= link_to 'School Calendar', 'about/school-calendar', class: 'dropdown-item' %>
+    <%= link_to 'Career Opportunities', 'about/career-opportunities', class: 'dropdown-item' %>
+    <%= link_to 'Board', 'about/board', class: 'dropdown-item' %>
   </div>
 </li>
 
-<li class="nav-item dropdown">
-  <a class="nav-link dropdown-toggle font-weight-bolder" href="#" id="admissions-dropdown" aria-haspopup="true" aria-expanded="false"><%= t('menu.admissions') %></a>
-  <div class="dropdown-menu" aria-labelledby="admissions-dropdown">
-    <%= link_to 'English', '/', class: 'dropdown-item' %>
-  </div>
+<li class="nav-item font-weight-bolder">
+  <%= link_to 'Admissions', local_path('admissions'), class: 'nav-link' %>
 </li>
 
 <li class="nav-item dropdown">
-  <a class="nav-link dropdown-toggle font-weight-bolder" href="#" id="programmes-dropdown" aria-haspopup="true" aria-expanded="false"><%= t('menu.programmes') %></a>
+  <a class="nav-link dropdown-toggle font-weight-bolder" href="<%= local_path('programmes') %>" id="programmes-dropdown" aria-haspopup="true" aria-expanded="false"><%= t('menu.programmes') %></a>
   <div class="dropdown-menu" aria-labelledby="programmes-dropdown">
-    <%= link_to 'English', '/', class: 'dropdown-item' %>
+    <%= link_to 'Playgroup', 'programmes/playgroup', class: 'dropdown-item' %>
+    <%= link_to 'Early Years', 'programmes/early-years', class: 'dropdown-item' %>
+    <%= link_to 'PYP', 'programmes/pyp', class: 'dropdown-item' %>
   </div>
 </li>
 
 <li class="nav-item dropdown">
-  <a class="nav-link dropdown-toggle font-weight-bolder" href="#" id="saturday-dropdown" aria-haspopup="true" aria-expanded="false"><%= t('menu.saturday') %></a>
+  <a class="nav-link dropdown-toggle font-weight-bolder" href="<%= local_path('saturdayschool') %>" id="saturday-dropdown" aria-haspopup="true" aria-expanded="false"><%= t('menu.saturday') %></a>
   <div class="dropdown-menu" aria-labelledby="saturday-dropdown">
-    <%= link_to 'English', '/', class: 'dropdown-item' %>
+    <%= link_to 'Calendar', 'saturdayschool/schedule', class: 'dropdown-item' %>
+    <%= link_to 'Admission', 'saturdayschool/admission', class: 'dropdown-item' %>
+    <%= link_to 'Fees', 'saturdayschool/fees', class: 'dropdown-item' %>
+    <%= link_to 'English Programme', 'saturdayschool/english-program', class: 'dropdown-item' %>
+    <%= link_to 'German Programme', 'saturdayschool/german-program', class: 'dropdown-item' %>
+    <%= link_to 'French Programme', 'saturdayschool/french-program', class: 'dropdown-item' %>
+    <%= link_to 'Move to Learn', 'saturdayschool/move-to-learn', class: 'dropdown-item' %>
   </div>
 </li>
 
 <li class="nav-item dropdown">
-  <a class="nav-link dropdown-toggle font-weight-bolder" href="#" id="holiday-dropdown" aria-haspopup="true" aria-expanded="false"><%= t('menu.holidays') %></a>
+  <a class="nav-link dropdown-toggle font-weight-bolder" href="#" id="holiday-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><%= t('menu.holidays') %></a>
   <div class="dropdown-menu" aria-labelledby="holiday-dropdown">
-    <%= link_to 'English', '/', class: 'dropdown-item' %>
+    <%= link_to 'Summer School', local_path('summerschool'), class: 'dropdown-item' %>
+    <%= link_to 'Winter School', local_path('winterschool'), class: 'dropdown-item' %>
   </div>
 </li>
 
