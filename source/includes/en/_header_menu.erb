@@ -1,16 +1,16 @@
 <li class="nav-item dropdown">
   <a class="nav-link dropdown-toggle font-weight-bolder" href="<%= local_path('about') %>" id="about-dropdown" aria-haspopup="true" aria-expanded="false"><%= t('menu.about-us') %></a>
   <div class="dropdown-menu" aria-labelledby="about-dropdown">
-    <%= link_to "Principal's Welcome", 'about/principals-welcome', class: 'dropdown-item' %>
-    <%= link_to 'What We Offer', 'about/what-we-offer', class: 'dropdown-item' %>
-    <%= link_to 'Languages at DSKI', 'about/languages-at-dski', class: 'dropdown-item' %>
-    <%= link_to 'Clubs', 'about/clubs', class: 'dropdown-item' %>
-    <%= link_to 'Staff', 'about/staff', class: 'dropdown-item' %>
-    <%= link_to 'School Campus', 'about/school-campus', class: 'dropdown-item' %>
-    <%= link_to 'School Fees', 'about/school-fees', class: 'dropdown-item' %>
-    <%= link_to 'School Calendar', 'about/school-calendar', class: 'dropdown-item' %>
-    <%= link_to 'Career Opportunities', 'about/career-opportunities', class: 'dropdown-item' %>
-    <%= link_to 'Board', 'about/board', class: 'dropdown-item' %>
+    <%= link_to "Principal's Welcome", local_path('about/principals-welcome'), class: 'dropdown-item' %>
+    <%= link_to 'What We Offer', local_path('about/what-we-offer'), class: 'dropdown-item' %>
+    <%= link_to 'Languages at DSKI', local_path('about/languages-at-dski'), class: 'dropdown-item' %>
+    <%= link_to 'Clubs', local_path('about/clubs'), class: 'dropdown-item' %>
+    <%= link_to 'Staff', local_path('about/staff'), class: 'dropdown-item' %>
+    <%= link_to 'School Campus', local_path('about/school-campus'), class: 'dropdown-item' %>
+    <%= link_to 'School Fees', local_path('about/school-fees'), class: 'dropdown-item' %>
+    <%= link_to 'School Calendar', local_path('about/school-calendar'), class: 'dropdown-item' %>
+    <%= link_to 'Career Opportunities', local_path('about/career-opportunities'), class: 'dropdown-item' %>
+    <%= link_to 'Board', local_path('about/board'), class: 'dropdown-item' %>
   </div>
 </li>
 
@@ -21,22 +21,22 @@
 <li class="nav-item dropdown">
   <a class="nav-link dropdown-toggle font-weight-bolder" href="<%= local_path('programmes') %>" id="programmes-dropdown" aria-haspopup="true" aria-expanded="false"><%= t('menu.programmes') %></a>
   <div class="dropdown-menu" aria-labelledby="programmes-dropdown">
-    <%= link_to 'Playgroup', 'programmes/playgroup', class: 'dropdown-item' %>
-    <%= link_to 'Early Years', 'programmes/early-years', class: 'dropdown-item' %>
-    <%= link_to 'PYP', 'programmes/pyp', class: 'dropdown-item' %>
+    <%= link_to 'Playgroup', local_path('programmes/playgroup'), class: 'dropdown-item' %>
+    <%= link_to 'Early Years', local_path('programmes/early-years'), class: 'dropdown-item' %>
+    <%= link_to 'PYP', local_path('programmes/pyp'), class: 'dropdown-item' %>
   </div>
 </li>
 
 <li class="nav-item dropdown">
   <a class="nav-link dropdown-toggle font-weight-bolder" href="<%= local_path('saturdayschool') %>" id="saturday-dropdown" aria-haspopup="true" aria-expanded="false"><%= t('menu.saturday') %></a>
   <div class="dropdown-menu" aria-labelledby="saturday-dropdown">
-    <%= link_to 'Calendar', 'saturdayschool/schedule', class: 'dropdown-item' %>
-    <%= link_to 'Admission', 'saturdayschool/admission', class: 'dropdown-item' %>
-    <%= link_to 'Fees', 'saturdayschool/fees', class: 'dropdown-item' %>
-    <%= link_to 'English Programme', 'saturdayschool/english-program', class: 'dropdown-item' %>
-    <%= link_to 'German Programme', 'saturdayschool/german-program', class: 'dropdown-item' %>
-    <%= link_to 'French Programme', 'saturdayschool/french-program', class: 'dropdown-item' %>
-    <%= link_to 'Move to Learn', 'saturdayschool/move-to-learn', class: 'dropdown-item' %>
+    <%= link_to 'Calendar', local_path('saturdayschool/schedule'), class: 'dropdown-item' %>
+    <%= link_to 'Admission', local_path('saturdayschool/admission'), class: 'dropdown-item' %>
+    <%= link_to 'Fees', local_path('saturdayschool/fees'), class: 'dropdown-item' %>
+    <%= link_to 'English Programme', local_path('saturdayschool/english-program'), class: 'dropdown-item' %>
+    <%= link_to 'German Programme', local_path('saturdayschool/german-program'), class: 'dropdown-item' %>
+    <%= link_to 'French Programme', local_path('saturdayschool/french-program'), class: 'dropdown-item' %>
+    <%= link_to 'Move to Learn', local_path('saturdayschool/move-to-learn'), class: 'dropdown-item' %>
   </div>
 </li>
 

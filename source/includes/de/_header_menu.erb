@@ -1,13 +1,13 @@
 <li class="nav-item dropdown">
   <a class="nav-link dropdown-toggle font-weight-bolder" href="<%= local_path('about') %>" id="about-dropdown" aria-haspopup="true" aria-expanded="false"><%= t('menu.about-us') %></a>
   <div class="dropdown-menu" aria-labelledby="about-dropdown">
-    <%= link_to "Willkommensgruß des Schulleiters", 'about/principals-welcome', class: 'dropdown-item' %>
-    <%= link_to 'Unser Angebot', 'about/what-we-offer', class: 'dropdown-item' %>
-    <%= link_to 'Sprachen an der DSKI', 'about/languages-at-dski', class: 'dropdown-item' %>
-    <%= link_to 'Mitarbeiter', 'about/staff', class: 'dropdown-item' %>
-    <%= link_to 'Schulgebühren', 'about/school-fees', class: 'dropdown-item' %>
-    <%= link_to 'Schulkalender', 'about/school-calendar', class: 'dropdown-item' %>
-    <%= link_to 'Vorstand', 'about/board', class: 'dropdown-item' %>
+    <%= link_to "Willkommensgruß des Schulleiters", local_path('about/principals-welcome'), class: 'dropdown-item' %>
+    <%= link_to 'Unser Angebot', local_path('about/what-we-offer'), class: 'dropdown-item' %>
+    <%= link_to 'Sprachen an der DSKI', local_path('about/languages-at-dski'), class: 'dropdown-item' %>
+    <%= link_to 'Mitarbeiter', local_path('about/staff'), class: 'dropdown-item' %>
+    <%= link_to 'Schulgebühren', local_path('about/school-fees'), class: 'dropdown-item' %>
+    <%= link_to 'Schulkalender', local_path('about/school-calendar'), class: 'dropdown-item' %>
+    <%= link_to 'Vorstand', local_path('about/board'), class: 'dropdown-item' %>
   </div>
 </li>
 
@@ -18,9 +18,9 @@
 <li class="nav-item dropdown">
   <a class="nav-link dropdown-toggle font-weight-bolder" href="<%= local_path('programmes') %>" id="programmes-dropdown" aria-haspopup="true" aria-expanded="false"><%= t('menu.programmes') %></a>
   <div class="dropdown-menu" aria-labelledby="programmes-dropdown">
-    <%= link_to 'Spielgruppe', 'programmes/playgroup', class: 'dropdown-item' %>
-    <%= link_to 'Vorschule', 'programmes/early-years', class: 'dropdown-item' %>
-    <%= link_to 'Grundschule', 'programmes/pyp', class: 'dropdown-item' %>
+    <%= link_to 'Spielgruppe', local_path('programmes/playgroup'), class: 'dropdown-item' %>
+    <%= link_to 'Vorschule', local_path('programmes/early-years'), class: 'dropdown-item' %>
+    <%= link_to 'Grundschule', local_path('programmes/pyp'), class: 'dropdown-item' %>
   </div>
 </li>
 
