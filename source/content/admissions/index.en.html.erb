@@ -5,3 +5,142 @@ keywords: []
 url:
   legacy: "/admissions/"
 ---
+
+<div class="container-fluid p-0">
+  <%= image_tag 'banners/8_header_thin.jpg', alt: data.config.site_name, class: 'img-fluid d-block w-100' %>
+</div>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-7">
+      <h1>Admissions</h1>
+
+      <p>DSK International has two branches: the German Branch and the International Branch.</p>
+      <p>For learners in the International Branch the language of instruction is English, children also have the opportunity to learn Japanese and German. For learners in the German Branch, math and language classes are conducted in German, and all other classes are conducted in English except for the Japanese lessons.</p>
+      <p>German and International Branch students enjoy inquiry-based learning together as a whole class to encourage community building.</p>
+      <p>If you are unsure about languages at DSKI, please see our <%= link_to 'languages page', local_path('about/languages-at-dski') %> for more detailed information.</p>
+    </div>
+
+    <div class="col-4 offset-md-1">
+      <%= image_tag 'icons/download.png', alt: data.config.site_name, class: 'rounded img-fluid mb-2' %>
+      <h3>Application Form</h3>
+      <ul class="list-unstyled">
+        <li><%= link_to 'Access Application Form', '/media/forms/Application-Form-2019.pdf' %></li>
+      </ul>
+
+      <h3>Application Documents</h3>
+      <ul class="list-unstyled">
+        <li><%= link_to 'Registration form', '/media/forms/Registration-Form-2018-2019.pdf' %></li>
+        <li><%= link_to 'Student Information form', '/media/forms/Student-Information-Form-2018-2019.pdf' %></li>
+        <li><%= link_to 'Physical Examination form', '/media/forms/Physical-examination-form-2018-2019.pdf' %></li>
+        <li><%= link_to 'Declaration form', '/media/forms/Declaration-Form-2018-2019.pdf' %></li>
+      </ul>
+
+      <h3>Online Application</h3>
+      <ul class="list-unstyled">
+        <li><%= link_to 'Apply via online form', 'https://docs.google.com/forms/d/e/1FAIpQLSeOV2SL358ecQ_8i1o7xeYMlcK41EQUaKghBHU_yG142AD8Og/viewform?usp=sf_link' %></li>
+      </ul>
+
+      <h3>Submit Form</h3>
+      <ul class="list-unstyled">
+        <li><%= mail_to data.config.mailto + '?Subject=My application form is attached', 'Submit Application here' %></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-7">
+      <h2>How to Enroll</h2>
+
+      <p>At DSKI we have two stages to enrollment: Pre-Admission (before acceptance) and Registration (after acceptance).</p>
+
+      <h3>Pre-Admission</h3>
+
+      <p>If you wish to enrol your child at DSKI, simply complete and submit the application form. You can apply by downloading and submitting the "Application form" or via submitting our online form. They are available on the right of this page. If you have any questions about enrolment, <%= link_to 'please get in touch', local_path('contact') %>. If you wish to submit your completed forms please submit on the right of this page.</p>
+
+      <h3>Registration</h3>
+
+      <p>Parents wishing to enroll their child at DSKI, after the application has been accepted by the school, must provide/fill out and sign all of the documents which are listed at the “Registration Process” section of the Admission process page. After acceptance, we will provide the documents and walk you through the steps via email. </p>
+      <p>If you lose or delete these documents, you can also access these forms from the "Access Registration Pack After Acceptance" download on the right of the page.</p>
+      <p>Please see the "<%= link_to 'Admissions Process', local_path('admissions/process') %>" for a more detailed explanation of the enrollment process.</p>
+    </div>
+
+    <div class="col-4 offset-md-1">
+      <h3 class="mt-5">Enrolment Process</h3>
+      <p>STEP ONE<br>Make an Enquiry</p>
+      <p>STEP TWO<br>Submit Application</p>
+      <p>STEP THREE<br>Interview</p>
+      <p>STEP FOUR<br>Accept an Offer</p>
+      <p>STEP FIVE<br>Attend an Orientation</p>
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron jumbotron-fluid mt-5 p-0" style="margin-bottom:0;">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-3 p-5">
+        <% link_to local_path('admissions/schedule'), class: 'stretched-link' do %>
+          <%= image_tag 'icons/times.png', alt: data.config.site_name, class: 'rounded img-fluid mb-2', style: 'height:120px;' %>
+          <p class="lead">Enrolment Times</p>
+        <% end %>
+      </div>
+      <div class="col-md-3 p-5">
+        <% link_to local_path('admissions/placement'), class: 'stretched-link' do %>
+          <%= image_tag 'icons/placement.png', alt: data.config.site_name, class: 'rounded img-fluid mb-2', style: 'height:120px;' %>
+          <p class="lead">Placement</p>
+        <% end %>
+      </div>
+      <div class="col-md-3 p-5">
+        <% link_to local_path('admissions/process'), class: 'stretched-link' do %>
+          <%= image_tag 'icons/process.png', alt: data.config.site_name, class: 'rounded img-fluid mb-2', style: 'height:120px;' %>
+          <p class="lead">Admissions Process</p>
+        <% end %>
+      </div>
+      <div class="col-md-3 p-5">
+        <% link_to local_path('about/school-fees'), class: 'stretched-link' do %>
+          <%= image_tag 'icons/fee.png', alt: data.config.site_name, class: 'rounded img-fluid mb-2', style: 'height:120px;' %>
+          <p class="lead">School Fees</p>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-5 mb-5">
+  <div class="row">
+    <div class="col-7">
+      <h3>Contact Details for Enrollment</h3>
+
+      <p>The choice of a school for your child is one of the most important decisions you will make as a parent. We want to assist you in any way we can. Our Enrolments Office is open Monday-Friday 8.00am–4.00pm.</p>
+
+      <ul class="list-unstyled">
+        <li>Yasuyo Masada, Head of Enrolments / Office Manager</li>
+        <li>Telephone: <a href="tel:078 857 9777">078-857-9777</a></li>
+        <li>Fax: <a href="fax:078 857 9775">078-857-9775</a></li>
+        <li>Email: <%= mail_to data.config.mailto, data.config.mailto, role: 'button' %></li>
+      </ul>
+
+      <h3>Tours of the DSK International</h3>
+
+      <p>We regularly run small group tours of the school. There is also an Open Day held each year in May and November to showcase the whole school. Please get in touch to book a tour of the school.</p>
+      <p><%= mail_to data.config.mailto + '?subject=School Tour', 'Book a tour »', class: 'btn btn-lg btn-info', role: 'button' %></p>
+    </div>
+
+    <div class="col-4 offset-md-1">
+      <h3>FAQ's</h3>
+      <p>For a list of frequently asked questions please see <%= link_to 'here', local_path('admissions/faq') %>.</p>
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron jumbotron-fluid text-center bg-warning" style="margin-bottom:0;">
+  <div class="container">
+    <p>Still have questions about enrolment? Please get in touch</p>
+    <p>
+      <%= mail_to data.config.mailto + '?Subject=Enquiry about Enrolment', 'Get in touch »', class: 'btn btn-lg btn-info', role: 'button' %>
+    </p>
+  </div>
+</div>
