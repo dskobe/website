@@ -5,3 +5,33 @@ keywords: []
 url:
   legacy: "/about-us/school-fees/"
 ---
+
+<div class="container-fluid p-0">
+  <%= image_tag 'banners/8_header_thin.jpg', alt: data.config.site_name, class: 'img-fluid d-block w-100' %>
+</div>
+
+<div class="container mt-5 mb-5">
+  <div class="row">
+    <div class="col-7">
+      <h1>School Fees</h1>
+
+      <p>We understand that choosing an international school is a very large investment for most families and we thank you for considering DSKI for your child or children. Under special circumstances we can offer a reduction in school fees however an application must be made in writing, stating all details, to the Board of Trustees.</p>
+
+      <h2 class="mt-5">Extra Curricular Club Activities</h2>
+
+      <p>The fee for half of the school year (starting in September each year) will be 21,000 Yen.</p>
+      <p>There will be no buses at this time to transport your child home. Please try to carpool with other parents.</p>
+    </div>
+
+    <div class="col-4 offset-md-1">
+      <%= image_tag 'icons/download.png', alt: data.config.site_name, class: 'rounded img-fluid mb-2' %>
+      <h3>Document Downloads</h3>
+      <ul class="list-unstyled">
+        <li><%= link_to '2018/2019 Fee Breakdown', '/media/fees/Fee-Structure-20182019.pdf' %></li>
+        <li><%= link_to '2017/2018 Fee Breakdown', '/media/fees/Fee-Structure-20172018.pdf' %></li>
+        <li><%= link_to '2016/2017 Fee Breakdown', '/media/fees/Fee-Structure-20162017.pdf' %></li>
+        <li><%= link_to '2015/2016 Fee Breakdown', '/media/fees/Fee-Structure-20152016.pdf' %></li>
+      </ul>
+    </div>
+  </div>
+</div>
