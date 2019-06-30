@@ -5,3 +5,63 @@ keywords: []
 url:
   legacy: "/about-us-jpn/sponsors-jpn/?lang=ja"
 ---
+
+<div class="container-fluid p-0">
+  <%= image_tag 'banners/2_header_thin.jpg', alt: data.config.site_name, class: 'img-fluid d-block w-100' %>
+</div>
+
+<div class="container mt-5 mb-5">
+  <div class="row">
+    <div class="col-12">
+      <h1>スポンサー</h1>
+
+      <p>神戸ドイツ学院ヨーロピアンスクールは、以下の企業/団体によって多くのご支援をいただき、深く御礼申し上げます。ご支援やご寄付は、質の高い教育の提供に役立っています。</p>
+      <p>スポンサーシップをご希望の場合は<%= mail_to 'marketing@dskobe.org', 'marketing@dskobe.org' %>までご連絡ください。</p>
+
+      <h2 class="mt-5">Gold Level</h2>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mt-5 pr-5">
+            <p><%= link_to 'The Entente:<br>A Complete Residence', 'http://www.the-entente.jp/', class: 'lead font-weight-bold' %></li></p>
+            <p>Rokko Island is only 15 minutes from the center of the international city of Kobe. It is truly an ideal place to live - a waterfront zone full of bright open spaces and greenery.
+            THE ENTENTE offers rental homes to meet your every need. As soon as you step under our entrance arch, you will discover you have found your “home away from home” in Kobe.
+          </div>
+          <div class="col-md-6">
+            <a href="http://www.the-entente.jp/">
+              <%= image_tag '/media/sponsors/the_entente.jpg', alt: 'The Entente', class: 'img-fluid d-block w-100' %>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mt-5 pr-5">
+            <p><%= link_to 'Kobe Porsche', 'http://www.porsche.co.jp/dealers/kobe/', class: 'lead font-weight-bold' %></li></p>
+            <p>洗練の国際都市・神戸に、ポルシェ正規販売店として1999年にオープン。早くも、国道2号線沿いのショールームは神戸・東灘地域の新たなランドマークとなっています。スタッフはいずれもポルシェを知り尽くした経験豊富なエキスパート。ご購入からアフターケアに至るまで、きめ細やかなサービスで信頼と安全をお届けします。
+          </div>
+          <div class="col-md-6">
+            <a href="http://www.the-entente.jp/">
+              <%= image_tag '/media/sponsors/kobe_porsche.jpg', alt: 'Kobe Porsche', class: 'img-fluid d-block w-100' %>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="mt-5">Bronze Level</h2>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p><%= link_to 'TÜV Rheinland<br>テュフ ラインランド ジャパン株式会社', 'https://www.tuv.com/japan/jp/', class: 'lead font-weight-bold' %></li><br>
+            テュフ ラインランドは、さまざまな試験・評価・認証サービスを提供します
+          </div>
+        </div>
+      </div>
+
+      <h2 class="mt-5">Supporters</h2>
+      <ul>
+        <li><%= link_to 'Goethe Institute', 'https://www.goethe.de/ins/jp/ja/sta/osa.html?wt_sc=osaka' %></li>
+        <li><%= link_to 'Peace and Nature', 'https://www.peace-and-nature.com/' %></li>
+      </ul>
+    </div>
+  </div>
+</div>
