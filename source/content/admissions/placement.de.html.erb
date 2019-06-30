@@ -5,3 +5,72 @@ keywords: []
 url:
   legacy: "/admissions-de/admissions-placement/?lang=de"
 ---
+
+<div class="container-fluid p-0">
+  <%= image_tag 'banners/5_header_thin.jpg', alt: data.config.site_name, class: 'img-fluid d-block w-100' %>
+</div>
+
+<div class="container mt-5 mb-5">
+  <div class="row">
+    <div class="col-8">
+      <h1>Klassenzuweisung</h1>
+
+      <p>Die Kinder werden, gemäß ihres Alters am 1.September des Beitrittsjahres, einer Klasse zugewiesen.</p>
+      <p>* Sollte der Schüler/die Schülerin im September geboren worden sein, so entscheidet die Schule welche Klasse angemessen ist, basierend auf vorliegenden Dokumenten, Ergebnissen des Schnuppertags und falls möglich Prüfungen. </p>
+
+      <table class="table table-striped">
+        <thead class="thead-light">
+          <tr>
+            <th scope="col">Jahrgangsstufe</th>
+            <th scope="col">Alter des Kindes am 1.September</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Pre-Kindergarten</td>
+            <td>2 Jahre alt</td>
+          </tr>
+          <tr>
+            <td>Kindergarten</td>
+            <td>3 Jahre alt</td>
+          </tr>
+          <tr>
+            <td>Vorschule</td>
+            <td>5 Jahre alt</td>
+          </tr>
+          <tr>
+            <td>1. Klasse</td>
+            <td>6 Jahre alt</td>
+          </tr>
+          <tr>
+            <td>2. Klasse</td>
+            <td>7 Jahre alt</td>
+          </tr>
+          <tr>
+            <td>3. Klasse</td>
+            <td>8 Jahre alt</td>
+          </tr>
+          <tr>
+            <td>4. Klasse</td>
+            <td>9 Jahre alt</td>
+          </tr>
+          <tr>
+            <td>5. Klasse</td>
+            <td>10 Jahre alt</td>
+          </tr>
+          <tr>
+            <td>6. Klasse</td>
+            <td>11 Jahre alt</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="col-3 offset-md-1">
+      <h3>Zurück</h3>
+      <ul class="list-unstyled">
+        <li><%= link_to 'Zurück zu Aufnahme', local_path('admissions') %></li>
+      </ul>
+    </div>
+  </div>
+</div>
