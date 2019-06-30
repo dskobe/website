@@ -5,3 +5,82 @@ keywords: []
 url:
   legacy: "/what-we-offer-jpn/school-campus-jpn/?lang=ja"
 ---
+
+<div class="container-fluid p-0">
+  <%= image_tag 'banners/school_01.jpg', alt: data.config.site_name, class: 'img-fluid d-block w-100' %>
+</div>
+
+<div class="container mt-5 mb-5">
+  <div class="row">
+    <div class="col-7">
+      <h1>キャンパス</h1>
+
+      <h2 class="mt-5">六甲アイランドコミュニティとDSKI</h2>
+
+      <p>DESKは神戸市が開発した国際的な雰囲気を持つ市街地の六甲アイランドにあります。アイランドの自然は計画的に整備されており、多くの歩道があり交通量の少なさが人々に開放的でナチュラルな気分を与えてくれます。近隣の道路は幅広く、スクールまでの徒歩や公共交通機関へのアクセスも安全です。学校は住宅街にあり、神戸市立小磯記念美術館、神戸ファッション美術館、神戸ゆかりの美術館といった文化施設が近くにあります。DESKには17ヵ国の生徒が在籍しており、文化的に多様な地域社会構成を反映しています。</p>
+
+      <h2 class="mt-5">エコフレンドリースクール</h2>
+
+      <p>現在のユニークでエコフレンドリーなDESKの校舎は2009年に完成しました。2階建ての木造校舎は、持続可能な木材を使用し建設されました。1回はプレ幼稚園や幼稚園といった早期教育プログラムの教室となります。2階は初等教育プログラムの教室となります。他に図書館、美術館、EALサポートルーム、そして特別授業やプロジェクト作業をするための教室があります。</p>
+      <p>木材を使用し造られた空間は、学校で過ごす生徒や教職員に自然でグリーンな背景を与えてくれます。内部の木造パネルは有害物質で処理されておらず、生態系への影響を最小限に抑えられています。学校は私たちの生涯学習の全メンバーに健康的かつ快適で負担をかけない教育環境を提供できるよう設計されています。</p>
+      <p>EMLIS(Environmental Monitoring and Live Indication System)と連携し、エネルギーが与える影響に関して幅広く重要な情報を得ています。詳細については、このリンクをクリックしてください。</p>
+
+      <h2 class="mt-5">エコ・キーポイント</h2>
+
+      <ul>
+        <li>炭素固定-環境への景況の低い持続可能な木材資源を使用しています。</li>
+        <li>太陽光発電（PV）付き屋根材は合計55.3Kwを生産し、日中の学校の電力需要の80％以上をカバーしています。</li>
+        <li>高い断熱レベルで、現在の日本の省エネルギー基準を上回っています。</li>
+        <li>地下配管「アースチューブ」を使用した低エネルギー冷暖房システムがエネルギー需要を削減しています。</li>
+        <li>昼光証明による自然の光と空気の適切な取り入れは、学校全体の電力需要の縮小に役立ちます。</li>
+        <li>木製デッキ、バアルコニーやオーニングは日除けと防雨の役割を最大限にし、屋外と屋内の相互作用を可能としています。</li>
+        <li>すべての教室で使用した紙をリサイクルしています。</li>
+        <li>すべての教室にワームボックスがあります。</li>
+        <li>紙媒体からデジタルテクノロジー（例：Google Apps for Education）への置き換えをしています。</li>
+        <li>先頃、日本建築家協会から権威ある環境建築賞を受賞しました。 http://www.jia.or.jp/member/award/environment/2013/kobe.htm</li>
+      </ul>
+    </div>
+
+    <div class="col-4 offset-md-1">
+      <p><a href="http://www.jia.or.jp/member/award/environment/2013/kobe.htm">
+        <%= image_tag '/media/awards/JIA-環境建築賞.jpg', alt: 'Eco Award', class: 'rounded img-fluid mb-2' %><br>
+        日本建築家協会から<br>権威ある環境建築賞
+      </a></p>
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron jumbotron-fluid mb-0 pb-0">
+  <div class="container mt-3">
+    <div class="row">
+      <div class="col-3">
+        <h3>現代的建築が<br>学習を促す</h3>
+        <p>現代的で環境に配慮した校舎は、生徒たちの日々の学習に素晴らしい環境を提供します。テクノロジーを備え、自然光に溢れた明るい教室は、生徒が集中して学び成長できる快適な場所を提供しています。</p>
+        <p>学校見学を予約して、ぜひお越しください！</p>
+        <p><%= mail_to data.config.mailto + '?subject=School Tour', '見学予約 »', class: 'btn btn-lg btn-info', role: 'button' %></p>
+      </div>
+
+      <div class="col-9">
+        <div id="smallCarousel" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item">
+              <%= image_tag 'photos/campus4.jpg', alt: data.config.site_name, class: 'd-block w-100' %>
+            </div>
+            <div class="carousel-item active">
+              <%= image_tag 'photos/campus1.jpg', alt: data.config.site_name, class: 'd-block w-100' %>
+            </div>
+            <div class="carousel-item">
+              <%= image_tag 'photos/campus2.jpg', alt: data.config.site_name, class: 'd-block w-100' %>
+            </div>
+            <div class="carousel-item">
+              <%= image_tag 'photos/campus3.jpg', alt: data.config.site_name, class: 'd-block w-100' %>
+            </div>
+            <div class="carousel-item">
+              <%= image_tag 'photos/campus5.jpg', alt: data.config.site_name, class: 'd-block w-100' %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
