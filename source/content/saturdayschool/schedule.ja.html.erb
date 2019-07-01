@@ -5,3 +5,63 @@ keywords: []
 url:
   legacy: "/saturdayschool-jpn/schedule-jpn/?lang=ja"
 ---
+
+<div class="container-fluid p-0">
+  <%= image_tag 'banners/1_header_thin.jpg', alt: data.config.site_name, class: 'img-fluid d-block w-100' %>
+</div>
+
+<div class="container mt-5 mb-5">
+  <div class="row">
+    <div class="col-md-8">
+      <h1 class="mb-4">カレンダーとスケジュール</h1>
+
+      <h2>スケジュール</h2>
+      <p>2019年9月から、2020年6月まで、合計で30日の土曜日があります。クラスは、1日につき、午前9時から正午までの3時間です。</p>
+
+      <h2>カレンダー</h2>
+      <p>下のカレンダーを参照してください。</p>
+
+      <table class="table">
+        <thead class="thead-light">
+          <tr>
+            <th scope="col">Term 1 (15 土曜日)</th>
+            <th scope="col">Term 2 (15 土曜日)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2019年9月 – 7, 14, 21, 28</td>
+            <td>2020年2月– 8, 15, 22, 29</td>
+          </tr>
+          <tr>
+            <td>2019年10月 – 5, 19</td>
+            <td>2020年3月 – 7, 14</td>
+          </tr>
+          <tr>
+            <td>2019年11月 – 9, 16, 30</td>
+            <td>2020年4月 – 4, 11, 18, 25</td>
+          </tr>
+          <tr>
+            <td>2019年12月 – 7, 14</td>
+            <td>2020年5月 – 16, 23, 30</td>
+          </tr>
+          <tr>
+            <td>2020年1月 – 11, 18, 25</td>
+            <td>2020年6月 – 6, 13</td>
+          </tr>
+          <tr>
+            <td>2020年2月 - 1</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="col-md-3 offset-md-1">
+      <h3 class="mt-3">戻ります</h3>
+      <ul class="list-unstyled">
+        <li><%= link_to 'サタデースクール', local_path('saturdayschool') %></li>
+      </ul>
+    </div>
+  </div>
+</div>
