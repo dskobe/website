@@ -2,10 +2,10 @@
   <div class="container">
     <p><%= text ||= 'より詳細を知りたい方や学校見学の予約の際はご連絡ください。' %></p>
     <p>
-      <% if mailto %>
-        <%= mail_to mailto, button ||= 'お問い合わせ »', class: 'btn btn-lg btn-primary', role: 'button' %>
-      <% else %>
+      <% if (defined?(mailto)).nil? %>
         <%= link_to button ||= 'お問い合わせ »', link ||= local_path('contact'), class: 'btn btn-lg btn-primary', role: 'button' %>
+      <% else %>
+        <%= mail_to mailto, button ||= 'お問い合わせ »', class: 'btn btn-lg btn-primary', role: 'button' %>
       <% end %>
     </p>
   </div>

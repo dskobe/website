@@ -14,14 +14,25 @@
           <%= link_to t('menu.contact-us'), local_path('contact'), class: 'nav-link' %>
         </li>
 
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="language-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Language</a>
-          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="language-dropdown">
-            <%= link_to '<span class="flag-icon flag-icon-gb"></span> English', '/en', class: 'dropdown-item' %>
-            <%= link_to '<span class="flag-icon flag-icon-de"></span> Deutsch', '/de', class: 'dropdown-item' %>
-            <%= link_to '<span class="flag-icon flag-icon-jp"></span> 日本語',   '/ja', class: 'dropdown-item' %>
-          </div>
+        <% resource_path = current_resource.path.split('/')[1..-1].join('/') %>
+
+        <% if (I18n.locale.to_s != 'en') && (sitemap.find_resource_by_path "en/#{resource_path}") %>
+        <li class="nav-item">
+          <%= link_to '<span class="flag-icon flag-icon-gb"></span> English', current_page.url.sub(I18n.locale.to_s,'en'), class: 'nav-link' %>
         </li>
+        <% end %>
+
+        <% if (I18n.locale.to_s != 'de') && (sitemap.find_resource_by_path "de/#{resource_path}") %>
+        <li class="nav-item">
+          <%= link_to '<span class="flag-icon flag-icon-de"></span> Deutsch', current_page.url.sub(I18n.locale.to_s,'de'), class: 'nav-link' %>
+        </li>
+        <% end %>
+
+        <% if (I18n.locale.to_s != 'ja') && (sitemap.find_resource_by_path "ja/#{resource_path}") %>
+        <li class="nav-item">
+          <%= link_to '<span class="flag-icon flag-icon-jp"></span> 日本語', current_page.url.sub(I18n.locale.to_s,'ja'), class: 'nav-link' %>
+        </li>
+        <% end %>
       </ul>
 
       <ul class="navbar-nav flex-row d-flex flex-row ml-auto mb-2">
