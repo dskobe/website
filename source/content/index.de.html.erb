@@ -1,6 +1,6 @@
 ---
-title: "IB-Schule in Kobe"
-description: ""
+title: "DSK International - Internationale Schulausbildung in Kobe"
+description: "Willkommen bei DSK International, einer internationalen Schule in Kobe für Schüler von 2-11 Jahren. Wir sind eine IB World School und bemühen uns, mehrsprachige, international orientierte Schüler zu fördern."
 keywords: []
 url:
   legacy: "/?lang=de"
@@ -86,7 +86,7 @@ url:
         <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
       </ol>
       <div class="carousel-inner">
-        <div class="carousel-item" style="height: 28rem;">
+        <div class="carousel-item" style="height:20rem;">
           <div class="container">
             <div class="carousel-caption text-left">
                <%= image_tag 'people/Natalia.png', alt: data.config.site_name, style: 'float:right;' %>
@@ -95,7 +95,7 @@ url:
             </div>
           </div>
         </div>
-        <div class="carousel-item" style="height: 28rem;">
+        <div class="carousel-item" style="height:20rem;">
           <div class="container">
             <div class="carousel-caption text-left">
               <%= image_tag 'people/Yoona.png', alt: data.config.site_name, style: 'float:right;' %>
@@ -104,7 +104,7 @@ url:
             </div>
           </div>
         </div>
-        <div class="carousel-item active" style="height: 28rem;">
+        <div class="carousel-item active" style="height:20rem;">
           <div class="container">
             <div class="carousel-caption text-right">
                 <%= image_tag 'people/Dianne.png', alt: data.config.site_name, style: 'float:left;' %>
@@ -140,42 +140,8 @@ url:
   </div>
 </div>
 
-<div class="container mb-5">
-  <hr class="featurette-divider">
+<%= partial "includes/related_icons", :locals => {
+  :items => ['about/index','about/what-we-offer','admissions/index','about/school-history']
+} %>
 
-  <div class="row text-center">
-    <div class="col-md-3 p-5">
-      <% link_to local_path('about'), class: 'stretched-link' do %>
-        <%= image_tag 'icons/dsk.png', alt: data.config.site_name, class: 'rounded img-fluid mb-2', style: 'height:120px;' %>
-        <p class="lead">Über uns</p>
-      <% end %>
-    </div>
-    <div class="col-md-3 p-5">
-      <% link_to local_path('about/what-we-offer'), class: 'stretched-link' do %>
-        <%= image_tag 'icons/programmes.png', alt: data.config.site_name, class: 'rounded img-fluid mb-2', style: 'height:120px;' %>
-        <p class="lead">Unser Angebot</p>
-      <% end %>
-    </div>
-    <div class="col-md-3 p-5">
-      <% link_to local_path('about/admissions'), class: 'stretched-link' do %>
-        <%= image_tag 'icons/admissions.png', alt: data.config.site_name, class: 'rounded img-fluid mb-2', style: 'height:120px;' %>
-        <p class="lead">Aufnahme</p>
-      <% end %>
-    </div>
-    <div class="col-md-3 p-5">
-      <% link_to local_path('about/school-history'), class: 'stretched-link' do %>
-        <%= image_tag 'icons/history.png', alt: data.config.site_name, class: 'rounded img-fluid mb-2', style: 'height:120px;' %>
-        <p class="lead">Geschichte</p>
-      <% end %>
-    </div>
-  </div>
-</div>
-
-<div class="jumbotron jumbotron-fluid text-center bg-warning" style="margin-bottom:0;">
-  <div class="container">
-    <p>Bitte kontaktieren Sie uns für weitere Informationen oder um eine Schultour zu buchen.</p>
-    <p>
-      <%= link_to 'Kontakt aufnehmen »', local_path('contact'), class: 'btn btn-lg btn-primary', role: 'button' %>
-    </p>
-  </div>
-</div>
+<%= partial "includes/de/get_in_touch", :locals => {} %>

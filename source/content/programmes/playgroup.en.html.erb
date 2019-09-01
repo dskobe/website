@@ -1,5 +1,5 @@
 ---
-title: "Native and non-Native Students"
+title: "Playgroup Programme"
 description: ""
 keywords: []
 url:
@@ -13,7 +13,7 @@ url:
 <div class="container mt-5">
   <div class="row">
     <div class="col-md-8">
-      <h1 class="mb-4">Playgroup Programme</h1>
+      <h1><%= current_page.data.title %></h1>
 
       <p>The Playgroup at DSKI is a fun and interesting class for native and non-native English speaking children from 1 to 3 years old that is held on Thursdays for one hour. </p>
       <p>Using many songs, picture books, stories, puppets and other props, games, role-play and more fun and stimulating activities, children will learn target language such as greetings, colours, shapes, numbers, action verbs and short sentences. </p>
@@ -104,9 +104,8 @@ url:
   </div>
 </div>
 
-<div class="jumbotron jumbotron-fluid text-center bg-warning mt-0 mb-0">
-  <div class="container">
-    <p>Interested in joining our Playgroup Programme or would like more information about enrolment? Head over to our Admissions page</p>
-    <p><%= link_to 'To Admissions »', local_path('adminssions'), class: 'btn btn-lg btn-info', role: 'button' %></p>
-  </div>
-</div>
+<%= partial "includes/en/get_in_touch", :locals => {
+  :link => local_path('admissions'),
+  :text => 'Interested in joining our Playgroup Programme or would like more information about enrolment? Head over to our Admissions page.',
+  :button => 'To Admissions »'
+} %>

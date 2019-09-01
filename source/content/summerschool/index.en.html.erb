@@ -1,6 +1,6 @@
 ---
 title: "Summer School"
-description: ""
+description: "DSKI Makers Camp 2019"
 keywords: []
 url:
   legacy: "/summerschool/"
@@ -237,11 +237,6 @@ url:
   </div>
 </div>
 
-<div class="jumbotron jumbotron-fluid text-center bg-warning" style="margin-bottom:0;">
-  <div class="container">
-    <p>Still have questions about Summer School or would like to sign up?</p>
-    <p>
-      <%= link_to 'Get in touch »', local_path('contact'), class: 'btn btn-lg btn-primary', role: 'button' %>
-    </p>
-  </div>
-</div>
+<%= partial "includes/en/get_in_touch", :locals => {
+  :text => 'Still have questions about Summer School or would like to sign up?'
+} %>

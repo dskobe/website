@@ -1,5 +1,5 @@
 ---
-title: "IB PYP (International Baccalaureate)"
+title: "Grundschule"
 description: ""
 keywords: []
 url:
@@ -13,7 +13,7 @@ url:
 <div class="container mt-5">
   <div class="row">
     <div class="col-md-12">
-      <h1 class="mb-4">Grundschule</h1>
+      <h1><%= current_page.data.title %></h1>
 
       <p>Die <a href="https://www.ibo.org/en/school/002685">IBO (International Baccalaureate Organization)</a> ist eine gemeinnützige Einrichtung, deren Hauptsitz in Den Haag, Niederlande, ist. Es bietet eine pädagogische Philosophie und einen pädagogischen Rahmen, um sicherzustellen, dass Schulen auf der ganzen Welt ein motivierendes, relevantes und ausbalanciertes Programm für ihre Schüler entwickeln.</p>
       <p>Als anerkannte IB PYP (International Baccalaureate Primary Years Programme) Weltschule seit 2006 und als Deutsche Auslandsschule verwendet DSK International den Rahmenlehrplan Thüringen und verbindet ihn mit dem PYP Programm. Durch diese Verbindung entsteht ein umfassender, projektorientierter Lehrplan für Kinder vom Kindergarten bis hin zur Klasse 6.</p>
@@ -126,9 +126,8 @@ url:
   </div>
 </div>
 
-<div class="jumbotron jumbotron-fluid text-center bg-warning mt-0 mb-0">
-  <div class="container">
-    <p>Haben wir Ihr Interesse an der PYP geweckt und Sie hätten gerne noch mehr Informationen über die Anmeldung? Gehen Sie zur Seite mit allen Anmelde Informationen</p>
-    <p><%= link_to 'Zur Anmeldung »', local_path('adminssions'), class: 'btn btn-lg btn-info', role: 'button' %></p>
-  </div>
-</div>
+<%= partial "includes/de/get_in_touch", :locals => {
+  :link => local_path('admissions'),
+  :text => 'Haben wir Ihr Interesse an der PYP geweckt und Sie hätten gerne noch mehr Informationen über die Anmeldung? Gehen Sie zur Seite mit allen Anmelde Informationen.',
+  :button => 'Zur Anmeldung »'
+} %>

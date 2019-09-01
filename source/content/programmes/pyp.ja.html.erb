@@ -1,5 +1,5 @@
 ---
-title: "初等教育プログラム：神戸にある国際バカロレア認定校"
+title: "初等教育プログラム"
 description: ""
 keywords: []
 url:
@@ -13,7 +13,7 @@ url:
 <div class="container mt-5">
   <div class="row">
     <div class="col-md-12">
-      <h1 class="mb-4">初等教育プログラム</h1>
+      <h1><%= current_page.data.title %></h1>
 
       <p><a href="https://www.ibo.org/en/school/002685">IB (International Baccalaureate)</a>はスイスのジュネーブを拠点とする非営利団体です。世界中の学生に刺激的でバランスの取れたプログラムを提供するよう教育理念と教育の骨組みを準備しています。</p>
       <p>IB PYP (International Baccalaureate Primary Years Programme)として2006年から公認を受け、海外ドイツ学校としてDESKはPYPの探求のプログラムと一緒にチューリンゲンのカリキュラムの教育計画を使用し、幼稚園から小学6年生までの総合的な探求ベースのプログラムをご用意しています。両カリキュラムは学問的、社会的、感情的、物理的な側面を含むホリスティック・カリキュラムを提供することを重視しています。</p>
@@ -123,9 +123,8 @@ url:
   </div>
 </div>
 
-<div class="jumbotron jumbotron-fluid text-center bg-warning mt-0 mb-0">
-  <div class="container">
-    <p>PYPプログラムへのご参加に興味、または入学手続きに関する詳細情報が必要ですか？ 入学情報ページをご覧ください。</p>
-    <p><%= link_to '入学情報ページへ »', local_path('adminssions'), class: 'btn btn-lg btn-info', role: 'button' %></p>
-  </div>
-</div>
+<%= partial "includes/ja/get_in_touch", :locals => {
+  :link => local_path('admissions'),
+  :text => 'PYPプログラムへのご参加に興味、または入学手続きに関する詳細情報が必要ですか？ 入学情報ページをご覧ください。',
+  :button => '入学情報ページへ »'
+} %>

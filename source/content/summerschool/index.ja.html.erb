@@ -1,5 +1,5 @@
 ---
-title: "神戸にある国際バカロレア認定校"
+title: "DSKI Makers Camp 2019"
 description: ""
 keywords: []
 url:
@@ -13,7 +13,7 @@ url:
 <div class="container mt-5">
   <div class="row">
     <div class="col-9">
-      <h1>DSKI Makers Camp 2019</h1>
+      <h1><%= current_page.data.title %></h1>
 
       <p>DSKIのサマースクールは、組み立てや設計に興味がある生徒たちのための特別なプログラムで、彼らのソフトスキルや主体性を伸ばすことを特に重視しています。</p>
       <p>特設スペースでは、生徒たちは実験や発見を通して問題を解決し楽しみながら、時間、材料やアイデアをうまく使っていくことを学びます。</p>
@@ -226,11 +226,6 @@ url:
   </div>
 </div>
 
-<div class="jumbotron jumbotron-fluid text-center bg-warning" style="margin-bottom:0;">
-  <div class="container">
-    <p>ご質問がありましたらご連絡下さい</p>
-    <p>
-      <%= link_to 'お問い合わせ »', local_path('contact'), class: 'btn btn-lg btn-primary', role: 'button' %>
-    </p>
-  </div>
-</div>
+<%= partial "includes/ja/get_in_touch", :locals => {
+  :text => 'ご質問がありましたらご連絡下さい'
+} %>

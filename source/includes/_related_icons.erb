@@ -1,0 +1,17 @@
+<div class="jumbotron jumbotron-fluid mt-5 mb-0 p-0">
+  <div class="container">
+    <div class="row text-center">
+      <%
+        items.each do |item|
+          resource = local_resource(item)
+      %>
+      <div class="col-md-<%= 12/items.length %> p-5">
+        <% link_to resource.url, class: 'stretched-link' do %>
+          <%= image_tag resource.data.icon, alt: resource.data.title, class: 'rounded img-fluid mb-2', style: 'height:120px;' %>
+          <p class="lead"><%= resource.data.title %></p>
+        <% end %>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>

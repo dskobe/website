@@ -1,5 +1,5 @@
 ---
-title: "Native and non-Native Students"
+title: "Spielgruppe Programme"
 description: ""
 keywords: []
 url:
@@ -13,7 +13,7 @@ url:
 <div class="container mt-5">
   <div class="row">
     <div class="col-md-8">
-      <h1 class="mb-4">Spielgruppe Programme</h1>
+      <h1><%= current_page.data.title %></h1>
 
       <p>Die Spielgruppe an der DSKI ist eine Gruppe für Kinder zwischen 1-3 Jahren, die bereits Englisch sprechen oder es spielerisch kennen lernen wollen, die sich jeden Donnerstag für 1 Stunde trifft. </p>
       <p>Unterstützt durch Lieder, Bilderbücher, Geschichten, Puppentheater, Spiele, Rollenspiele und viele weitere stimulierende Aktivitäten lernen die Kinder erste Wörter zum Thema Begrüßungen, Farben, Formen, Zahlen, einfache Verben und kurze Sätze.</p>
@@ -102,9 +102,8 @@ url:
   </div>
 </div>
 
-<div class="jumbotron jumbotron-fluid text-center bg-warning mt-0 mb-0">
-  <div class="container">
-    <p>Haben wir Ihr Interesse an der Spielgruppe geweckt und Sie hätten gerne noch mehr Informationen über die Anmeldung? Gehen Sie zur Seite mit allen Anmelde Informationen.</p>
-    <p><%= link_to 'Zur Anmeldung »', local_path('adminssions'), class: 'btn btn-lg btn-info', role: 'button' %></p>
-  </div>
-</div>
+<%= partial "includes/de/get_in_touch", :locals => {
+  :link => local_path('admissions'),
+  :text => 'Haben wir Ihr Interesse an der Spielgruppe geweckt und Sie hätten gerne noch mehr Informationen über die Anmeldung? Gehen Sie zur Seite mit allen Anmelde Informationen.',
+  :button => 'Zur Anmeldung »'
+} %>

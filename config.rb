@@ -22,6 +22,13 @@ helpers do
     lang = options[:language] ? options[:language] : I18n.locale.to_s
     "/#{lang}/#{path}"
   end
+
+  def local_resource(path, options={})
+    lang = options[:language] ? options[:language] : I18n.locale.to_s
+    sitemap.resources
+      .select{ |resource| resource.path.include?("#{lang}/#{path}") }
+      .first
+    end
 end
 
 activate :external_pipeline,

@@ -1,5 +1,6 @@
 ---
 title: "About us"
+icon: "icons/dsk.png"
 description: ""
 keywords: []
 url:
@@ -13,7 +14,7 @@ url:
 <div class="container mt-5">
   <div class="row">
     <div class="col-7">
-      <h1>About us</h1>
+      <h1><%= current_page.data.title %></h1>
 
       <p>DSK International (DSKI) is a German school abroad and an IB World School for children ages 2 to 11. At DSKI, we provide an exceptional, innovative education anchored by our German heritage and recognized for embracing the rich diversity in our learners and our world. We approach education holistically in order to ensure that students learn using their heart, head and hands.</p>
       <p>Our mission is built upon our German heritage and European values and beliefs. As a school community we strive to be lifelong inquirers inspired by and challenged through authentic and meaningful learning experiences. Being committed to providing an exceptional education, we foster international mindedness, critical thinking, inclusion and respect for diversity and the willingness to act with integrity and compassion.</p>
@@ -35,36 +36,9 @@ url:
   </div>
 </div>
 
-<div class="jumbotron jumbotron-fluid mt-5 p-0" style="margin-bottom:0;">
-  <div class="container">
-    <div class="row text-center">
-      <div class="col-md-3 p-5">
-        <% link_to local_path('about/what-we-offer'), class: 'stretched-link' do %>
-          <%= image_tag 'icons/offer.png', alt: data.config.site_name, class: 'rounded img-fluid mb-2', style: 'height:120px;' %>
-          <p class="lead">What we Offer</p>
-        <% end %>
-      </div>
-      <div class="col-md-3 p-5">
-        <% link_to local_path('programmes'), class: 'stretched-link' do %>
-          <%= image_tag 'icons/programmes_2.png', alt: data.config.site_name, class: 'rounded img-fluid mb-2', style: 'height:120px;' %>
-          <p class="lead">Our Programmes</p>
-        <% end %>
-      </div>
-      <div class="col-md-3 p-5">
-        <% link_to local_path('about/principals-welcome'), class: 'stretched-link' do %>
-          <%= image_tag 'icons/welcome.png', alt: data.config.site_name, class: 'rounded img-fluid mb-2', style: 'height:120px;' %>
-          <p class="lead">Principal's Welcome</p>
-        <% end %>
-      </div>
-      <div class="col-md-3 p-5">
-        <% link_to local_path('about/languages-at-dski'), class: 'stretched-link' do %>
-          <%= image_tag 'icons/languages.png', alt: data.config.site_name, class: 'rounded img-fluid mb-2', style: 'height:120px;' %>
-          <p class="lead">Our Languages</p>
-        <% end %>
-      </div>
-    </div>
-  </div>
-</div>
+<%= partial "includes/related_icons", :locals => {
+  :items => ['about/what-we-offer','programmes/index','about/principals-welcome','about/languages-at-dski']
+} %>
 
 <div class="container mt-5">
   <div class="row">
@@ -117,11 +91,6 @@ url:
   </div>
 </div>
 
-<div class="jumbotron jumbotron-fluid text-center bg-warning" style="margin-bottom:0;">
-  <div class="container">
-    <p>If you have any questions please get in touch.</p>
-    <p>
-      <%= link_to 'Get in touch »', local_path('contact'), class: 'btn btn-lg btn-primary', role: 'button' %>
-    </p>
-  </div>
-</div>
+<%= partial "includes/en/get_in_touch", :locals => {
+  :text => 'If you have any questions please get in touch.'
+} %>

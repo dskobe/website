@@ -1,5 +1,5 @@
 ---
-title: "IB World School Early Years"
+title: "Early Years Programme"
 description: ""
 keywords: []
 url:
@@ -13,7 +13,7 @@ url:
 <div class="container mt-5">
   <div class="row">
     <div class="col-md-12">
-      <h1 class="mb-4">Early Years Programme</h1>
+      <h1><%= current_page.data.title %></h1>
 
       <p>The Early Years Program at DSKI consists of two primary groups: <strog>Pre-Kindergarten (children 2-3 years old)</strong> and <strong>Early Years / Kindergarten (children 3-5 years old)</strong>. The Early Years department is equipped with facilities and resources that were designed with younger children in mind, and created to provide them an accessible and engaging space to flourish. </p>
       <p>The Pre-Kindergarten curriculum follows three original units inspired by the IB philosophy of “inquiry-based learning.” These units help children to build vocabulary, strengthen their developing social and motor skills, and prep them for entry into the IB PYP Early Years Program.<br>
@@ -124,9 +124,8 @@ url:
   </div>
 </div>
 
-<div class="jumbotron jumbotron-fluid text-center bg-warning mt-0 mb-0">
-  <div class="container">
-    <p>Interested in joining our Early Years Programme or would like more information about enrolment? Head over to our Admissions page</p>
-    <p><%= link_to 'To Admissions »', local_path('adminssions'), class: 'btn btn-lg btn-info', role: 'button' %></p>
-  </div>
-</div>
+<%= partial "includes/en/get_in_touch", :locals => {
+  :link => local_path('admissions'),
+  :text => 'Interested in joining our Early Years Programme or would like more information about enrolment? Head over to our Admissions page.',
+  :button => 'To Admissions »'
+} %>

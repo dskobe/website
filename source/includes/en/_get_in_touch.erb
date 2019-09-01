@@ -1,0 +1,12 @@
+<div class="jumbotron jumbotron-fluid text-center bg-warning" style="margin-bottom:0;">
+  <div class="container">
+    <p><%= text ||= 'Need more information? Make an inquiry to the school.' %></p>
+    <p>
+      <% if mailto %>
+        <%= mail_to mailto, button ||= 'Get in touch »', class: 'btn btn-lg btn-primary', role: 'button' %>
+      <% else %>
+        <%= link_to button ||= 'Get in touch »', link ||= local_path('contact'), class: 'btn btn-lg btn-primary', role: 'button' %>
+      <% end %>
+    </p>
+  </div>
+</div>

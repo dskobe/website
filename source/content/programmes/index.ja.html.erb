@@ -1,6 +1,7 @@
 ---
-title: "早期教育 | 初等教育"
-description: ""
+title: "プログラム"
+icon: "icons/programmes.png"
+description: "早期教育 | 初等教育"
 keywords: []
 url:
   legacy: "/programmes-overview/?lang=ja"
@@ -13,7 +14,8 @@ url:
 <div class="container mt-5 mb-5">
   <div class="row">
     <div class="col-md-8">
-      <h1>プログラム</h1>
+      <h1><%= current_page.data.title %></h1>
+
       神戸ドイツ学院ヨーロピアンスクールは2歳から11歳までの学習者に独自の多言語教育を提供しています。学習者のニーズを満たすために英語、ドイツ語、日本語の3つの言語でカリキュラムを提供しています。</p>
       <p>神戸ドイツ学院ヨーロピアンスクールは<a href="https://www.ibo.org/en/school/002685">国際バカロレア認定校(IB)</a>であることを誇りに思います。あらゆる年齢や文化的な背景や経験を持っている子供たちの学問的、感情的、社会的、身体的、創造的な成長を育む環境を提供します。国際バカロレア認定校として、生涯学習への情熱と世界に良い変化を起こす強い意志を喚起するよう努めています。</p>
       <p>DSKIには主な2つの分科プログラムがあります：ドイツ語と国際語（英語）。生徒は総合教室で英語とドイツ語を話す教師と共に多くの時間を過ごしますが、数学と語学の授業はドイツ語と英語の各々で行われます。</p>
@@ -103,42 +105,10 @@ url:
   </div>
 </div>
 
-<div class="jumbotron jumbotron-fluid mt-5 p-0 mb-0">
-  <div class="container">
-    <div class="row text-center">
-      <div class="col-md-3 p-5">
-        <% link_to local_path('about'), class: 'stretched-link' do %>
-          <%= image_tag 'icons/dsk.png', alt: data.config.site_name, class: 'rounded img-fluid mb-2', style: 'height:120px;' %>
-          <p class="lead">当学院について</p>
-        <% end %>
-      </div>
-      <div class="col-md-3 p-5">
-        <% link_to local_path('about/what-we-offer'), class: 'stretched-link' do %>
-          <%= image_tag 'icons/programmes.png', alt: data.config.site_name, class: 'rounded img-fluid mb-2', style: 'height:120px;' %>
-          <p class="lead">当校がご提供すること</p>
-        <% end %>
-      </div>
-      <div class="col-md-3 p-5">
-        <% link_to local_path('about/admissions'), class: 'stretched-link' do %>
-          <%= image_tag 'icons/admissions.png', alt: data.config.site_name, class: 'rounded img-fluid mb-2', style: 'height:120px;' %>
-          <p class="lead">入学</p>
-        <% end %>
-      </div>
-      <div class="col-md-3 p-5">
-        <% link_to local_path('about/school-campus'), class: 'stretched-link' do %>
-          <%= image_tag 'icons/history.png', alt: data.config.site_name, class: 'rounded img-fluid mb-2', style: 'height:120px;' %>
-          <p class="lead">キャンパス</p>
-        <% end %>
-      </div>
-    </div>
-  </div>
-</div>
+<%= partial "includes/related_icons", :locals => {
+  :items => ['about/index','about/what-we-offer','admissions/index','about/school-history']
+} %>
 
-<div class="jumbotron jumbotron-fluid text-center bg-warning mt-0 mb-0">
-  <div class="container">
-    <p>詳細情報が必要ですか？学校にご質問いただくか、ホームページ上の入学情報ページに進んでください。</p>
-    <p>
-      <%= link_to 'お問い合わせ »', local_path('contact'), class: 'btn btn-lg btn-primary', role: 'button' %>
-    </p>
-  </div>
-</div>
+<%= partial "includes/ja/get_in_touch", :locals => {
+  :text => '詳細情報が必要ですか？学校にご質問いただくか、ホームページ上の入学情報ページに進んでください。'
+} %>

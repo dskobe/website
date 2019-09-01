@@ -1,5 +1,5 @@
 ---
-title: "IB World School Early Years"
+title: "Vorschule Programm"
 description: ""
 keywords: []
 url:
@@ -13,7 +13,7 @@ url:
 <div class="container mt-5">
   <div class="row">
     <div class="col-md-12">
-      <h1 class="mb-4">Vorschule Programm</h1>
+      <h1><%= current_page.data.title %></h1>
 
       <p>Der Kindergarten an der DSKI besteht aus zwei Gruppen: Pre-Kindergarten (Krabbelgruppe, Kinder von 2-3 Jahren) und Kindergarten (Kinder von 3-5 Jahren). Die Ausstattung des Kindergartens ist den Bedürfnissen der kleinen Kinder angepasst und bietet ihnen eine reizvolle, leicht zugängliche Lernumgebung um zu wachsen.</p>
       <p>Der Pre-Kindergarten folgt dem vom IB Programme inspirierten Grundgedanken des entdeckenden Lernens und behandelt dabei drei Lerneinheiten. Diese Lerneinheiten helfen den Kindern ihr Vokabular aufzubauen, ihre motorischen und geistigen Fähigkeiten zu entwickeln und bereiten sie auf den Eintritt in das IB Kindergarten Programm vor.</p>
@@ -124,9 +124,8 @@ url:
   </div>
 </div>
 
-<div class="jumbotron jumbotron-fluid text-center bg-warning mt-0 mb-0">
-  <div class="container">
-    <p>Haben wir Ihr Interesse an der Vorschule geweckt und Sie hätten gerne noch mehr Informationen über die Anmeldung? Gehen Sie zur Seite mit allen Anmelde Informationen.</p>
-    <p><%= link_to 'Zur Anmeldung »', local_path('adminssions'), class: 'btn btn-lg btn-info', role: 'button' %></p>
-  </div>
-</div>
+<%= partial "includes/de/get_in_touch", :locals => {
+  :link => local_path('admissions'),
+  :text => 'Haben wir Ihr Interesse an der Vorschule geweckt und Sie hätten gerne noch mehr Informationen über die Anmeldung? Gehen Sie zur Seite mit allen Anmelde Informationen.',
+  :button => 'Zur Anmeldung »'
+} %>

@@ -1,5 +1,6 @@
 ---
-title: "11歳の学習者のための神戸にある国際バカロレア認定校"
+title: "入学"
+icon: "icons/admissions.png"
 description: ""
 keywords: []
 url:
@@ -13,7 +14,7 @@ url:
 <div class="container mt-5">
   <div class="row">
     <div class="col-7">
-      <h1>入学</h1>
+      <h1><%= current_page.data.title %></h1>
 
       <p>神戸ドイツ学院ヨーロピアンスクールは2つのプログラムに分かれています(ドイツプログラムと国際プログラム)</p>
       <p>国際プログラムの学習者に対する指導言語は英語で、子供たちは日本語とドイツ語も学ぶ機会があります。ドイツプログラムの学習者に対しては、数学と語学の授業はドイツ語で行われますが、全ての授業において言語サポートを行っています。</p>
@@ -69,36 +70,9 @@ url:
   </div>
 </div>
 
-<div class="jumbotron jumbotron-fluid mt-5 p-0" style="margin-bottom:0;">
-  <div class="container">
-    <div class="row text-center">
-      <div class="col-md-3 p-5">
-        <% link_to local_path('admissions/schedule'), class: 'stretched-link' do %>
-          <%= image_tag 'icons/times.png', alt: data.config.site_name, class: 'rounded img-fluid mb-2', style: 'height:120px;' %>
-          <p class="lead">入学時期</p>
-        <% end %>
-      </div>
-      <div class="col-md-3 p-5">
-        <% link_to local_path('admissions/placement'), class: 'stretched-link' do %>
-          <%= image_tag 'icons/placement.png', alt: data.config.site_name, class: 'rounded img-fluid mb-2', style: 'height:120px;' %>
-          <p class="lead">クラス分け</p>
-        <% end %>
-      </div>
-      <div class="col-md-3 p-5">
-        <% link_to local_path('admissions/process'), class: 'stretched-link' do %>
-          <%= image_tag 'icons/process.png', alt: data.config.site_name, class: 'rounded img-fluid mb-2', style: 'height:120px;' %>
-          <p class="lead">入学手続き</p>
-        <% end %>
-      </div>
-      <div class="col-md-3 p-5">
-        <% link_to local_path('about/school-fees'), class: 'stretched-link' do %>
-          <%= image_tag 'icons/fee.png', alt: data.config.site_name, class: 'rounded img-fluid mb-2', style: 'height:120px;' %>
-          <p class="lead">学費</p>
-        <% end %>
-      </div>
-    </div>
-  </div>
-</div>
+<%= partial "includes/related_icons", :locals => {
+  :items => ['admissions/schedule','admissions/placement','admissions/process','about/school-fees']
+} %>
 
 <div class="container mt-5 mb-5">
   <div class="row">
@@ -124,11 +98,6 @@ url:
   </div>
 </div>
 
-<div class="jumbotron jumbotron-fluid text-center bg-warning" style="margin-bottom:0;">
-  <div class="container">
-    <p>入学のご質問がありますか？ご連絡下さい</p>
-    <p>
-      <%= mail_to data.config.mailto + '?Subject=Enquiry about Enrolment', 'お問い合わせ »', class: 'btn btn-lg btn-info', role: 'button' %>
-    </p>
-  </div>
-</div>
+<%= partial "includes/ja/get_in_touch", :locals => {
+  :text => '入学のご質問がありますか？ご連絡下さい'
+} %>

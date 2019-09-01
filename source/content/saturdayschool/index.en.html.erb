@@ -13,7 +13,7 @@ url:
 <div class="container mt-5">
   <div class="row">
     <div class="col-md-8">
-      <h1 class="mb-4">Saturday School</h1>
+      <h1 class="mb-4"><%= current_page.data.title %></h1>
 
       <p>Saturday school at DSK International is a Saturday morning school open to children with English, German or French speaking backgrounds from the ages of 5 years to 12 years.</p>
       <p>There are three regular programmes: <%= link_to 'English', local_path('saturdayschool/english-program'), class: 'font-weight-bold' %>, <%= link_to 'German', local_path('saturdayschool/german-program'), class: 'font-weight-bold' %> and <%= link_to 'French', local_path('saturdayschool/french-program'), class: 'font-weight-bold' %> (Language Based Programs) and one learning and movement based programme: <%= link_to 'Move to Learn', local_path('saturdayschool/move-to-learn'), class: 'font-weight-bold' %>. The 2018 – 2019 year programs start in September 2018. Applications are mainly open from February to June but are also accepted during other months of the year.</p>
@@ -115,30 +115,9 @@ url:
   </div>
 </div>
 
-<div class="jumbotron jumbotron-fluid mt-5 p-0 mb-0">
-  <div class="container">
-    <div class="row text-center">
-      <div class="col-md-4 p-5">
-        <% link_to local_path('saturdayschool/schedule'), class: 'stretched-link' do %>
-          <%= image_tag 'icons/eligibility.png', alt: data.config.site_name, class: 'rounded img-fluid mb-2', style: 'height:120px;' %>
-          <p class="lead">Calendar and Schedule</p>
-        <% end %>
-      </div>
-      <div class="col-md-4 p-5">
-        <% link_to local_path('saturdayschool/admission'), class: 'stretched-link' do %>
-          <%= image_tag 'icons/admissions.png', alt: data.config.site_name, class: 'rounded img-fluid mb-2', style: 'height:120px;' %>
-          <p class="lead">Admission Process</p>
-        <% end %>
-      </div>
-      <div class="col-md-4 p-5">
-        <% link_to local_path('saturdayschool/fees'), class: 'stretched-link' do %>
-          <%= image_tag 'icons/fee.png', alt: data.config.site_name, class: 'rounded img-fluid mb-2', style: 'height:120px;' %>
-          <p class="lead">Fees</p>
-        <% end %>
-      </div>
-    </div>
-  </div>
-</div>
+<%= partial "includes/related_icons", :locals => {
+  :items => ['saturdayschool/schedule','saturdayschool/admission','saturdayschool/fees']
+} %>
 
 <div class="container mt-5 mb-5">
   <div class="row">
@@ -162,9 +141,7 @@ url:
   </div>
 </div>
 
-<div class="jumbotron jumbotron-fluid text-center bg-warning" style="margin-bottom:0;">
-  <div class="container">
-    <p>Still have questions about Saturday School? Please get in touch</p>
-    <p><%= mail_to data.config.mailto + 'saturday.coordinator@dskobe.org?Subject=Enquiry about Saturday School', 'Get in touch »', class: 'btn btn-lg btn-info', role: 'button' %></p>
-  </div>
-</div>
+<%= partial "includes/en/get_in_touch", :locals => {
+  :text => 'Still have questions about Saturday School? Please get in touch.',
+  :mailto => 'saturday.coordinator@dskobe.org?Subject=Enquiry about Saturday School'
+} %>

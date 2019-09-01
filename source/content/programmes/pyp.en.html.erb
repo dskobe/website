@@ -1,5 +1,5 @@
 ---
-title: "IB World School in Kobe"
+title: "Primary Years Programme"
 description: ""
 keywords: []
 url:
@@ -13,7 +13,7 @@ url:
 <div class="container mt-5">
   <div class="row">
     <div class="col-md-12">
-      <h1 class="mb-4">Primary Years Programme</h1>
+      <h1><%= current_page.data.title %></h1>
 
       <p>The <a href="https://www.ibo.org/en/school/002685">IBO (International Baccalaureate Organisation)</a> is a non-profit organisation based in The Hague, The Netherlands. It provides an educational philosophy and framework to ensure that schools all over the world are providing stimulating, relevant and balanced programmes for their students.</p>
       <p>As an authorised IB PYP (International Baccalaureate Primary Years Programme) world school since 2006 and a German School Abroad, DSKI uses the educational plans from the Thuringia curriculum alongside the PYP Programme of Inquiry to create a comprehensive, inquiry based programme from Kindergarten to Grade 6. The resulting programme focusses on delivering a holistic curriculum encompassing the academic, social, emotional and physical aspects of learning.</p>
@@ -125,9 +125,8 @@ url:
   </div>
 </div>
 
-<div class="jumbotron jumbotron-fluid text-center bg-warning mt-0 mb-0">
-  <div class="container">
-    <p>Interested in joining our Primary Years Programme or would like more information about enrolments? Head over to our Admissions page</p>
-    <p><%= link_to 'To Admissions »', local_path('adminssions'), class: 'btn btn-lg btn-info', role: 'button' %></p>
-  </div>
-</div>
+<%= partial "includes/en/get_in_touch", :locals => {
+  :link => local_path('admissions'),
+  :text => 'Interested in joining our Primary Years Programme or would like more information about enrolments? Head over to our Admissions page.',
+  :button => 'To Admissions »'
+} %>

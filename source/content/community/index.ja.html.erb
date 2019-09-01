@@ -1,5 +1,5 @@
 ---
-title: "コミュニティ: DSKIのコミュニティにようこそ"
+title: "コミュニティ"
 description: ""
 keywords: []
 url:
@@ -13,7 +13,7 @@ url:
 <div class="container mt-5">
   <div class="row">
     <div class="col-7">
-      <h1>コミュニティ</h1>
+      <h1><%= current_page.data.title %></h1>
 
       <p>ここDSKIでは、ご両親、パートナー、教職員、卒業生との深い関わり合いを反映した連携の強い全員参加型のコミュニティがあります。この深い関わり合いの意識は生徒たちから全ての年齢層にまで及びます。</p>
       <p>W私たちはあらゆる年齢、文化的背景や経験を持っている子供たちの学問的、感情的、社会的、肉体的な成長と創造性育む環境を提供します。国際バカロレア認定校として、生涯学習への情熱と、世界に有益な変化を起こす強い意志を喚起する努力をしています。</p>
@@ -46,36 +46,10 @@ url:
   </div>
 </div>
 
-<div class="jumbotron jumbotron-fluid mt-5 p-0" style="margin-bottom:0;">
-  <div class="container">
-    <div class="row text-center">
-      <div class="col-md-4 p-5">
-        <% link_to local_path('community/alumni'), class: 'stretched-link' do %>
-          <%= image_tag 'icons/alumni.png', alt: data.config.site_name, class: 'rounded img-fluid mb-2', style: 'height:120px;' %>
-          <p class="lead">卒業生</p>
-        <% end %>
-      </div>
-      <div class="col-md-4 p-5">
-        <% link_to local_path('community/pta'), class: 'stretched-link' do %>
-          <%= image_tag 'icons/pta.png', alt: data.config.site_name, class: 'rounded img-fluid mb-2', style: 'height:120px;' %>
-          <p class="lead">PTA</p>
-        <% end %>
-      </div>
-      <div class="col-md-4 p-5">
-        <% link_to local_path('about/sponsors'), class: 'stretched-link' do %>
-          <%= image_tag 'icons/sponsors.png', alt: data.config.site_name, class: 'rounded img-fluid mb-2', style: 'height:120px;' %>
-          <p class="lead">スポンサー</p>
-        <% end %>
-      </div>
-    </div>
-  </div>
-</div>
+<%= partial "includes/related_icons", :locals => {
+  :items => ['community/alumni','community/pta','about/sponsors']
+} %>
 
-<div class="jumbotron jumbotron-fluid text-center bg-warning" style="margin-bottom:0;">
-  <div class="container">
-    <p>活気あるコミュニティへの参加にご興味ありますか？ご両親、パートナー、卒業生との話しあいの機会についてはお気軽にお問合せください。</p>
-    <p>
-      <%= link_to '連絡する »', local_path('contact'), class: 'btn btn-lg btn-primary', role: 'button' %>
-    </p>
-  </div>
-</div>
+<%= partial "includes/ja/get_in_touch", :locals => {
+  :text => '活気あるコミュニティへの参加にご興味ありますか？ご両親、パートナー、卒業生との話しあいの機会についてはお気軽にお問合せください。'
+} %>

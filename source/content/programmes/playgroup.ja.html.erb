@@ -1,5 +1,5 @@
 ---
-title: "プレイグループプログラム：神戸にある国際バカロレア認定校"
+title: "プレイグループプログラム"
 description: ""
 keywords: []
 url:
@@ -13,7 +13,7 @@ url:
 <div class="container mt-5">
   <div class="row">
     <div class="col-md-8">
-      <h1 class="mb-4">プレイグループプログラム</h1>
+      <h1><%= current_page.data.title %></h1>
 
       <p>DSKIプレイグループは、1-3歳のお子様を対象に毎週木曜日に1時間開催します。母国語が英語であるなしに関わらず、楽しめる面白いプログラムです。</p>
       <p>たくさんの音楽、絵本、物語、人形や小道具を使用したゲーム、ロールプレイングなどの楽しく刺激的なアクティビティを通じて、お子様は挨拶、色、形、数字、動詞や短文といった目標としている言語を学んでいきます。/p>
@@ -103,9 +103,8 @@ url:
   </div>
 </div>
 
-<div class="jumbotron jumbotron-fluid text-center bg-warning mt-0 mb-0">
-  <div class="container">
-    <p>プレイグループプログラムへの参加にご興味がある、もしくは入学に関する詳しい情報をお探しですか？入学ページにお進みください。</p>
-    <p><%= link_to '入学ページへ »', local_path('adminssions'), class: 'btn btn-lg btn-info', role: 'button' %></p>
-  </div>
-</div>
+<%= partial "includes/ja/get_in_touch", :locals => {
+  :link => local_path('admissions'),
+  :text => 'プレイグループプログラムへの参加にご興味がある、もしくは入学に関する詳しい情報をお探しですか？入学ページにお進みください。',
+  :button => '入学情報ページへ »'
+} %>

@@ -1,6 +1,7 @@
 ---
-title: "Enrol at DSKI - International"
-description: ""
+title: "Admissions"
+icon: "icons/admissions.png"
+description: "Enrol at DSKI - International"
 keywords: []
 url:
   legacy: "/admissions/"
@@ -13,7 +14,7 @@ url:
 <div class="container mt-5">
   <div class="row">
     <div class="col-7">
-      <h1>Admissions</h1>
+      <h1><%= current_page.data.title %></h1>
 
       <p>DSK International has two branches: the German Branch and the International Branch.</p>
       <p>For learners in the International Branch the language of instruction is English, children also have the opportunity to learn Japanese and German. For learners in the German Branch, math and language classes are conducted in German, and all other classes are conducted in English except for the Japanese lessons.</p>
@@ -78,36 +79,9 @@ url:
   </div>
 </div>
 
-<div class="jumbotron jumbotron-fluid mt-5 p-0" style="margin-bottom:0;">
-  <div class="container">
-    <div class="row text-center">
-      <div class="col-md-3 p-5">
-        <% link_to local_path('admissions/schedule'), class: 'stretched-link' do %>
-          <%= image_tag 'icons/times.png', alt: data.config.site_name, class: 'rounded img-fluid mb-2', style: 'height:120px;' %>
-          <p class="lead">Enrolment Times</p>
-        <% end %>
-      </div>
-      <div class="col-md-3 p-5">
-        <% link_to local_path('admissions/placement'), class: 'stretched-link' do %>
-          <%= image_tag 'icons/placement.png', alt: data.config.site_name, class: 'rounded img-fluid mb-2', style: 'height:120px;' %>
-          <p class="lead">Placement</p>
-        <% end %>
-      </div>
-      <div class="col-md-3 p-5">
-        <% link_to local_path('admissions/process'), class: 'stretched-link' do %>
-          <%= image_tag 'icons/process.png', alt: data.config.site_name, class: 'rounded img-fluid mb-2', style: 'height:120px;' %>
-          <p class="lead">Admissions Process</p>
-        <% end %>
-      </div>
-      <div class="col-md-3 p-5">
-        <% link_to local_path('about/school-fees'), class: 'stretched-link' do %>
-          <%= image_tag 'icons/fee.png', alt: data.config.site_name, class: 'rounded img-fluid mb-2', style: 'height:120px;' %>
-          <p class="lead">School Fees</p>
-        <% end %>
-      </div>
-    </div>
-  </div>
-</div>
+<%= partial "includes/related_icons", :locals => {
+  :items => ['admissions/schedule','admissions/placement','admissions/process','about/school-fees']
+} %>
 
 <div class="container mt-5 mb-5">
   <div class="row">
@@ -136,11 +110,6 @@ url:
   </div>
 </div>
 
-<div class="jumbotron jumbotron-fluid text-center bg-warning mb-0">
-  <div class="container">
-    <p>Still have questions about enrolment? Please get in touch</p>
-    <p>
-      <%= mail_to data.config.mailto + '?Subject=Enquiry about Enrolment', 'Get in touch »', class: 'btn btn-lg btn-info', role: 'button' %>
-    </p>
-  </div>
-</div>
+<%= partial "includes/en/get_in_touch", :locals => {
+  :text => 'Still have questions about enrolment? Please get in touch.'
+} %>

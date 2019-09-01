@@ -1,5 +1,5 @@
 ---
-title: "Gemeinschaft: Die Deutsche Schule Kobe International"
+title: "Die deutsche Schulgemeinschaft"
 description: ""
 keywords: []
 url:
@@ -13,7 +13,7 @@ url:
 <div class="container mt-5">
   <div class="row">
     <div class="col-7">
-      <h1>Die deutsche Schulgemeinschaft</h1>
+      <h1><%= current_page.data.title %></h1>
 
       <p>An der DSKI gibt es eine engagierte und aufgeschlossene Gemeinschaft dank der Mithilfe von Eltern, Partnern, Lehrern und Alumni. Dieses hohe Engagement und ein Gefühl von Zugehörigkeit wird an unsere Schüler jeder Altersstufe weitergegeben.</p>
       <p>Wir bieten eine Lernumgebung, die das akademische, emotionale, soziale, körperliche und kreative Wachstum von Kindern allen Alters, ganz gleich ihrer Herkunft und ihrer Erfahrungen, fördert. Als IB World School streben wir danach, die lebenslange Freude am Lernen zu erwecken, um so die Welt positiv verändern zu können.</p>
@@ -45,36 +45,10 @@ url:
   </div>
 </div>
 
-<div class="jumbotron jumbotron-fluid mt-5 p-0" style="margin-bottom:0;">
-  <div class="container">
-    <div class="row text-center">
-      <div class="col-md-4 p-5">
-        <% link_to local_path('community/alumni'), class: 'stretched-link' do %>
-          <%= image_tag 'icons/alumni.png', alt: data.config.site_name, class: 'rounded img-fluid mb-2', style: 'height:120px;' %>
-          <p class="lead">Ehemalige Schüler</p>
-        <% end %>
-      </div>
-      <div class="col-md-4 p-5">
-        <% link_to local_path('community/pta'), class: 'stretched-link' do %>
-          <%= image_tag 'icons/pta.png', alt: data.config.site_name, class: 'rounded img-fluid mb-2', style: 'height:120px;' %>
-          <p class="lead">Elternbeirat (PTA)</p>
-        <% end %>
-      </div>
-      <div class="col-md-4 p-5">
-        <% link_to local_path('about/sponsors'), class: 'stretched-link' do %>
-          <%= image_tag 'icons/sponsors.png', alt: data.config.site_name, class: 'rounded img-fluid mb-2', style: 'height:120px;' %>
-          <p class="lead">Sponsoren</p>
-        <% end %>
-      </div>
-    </div>
-  </div>
-</div>
+<%= partial "includes/related_icons", :locals => {
+  :items => ['community/alumni','community/pta','about/sponsors']
+} %>
 
-<div class="jumbotron jumbotron-fluid text-center bg-warning" style="margin-bottom:0;">
-  <div class="container">
-    <p>Haben Sie Interesse daran, unserer lebhaften Gemeinschaft beizutreten? Bitte kontaktieren Sie uns und wir geben Ihnen gerne weitere Details für Eltern, Partner und Alumni.</p>
-    <p>
-      <%= link_to 'Kontakt aufnehmen »', local_path('contact'), class: 'btn btn-lg btn-primary', role: 'button' %>
-    </p>
-  </div>
-</div>
+<%= partial "includes/de/get_in_touch", :locals => {
+  :text => 'Haben Sie Interesse daran, unserer lebhaften Gemeinschaft beizutreten? Bitte kontaktieren Sie uns und wir geben Ihnen gerne weitere Details für Eltern, Partner und Alumni.'
+} %>

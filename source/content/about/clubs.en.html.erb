@@ -13,7 +13,7 @@ url:
 <div class="container mt-5">
   <div class="row">
     <div class="col-7">
-      <h1>Clubs</h1>
+      <h1><%= current_page.data.title %></h1>
 
       <p>DSK International offers a wide range of after school extracurricular club activities. From sports, to arts, to computer science and much more we feel there is something for everyone.</p>
       <p>We are now pleased to announce that our clubs are also open for external children to attend.</p>
@@ -399,11 +399,6 @@ url:
   </div>
 </div>
 
-<div class="jumbotron jumbotron-fluid text-center bg-warning mb-0">
-  <div class="container">
-    <p>If you have any questions please get in touch.</p>
-    <p>
-      <%= mail_to data.config.mailto + '?Subject=Enquiry about DSKI', 'Get in touch »', class: 'btn btn-lg btn-info', role: 'button' %>
-    </p>
-  </div>
-</div>
+<%= partial "includes/en/get_in_touch", :locals => {
+  :text => 'If you have any questions please get in touch.'
+} %>
