@@ -388,13 +388,9 @@ url:
     </div>
 
     <div class="col-9">
-      <div id="smallCarousel" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <%= image_tag 'photos/Makers-Camp1.jpg', alt: data.config.site_name, class: 'd-block w-100' %>
-          </div>
-        </div>
-      </div>
+    <%= partial "includes/carousel", :locals => {
+      :items => ['photos/Makers-Camp1.jpg']
+    } %>
     </div>
   </div>
 </div>

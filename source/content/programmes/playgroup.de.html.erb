@@ -81,22 +81,9 @@ url:
       </div>
 
       <div class="col-9">
-        <div id="smallCarousel" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <%= image_tag 'photos/Playgroup1.jpg', alt: data.config.site_name, class: 'd-block w-100' %>
-            </div>
-            <div class="carousel-item">
-              <%= image_tag 'photos/Playgroup2.jpg', alt: data.config.site_name, class: 'd-block w-100' %>
-            </div>
-            <div class="carousel-item">
-              <%= image_tag 'photos/Playgroup3.jpg', alt: data.config.site_name, class: 'd-block w-100' %>
-            </div>
-            <div class="carousel-item">
-              <%= image_tag 'photos/Playgroup4.jpg', alt: data.config.site_name, class: 'd-block w-100' %>
-            </div>
-          </div>
-        </div>
+        <%= partial "includes/carousel", :locals => {
+          :items => ['photos/Playgroup1.jpg','photos/Playgroup2.jpg','photos/Playgroup3.jpg','photos/Playgroup4.jpg']
+        } %>
       </div>
     </div>
   </div>

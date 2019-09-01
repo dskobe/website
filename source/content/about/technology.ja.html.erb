@@ -55,22 +55,9 @@ url:
       </div>
 
       <div class="col-9">
-        <div id="smallCarousel" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <%= image_tag 'photos/technology1.jpg', alt: data.config.site_name, class: 'd-block w-100' %>
-            </div>
-            <div class="carousel-item">
-              <%= image_tag 'photos/technology2.jpg', alt: data.config.site_name, class: 'd-block w-100' %>
-            </div>
-            <div class="carousel-item">
-              <%= image_tag 'photos/technology3.jpg', alt: data.config.site_name, class: 'd-block w-100' %>
-            </div>
-            <div class="carousel-item">
-              <%= image_tag 'photos/technology4.jpg', alt: data.config.site_name, class: 'd-block w-100' %>
-            </div>
-          </div>
-        </div>
+        <%= partial "includes/carousel", :locals => {
+          :items => ['photos/technology1.jpg','photos/technology2.jpg','photos/technology3.jpg','photos/technology4.jpg']
+        } %>
       </div>
     </div>
   </div>

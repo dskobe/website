@@ -193,35 +193,14 @@ url:
   <div class="row">
     <div class="col-4">
       <h3>サマースクールお申し込み</h3>
-
       <%= image_tag 'icons/signup.png', alt: data.config.site_name, class: 'rounded img-fluid mb-2' %>
       <p><%= link_to 'お申し込み >', 'https://docs.google.com/forms/d/1fsQxiniOJvSxIKcGz8RrUiuGxlXe-lZowE0kCvV3zKw/viewform?edit_requested=true' %></p>
-
-  </div>
+    </div>
 
     <div class="col-8">
-      <div id="smallCarousel" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <%= image_tag 'photos/Makers-Camp1.jpg', alt: data.config.site_name, class: 'd-block w-100' %>
-          </div>
-          <div class="carousel-item">
-            <%= image_tag 'photos/Makers-Camp2.jpg', alt: data.config.site_name, class: 'd-block w-100' %>
-          </div>
-          <div class="carousel-item">
-            <%= image_tag 'photos/Makers-Camp3.jpg', alt: data.config.site_name, class: 'd-block w-100' %>
-          </div>
-          <div class="carousel-item">
-            <%= image_tag 'photos/Makers-Camp4.jpg', alt: data.config.site_name, class: 'd-block w-100' %>
-          </div>
-          <div class="carousel-item">
-            <%= image_tag 'photos/Makers-Camp5.jpg', alt: data.config.site_name, class: 'd-block w-100' %>
-          </div>
-          <div class="carousel-item">
-            <%= image_tag 'photos/Makers-Camp6.jpg', alt: data.config.site_name, class: 'd-block w-100' %>
-          </div>
-          </div>
-      </div>
+      <%= partial "includes/carousel", :locals => {
+        :items => ['photos/Makers-Camp1.jpg','photos/Makers-Camp2.jpg','photos/Makers-Camp3.jpg','photos/Makers-Camp4.jpg','photos/Makers-Camp5.jpg','photos/Makers-Camp6.jpg']
+      } %>
     </div>
   </div>
 </div>

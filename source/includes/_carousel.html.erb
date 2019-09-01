@@ -1,0 +1,15 @@
+<div id="<%= id ||= rand(2**256).to_s(36)[0..7] %>" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <% counter = 0 %>
+    <% items.each do |item| %>
+      <% if counter > 0 %>
+      <div class="carousel-item">
+      <% else %>
+      <div class="carousel-item active">
+      <% counter = 1 %>
+      <% end %>
+      <%= image_tag item, alt: data.config.site_name, class: 'd-block w-100' %>
+      </div>
+    <% end %>
+  </div>
+</div>

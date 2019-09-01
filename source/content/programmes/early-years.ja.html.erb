@@ -78,28 +78,9 @@ url:
       </div>
 
       <div class="col-9">
-        <div id="smallCarousel" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <%= image_tag 'photos/Early-years1.jpg', alt: data.config.site_name, class: 'd-block w-100' %>
-            </div>
-            <div class="carousel-item">
-              <%= image_tag 'photos/Early-years2.jpg', alt: data.config.site_name, class: 'd-block w-100' %>
-            </div>
-            <div class="carousel-item">
-              <%= image_tag 'photos/Early-years3.jpg', alt: data.config.site_name, class: 'd-block w-100' %>
-            </div>
-            <div class="carousel-item">
-              <%= image_tag 'photos/Early-years4.jpg', alt: data.config.site_name, class: 'd-block w-100' %>
-            </div>
-            <div class="carousel-item">
-              <%= image_tag 'photos/Early-years5.jpg', alt: data.config.site_name, class: 'd-block w-100' %>
-            </div>
-            <div class="carousel-item">
-              <%= image_tag 'photos/Early-years6.jpg', alt: data.config.site_name, class: 'd-block w-100' %>
-            </div>
-          </div>
-        </div>
+        <%= partial "includes/carousel", :locals => {
+          :items => ['photos/Early-years1.jpg','photos/Early-years2.jpg','photos/Early-years3.jpg','photos/Early-years4.jpg','photos/Early-years5.jpg','photos/Early-years6.jpg']
+        } %>
       </div>
     </div>
   </div>
