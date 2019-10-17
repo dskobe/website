@@ -10,8 +10,8 @@
   </div>
 </li>
 
-<li class="nav-item font-weight-bolder">
-  <%= link_to 'Aktivitäten', local_path('activities'), class: 'nav-link' %>
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle font-weight-bolder" href="<%= local_path('news') %>" id="about-dropdown" aria-haspopup="true" aria-expanded="false"><%= t('menu.news') %></a>
 </li>
 
 <li class="nav-item dropdown">
