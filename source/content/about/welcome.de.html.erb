@@ -37,3 +37,19 @@ url:
     </div>
   </div>
 </div>
+
+<div class="container">
+  <%= image_tag 'people/DSKI-staff-photo-201819.jpg', alt: data.config.site_name, class: 'img-fluid d-block w-100' %>
+</div>
+
+<div class="container mt-5 mb-5">
+  <div class="row">
+    <div class="col-12">
+      <h1><%= current_page.data.title %></h1>
+
+      <p class="mt-4">Alle Grundschullehrer der Schule sprechen <strong>fließend Englisch oder Deutsch</strong> und sind <strong>ausgebildete, qualifizierte Lehrer</strong> in ihren Herkunftsländern (aktuell aus Singapur, Australien, Kanada, Südafrika, Japan, USA, Großbritannien und Deutschland). </p>
+
+      <p><%= mail_to 'sekretariat@dskobe.org', 'Kontakt aufnehmen »', class: 'btn btn-lg btn-info', role: 'button' %></p>
+    </div>
+  </div>
+</div>

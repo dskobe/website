@@ -56,7 +56,7 @@ url:
     <div class="col-md-4">
       <h2>真のコミュニティ</h2>
       <p>教育とは、生徒の両親や更に広いコミュニティと共有する課題です。私たちは学習者に国際性と客観性、誠実さと思いやりをもって行動する生涯の探求心を育成することを目指します。私たちのコミュニティに敬意を表します。</p>
-      <p><%= link_to 'さらに詳しく', local_path('community'), class: 'stretched-link' %></p>
+      <p><%= link_to 'さらに詳しく', local_path('school'), class: 'stretched-link' %></p>
     </div>
   </div>
 
@@ -68,7 +68,7 @@ url:
       <p class="lead">2-11歳の学習者のための神戸にある国際バカロレア認定校<br>
         生徒と教員の優れた人数比率:教員1人当たり6-15人のクラス編成</p>
       <p>私たちは、あらゆる年齢や文化的な背景や経験を持っている子供たちの学問的、感情的、社会的、身体的、創造的な成長を育む環境を提供します。国際バカロレア認定校として、生涯学習への情熱と世界に良い変化を起こす強い意志を喚起するよう努めています。3つの言語(英語、ドイツ語、日本語)、国際カリキュラム(PYP)、ドイツ語(チューリンゲン)、個々へのサポートを可能にする少人数授業、質の高い音楽プログラム、水泳レッスンと素敵なコミュニティを提供します。</p>
-      <p>校長からの歓迎の挨拶は<%= link_to 'こちらをクリックしてください', local_path('about/principals-welcome'), class: 'stretched-link' %></p>
+      <p>校長からの歓迎の挨拶は<%= link_to 'こちらをクリックしてください', local_path('about/welcome'), class: 'stretched-link' %></p>
     </div>
     <div class="col-md-3 text-center">
       <%= image_tag 'ib-world-school-logo.png', alt: data.config.site_name %>
@@ -145,7 +145,7 @@ url:
 </div>
 
 <%= partial "includes/related_icons", :locals => {
-  :items => ['about/what-we-offer','admissions/index','about/school-campus','contact']
+  :items => ['about/what-we-offer','admissions/index','about/campus','contact']
 } %>
 
 <%= partial "includes/ja/get_in_touch", :locals => {} %>

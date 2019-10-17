@@ -39,7 +39,7 @@ url:
           <p>Join one of our clubs and learn new skills, <br>have fun and get active mentally and physically.</p>
           <p>
             <!-- <a class="btn btn-lg btn-primary" href="#" role="button">Sign Up Now</a> -->
-            <%= link_to 'Find out more', local_path('about/clubs'), class: 'btn btn-lg btn-secondary', role: 'button' %>
+            <%= link_to 'Find out more', local_path('school/clubs'), class: 'btn btn-lg btn-secondary', role: 'button' %>
           </p>
         </div>
       </div>
@@ -70,7 +70,7 @@ url:
     <div class="col-md-4">
       <h2>A True <br>Community</h2>
       <p>Education is a task we share with their parents and with the wider community.  We are united in our aim to foster life-long inquirers, who are internationally minded, think critically and are willing to act with integrity and compassion. We celebrate our community.</p>
-      <p><%= link_to 'Find out more', local_path('community'), class: 'stretched-link' %></p>
+      <p><%= link_to 'Find out more', local_path('school'), class: 'stretched-link' %></p>
     </div>
   </div>
 
@@ -82,7 +82,7 @@ url:
       <p class="lead">An International IB school in Kobe for learners from 2 - 11 years<br>
           Excellent student to teacher ratio: class sizes from 6 - 15 students</p>
       <p>We provide an environment that nurtures the academic, emotional, social, physical and creative growth of children of all ages, cultural backgrounds and experiences. As an IB World School, we strive to ignite a passion for lifelong learning and a desire to make positive change in the world. We offer three languages (English, German and Japanese), an international curriculum (PYP), a German curriculum (Thüringer Lehrplan), small classes allowing for individual support, a quality music program, swimming lessons and an amazing community.</p>
-      <p>To hear a welcome message from our principal, <%= link_to 'click here', local_path('about/principals-welcome'), class: 'stretched-link' %>.</p>
+      <p>To hear a welcome message from our principal, <%= link_to 'click here', local_path('about/welcome'), class: 'stretched-link' %>.</p>
     </div>
     <div class="col-md-3 text-center">
       <%= image_tag 'ib-world-school-logo.png', alt: data.config.site_name %>
@@ -155,7 +155,7 @@ url:
 </div>
 
 <%= partial "includes/related_icons", :locals => {
-  :items => ['about/index','about/what-we-offer','admissions/index','about/career-opportunities']
+  :items => ['about/index','about/what-we-offer','admissions/index','school/careers']
 } %>
 
 <%= partial "includes/en/get_in_touch", :locals => {} %>

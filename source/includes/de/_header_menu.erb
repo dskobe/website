@@ -1,18 +1,27 @@
 <li class="nav-item dropdown">
   <a class="nav-link dropdown-toggle font-weight-bolder" href="<%= local_path('about') %>" id="about-dropdown" aria-haspopup="true" aria-expanded="false"><%= t('menu.about-us') %></a>
   <div class="dropdown-menu" aria-labelledby="about-dropdown">
-    <%= link_to "Willkommensgruß des Schulleiters", local_path('about/principals-welcome'), class: 'dropdown-item' %>
+    <%= link_to "Willkommensgruß", local_path('about/welcome'), class: 'dropdown-item' %>
+    <%= link_to 'Schulkalender', local_path('about/calendar'), class: 'dropdown-item' %>
     <%= link_to 'Unser Angebot', local_path('about/what-we-offer'), class: 'dropdown-item' %>
     <%= link_to 'Sprachen an der DSKI', local_path('about/languages-at-dski'), class: 'dropdown-item' %>
-    <%= link_to 'Mitarbeiter', local_path('about/staff'), class: 'dropdown-item' %>
-    <%= link_to 'Schulgebühren', local_path('about/school-fees'), class: 'dropdown-item' %>
-    <%= link_to 'Schulkalender', local_path('about/school-calendar'), class: 'dropdown-item' %>
-    <%= link_to 'Vorstand', local_path('about/board'), class: 'dropdown-item' %>
+    <%= link_to 'Technologie', local_path('about/technology'), class: 'dropdown-item' %>
+    <%= link_to 'Unser Campus', local_path('about/campus'), class: 'dropdown-item' %>
   </div>
 </li>
 
 <li class="nav-item font-weight-bolder">
-  <%= link_to 'Aufnahme', local_path('admissions'), class: 'nav-link' %>
+  <%= link_to 'Aktivitäten', local_path('activities'), class: 'nav-link' %>
+</li>
+
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle font-weight-bolder" href="<%= local_path('admissions') %>" id="admissions-dropdown" aria-haspopup="true" aria-expanded="false"><%= t('menu.admissions') %></a>
+  <div class="dropdown-menu" aria-labelledby="admissions-dropdown">
+    <%= link_to 'Klassenzuteilung', local_path('admissions/placement'), class: 'dropdown-item' %>
+    <%= link_to 'Aufnahmeverfahren', local_path('admissions/process'), class: 'dropdown-item' %>
+    <%= link_to "Schulgebühren", local_path('admissions/fees'), class: 'dropdown-item' %>
+    <%= link_to 'Aufnahmezeiten', local_path('admissions/schedule'), class: 'dropdown-item' %>
+  </div>
 </li>
 
 <li class="nav-item dropdown">
@@ -24,13 +33,12 @@
   </div>
 </li>
 
-<li class="nav-item font-weight-bolder">
-  <%= link_to 'Sommer Schule', local_path('summerschool'), class: 'nav-link' %>
-</li>
-
 <li class="nav-item dropdown">
-  <a class="nav-link dropdown-toggle font-weight-bolder" href="<%= local_path('community') %>" id="community-dropdown" aria-haspopup="true" aria-expanded="false"><%= t('menu.community') %></a>
+  <a class="nav-link dropdown-toggle font-weight-bolder" href="<%= local_path('school') %>" id="community-dropdown" aria-haspopup="true" aria-expanded="false"><%= t('menu.school') %></a>
   <div class="dropdown-menu dropdown-menu-right" aria-labelledby="community-dropdown">
-    <%= link_to 'Ehemalige Schüler', local_path('community/alumni'), class: 'dropdown-item' %>
+    <%= link_to 'Elternbeirat (PTA)', local_path('school/pta'), class: 'dropdown-item' %>
+    <%= link_to 'Ehemalige Schüler', local_path('school/alumni'), class: 'dropdown-item' %>
+    <%= link_to 'Stellenangebote', local_path('school/careers'), class: 'dropdown-item' %>
+    <%= link_to 'Sponsoren', local_path('school/sponsors'), class: 'dropdown-item' %>
   </div>
-</li>
+</li-->

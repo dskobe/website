@@ -41,15 +41,11 @@
 nav.navbar {
   background-color:#ffffff;
   border-top: 10px solid #fec10d;
-  border-bottom: 10px solid #ffffff;;
+  border-bottom: 1px solid #ffffff;;
 }
 
 .navbar-brand img {
   width: 320px;
-}
-
-.dropdown-toggle::after {
-  content: none;
 }
 
 /* CUSTOMIZE THE CAROUSEL
