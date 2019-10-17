@@ -31,8 +31,8 @@ url:
 
       <h3 class="mt-4">Related Pages</h3>
       <ul class="list-unstyled">
-        <li><%= link_to 'Alumni', local_path('community/alumni') %></li>
-        <li><%= link_to 'PTA', local_path('community/pta') %></li>
+        <li><%= link_to 'Alumni', local_path('school/alumni') %></li>
+        <li><%= link_to 'PTA', local_path('school/pta') %></li>
         <li><%= link_to 'Sponsors', local_path('school/sponsors') %></li>
       </ul>
 
@@ -46,7 +46,7 @@ url:
 </div>
 
 <%= partial "includes/related_icons", :locals => {
-  :items => ['community/alumni','community/pta','school/sponsors']
+  :items => ['school/alumni','school/pta','school/sponsors']
 } %>
 
 <%= partial "includes/en/get_in_touch", :locals => {
