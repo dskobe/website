@@ -13,20 +13,20 @@ url:
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <%= image_tag 'carousel/img_01.jpg', alt: data.config.site_name, class: 'd-block w-100' %>
+      <%= image_tag 'carousel/img_04.jpg', alt: data.config.site_name, class: 'd-block w-100' %>
       <div class="container">
-        <div class="carousel-caption text-left">
-          <h1>Lebenslanges Lernen</h1>
+        <div class="carousel-caption text-center">
+          <h1 class="display-4 mb-3">Lebenslanges Lernen</h1>
           <p><%= link_to 'Klicken Sie hier', local_path('about'), class: 'btn btn-lg btn-primary', role: 'button' %></p>
         </div>
       </div>
     </div>
     <div class="carousel-item">
-      <%= image_tag 'carousel/img_02.jpg', alt: data.config.site_name, class: 'd-block w-100' %>
+      <%= image_tag 'carousel/img_05.jpg', alt: data.config.site_name, class: 'd-block w-100' %>
       <div class="container">
-        <div class="carousel-caption text-left">
-          <h1>Unsere Programme</h1>
-          <p><%= link_to 'Klicken Sie hier', local_path('programmes'), class: 'btn btn-lg btn-primary', role: 'button' %></p>
+        <div class="carousel-caption text-center">
+          <h1 class="display-4 mb-3">Oktoberfest - 19. Oktober</h1>
+          <p><%= link_to 'Klicken Sie hier', local_path('news'), class: 'btn btn-lg btn-primary', role: 'button' %></p>
         </div>
       </div>
     </div>
@@ -40,6 +40,17 @@ url:
     <span class="sr-only">Weiter</span>
   </a>
 </div>
+
+<section class="jumbotron text-center" style="background-color:inherit;">
+  <div class="container">
+    <div class="col-md-10 offset-md-1">
+      <p class="lead text-muted">Herzlich Willkommen an der DSKI, eine Internationale IB-Schule in Kobe für Schüler von 2-11 Jahren.</p>
+      <p>
+        <a href="/media/prospectus/DSKI_Prospectus_V5.pdf" class="btn btn-outline-secondary btn-lg my-2" target="_blank">Download Prospectus</a>
+      </p>
+    </div>
+  </div>
+</section>
 
 <div class="container">
   <div class="row">

@@ -10,22 +10,32 @@ url:
   <ol class="carousel-indicators">
     <li data-target="#topCarousel" data-slide-to="0" class="active"></li>
     <li data-target="#topCarousel" data-slide-to="1" class=""></li>
+    <li data-target="#topCarousel" data-slide-to="2" class=""></li>
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <%= image_tag 'carousel/img_01.jpg', alt: data.config.site_name, class: 'd-block w-100' %>
+      <%= image_tag 'carousel/img_04.jpg', alt: data.config.site_name, class: 'd-block w-100' %>
       <div class="container">
-        <div class="carousel-caption text-left">
-          <h1>共に知的、道徳的、身体的に学ぶ</h1>
+        <div class="carousel-caption text-center">
+          <h1 class="display-4 mb-3">共に知的、道徳的、身体的に学ぶ</h1>
           <p><%= link_to 'さらに詳しく', local_path('about'), class: 'btn btn-lg btn-primary', role: 'button' %></p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <%= image_tag 'carousel/img_05.jpg', alt: data.config.site_name, class: 'd-block w-100' %>
+      <div class="container">
+        <div class="carousel-caption text-center">
+          <h1 class="display-4 mb-3">オクトーバーフェスト ー 10月19日</h1>
+          <p><%= link_to 'さらに詳しく', local_path('news'), class: 'btn btn-lg btn-primary', role: 'button' %></p>
         </div>
       </div>
     </div>
     <div class="carousel-item">
       <%= image_tag 'carousel/img_02.jpg', alt: data.config.site_name, class: 'd-block w-100' %>
       <div class="container">
-        <div class="carousel-caption text-left">
-          <h1>私たちのプログラム</h1>
+        <div class="carousel-caption text-center">
+          <h1 class="display-4 mb-3">私たちのプログラム</h1>
           <p><%= link_to 'さらに詳しく', local_path('programmes'), class: 'btn btn-lg btn-primary', role: 'button' %></p>
         </div>
       </div>
@@ -40,6 +50,14 @@ url:
     <span class="sr-only">次</span>
   </a>
 </div>
+
+<section class="jumbotron text-center" style="background-color:inherit;">
+  <div class="container">
+    <div class="col-md-10 offset-md-1">
+      <p class="lead text-muted">2-11歳の学習者のための神戸にある国際バカロレア認定校</p>
+    </div>
+  </div>
+</section>
 
 <div class="container">
   <div class="row">
