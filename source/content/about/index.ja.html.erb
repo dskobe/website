@@ -23,18 +23,18 @@ url:
     <div class="col-4 offset-md-1">
       <h3 class="mt-5">関連ページ</h3>
       <ul class="list-unstyled">
-        <li><%= link_to 'キャンパス', local_path('about/school-campus') %></li>
-        <li><%= link_to '授業料', local_path('about/school-fees') %></li>
-        <li><%= link_to 'カレンダー', local_path('about/school-calendar') %></li>
-        <li><%= link_to 'スポンサー', local_path('about/sponsors') %></li>
-        <li><%= link_to '歴史', local_path('about/school-history') %></li>
+        <li><%= link_to 'キャンパス', local_path('about/campus') %></li>
+        <li><%= link_to '授業料', local_path('admissions/fees') %></li>
+        <li><%= link_to 'カレンダー', local_path('activities') %></li>
+        <li><%= link_to 'スポンサー', local_path('school/sponsors') %></li>
+        <li><%= link_to '歴史', local_path('about/history') %></li>
       </ul>
     </div>
   </div>
 </div>
 
 <%= partial "includes/related_icons", :locals => {
-  :items => ['about/what-we-offer','programmes/index','about/principals-welcome','about/languages-at-dski']
+  :items => ['about/what-we-offer','programmes/index','about/welcome','about/languages-at-dski']
 } %>
 
 <div class="container mt-5">

@@ -33,7 +33,7 @@ url:
       <ul class="list-unstyled">
         <li><%= link_to 'Alumni', local_path('community/alumni') %></li>
         <li><%= link_to 'PTA', local_path('community/pta') %></li>
-        <li><%= link_to 'Sponsors', local_path('about/sponsors') %></li>
+        <li><%= link_to 'Sponsors', local_path('school/sponsors') %></li>
       </ul>
 
       <h3 class="mt-4">DSKI on Facebook</h3>
@@ -46,7 +46,7 @@ url:
 </div>
 
 <%= partial "includes/related_icons", :locals => {
-  :items => ['community/alumni','community/pta','about/sponsors']
+  :items => ['community/alumni','community/pta','school/sponsors']
 } %>
 
 <%= partial "includes/en/get_in_touch", :locals => {

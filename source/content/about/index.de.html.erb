@@ -23,21 +23,19 @@ url:
     <div class="col-4 offset-md-1">
       <h3 class="mt-5">Weitere Seiten</h3>
       <ul class="list-unstyled">
-        <li><%= link_to 'Schulchronik', local_path('about/school-history') %></li>
-        <li><%= link_to 'Schulkalender', local_path('about/school-calendar') %></li>
-        <li><%= link_to 'Mitarbeiter', local_path('about/staff') %></li>
-        <li><%= link_to 'Schulgebühren', local_path('about/school-fees') %></li>
-        <li><%= link_to 'Gemeinschaft', local_path('community') %></li>
-        <li><%= link_to 'Karrieremöglichkeiten', local_path('about/career-opportunities') %></li>
-        <li><%= link_to 'Unsere Sponsoren', local_path('about/sponsors') %></li>
-        <li><%= link_to 'Vorstand', local_path('about/board') %></li>
+        <li><%= link_to 'Schulchronik', local_path('about/history') %></li>
+        <li><%= link_to 'Schulkalender', local_path('activities') %></li>
+        <li><%= link_to 'Schulgebühren', local_path('admissions/fees') %></li>
+        <li><%= link_to 'Gemeinschaft', local_path('school') %></li>
+        <li><%= link_to 'Karrieremöglichkeiten', local_path('school/careers') %></li>
+        <li><%= link_to 'Unsere Sponsoren', local_path('school/sponsors') %></li>
       </ul>
     </div>
   </div>
 </div>
 
 <%= partial "includes/related_icons", :locals => {
-  :items => ['about/what-we-offer','programmes/index','about/principals-welcome','about/languages-at-dski']
+  :items => ['about/what-we-offer','programmes/index','about/welcome','about/languages-at-dski']
 } %>
 
 <div class="container mt-5">
