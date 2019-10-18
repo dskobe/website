@@ -15,3 +15,14 @@ function toggleDropdown (e) {
 $('body')
   .on('mouseenter mouseleave','.dropdown',toggleDropdown)
   .on('click', '.dropdown-menu a', toggleDropdown);
+
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#252e39"
+    },
+    "button": {
+      "background": "#14a7d0"
+    }
+  }
+});
