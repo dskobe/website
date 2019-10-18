@@ -12,10 +12,10 @@ url:
 
 <div class="container mt-5 mb-5">
   <div class="row">
-    <div class="col-4">
+    <div class="col-md-4">
       <%= image_tag 'image-404.jpg', alt: data.config.site_name, class: 'img-fluid d-block w-100' %>
     </div>
-    <div class="col-8">
+    <div class="col-md-8">
       <h1><%= current_page.data.title %></h1>
       <p>Sorry, we can't find the page you are looking for. Please go to <%= link_to 'Home', local_path('') %>.</p>
     </div>

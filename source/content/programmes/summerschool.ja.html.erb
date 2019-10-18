@@ -22,7 +22,7 @@ url:
 
     </div>
 
-    <div class="col-3">
+    <div class="col-md-3">
       <%= image_tag 'icons/signup.png', alt: data.config.site_name, class: 'rounded img-fluid mb-2' %>
       <ul class="list-unstyled">
         <li><%= link_to 'お申し込み >', 'https://docs.google.com/forms/d/e/1FAIpQLSc8AaB8-n2sC1CvzBpgsFOSMa0xyFQeQyQSes_GyA6YIZQnew/viewform?usp=sf_link' %></li>
@@ -147,7 +147,7 @@ url:
       <p><%= link_to '全てのプログラムをこちらからダウンロードできます＞', '/media/camps/DSK-Makers-Camp-Programme.pdf' %></p>
     </div>
 
-    <div class="col-3"></div>
+    <div class="col-md-3"></div>
   </div>
 </div>
 
@@ -191,13 +191,13 @@ url:
 
 <div class="container mt-5">
   <div class="row">
-    <div class="col-4">
+    <div class="col-md-4">
       <h3>サマースクールお申し込み</h3>
       <%= image_tag 'icons/signup.png', alt: data.config.site_name, class: 'rounded img-fluid mb-2' %>
       <p><%= link_to 'お申し込み >', 'https://docs.google.com/forms/d/1fsQxiniOJvSxIKcGz8RrUiuGxlXe-lZowE0kCvV3zKw/viewform?edit_requested=true' %></p>
     </div>
 
-    <div class="col-8">
+    <div class="col-md-8">
       <%= partial "includes/carousel", :locals => {
         :items => ['photos/Makers-Camp1.jpg','photos/Makers-Camp2.jpg','photos/Makers-Camp3.jpg','photos/Makers-Camp4.jpg','photos/Makers-Camp5.jpg','photos/Makers-Camp6.jpg']
       } %>

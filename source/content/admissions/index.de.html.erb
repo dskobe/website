@@ -13,7 +13,7 @@ url:
 
 <div class="container mt-5">
   <div class="row">
-    <div class="col-7">
+    <div class="col-md-7">
       <h1><%= current_page.data.title %></h1>
 
       <p>Grundsätzlich lernen alle Kinder gemeinsam in ihrer Klasse mit ihrem Klassenlehrer, unabhängig davon, welche Sprache ihre Muttersprache ist.</p>
@@ -24,7 +24,7 @@ url:
       <p>Falls Sie sich unsicher über die Sprachen an der DSKI sind, können Sie auf der Seite <%= link_to 'Sprachen an der DSKI', local_path('about/languages-at-dski') %>  mehr erfahren.</p>
     </div>
 
-    <div class="col-4 offset-md-1">
+    <div class="col-md-4 offset-md-1">
       <%= image_tag 'icons/download.png', alt: data.config.site_name, class: 'rounded img-fluid mb-2' %>
       <h3>Aufnahmeformular</h3>
       <ul class="list-unstyled">
@@ -48,7 +48,7 @@ url:
 
 <div class="container">
   <div class="row">
-    <div class="col-7">
+    <div class="col-md-7">
       <h2>Wie man sich einschreibt</h2>
 
       <p>Die Aufnahme eines Schülers/einer Schülerin gliedert sich in 2 Phasen: Vor der Aufnahme und nach der Aufnahmebestätigung.</p>
@@ -64,7 +64,7 @@ url:
       <p>Für weitere, ausführliche Informationen lesen Sie bitte die detaillierten Erklärungen unter “Aufnahmeprozess”.</p>
     </div>
 
-    <div class="col-4 offset-md-1">
+    <div class="col-md-4 offset-md-1">
       <h3 class="mt-5">Aufnahmeprozess</h3>
       <p>ERSTER SCHRITT<br>Stellen Sie eine Aufnahmeanfrage</p>
       <p>ZWEITER SCHRITT<br>Senden Sie uns das Aufnahmeformular zu</p>
@@ -81,7 +81,7 @@ url:
 
 <div class="container mt-5 mb-5">
   <div class="row">
-    <div class="col-7">
+    <div class="col-md-7">
       <h3>Kontaktdetails für die Registrierung</h3>
 
       <p>Die Auswahl der richtigen Schule für Ihr Kind ist einer der wichtigsten Entscheidungen, die Sie als Eltern machen werden. Wir möchten Sie dabei in jeglicher Weise unterstützen. Unser Büro ist für Sie geöffnet Montag-Freitag von 8:00 Uhr bis 16:00 Uhr.</p>
@@ -99,7 +99,7 @@ url:
       <p><%= mail_to data.config.mailto + '?subject=School Tour', 'Buchen Sie eine Tour »', class: 'btn btn-lg btn-info', role: 'button' %></p>
     </div>
 
-    <div class="col-4 offset-md-1">
+    <div class="col-md-4 offset-md-1">
       <h3>FAQs</h3>
       <p>Bitte klicken Sie <%= link_to 'hier', local_path('admissions/faq') %>, um zu unserer Fragen-Seite zu kommen.</p>
     </div>

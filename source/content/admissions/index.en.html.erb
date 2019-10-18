@@ -13,7 +13,7 @@ url:
 
 <div class="container mt-5">
   <div class="row">
-    <div class="col-7">
+    <div class="col-md-7">
       <h1><%= current_page.data.title %></h1>
 
       <p>DSK International has two branches: the German Branch and the International Branch.</p>
@@ -22,7 +22,7 @@ url:
       <p>If you are unsure about languages at DSKI, please see our <%= link_to 'languages page', local_path('about/languages-at-dski') %> for more detailed information.</p>
     </div>
 
-    <div class="col-4 offset-md-1">
+    <div class="col-md-4 offset-md-1">
       <%= image_tag 'icons/download.png', alt: data.config.site_name, class: 'rounded img-fluid mb-2' %>
       <h3>Application Form</h3>
       <ul class="list-unstyled">
@@ -52,7 +52,7 @@ url:
 
 <div class="container">
   <div class="row">
-    <div class="col-7">
+    <div class="col-md-7">
       <h2>How to Enroll</h2>
 
       <p>At DSKI we have two stages to enrollment: Pre-Admission (before acceptance) and Registration (after acceptance).</p>
@@ -68,7 +68,7 @@ url:
       <p>Please see the "<%= link_to 'Admissions Process', local_path('admissions/process') %>" for a more detailed explanation of the enrollment process.</p>
     </div>
 
-    <div class="col-4 offset-md-1">
+    <div class="col-md-4 offset-md-1">
       <h3 class="mt-5">Enrolment Process</h3>
       <p>STEP ONE<br>Make an Enquiry</p>
       <p>STEP TWO<br>Submit Application</p>
@@ -85,7 +85,7 @@ url:
 
 <div class="container mt-5 mb-5">
   <div class="row">
-    <div class="col-7">
+    <div class="col-md-7">
       <h3>Contact Details for Enrollment</h3>
 
       <p>The choice of a school for your child is one of the most important decisions you will make as a parent. We want to assist you in any way we can. Our Enrolments Office is open Monday-Friday 8.00am–4.00pm.</p>
@@ -103,7 +103,7 @@ url:
       <p><%= mail_to data.config.mailto + '?subject=School Tour', 'Book a tour »', class: 'btn btn-lg btn-info', role: 'button' %></p>
     </div>
 
-    <div class="col-4 offset-md-1">
+    <div class="col-md-4 offset-md-1">
       <h3>FAQ's</h3>
       <p>For a list of frequently asked questions please see <%= link_to 'here', local_path('admissions/faq') %>.</p>
     </div>
