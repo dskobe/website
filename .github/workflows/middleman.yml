@@ -38,5 +38,4 @@ jobs:
         AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
       run: |
         pip install awscli --upgrade pip
-        aws s3 sync --sse --delete public --acl public-read \
-          ./public/ [s3://dskobe-website]
+        aws s3 sync --sse --delete public s3://dskobe-website/ --acl public-read
