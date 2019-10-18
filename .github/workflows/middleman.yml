@@ -15,9 +15,10 @@ jobs:
         ruby-version: 2.6.x
     - name: Build the Middleman site
       run: |
-        apt-get install -y curl
+        sudo apt-get update -yqqq
+        sudo apt-get install -y curl
         curl -sL https://deb.nodesource.com/setup_11.x | bash -
-        apt-get install -y nodejs
+        sudo apt-get install -y nodejs
         gem install bundler
         bundle install --path vendor --jobs 4 --retry 3 && npm i
         bundle exec middleman build --build-dir=public --clean
