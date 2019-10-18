@@ -8,7 +8,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse flex-column ml-lg-0 ml-0" id="navbarCollapse">
+    <div class="collapse navbar-collapse flex-column" id="navbarCollapse">
       <ul class="navbar-nav d-flex flex-row ml-auto">
         <li class="nav-item">
           <%= link_to t('menu.contact-us'), local_path('contact'), class: 'nav-link' %>
@@ -35,7 +35,7 @@
         <% end %>
       </ul>
 
-      <ul class="navbar-nav flex-row d-flex flex-row ml-auto mb-2">
+      <ul class="navbar-nav flex-row d-flex flex-row ml-auto">
         <%= partial "includes/" + I18n.locale.to_s + "/header_menu" %>
       </ul>
     </div>
