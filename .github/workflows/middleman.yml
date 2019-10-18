@@ -15,7 +15,6 @@ jobs:
         ruby-version: 2.6.x
     - name: Build the Middleman site
       run: |
-        apt-get update -yqqq
         apt-get install -y curl
         curl -sL https://deb.nodesource.com/setup_11.x | bash -
         apt-get install -y nodejs
