@@ -5,7 +5,7 @@
       <HttpErrorCodeReturnedEquals>403</HttpErrorCodeReturnedEquals>
     </Condition>
     <Redirect>
-      <HostName>next.dskobe.org</HostName>
+      <HostName>www.dskobe.org</HostName>
       <ReplaceKeyWith>de/error/</ReplaceKeyWith>
     </Redirect>
   </RoutingRule>
@@ -15,7 +15,7 @@
       <HttpErrorCodeReturnedEquals>403</HttpErrorCodeReturnedEquals>
     </Condition>
     <Redirect>
-      <HostName>next.dskobe.org</HostName>
+      <HostName>www.dskobe.org</HostName>
       <ReplaceKeyWith>ja/error/</ReplaceKeyWith>
     </Redirect>
   </RoutingRule>
@@ -24,7 +24,7 @@
       <HttpErrorCodeReturnedEquals>403</HttpErrorCodeReturnedEquals>
     </Condition>
     <Redirect>
-      <HostName>next.dskobe.org</HostName>
+      <HostName>www.dskobe.org</HostName>
       <ReplaceKeyWith>en/error/</ReplaceKeyWith>
     </Redirect>
   </RoutingRule>
