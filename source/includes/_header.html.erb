@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-xl navbar-light sticky-top">
+<nav class="navbar navbar-expand-xl navbar-light sticky-top navbar-custom">
   <div class="container">
     <% link_to local_path(''), class: 'navbar-brand' do %>
       <%= image_tag 'logo_header.png', alt: data.config.site_name %>
@@ -9,33 +9,32 @@
     </button>
 
     <div class="collapse navbar-collapse flex-column" id="navbarCollapse">
-      <ul class="navbar-nav d-flex flex-row ml-auto">
-        <li class="nav-item pl-1">
+      <ul class="navbar-nav d-flex ml-auto">
+        <li class="nav-item">
           <%= link_to t('menu.contact-us'), local_path('contact'), class: 'nav-link' %>
         </li>
 
         <% resource_path = current_resource.path.split('/')[1..-1].join('/') %>
 
         <% if (I18n.locale.to_s != 'en') && (sitemap.find_resource_by_path "en/#{resource_path}") %>
-        <li class="nav-item pl-1">
+        <li class="nav-item pl-2">
           <%= link_to '<span class="flag-icon flag-icon-gb"></span> English', current_page.url.sub(I18n.locale.to_s,'en'), class: 'nav-link' %>
         </li>
         <% end %>
 
         <% if (I18n.locale.to_s != 'de') && (sitemap.find_resource_by_path "de/#{resource_path}") %>
-        <li class="nav-item pl-1">
+        <li class="nav-item pl-2">
           <%= link_to '<span class="flag-icon flag-icon-de"></span> Deutsch', current_page.url.sub(I18n.locale.to_s,'de'), class: 'nav-link' %>
         </li>
         <% end %>
 
         <% if (I18n.locale.to_s != 'ja') && (sitemap.find_resource_by_path "ja/#{resource_path}") %>
-        <li class="nav-item pl-1">
+        <li class="nav-item pl-2">
           <%= link_to '<span class="flag-icon flag-icon-jp"></span> 日本語', current_page.url.sub(I18n.locale.to_s,'ja'), class: 'nav-link' %>
         </li>
         <% end %>
       </ul>
-
-      <ul class="navbar-nav flex-row d-flex flex-row ml-auto">
+      <ul class="navbar-nav d-flex ml-auto">
         <%= partial "includes/" + I18n.locale.to_s + "/header_menu" %>
       </ul>
     </div>
