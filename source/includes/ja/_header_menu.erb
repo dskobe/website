@@ -1,7 +1,7 @@
 <li class="nav-item dropdown">
-  <a class="nav-link dropdown-toggle font-weight-bolder" href="<%= local_path('about') %>" id="about-dropdown" aria-haspopup="true" aria-expanded="false"><%= t('menu.about-us') %></a>
+  <a class="nav-link dropdown-toggle font-weight-bolder" href="#" id="about-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><%= t('menu.about-us') %></a>
   <div class="dropdown-menu" aria-labelledby="about-dropdown">
-    <!--<%= link_to "校長挨拶", local_path('about'), class: 'dropdown-item' %>-->
+    <%= link_to "概要", local_path('about'), class: 'dropdown-item' %>
     <%= link_to '提供するもの', local_path('about/what-we-offer'), class: 'dropdown-item' %>
     <%= link_to 'DSKIの言語', local_path('about/languages-at-dski'), class: 'dropdown-item' %>
     <%= link_to 'テクノロジー', local_path('about/technology'), class: 'dropdown-item' %>
@@ -9,13 +9,17 @@
   </div>
 </li>
 
-<li class="nav-item dropdown">
-  <a class="nav-link dropdown-toggle font-weight-bolder" href="<%= local_path('news') %>" id="about-dropdown" aria-haspopup="true" aria-expanded="false"><%= t('menu.news') %></a>
+<li class="nav-item dropdown pl-1">
+  <a class="nav-link dropdown-toggle font-weight-bolder" href="#" id="news-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><%= t('menu.news') %></a>
+  <div class="dropdown-menu" aria-labelledby="news-dropdown">
+    <%= link_to "概要", local_path('news'), class: 'dropdown-item' %>
+  </div>
 </li>
 
 <li class="nav-item dropdown">
-  <a class="nav-link dropdown-toggle font-weight-bolder" href="<%= local_path('admissions') %>" id="admissions-dropdown" aria-haspopup="true" aria-expanded="false"><%= t('menu.admissions') %></a>
+  <a class="nav-link dropdown-toggle font-weight-bolder" href="#" id="admissions-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><%= t('menu.admissions') %></a>
   <div class="dropdown-menu" aria-labelledby="admissions-dropdown">
+    <%= link_to "概要", local_path('admissions'), class: 'dropdown-item' %>
     <%= link_to 'クラス分け概要', local_path('admissions/placement'), class: 'dropdown-item' %>
     <%= link_to '申請と登録', local_path('admissions/process'), class: 'dropdown-item' %>
     <%= link_to "授業料", local_path('admissions/fees'), class: 'dropdown-item' %>
@@ -24,8 +28,9 @@
 </li>
 
 <li class="nav-item dropdown">
-  <a class="nav-link dropdown-toggle font-weight-bolder" href="<%= local_path('programmes') %>" id="programmes-dropdown" aria-haspopup="true" aria-expanded="false"><%= t('menu.programmes') %></a>
+  <a class="nav-link dropdown-toggle font-weight-bolder" href="#" id="programmes-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><%= t('menu.programmes') %></a>
   <div class="dropdown-menu" aria-labelledby="programmes-dropdown">
+    <%= link_to "概要", local_path('programmes'), class: 'dropdown-item' %>
     <%= link_to 'プレイグループ', local_path('programmes/playgroup'), class: 'dropdown-item' %>
     <%= link_to '幼稚教育', local_path('programmes/early-years'), class: 'dropdown-item' %>
     <%= link_to '初等教育', local_path('programmes/pyp'), class: 'dropdown-item' %>
@@ -35,8 +40,9 @@
 </li>
 
 <li class="nav-item dropdown">
-  <a class="nav-link dropdown-toggle font-weight-bolder" href="<%= local_path('saturdayschool') %>" id="saturday-dropdown" aria-haspopup="true" aria-expanded="false"><%= t('menu.saturday') %></a>
+  <a class="nav-link dropdown-toggle font-weight-bolder" href="#" id="saturday-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><%= t('menu.saturday') %></a>
   <div class="dropdown-menu" aria-labelledby="saturday-dropdown">
+    <%= link_to "概要", local_path('saturdayschool'), class: 'dropdown-item' %>
     <%= link_to 'カレンダー', local_path('saturdayschool/schedule'), class: 'dropdown-item' %>
     <%= link_to '入学', local_path('saturdayschool/admission'), class: 'dropdown-item' %>
     <%= link_to '諸費用', local_path('saturdayschool/fees'), class: 'dropdown-item' %>
@@ -48,8 +54,9 @@
 </li>
 
 <li class="nav-item dropdown">
-  <a class="nav-link dropdown-toggle font-weight-bolder" href="<%= local_path('school') %>" id="community-dropdown" aria-haspopup="true" aria-expanded="false"><%= t('menu.school') %></a>
+  <a class="nav-link dropdown-toggle font-weight-bolder" href="#" id="community-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><%= t('menu.school') %></a>
   <div class="dropdown-menu dropdown-menu-right" aria-labelledby="community-dropdown">
+    <%= link_to "概要", local_path('school'), class: 'dropdown-item' %>
     <%= link_to '卒業生', local_path('school/alumni'), class: 'dropdown-item' %>
     <%= link_to 'スポンサー', local_path('school/sponsors'), class: 'dropdown-item' %>
   </div>
