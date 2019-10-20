@@ -10,14 +10,45 @@ url:
   <ol class="carousel-indicators">
     <li data-target="#topCarousel" data-slide-to="0" class="active"></li>
     <li data-target="#topCarousel" data-slide-to="1" class=""></li>
+    <li data-target="#topCarousel" data-slide-to="2" class=""></li>
+    <li data-target="#topCarousel" data-slide-to="3" class=""></li>
+    <li data-target="#topCarousel" data-slide-to="4" class=""></li>
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
       <%= image_tag 'carousel/img_04.jpg', alt: data.config.site_name, class: 'd-block w-100' %>
       <div class="container">
         <div class="carousel-caption text-center">
-          <h1 class="display-4 mb-3">International Education in Kobe</h1>
-          <p><%= link_to 'Learn more', local_path('about'), class: 'btn btn-lg btn-primary', role: 'button' %></p>
+          <h1 class="display-4 mb-3 strokeme">International Education in Kobe</h1>
+          <p><%= link_to 'Find out more', local_path('about'), class: 'btn btn-lg btn-primary', role: 'button' %></p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <%= image_tag 'carousel/img_01.jpg', alt: data.config.site_name, class: 'd-block w-100' %>
+      <div class="container">
+        <div class="carousel-caption text-center">
+          <h1 class="display-4 mb-3 strokeme">Lifelong Learning</h1>
+          <p><%= link_to 'Find out more', local_path('about'), class: 'btn btn-lg btn-primary', role: 'button' %></p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <%= image_tag 'carousel/img_02.jpg', alt: data.config.site_name, class: 'd-block w-100' %>
+      <div class="container">
+        <div class="carousel-caption text-center">
+          <h1 class="display-4 mb-3 strokeme">Our Programmes</h1>
+          <p><%= link_to 'Find out more', local_path('programmes'), class: 'btn btn-lg btn-primary', role: 'button' %></p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <%= image_tag 'carousel/img_03.jpg', alt: data.config.site_name, class: 'd-block w-100' %>
+      <div class="container">
+        <div class="carousel-caption text-right">
+          <h1 class="display-4 mb-3 strokeme">DSKI Clubs</h1>
+          <p>Join one of our clubs and learn new skills, <br>have fun and get active mentally and physically.</p>
+          <p><%= link_to 'Find out more', local_path('school/clubs'), class: 'btn btn-lg btn-secondary', role: 'button' %></p>
         </div>
       </div>
     </div>
@@ -25,8 +56,8 @@ url:
       <%= image_tag 'carousel/img_05.jpg', alt: data.config.site_name, class: 'd-block w-100' %>
       <div class="container">
         <div class="carousel-caption text-center">
-          <h1 class="display-4 mb-3">Oktoberfest - 19th October</h1>
-          <p><%= link_to 'Learn more', local_path('news'), class: 'btn btn-lg btn-primary', role: 'button' %></p>
+          <h1 class="display-4 mb-3 strokeme">Latest News</h1>
+          <p><%= link_to 'Find out more', local_path('news'), class: 'btn btn-lg btn-primary', role: 'button' %></p>
         </div>
       </div>
     </div>
