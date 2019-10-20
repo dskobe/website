@@ -2,7 +2,6 @@
   <a class="nav-link dropdown-toggle font-weight-bolder" href="<%= local_path('about') %>" id="about-dropdown" aria-haspopup="true" aria-expanded="false"><%= t('menu.about-us') %></a>
   <div class="dropdown-menu" aria-labelledby="about-dropdown">
     <%= link_to "Welcome", local_path('about/welcome'), class: 'dropdown-item' %>
-    <%= link_to 'Calendar', local_path('about/calendar'), class: 'dropdown-item' %>
     <%= link_to 'What We Offer', local_path('about/what-we-offer'), class: 'dropdown-item' %>
     <%= link_to 'Languages at DSKI', local_path('about/languages-at-dski'), class: 'dropdown-item' %>
     <%= link_to 'Physical Education', local_path('about/physical-education'), class: 'dropdown-item' %>
