@@ -13,7 +13,7 @@ function toggleDropdown (e) {
 }
 
 $('body')
-  .on('mouseenter mouseleave','.dropdown',toggleDropdown)
+  .on('mouseenter mouseleave touchstart','.dropdown',toggleDropdown)
   .on('click', '.dropdown-menu a', toggleDropdown);
 
 window.cookieconsent.initialise({
