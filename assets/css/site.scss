@@ -155,3 +155,13 @@ nav.navbar-custom {
 .flag-icon-jp.flag-icon-squared {
   background-image: url(../images/flags/1x1/jp.svg);
 }
+
+/* Multi level dropdown navigation: https://github.com/chemikus/bootstrap-4-multi-dropdown-navbar
+-------------------------------------------------- */
+.dropdown-toggle.active-dropdown::after {
+  transform: rotate(-90deg);
+}
+
+a.dropdown-toggle {
+  cursor: pointer;
+}
