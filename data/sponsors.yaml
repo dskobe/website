@@ -1,0 +1,30 @@
+gold:
+  - name: "The Entente: <br> A Complete Residence"
+    website: "http://www.the-entente.jp/"
+    abstract:
+      en: "Rokko Island is only 15 minutes from the center of the international city of Kobe. It is truly an ideal place to live - a waterfront zone full of bright open spaces and greenery. THE ENTENTE offers rental homes to meet your every need. As soon as you step under our entrance arch, you will discover you have found your “home away from home” in Kobe."
+    image: "/media/sponsors/the_entente.jpg"
+
+  - name: "Kobe Porsche"
+    website: "http://www.porsche.co.jp/dealers/kobe/"
+    abstract:
+      en: "洗練の国際都市・神戸に、ポルシェ正規販売店として1999年にオープン。早くも、国道2号線沿いのショールームは神戸・東灘地域の新たなランドマークとなっています。スタッフはいずれもポルシェを知り尽くした経験豊富なエキスパート。ご購入からアフターケアに至るまで、きめ細やかなサービスで信頼と安全をお届けします。"
+    image: "/media/sponsors/kobe_porsche.jpg"
+
+silver:
+
+bronze:
+  - name: "TÜV Rheinland <br> テュフ ラインランド ジャパン株式会社"
+    website: "https://www.tuv.com/japan/jp/"
+    abstract:
+      en: "テュフ ラインランドは、さまざまな試験・評価・認証サービスを提供します"
+
+supporter:
+  - name: "Georepublic"
+    website: "https://georepublic.info/"
+  - name: "Goethe Institute"
+    website: "https://www.goethe.de/ins/jp/ja/sta/osa.html?wt_sc=osaka"
+  - name: "Peace and Nature"
+    website: "https://www.peace-and-nature.com/"
+
+oktoberfest:
