@@ -13,7 +13,8 @@
 <li class="nav-item dropdown pl-1">
   <a class="nav-link dropdown-toggle font-weight-bolder" href="#" id="news-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><%= t('menu.news') %></a>
   <div class="dropdown-menu" aria-labelledby="news-dropdown">
-    <%= link_to "Übersicht", local_path('news'), class: 'dropdown-item' %>
+    <%= link_to "Veranstaltungen", local_path('news'), class: 'dropdown-item' %>
+    <%= link_to "Schulkalender", local_path('news/calendar'), class: 'dropdown-item' %>
   </div>
 </li>
 
