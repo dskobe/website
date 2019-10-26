@@ -1,5 +1,5 @@
 ---
-title: "DSKI カレンダー"
+title: "DSKI イベントカレンダー"
 description: ""
 keywords: []
 url:
@@ -15,13 +15,35 @@ url:
     <div class="col-12">
       <h1><%= current_page.data.title %></h1>
 
-      <h2 class="mt-4">DSKI イベントカレンダー</h2>
       <p class="mt-4"><%= link_to 'カレンダーをここからダウンロードする', '/media/calendars/Events-2019-2020.pdf' %></p>
 
-      <h2 class="mt-4">2019/2020 カレンダー</h2>
-      <%= image_tag '/media/calendars/DSKI-2019-20-School-Calendar.png', alt: '2019/2020 カレンダー', class: 'img-fluid d-block w-100' %>
+      <h2 class="mt-4">今後のイベント</h2>
 
-      <p><%= link_to 'カレンダーをここからダウンロードする', '/media/calendars/DSKI-2019-20-School-Calendar.pdf' %></p>
+      <h3 class="mt-4">学校見学会</h3>
+      <p class="lead text-muted">11月21日 9.30am - 12.00pm</p>
+      <ul>
+        <li>学校内見学</li>
+        <li>教師紹介</li>
+        <li>お茶の時間</li>
+      </ul>
+      <p>どの国籍の方にもご参加いただけます!<br>当日お気軽にご参加ください。ご予約は不要です。</p>
+
+      <hr class="featurette-divider">
+
+      <h2 class="mt-4">過去のイベント</h2>
+
+      <h3 class="mt-4">Oktoberfest</h3>
+      <p>10月19日、ドイツビールや手作りケーキ、ドイツの伝統的な食べ物や抽選会をいっしょに楽しみましょう。</p>
+      <ul>
+        <li>ドイツビール</li>
+        <li>生バンド演奏</li>
+        <li>手作りケーキ</li>
+        <li>ドイツの伝統的な食べ物</li>
+        <li>トンボラ</li>
+        <li>楽しい子供のゲーム</li>
+      </ul>
+
+      <%= image_tag '/media/prospectus/octoberfest.jpg', alt: 'Oktoberfest', class: 'img-fluid d-block w-50' %>
     </div>
   </div>
 </div>
