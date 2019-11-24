@@ -14,7 +14,6 @@
   <div class="dropdown-menu" aria-labelledby="news-dropdown">
     <%= link_to "イベントカレンダー", local_path('news'), class: 'dropdown-item' %>
     <%= link_to "スクールカレンダー", local_path('news/calendar'), class: 'dropdown-item' %>
-    <%= link_to "サタデースクール", local_path('saturdayschool/schedule'), class: 'dropdown-item' %>
   </div>
 </li>
 
@@ -26,12 +25,6 @@
     <%= link_to '申請と登録', local_path('admissions/process'), class: 'dropdown-item' %>
     <%= link_to "授業料", local_path('admissions/fees'), class: 'dropdown-item' %>
     <%= link_to '入学時期', local_path('admissions/schedule'), class: 'dropdown-item' %>
-    <div class="dropdown-divider"></div>
-    <%= link_to t('menu.saturday'), '#', class: 'dropdown-item dropdown-toggle' %>
-    <ul class="dropdown-menu">
-      <li><%= link_to '入学', local_path('saturdayschool/admission'), class: 'dropdown-item' %></li>
-      <li><%= link_to '諸費用', local_path('saturdayschool/fees'), class: 'dropdown-item' %></li>
-    </ul>
   </div>
 </li>
 
@@ -44,13 +37,6 @@
     <%= link_to '初等教育', local_path('programmes/pyp'), class: 'dropdown-item' %>
     <div class="dropdown-divider"></div>
     <%= link_to t('menu.saturday'), '#', class: 'dropdown-item dropdown-toggle' %>
-    <ul class="dropdown-menu">
-      <li><%= link_to "概要", local_path('saturdayschool'), class: 'dropdown-item' %></li>
-      <li><%= link_to '英語プログラム', local_path('saturdayschool/english-program'), class: 'dropdown-item' %></li>
-      <li><%= link_to 'ドイツ語プログラム', local_path('saturdayschool/german-program'), class: 'dropdown-item' %></li>
-      <li><%= link_to 'フランス語プログラム', local_path('saturdayschool/french-program'), class: 'dropdown-item' %></li>
-      <li><%= link_to 'ムーブ・トウ・ラーン', local_path('saturdayschool/move-to-learn'), class: 'dropdown-item' %></li>
-    </ul>
     <%= link_to 'サマースクール', local_path('programmes/summerschool'), class: 'dropdown-item' %>
   </div>
 </li>
@@ -63,3 +49,17 @@
     <%= link_to 'スポンサー', local_path('school/sponsors'), class: 'dropdown-item' %>
   </div>
 </li-->
+
+<li class="nav-item dropdown pl-1">
+  <a class="nav-link dropdown-toggle font-weight-bolder" href="#" id="saturday-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><%= t('menu.saturday') %></a>
+  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="saturday-dropdown">
+    <%= link_to "概要", local_path('saturdayschool'), class: 'dropdown-item' %>
+    <%= link_to '英語プログラム', local_path('saturdayschool/english-program'), class: 'dropdown-item' %>
+    <%= link_to 'ドイツ語プログラム', local_path('saturdayschool/german-program'), class: 'dropdown-item' %>
+    <%= link_to 'フランス語プログラム', local_path('saturdayschool/french-program'), class: 'dropdown-item' %>
+    <%= link_to 'ムーブ・トウ・ラーン', local_path('saturdayschool/move-to-learn'), class: 'dropdown-item' %>
+    <%= link_to "サタデースクール", local_path('saturdayschool/schedule'), class: 'dropdown-item' %>
+    <%= link_to '諸費用', local_path('saturdayschool/fees'), class: 'dropdown-item' %>
+    <%= link_to '入学', local_path('saturdayschool/admission'), class: 'dropdown-item' %>
+  </div>
+</li>
