@@ -6,15 +6,15 @@ url:
   legacy: "/?lang=de"
 ---
 
-<div id="topCarousel" class="carousel slide pointer-event" data-ride="carousel"  data-interval="false">
+<div id="topCarousel" class="carousel slide pointer-event" data-ride="carousel" data-interval="5000">
   <ol class="carousel-indicators">
-    <li data-target="#topCarousel" data-slide-to="0" class=""></li>
-    <li data-target="#topCarousel" data-slide-to="1" class="active"></li>
+    <li data-target="#topCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#topCarousel" data-slide-to="1" class=""></li>
     <li data-target="#topCarousel" data-slide-to="2" class=""></li>
     <li data-target="#topCarousel" data-slide-to="3" class=""></li>
   </ol>
   <div class="carousel-inner">
-    <div class="carousel-item">
+    <div class="carousel-item active">
       <%= image_tag 'carousel/img_04.jpg', alt: data.config.site_name, class: 'd-block w-100', 'data-object-fit': 'cover' %>
       <div class="container">
         <div class="carousel-caption text-center">
@@ -23,7 +23,7 @@ url:
         </div>
       </div>
     </div>
-    <div class="carousel-item active">
+    <div class="carousel-item">
       <%= image_tag 'carousel/img_06.jpg', alt: data.config.site_name, class: 'd-block w-100', 'data-object-fit': 'cover' %>
       <div class="container">
         <div class="carousel-caption text-center">
