@@ -20,3 +20,8 @@ de:
     school: "Gemeinschaft"
     contact-us: "Kontakt"
     language: "Sprache"
+
+  slider:
+    button: "Klicken Sie hier"
+    previous: "Zurück"
+    next: "Weiter"

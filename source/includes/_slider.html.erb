@@ -1,0 +1,36 @@
+<div id="topCarousel" class="carousel slide pointer-event" data-ride="carousel" data-interval="7000">
+
+  <ol class="carousel-indicators">
+    <% items.each_with_index do |item, index| %>
+      <% unless item.key?(:disabled) && item[:disabled] %>
+        <li data-target="#topCarousel" data-slide-to="<%= index %>" class="<%= (item[:active]) ? 'active' : '' %>"></li>
+      <% end %>
+    <% end %>
+  </ol>
+
+  <div class="carousel-inner">
+    <% items.each do |item| %>
+      <% unless item.key?(:disabled) && item[:disabled] %>
+        <div class="carousel-item <%= (item[:active]) ? 'active' : '' %>">
+          <%= image_tag item[:image], alt: data.config.site_name, class: 'd-block w-100', 'data-object-fit': 'cover' %>
+          <div class="container">
+            <div class="carousel-caption text-center">
+              <h1 class="display-4 mb-3 strokeme"><%= item[:title] %></h1>
+              <p><%= item[:text] %></p>
+              <p><%= link_to t('slider.button'), item[:link], class: 'btn btn-lg btn-primary', role: 'button' %></p>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+
+  <a class="carousel-control-prev" href="#topCarousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only"><%= t('slider.previous') %></span>
+  </a>
+  <a class="carousel-control-next" href="#topCarousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only"><%= t('slider.next') %></span>
+  </a>
+</div>

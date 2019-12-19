@@ -20,3 +20,8 @@ ja:
     school: "コミュニティ"
     contact-us: "お問い合わせ"
     language: "Language"
+
+  slider:
+    button: "さらに詳しく"
+    previous: "前"
+    next: "次"

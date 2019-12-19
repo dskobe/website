@@ -6,90 +6,40 @@ url:
   legacy: "/"
 ---
 
-<div id="topCarousel" class="carousel slide pointer-event" data-ride="carousel" data-interval="7000">
-  <ol class="carousel-indicators">
-    <li data-target="#topCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#topCarousel" data-slide-to="1" class=""></li>
-    <li data-target="#topCarousel" data-slide-to="2" class=""></li>
-    <li data-target="#topCarousel" data-slide-to="3" class=""></li>
-    <li data-target="#topCarousel" data-slide-to="4" class=""></li>
-    <li data-target="#topCarousel" data-slide-to="5" class=""></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <%= image_tag 'carousel/img_04.jpg', alt: data.config.site_name, class: 'd-block w-100', 'data-object-fit': 'cover' %>
-      <div class="container">
-        <div class="carousel-caption text-center">
-          <h1 class="display-4 mb-3 strokeme">International Education in Kobe</h1>
-          <p><%= link_to 'Find out more', local_path('about'), class: 'btn btn-lg btn-primary', role: 'button' %></p>
-        </div>
-      </div>
-    </div>
-    <!--div class="carousel-item">
-      <%= image_tag 'carousel/img_06.jpg', alt: data.config.site_name, class: 'd-block w-100', 'data-object-fit': 'cover' %>
-      <div class="container">
-        <div class="carousel-caption text-center">
-          <h1 class="display-4 mb-3 strokeme">Open Day on November 21st</h1>
-          <p><%= link_to 'Find out more', local_path('news'), class: 'btn btn-lg btn-primary', role: 'button' %></p>
-        </div>
-      </div>
-    </div-->
-    <div class="carousel-item">
-      <%= image_tag 'carousel/img_01.jpg', alt: data.config.site_name, class: 'd-block w-100', 'data-object-fit': 'cover' %>
-      <div class="container">
-        <div class="carousel-caption text-center">
-          <h1 class="display-4 mb-3 strokeme">Lifelong Learning</h1>
-          <p><%= link_to 'Find out more', local_path('about'), class: 'btn btn-lg btn-primary', role: 'button' %></p>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <%= image_tag 'carousel/img_02.jpg', alt: data.config.site_name, class: 'd-block w-100', 'data-object-fit': 'cover' %>
-      <div class="container">
-        <div class="carousel-caption text-center">
-          <h1 class="display-4 mb-3 strokeme">Our Programmes</h1>
-          <p><%= link_to 'Find out more', local_path('programmes'), class: 'btn btn-lg btn-primary', role: 'button' %></p>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <%= image_tag 'carousel/img_03.jpg', alt: data.config.site_name, class: 'd-block w-100', 'data-object-fit': 'cover' %>
-      <div class="container">
-        <div class="carousel-caption text-right">
-          <h1 class="display-4 mb-3 strokeme">DSKI Clubs</h1>
-          <p>Join one of our clubs and learn new skills, <br>have fun and get active mentally and physically.</p>
-          <p><%= link_to 'Find out more', local_path('school/clubs'), class: 'btn btn-lg btn-secondary', role: 'button' %></p>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <%= image_tag 'carousel/img_05.jpg', alt: data.config.site_name, class: 'd-block w-100', 'data-object-fit': 'cover' %>
-      <div class="container">
-        <div class="carousel-caption text-center">
-          <h1 class="display-4 mb-3 strokeme">Latest News</h1>
-          <p><%= link_to 'Find out more', local_path('news'), class: 'btn btn-lg btn-primary', role: 'button' %></p>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <%= image_tag 'carousel/img_07.jpg', alt: data.config.site_name, class: 'd-block w-100', 'data-object-fit': 'cover' %>
-      <div class="container">
-        <div class="carousel-caption text-center">
-          <h1 class="display-4 mb-3 strokeme">Saturday School</h1>
-          <p><%= link_to 'Find out more', local_path('saturdayschool'), class: 'btn btn-lg btn-primary', role: 'button' %></p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#topCarousel" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#topCarousel" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
+<%= partial "includes/slider", :locals => {
+  :items => [{
+    :image => 'carousel/img_04.jpg',
+    :link => local_path('about'),
+    :title => 'International Education in Kobe',
+    :active => true
+  },{
+    :image => 'carousel/img_06.jpg',
+    :link => local_path('news'),
+    :title => 'Open Day on November 21st',
+    :disabled => true
+  },{
+    :image => 'carousel/img_01.jpg',
+    :link => local_path('about'),
+    :title => 'Lifelong Learning'
+  },{
+    :image => 'carousel/img_02.jpg',
+    :link => local_path('programmes'),
+    :title => 'Our Programmes'
+  },{
+    :image => 'carousel/img_03.jpg',
+    :link => local_path('school/clubs'),
+    :text => 'Join one of our clubs and learn new skills, <br>have fun and get active mentally and physically.',
+    :title => 'DSKI Clubs'
+  },{
+    :image => 'carousel/img_05.jpg',
+    :link => local_path('news'),
+    :title => 'Latest News'
+  },{
+    :image => 'carousel/img_07.jpg',
+    :link => local_path('saturdayschool'),
+    :title => 'Saturday School'
+  }]
+} %>
 
 <section class="jumbotron text-center" style="background-color:inherit;">
   <div class="container">

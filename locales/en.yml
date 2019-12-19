@@ -20,3 +20,8 @@ en:
     school: "Community"
     contact-us: "Contact Us"
     language: "Language"
+
+  slider:
+    button: "Find out more"
+    previous: "Previous"
+    next: "Next"

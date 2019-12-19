@@ -6,60 +6,27 @@ url:
   legacy: "/?lang=de"
 ---
 
-<div id="topCarousel" class="carousel slide pointer-event" data-ride="carousel" data-interval="7000">
-  <ol class="carousel-indicators">
-    <li data-target="#topCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#topCarousel" data-slide-to="1" class=""></li>
-    <li data-target="#topCarousel" data-slide-to="2" class=""></li>
-    <!--li data-target="#topCarousel" data-slide-to="3" class=""></li-->
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <%= image_tag 'carousel/img_04.jpg', alt: data.config.site_name, class: 'd-block w-100', 'data-object-fit': 'cover' %>
-      <div class="container">
-        <div class="carousel-caption text-center">
-          <h1 class="display-4 mb-3 strokeme">Lebenslanges Lernen</h1>
-          <p><%= link_to 'Klicken Sie hier', local_path('about'), class: 'btn btn-lg btn-primary', role: 'button' %></p>
-        </div>
-      </div>
-    </div>
-    <!--div class="carousel-item">
-      <%= image_tag 'carousel/img_06.jpg', alt: data.config.site_name, class: 'd-block w-100', 'data-object-fit': 'cover' %>
-      <div class="container">
-        <div class="carousel-caption text-center">
-          <h1 class="display-4 mb-3 strokeme">Open Day am 21. November</h1>
-          <p><%= link_to 'Klicken Sie hier', local_path('news'), class: 'btn btn-lg btn-primary', role: 'button' %></p>
-        </div>
-      </div>
-    </div-->
-    <div class="carousel-item">
-    <%= image_tag 'carousel/img_02.jpg', alt: data.config.site_name, class: 'd-block w-100', 'data-object-fit': 'cover' %>
-    <div class="container">
-      <div class="carousel-caption text-center">
-        <h1 class="display-4 mb-3 strokeme">Unsere Programme</h1>
-        <p><%= link_to 'Klicken Sie hier', local_path('programmes'), class: 'btn btn-lg btn-primary', role: 'button' %></p>
-      </div>
-    </div>
-    </div>
-    <div class="carousel-item">
-      <%= image_tag 'carousel/img_05.jpg', alt: data.config.site_name, class: 'd-block w-100', 'data-object-fit': 'cover' %>
-      <div class="container">
-        <div class="carousel-caption text-center">
-          <h1 class="display-4 mb-3 strokeme">Aktuelles - News</h1>
-          <p><%= link_to 'Klicken Sie hier', local_path('news'), class: 'btn btn-lg btn-primary', role: 'button' %></p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#topCarousel" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Zurück</span>
-  </a>
-  <a class="carousel-control-next" href="#topCarousel" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Weiter</span>
-  </a>
-</div>
+<%= partial "includes/slider", :locals => {
+  :items => [{
+    :image => 'carousel/img_01.jpg',
+    :link => local_path('about'),
+    :title => 'Lebenslanges Lernen',
+    :active => true
+  },{
+    :image => 'carousel/img_06.jpg',
+    :link => local_path('news'),
+    :title => 'Open Day am 21. November',
+    :disabled => true
+  },{
+    :image => 'carousel/img_02.jpg',
+    :link => local_path('programmes'),
+    :title => 'Unsere Programme'
+  },{
+    :image => 'carousel/img_05.jpg',
+    :link => local_path('news'),
+    :title => 'Aktuelles - News'
+  }]
+} %>
 
 <section class="jumbotron text-center" style="background-color:inherit;">
   <div class="container">
