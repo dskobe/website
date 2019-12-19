@@ -13,7 +13,7 @@ url:
     <li data-target="#topCarousel" data-slide-to="2" class=""></li>
     <li data-target="#topCarousel" data-slide-to="3" class=""></li>
     <li data-target="#topCarousel" data-slide-to="4" class=""></li>
-    <!--li data-target="#topCarousel" data-slide-to="5" class=""></li-->
+    <li data-target="#topCarousel" data-slide-to="5" class=""></li>
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -68,6 +68,15 @@ url:
         <div class="carousel-caption text-center">
           <h1 class="display-4 mb-3 strokeme">Latest News</h1>
           <p><%= link_to 'Find out more', local_path('news'), class: 'btn btn-lg btn-primary', role: 'button' %></p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <%= image_tag 'carousel/img_07.jpg', alt: data.config.site_name, class: 'd-block w-100', 'data-object-fit': 'cover' %>
+      <div class="container">
+        <div class="carousel-caption text-center">
+          <h1 class="display-4 mb-3 strokeme">Saturday School</h1>
+          <p><%= link_to 'Find out more', local_path('saturdayschool'), class: 'btn btn-lg btn-primary', role: 'button' %></p>
         </div>
       </div>
     </div>

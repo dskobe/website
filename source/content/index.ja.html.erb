@@ -11,7 +11,7 @@ url:
     <li data-target="#topCarousel" data-slide-to="0" class="active"></li>
     <li data-target="#topCarousel" data-slide-to="1" class=""></li>
     <li data-target="#topCarousel" data-slide-to="2" class=""></li>
-    <!--li data-target="#topCarousel" data-slide-to="3" class=""></li-->
+    <li data-target="#topCarousel" data-slide-to="3" class=""></li>
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -47,6 +47,15 @@ url:
         <div class="carousel-caption text-center">
           <h1 class="display-4 mb-3 strokeme">私たちのプログラム</h1>
           <p><%= link_to 'さらに詳しく', local_path('programmes'), class: 'btn btn-lg btn-primary', role: 'button' %></p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <%= image_tag 'carousel/img_07.jpg', alt: data.config.site_name, class: 'd-block w-100', 'data-object-fit': 'cover' %>
+      <div class="container">
+        <div class="carousel-caption text-center">
+          <h1 class="display-4 mb-3 strokeme">サタデースクール</h1>
+          <p><%= link_to 'さらに詳しく', local_path('saturdayschool'), class: 'btn btn-lg btn-primary', role: 'button' %></p>
         </div>
       </div>
     </div>
