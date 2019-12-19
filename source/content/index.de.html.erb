@@ -77,50 +77,23 @@ url:
 <div class="jumbotron jumbotron-fluid bg-dark" style="padding-bottom:0;padding-top:2rem;">
   <div class="container">
     <h2 class="text-light d-sm-none d-md-block">Stimmen von ehemaligen Schülern</h2>
-    <div id="myCarousel" class="carousel slide pointer-event" data-ride="carousel" style="margin-bottom:0px;">
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class=""></li>
-        <li data-target="#myCarousel" data-slide-to="1" class=""></li>
-        <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item" style="height:20rem;">
-          <div class="container">
-            <div class="carousel-caption text-left">
-               <%= image_tag 'people/Natalia.png', alt: data.config.site_name, style: 'float:right;' %>
-              <h3>Natalia</h3>
-              <p>“Fantastische Schule. Ich habe dort viele gute Freunde gefunden und ein paar der besten Erinnerungen meiner Schulzeit gemacht. Ich wünsche mir wirklich, ich könnte zurückkommen.”</p>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item" style="height:20rem;">
-          <div class="container">
-            <div class="carousel-caption text-left">
-              <%= image_tag 'people/Yoona.png', alt: data.config.site_name, style: 'float:right;' %>
-              <h3>Yoona</h3>
-            <p>“Die Deutsche Schule Kobe International war für mich immer wie ein Zuhause und alle meine Freunde und alle anderen waren wie meine Familie. Es ist ein sehr schöner Ort und ich hatte immer Spaß daran, zur Schule zu gehe. Da es eine kleine Schule ist, konnte ich meinen Lehrern oft Fragen stellen, welche mir halfen, mein Wissen zu erweitern.”</p>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item active" style="height:20rem;">
-          <div class="container">
-            <div class="carousel-caption text-right">
-                <%= image_tag 'people/Dianne.png', alt: data.config.site_name, style: 'float:left;' %>
-                <h3>Dianne</h3>
-              <p>“DSKI ist wirklich eine inspirierende Schule zum Lernen. Es gibt so viel zu erzählen, aber was ich gerne hervorheben möchte ist, wie die Lehrer die Schüler in dem Fach “Unit of Inquiry” darin unterstützen, eigenständig zu lernen. Das Besondere an dieser Art zu Unterrichten ist, dass die Kinder sehr motiviert und erpicht darauf sind zu lernen, sich Wissen anzueignen, eigene Ideen zu entwickeln und nach Lösungsansätzen zu suchen.”</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Zurück</span>
-      </a>
-      <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Weiter</span>
-      </a>
-    </div>
+
+    <%= partial "includes/voices", :locals => {
+      :items => [{
+        :image => 'people/Natalia.png',
+        :name => 'Natalia',
+        :text => '“Fantastische Schule. Ich habe dort viele gute Freunde gefunden und ein paar der besten Erinnerungen meiner Schulzeit gemacht. Ich wünsche mir wirklich, ich könnte zurückkommen.“'
+      },{
+        :image => 'people/Yoona.png',
+        :name => 'Yoona',
+        :text => '“Die Deutsche Schule Kobe International war für mich immer wie ein Zuhause und alle meine Freunde und alle anderen waren wie meine Familie. Es ist ein sehr schöner Ort und ich hatte immer Spaß daran, zur Schule zu gehe. Da es eine kleine Schule ist, konnte ich meinen Lehrern oft Fragen stellen, welche mir halfen, mein Wissen zu erweitern.“'
+      },{
+        :image => 'people/Dianne.png',
+        :name => 'Dianne',
+        :text => '“DSKI ist wirklich eine inspirierende Schule zum Lernen. Es gibt so viel zu erzählen, aber was ich gerne hervorheben möchte ist, wie die Lehrer die Schüler in dem Fach “Unit of Inquiry” darin unterstützen, eigenständig zu lernen. Das Besondere an dieser Art zu Unterrichten ist, dass die Kinder sehr motiviert und erpicht darauf sind zu lernen, sich Wissen anzueignen, eigene Ideen zu entwickeln und nach Lösungsansätzen zu suchen.“',
+        :active => true
+      }]
+    } %>
   </div>
 </div>
 

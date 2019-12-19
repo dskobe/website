@@ -90,50 +90,23 @@ url:
 <div class="jumbotron jumbotron-fluid bg-dark" style="padding-bottom:0;padding-top:2rem;">
   <div class="container">
     <h2 class="text-light d-sm-none d-md-block">Hear from Past Students</h2>
-    <div id="myCarousel" class="carousel slide pointer-event" data-ride="carousel" style="margin-bottom:0px;">
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class=""></li>
-        <li data-target="#myCarousel" data-slide-to="1" class=""></li>
-        <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item" style="height:20rem;">
-          <div class="container">
-            <div class="carousel-caption text-left">
-              <%= image_tag 'people/Natalia.png', alt: data.config.site_name, style: 'float:right;' %>
-              <h3>Natalia</h3>
-              <p>“Fantastic school. Made a lot of great friends and some of my best memories from school. Really wish I could go back.”</p>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item" style="height:20rem;">
-          <div class="container">
-            <div class="carousel-caption text-left">
-              <%= image_tag 'people/Yoona.png', alt: data.config.site_name, style: 'float:right;' %>
-              <h3>Yoona</h3>
-            <p>“DSK International always made me feel like I was at home, and all my friends and everyone in school were like my family. It was a very comfortable place to be, and I was always excited to go to school. Also, because it is a small school, I was able to ask questions to my teachers easily which helped me learn a lot.”</p>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item active" style="height:20rem;">
-          <div class="container">
-            <div class="carousel-caption text-right">
-                <%= image_tag 'people/Dianne.png', alt: data.config.site_name, style: 'float:left;' %>
-                <h3>Dianne</h3>
-              <p>“DSKI is such an inspirational school to learn in. I have so much to say, but what I would like to emphasize the most is how the teachers support children to be independent learners through a class called the unit of inquiry. The significance of this teaching style is that children are very motivated and excited to learn, develop knowledge, come up with ideas and seek for solutions.”</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
+
+    <%= partial "includes/voices", :locals => {
+      :items => [{
+        :image => 'people/Natalia.png',
+        :name => 'Natalia',
+        :text => '“Fantastic school. Made a lot of great friends and some of my best memories from school. Really wish I could go back.“'
+      },{
+        :image => 'people/Yoona.png',
+        :name => 'Yoona',
+        :text => '“DSK International always made me feel like I was at home, and all my friends and everyone in school were like my family. It was a very comfortable place to be, and I was always excited to go to school. Also, because it is a small school, I was able to ask questions to my teachers easily which helped me learn a lot.“'
+      },{
+        :image => 'people/Dianne.png',
+        :name => 'Dianne',
+        :text => '“DSKI is such an inspirational school to learn in. I have so much to say, but what I would like to emphasize the most is how the teachers support children to be independent learners through a class called the unit of inquiry. The significance of this teaching style is that children are very motivated and excited to learn, develop knowledge, come up with ideas and seek for solutions.“',
+        :active => true
+      }]
+    } %>
   </div>
 </div>
 

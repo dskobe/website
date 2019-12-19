@@ -1,0 +1,35 @@
+<div id="myCarousel" class="carousel slide pointer-event" data-ride="carousel" style="margin-bottom:0px;">
+
+  <ol class="carousel-indicators">
+    <% items.each_with_index do |item, index| %>
+      <% unless item.key?(:disabled) && item[:disabled] %>
+        <li data-target="#myCarousel" data-slide-to="<%= index %>" class="<%= (item[:active]) ? 'active' : '' %>"></li>
+      <% end %>
+    <% end %>
+  </ol>
+
+  <div class="carousel-inner">
+    <% items.each do |item| %>
+      <% unless item.key?(:disabled) && item[:disabled] %>
+        <div class="carousel-item <%= (item[:active]) ? 'active' : '' %>" style="height:20rem;">
+          <div class="container">
+            <div class="carousel-caption text-left">
+              <%= image_tag item[:image], alt: data.config.site_name, style: 'float:right;' %>
+              <h3><%= item[:name] %></h3>
+              <p><%= item[:text] %></p>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+
+  <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only"><%= t('slider.previous') %></span>
+  </a>
+  <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only"><%= t('slider.next') %></span>
+  </a>
+</div>
