@@ -20,7 +20,8 @@ The template uses [Webpack] for asset processing through the external pipeline. 
 ## Install
 
 ```sh
-bundle --path vendor/bundle
+bundle config set path 'vendor/bundle'
+bundle
 npm i
 ```
 
