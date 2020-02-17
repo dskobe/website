@@ -13,23 +13,21 @@ url:
 <div class="container mt-5 mb-5">
   <div class="row">
     <div class="col-12">
-      <h1>2019/2020 <%= current_page.data.title %></h1>
+      <h1><%= current_page.data.title %></h1>
 
-      <p><%= link_to 'Klicken Sie hier, um den Kalender herunterzuladen.', '/media/calendars/DSKI-2019-20-School-Calendar.pdf' %></p>
-
-      <%= image_tag '/media/calendars/DSKI-2019-20-School-Calendar.png', alt: '2019/2020 Schulkalendar', class: 'img-fluid d-block w-100' %>
+      <ul class="mt-5">
+        <li><%= link_to 'Klicken Sie hier, um den 2019/2020 Kalender herunterzuladen.', '/media/calendars/DSKI-2019-20-School-Calendar.pdf' %></li>
+        <li><%= link_to 'Klicken Sie hier, um den 2020/2021 Kalender herunterzuladen.', '/media/calendars/DSKI-2020-21-School-Calendar.pdf' %></li>
+      </ul>
     </div>
   </div>
-</div>
 
-<div class="container mt-5 mb-5">
   <div class="row">
-    <div class="col-12">
-      <h1>2020/2021 <%= current_page.data.title %></h1>
-
-      <p><%= link_to 'Klicken Sie hier, um den Kalender herunterzuladen.', '/media/calendars/DSKI-2020-21-School-Calendar.pdf' %></p>
-
-      <%= image_tag '/media/calendars/DSKI-2020-21-School-Calendar.png', alt: '2020/2021 Schulkalendar', class: 'img-fluid d-block w-100' %>
+    <div class="col-xl-6">
+      <%= image_tag '/media/calendars/DSKI-2019-20-School-Calendar.png', alt: '2019/2020 School Calendar', class: 'img-fluid d-block w-100' %>
+    </div>
+    <div class="col-xl-6">
+      <%= image_tag '/media/calendars/DSKI-2020-21-School-Calendar.png', alt: '2020/2021 School Calendar', class: 'img-fluid d-block w-100' %>
     </div>
   </div>
 </div>
