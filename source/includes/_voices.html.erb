@@ -14,7 +14,7 @@
         <div class="carousel-item <%= (item[:active]) ? 'active' : '' %>" style="height:20rem;">
           <div class="container">
             <div class="carousel-caption text-left">
-              <%= image_tag item[:image], alt: data.config.site_name, style: 'float:right;' %>
+              <%= image_tag item[:image], alt: data.config.title, style: 'float:right;' %>
               <h3><%= item[:name] %></h3>
               <p><%= item[:text] %></p>
             </div>
@@ -26,10 +26,10 @@
 
   <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only"><%= t('slider.previous') %></span>
+    <span class="sr-only"><%= data.config.slider.previous %></span>
   </a>
   <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only"><%= t('slider.next') %></span>
+    <span class="sr-only"><%= data.config.slider.next %></span>
   </a>
 </div>

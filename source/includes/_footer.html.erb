@@ -2,24 +2,24 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        <p><%= t('footer.school') %></p>
-        <p><%= t('footer.address') %></p>
+        <p><%= data.config.footer.school %></p>
+        <p><%= data.config.footer.address %></p>
 
-        <%= image_tag 'ib-world-school-logo_footer.png', alt: data.config.site_name %>
-        <%= image_tag 'DAS_1500_transparent_V2.png', alt: data.config.site_name, style: 'margin-left:20px;'  %>
+        <%= image_tag 'ib-world-school-logo_footer.png', alt: data.config.title %>
+        <%= image_tag 'DAS_1500_transparent_V2.png', alt: data.config.title, style: 'margin-left:20px;'  %>
       </div>
 
       <div class="col-md-3">
         <ul class="list-unstyled">
-          <%= partial "includes/" + I18n.locale.to_s + "/footer_menu" %>
+          <%= partial "includes/footer_menu" %>
         </ul>
       </div>
 
       <div class="col-md-3">
         <ul class="list-unstyled">
-          <li><i class="icon ion-md-call"></i> <%= data.config.phone %></li>
-          <li><i class="icon ion-md-paper"></i> <%= data.config.fax %></li>
-          <li><i class="icon ion-md-mail"></i> <%= mail_to data.config.mailto, data.config.mailto, class: 'text-light' %></li>
+          <li><i class="icon ion-md-call"></i> <%= data.config.contact.phone %></li>
+          <li><i class="icon ion-md-paper"></i> <%= data.config.contact.fax %></li>
+          <li><i class="icon ion-md-mail"></i> <%= mail_to data.config.contact.mailto, data.config.contact.mailto, class: 'text-light' %></li>
         </ul>
         <ul class="list-inline">
           <li class="list-inline-item display-4">
@@ -30,7 +30,7 @@
     </div>
 
     <hr>
-    <p class="float-right"><a href="#" class="text-light"><%= t('footer.backtotop') %></a></p>
-    <p><%= data.config.copyright %></p>
+    <p class="float-right"><a href="#" class="text-light"><%= data.config.footer.backtotop %></a></p>
+    <p><%= data.config.footer.copyright %></p>
   </div>
 </footer>

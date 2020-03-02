@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="<%= I18n.locale.to_s %>">
+<html lang="en">
   <head>
-    <title><%= current_page.data.title + " | " + I18n.t(:title) %></title>
+    <title><%= current_page.data.title + " | " + data.config.title %></title>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="google-site-verification" content="Hd4uf1DcsW07ExTeXGIscOFiBM9dhZmE_FI3AgD-bQ8" />
+    <meta name="google-site-verification" content="<%= data.config.google.verification %>" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
@@ -17,7 +17,7 @@
     <meta name="msapplication-config" content="/assets/images/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 
-    <meta name="description" content="<%= current_page.data.description + ' ' + I18n.t(:description) %>">
+    <meta name="description" content="<%= current_page.data.description + ' ' + data.config.description %>">
     <%= stylesheet_link_tag "site", "https://unpkg.com/ionicons@4.5.10-1/dist/css/ionicons.min.css", "https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" %>
   </head>
   <body>

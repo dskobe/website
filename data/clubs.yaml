@@ -1,12 +1,9 @@
 clubs:
-  - title:
-      en: "Soccer"
-    description:
-      en: "Learn the fundamental skills needed for Football."
+  - title: "Soccer"
+    description: "Learn the fundamental skills needed for Football."
     teacher: "Mr. Lachlan Waite"
     size: "4-12"
-    age:
-      en: "PS - Grade 6 (Jr & Sr are split)"
+    age: "PS - Grade 6 (Jr & Sr are split)"
     days:
       - weekday: 3
         identifier: "PS - G2"
@@ -16,5 +13,4 @@ clubs:
     category: "sports"
     enabled: true
 
-  - title:
-      en: "Basketball"
+  - title: "Basketball"

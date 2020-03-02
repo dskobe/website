@@ -1,0 +1,66 @@
+---
+title: "Calendar and Schedule"
+icon: "icons/eligibility.png"
+description: ""
+keywords: []
+url:
+  legacy: "/saturdayschool/saturday-school-schedule/"
+---
+
+<div class="container-fluid p-0">
+  <%= image_tag 'banners/1_header_thin.jpg', alt: data.config.title, class: 'img-fluid d-block w-100' %>
+</div>
+
+<div class="container mt-5 mb-5">
+  <div class="row">
+    <div class="col-md-8">
+      <h1 class="mb-4"><%= current_page.data.title %></h1>
+
+      <h2>Calendar & Schedule 2019-2020</h2>
+      <p>There are a total of 30 Saturdays from September 2019 to June 2020. Classes are 3 hours per day from 9:00 a.m. to 12:00 p.m.</p>
+      <p>Please check the calendar below:</p>
+
+      <table class="table">
+        <thead class="thead-light">
+          <tr>
+            <th scope="col">Term 1 (15 Classes - Saturdays)</th>
+            <th scope="col">Term 2 (15 Classes - Saturdays)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>September 2019 – 7, 14, 21, 28</td>
+            <td>February 2020 – 8, 15, 22, 29</td>
+          </tr>
+          <tr>
+            <td>October 2019 – 5, 19</td>
+            <td>March 2020 – 7, 14</td>
+          </tr>
+          <tr>
+            <td>November 2019 – 9, 16, 30</td>
+            <td>April 2020 – 4, 11, 18, 25</td>
+          </tr>
+          <tr>
+            <td>December 2019 – 7, 14</td>
+            <td>May 2020 – 16, 23, 30</td>
+          </tr>
+          <tr>
+            <td>January 2020 – 11, 18, 25</td>
+            <td>June 2020 – 6, 13</td>
+          </tr>
+          <tr>
+            <td>February 2020 - 1</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="col-md-3 offset-md-1">
+      <h3 class="mt-3">Go back</h3>
+      <ul class="list-unstyled">
+        <li><%= link_to 'Back to main Saturday School page', local_path('saturdayschool') %></li>
+      </ul>
+    </div>
+  </div>
+</div>
