@@ -1,0 +1,132 @@
+<h2 class="mb-3">Document Downloads</h2>
+
+<div class="row row-cols-1 row-cols-md-3">
+
+  <div class="col mb-4">
+    <div class="card h-100">
+      <div class="row no-gutters">
+        <div class="col-md-3">
+          <%= image_tag 'icons/download.png', alt: data.config.title, class: 'card-img-top' %>
+        </div>
+        <div class="col-md-9">
+          <div class="card-body">
+            <h5 class="card-title">Fee Breakdown</h5>
+            <%= link_to 'Download PDF', '/media/fees/Fee-Structure-20192020.pdf', class: 'btn btn-primary' %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col mb-4">
+    <div class="card h-100">
+      <div class="row no-gutters">
+        <div class="col-md-3">
+          <%= image_tag 'icons/download.png', alt: data.config.title, class: 'card-img-top' %>
+        </div>
+        <div class="col-md-9">
+          <div class="card-body">
+            <h5 class="card-title">Access Application</h5>
+            <%= link_to 'Download Form', '/media/forms/Application-Form-2019.pdf', class: 'btn btn-primary' %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col mb-4">
+    <div class="card h-100">
+      <div class="row no-gutters">
+        <div class="col-md-3">
+          <%= image_tag 'icons/download.png', alt: data.config.title, class: 'card-img-top' %>
+        </div>
+        <div class="col-md-9">
+          <div class="card-body">
+            <h5 class="card-title">Registration</h5>
+            <%= link_to 'Download Form', '/media/forms/Registration-Form-2018-2019.pdf', class: 'btn btn-primary' %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col mb-4">
+    <div class="card h-100">
+      <div class="row no-gutters">
+        <div class="col-md-3">
+          <%= image_tag 'icons/download.png', alt: data.config.title, class: 'card-img-top' %>
+        </div>
+        <div class="col-md-9">
+          <div class="card-body">
+            <h5 class="card-title">Student Information</h5>
+            <%= link_to 'Download Form', '/media/forms/Student-Information-Form-2018-2019.pdf', class: 'btn btn-primary' %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col mb-4">
+    <div class="card h-100">
+      <div class="row no-gutters">
+        <div class="col-md-3">
+          <%= image_tag 'icons/download.png', alt: data.config.title, class: 'card-img-top' %>
+        </div>
+        <div class="col-md-9">
+          <div class="card-body">
+            <h5 class="card-title">Physical Examination</h5>
+            <%= link_to 'Download Form', '/media/forms/Physical-examination-form-2018-2019.pdf', class: 'btn btn-primary' %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col mb-4">
+    <div class="card h-100">
+      <div class="row no-gutters">
+        <div class="col-md-3">
+          <%= image_tag 'icons/download.png', alt: data.config.title, class: 'card-img-top' %>
+        </div>
+        <div class="col-md-9">
+          <div class="card-body">
+            <h5 class="card-title">Declaration</h5>
+            <%= link_to 'Download Form', '/media/forms/Declaration-Form-2018-2019.pdf', class: 'btn btn-primary' %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col mb-4">
+    <div class="card h-100">
+      <div class="row no-gutters">
+        <div class="col-md-3">
+          <%= image_tag 'icons/download.png', alt: data.config.title, class: 'card-img-top' %>
+        </div>
+        <div class="col-md-9">
+          <div class="card-body">
+            <h5 class="card-title">Apply via online</h5>
+            <%= link_to 'Submit Form', 'https://docs.google.com/forms/d/e/1FAIpQLSeOV2SL358ecQ_8i1o7xeYMlcK41EQUaKghBHU_yG142AD8Og/viewform?usp=sf_link', class: 'btn btn-primary' %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col mb-4">
+    <div class="card h-100">
+      <div class="row no-gutters">
+        <div class="col-md-3">
+          <%= image_tag 'icons/download.png', alt: data.config.title, class: 'card-img-top' %>
+        </div>
+        <div class="col-md-9">
+          <div class="card-body">
+            <h5 class="card-title">Submit Application</h5>
+            <%= mail_to data.config.contact.mailto + '?Subject=My application form is attached', 'Submit Email', class: 'btn btn-primary' %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

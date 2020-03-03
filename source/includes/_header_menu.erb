@@ -20,17 +20,6 @@
 </li>
 
 <li class="nav-item dropdown pl-1">
-  <a class="nav-link dropdown-toggle font-weight-bolder" href="#" id="admissions-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><%= data.config.menu.admissions %></a>
-  <div class="dropdown-menu" aria-labelledby="admissions-dropdown">
-    <%= link_to "Overview", local_path('admissions'), class: 'dropdown-item' %>
-    <%= link_to 'Placement', local_path('admissions/placement'), class: 'dropdown-item' %>
-    <%= link_to 'Admissions Process', local_path('admissions/process'), class: 'dropdown-item' %>
-    <%= link_to "School Fees", local_path('admissions/fees'), class: 'dropdown-item' %>
-    <%= link_to 'Enrolment Times', local_path('admissions/schedule'), class: 'dropdown-item' %>
-  </div>
-</li>
-
-<li class="nav-item dropdown pl-1">
   <a class="nav-link dropdown-toggle font-weight-bolder" href="#" id="programmes-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><%= data.config.menu.programmes %></a>
   <div class="dropdown-menu" aria-labelledby="programmes-dropdown">
     <%= link_to "Overview", local_path('programmes'), class: 'dropdown-item' %>
