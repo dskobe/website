@@ -3,112 +3,93 @@ title: "Our Programmes"
 icon: "icons/programmes.png"
 description: ""
 keywords: []
-url:
-  legacy: "/programmes-overview/"
+banner: "banners/7_header_thin.jpg"
 ---
 
-<div class="container-fluid p-0">
-  <%= image_tag 'banners/7_header_thin.jpg', alt: data.config.title, class: 'img-fluid d-block w-100' %>
-</div>
+<h1><%= current_page.data.title %></h1>
 
-<div class="container mt-5 mb-5">
-  <div class="row">
-    <div class="col-md-8">
-      <h1><%= current_page.data.title %></h1>
+<div class="row">
+  <div class="col-md-8">
+    <p class="lead font-weight-bold mt-4 mb-3">DSK International provides a unique, multilingual education to learners ages 2 to 11 in three languages: English, German and Japanese.</p>
+    <p>DSK International is proud to be an <a href="https://www.ibo.org/en/school/002685">International Baccalaureate Organisation (IB) World School</a>. We provide an environment that nurtures the academic, emotional, social, physical and creative growth of children of all ages, cultural backgrounds and experiences. As an IB World School, we strive to ignite a passion for lifelong learning and a desire to make positive change in the world.</p>
+    <p>DSKI has two main branches: German and International (English language). Though learners spend most of their day together in an integrated classroom with both English- and German-speaking homeroom teachers, math and language instruction occurs in either German or English.</p>
+    <p>One aspect that is very unique to our school is our language programme: 3 languages in primary school with English and German (curriculum) and Japanese as JFL (Japanese as a Foreign Language) and KOKUGO (native Japanese Curriculum).</p>
+  </div>
 
-      <p class="lead font-weight-bold mt-4 mb-3">DSK International provides a unique, multilingual education to learners ages 2 to 11 in three languages: English, German and Japanese.</p>
-      <p>DSK International is proud to be an <a href="https://www.ibo.org/en/school/002685">International Baccalaureate Organisation (IB) World School</a>. We provide an environment that nurtures the academic, emotional, social, physical and creative growth of children of all ages, cultural backgrounds and experiences. As an IB World School, we strive to ignite a passion for lifelong learning and a desire to make positive change in the world.</p>
-      <p>DSKI has two main branches: German and International (English language). Though learners spend most of their day together in an integrated classroom with both English- and German-speaking homeroom teachers, math and language instruction occurs in either German or English.</p>
-      <p>One aspect that is very unique to our school is our language programme: 3 languages in primary school with English and German (curriculum) and Japanese as JFL (Japanese as a Foreign Language) and KOKUGO (native Japanese Curriculum).</p>
-    </div>
-
-    <div class="col-md-3 offset-md-1 text-center"">
-      <p class="mt-5"><a href="https://www.ibo.org/en/school/002685">
-        <%= image_tag 'ib-world-school-logo_sidebar.png', alt: data.config.title, class: 'rounded' %></a></p>
-      <p class="mt-3"><a href="https://www.ibo.org/programmes/primary-years-programme/">
-        <%= image_tag 'pyp-programme-logo-en.png', alt: data.config.title, class: 'rounded' %></a></p>
-      <blockquote class="blockquote mt-5">
-        <p class="lead font-weight-bold mb-2">"Learning by heart, head and hand"</p>
-        <footer class="blockquote-footer">Johann Heinrich Pestalozzi</footer>
-      </blockquote>
-    </div>
+  <div class="col-md-3 offset-md-1 text-center"">
+    <p class="mt-5"><a href="https://www.ibo.org/en/school/002685">
+      <%= image_tag 'ib-world-school-logo_sidebar.png', alt: data.config.title, class: 'rounded' %></a></p>
+    <p class="mt-3"><a href="https://www.ibo.org/programmes/primary-years-programme/">
+      <%= image_tag 'pyp-programme-logo-en.png', alt: data.config.title, class: 'rounded' %></a></p>
+    <blockquote class="blockquote mt-5">
+      <p class="lead font-weight-bold mb-2">"Learning by heart, head and hand"</p>
+      <footer class="blockquote-footer">Johann Heinrich Pestalozzi</footer>
+    </blockquote>
   </div>
 </div>
 
-<div class="container">
-  <div class="row">
-    <div class="col-12 mb-5">
-      <h2>Our Programmes</h2>
-    </div>
+<h2 class="mt-5">Our Programmes</h2>
+
+<div class="row">
+  <div class="col-md-4">
+    <%= image_tag 'icons/schoolbag_1.png', alt: data.config.title, class: 'rounded img-fluid mb-2', style: 'height:120px;' %>
+    <h3 class="text-primary font-weight-bold">Playgroup</h3>
+    <hr>
+    <ul class="list-unstyled">
+      <li class="lead">1 – 3 years</li>
+      <li class="font-weight-bold mt-3">Timetable:</li>
+      <li>Thursdays 14:40 - 15:30</li>
+      <li class="font-weight-bold mt-3">Programmes:</li>
+      <li>Playgroup play</li>
+      <li></li>
+      <li class="font-weight-bold mt-3">Languages:</li>
+      <li>Native & Non-native English speakers</li>
+      <li class="font-weight-bold mt-3">IB: No</li>
+      <li>IB PYP units of Inquiry</li>
+      <li>start in Early Years Programme</li>
+    </ul>
+    <%= link_to 'Find out more', local_path('programmes/playgroup'), class: 'btn btn-lg btn-outline-primary', role: 'button' %>
   </div>
 
-  <div class="row">
-    <div class="col-md-4">
-      <%= image_tag 'icons/schoolbag_1.png', alt: data.config.title, class: 'rounded img-fluid mb-2', style: 'height:120px;' %>
-      <h3 class="text-primary font-weight-bold">Playgroup</h3>
-      <hr>
-      <ul class="list-unstyled">
-        <li class="lead">1 – 3 years</li>
-        <li class="font-weight-bold mt-3">Timetable:</li>
-        <li>Thursdays 14:40 - 15:30</li>
-        <li class="font-weight-bold mt-3">Programmes:</li>
-        <li>Playgroup play</li>
-        <li></li>
-        <li class="font-weight-bold mt-3">Languages:</li>
-        <li>Native & Non-native English speakers</li>
-        <li class="font-weight-bold mt-3">IB: No</li>
-        <li>IB PYP units of Inquiry</li>
-        <li>start in Early Years Programme</li>
-      </ul>
-      <%= link_to 'Find out more', local_path('programmes/playgroup'), class: 'btn btn-lg btn-outline-primary', role: 'button' %>
-    </div>
+  <div class="col-md-4">
+    <%= image_tag 'icons/schoolbag_2.png', alt: data.config.title, class: 'rounded img-fluid mb-2', style: 'height:120px;' %>
+    <h3 class="text-primary font-weight-bold">Early Years</h3>
+    <hr>
+    <ul class="list-unstyled">
+      <li class="lead">2 – 5 years</li>
+      <li class="font-weight-bold mt-3">Timetable:</li>
+      <li>Monday to Friday</li>
+      <li class="font-weight-bold mt-3">Programmes:</li>
+      <li>Pre-Kindergarten class (2 years old) and</li>
+      <li>Early Years/Kindergarten (3-5 years old)</li>
+      <li class="font-weight-bold mt-3">Languages:</li>
+      <li>English, German and Japanese</li>
+      <li class="font-weight-bold mt-3">IB: Yes</li>
+      <li>Early Years/Kindergarten complete</li>
+      <li>8 units of enquiry</li>
+    </ul>
+    <%= link_to 'Find out more', local_path('programmes/early-years'), class: 'btn btn-lg btn-outline-primary', role: 'button' %>
+  </div>
 
-    <div class="col-md-4">
-      <%= image_tag 'icons/schoolbag_2.png', alt: data.config.title, class: 'rounded img-fluid mb-2', style: 'height:120px;' %>
-      <h3 class="text-primary font-weight-bold">Early Years</h3>
-      <hr>
-      <ul class="list-unstyled">
-        <li class="lead">2 – 5 years</li>
-        <li class="font-weight-bold mt-3">Timetable:</li>
-        <li>Monday to Friday</li>
-        <li class="font-weight-bold mt-3">Programmes:</li>
-        <li>Pre-Kindergarten class (2 years old) and</li>
-        <li>Early Years/Kindergarten (3-5 years old)</li>
-        <li class="font-weight-bold mt-3">Languages:</li>
-        <li>English, German and Japanese</li>
-        <li class="font-weight-bold mt-3">IB: Yes</li>
-        <li>Early Years/Kindergarten complete</li>
-        <li>8 units of enquiry</li>
-      </ul>
-      <%= link_to 'Find out more', local_path('programmes/early-years'), class: 'btn btn-lg btn-outline-primary', role: 'button' %>
-    </div>
-
-    <div class="col-md-4">
-      <%= image_tag 'icons/schoolbag_3.png', alt: data.config.title, class: 'rounded img-fluid mb-2', style: 'height:120px;' %>
-      <h3 class="text-primary font-weight-bold">Primary Years</h3>
-      <hr>
-      <ul class="list-unstyled">
-        <li class="lead">5 – 11 years</li>
-        <li class="font-weight-bold mt-3">Timetable:</li>
-        <li>Monday to Friday</li>
-        <li class="font-weight-bold mt-3">Programmes:</li>
-        <li>Thüringer Curriculum</li>
-        <li>PYP Programme of Inquiry</li>
-        <li class="font-weight-bold mt-3">Languages:</li>
-        <li>English, German and Japanese</li>
-        <li class="font-weight-bold mt-3">IB: Yes</li>
-        <li>Full IB PYP</li>
-        <li>Programme of Inquiry</li>
-      </ul>
-      <%= link_to 'Find out more', local_path('programmes/pyp'), class: 'btn btn-lg btn-outline-primary', role: 'button' %>
-    </div>
+  <div class="col-md-4">
+    <%= image_tag 'icons/schoolbag_3.png', alt: data.config.title, class: 'rounded img-fluid mb-2', style: 'height:120px;' %>
+    <h3 class="text-primary font-weight-bold">Primary Years</h3>
+    <hr>
+    <ul class="list-unstyled">
+      <li class="lead">5 – 11 years</li>
+      <li class="font-weight-bold mt-3">Timetable:</li>
+      <li>Monday to Friday</li>
+      <li class="font-weight-bold mt-3">Programmes:</li>
+      <li>Thüringer Curriculum</li>
+      <li>PYP Programme of Inquiry</li>
+      <li class="font-weight-bold mt-3">Languages:</li>
+      <li>English, German and Japanese</li>
+      <li class="font-weight-bold mt-3">IB: Yes</li>
+      <li>Full IB PYP</li>
+      <li>Programme of Inquiry</li>
+    </ul>
+    <%= link_to 'Find out more', local_path('programmes/pyp'), class: 'btn btn-lg btn-outline-primary', role: 'button' %>
   </div>
 </div>
 
-<%= partial "includes/related_icons", :locals => {
-  :items => ['about/index','about/what-we-offer','admissions/index','about/history']
-} %>
-
-<%= partial "includes/get_in_touch", :locals => {
-  :text => 'Need more information? Make an inquiry to the school or go straight to our admissions page.'
-} %>
+<p class="lead mt-5">Need more information? Make an <%= link_to "inquiry to the school", "contact" %> or go straight to our <%= link_to "admissions page", "admissions" %>.</p>
