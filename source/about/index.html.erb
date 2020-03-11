@@ -3,92 +3,55 @@ title: "About us"
 icon: "icons/dsk.png"
 description: ""
 keywords: []
-url:
-  legacy: "/about-us/"
+banner: "banners/5_header_thin.jpg"
 ---
 
-<div class="container-fluid p-0">
-  <%= image_tag 'banners/5_header_thin.jpg', alt: data.config.title, class: 'img-fluid d-block w-100' %>
-</div>
+<h1><%= current_page.data.title %></h1>
 
-<div class="container mt-5">
-  <div class="row">
-    <div class="col-md-7">
-      <h1><%= current_page.data.title %></h1>
+<p>DSK International (DSKI) is a German school abroad and an IB World School for children ages 2 to 11. At DSKI, we provide an exceptional, innovative education anchored by our German heritage and recognized for embracing the rich diversity in our learners and our world. We approach education holistically in order to ensure that students learn using their heart, head and hands.</p>
+<p>Our mission is built upon our German heritage and European values and beliefs. As a school community we strive to be lifelong inquirers inspired by and challenged through authentic and meaningful learning experiences. Being committed to providing an exceptional education, we foster international mindedness, critical thinking, inclusion and respect for diversity and the willingness to act with integrity and compassion.</p>
 
-      <p>DSK International (DSKI) is a German school abroad and an IB World School for children ages 2 to 11. At DSKI, we provide an exceptional, innovative education anchored by our German heritage and recognized for embracing the rich diversity in our learners and our world. We approach education holistically in order to ensure that students learn using their heart, head and hands.</p>
-      <p>Our mission is built upon our German heritage and European values and beliefs. As a school community we strive to be lifelong inquirers inspired by and challenged through authentic and meaningful learning experiences. Being committed to providing an exceptional education, we foster international mindedness, critical thinking, inclusion and respect for diversity and the willingness to act with integrity and compassion.</p>
-    </div>
+<h2 class="mt-5">Some things we offer at DSKI...</h2>
+<p><%= link_to 'For more details see here', local_path('about/what-we-offer'), class: 'stretched-link' %></p>
 
-    <div class="col-md-4 offset-md-1">
-      <h3 class="mt-5">Related Pages</h3>
-      <ul class="list-unstyled">
-        <li><%= link_to 'Our History', local_path('about/history') %></li>
-        <li><%= link_to 'School Calendar', local_path('news') %></li>
-        <li><%= link_to 'Clubs', local_path('school/clubs') %></li>
-        <li><%= link_to 'School Fees', local_path('admissions/fees') %></li>
-        <li><%= link_to 'Career Opportunities', local_path('school/careers') %></li>
-        <li><%= link_to 'Our Sponsors', local_path('school/sponsors') %></li>
-      </ul>
-    </div>
+<div class="row align-items-center mb-5">
+  <div class="col-md-6">
+    <h3>Learn Three Languages at DSKI</h3>
+    <p>At DSKI, students have the opportunity to learn three languages: English, German and Japanese. Why not give your child an amazing head start in life.</p>
+    <p><%= link_to 'Find out more', local_path('about/languages-at-dski'), class: 'stretched-link' %></p>
+  </div>
+  <div class="col-md-6">
+    <%= image_tag 'photos/about_1_800px.jpg', alt: 'Learn Three Languages at DSKI', class: 'img-fluid d-block w-100' %>
   </div>
 </div>
 
-<%= partial "includes/related_icons", :locals => {
-  :items => ['about/what-we-offer','programmes/index','about/welcome','about/languages-at-dski']
-} %>
-
-<div class="container mt-5">
-  <div class="row">
-    <div class="col-12">
-      <h2>Some things we offer at DSKI...</h2>
-      <p><%= link_to 'For more details see here', local_path('about/what-we-offer'), class: 'stretched-link' %></p>
-    </div>
+<div class="row align-items-center mb-5">
+  <div class="col-md-6">
+    <%= image_tag 'photos/about_3_800px.jpg', alt: '', class: 'img-fluid d-block w-100' %>
   </div>
-
-  <div class="row align-items-center mb-5">
-    <div class="col-md-6">
-      <h3>Learn Three Languages at DSKI</h3>
-      <p>At DSKI, students have the opportunity to learn three languages: English, German and Japanese. Why not give your child an amazing head start in life.</p>
-      <p><%= link_to 'Find out more', local_path('about/languages-at-dski'), class: 'stretched-link' %></p>
-    </div>
-    <div class="col-md-6">
-      <%= image_tag 'photos/about_1_800px.jpg', alt: 'Learn Three Languages at DSKI', class: 'img-fluid d-block w-100' %>
-    </div>
-  </div>
-
-  <div class="row align-items-center mb-5">
-    <div class="col-md-6">
-      <%= image_tag 'photos/about_3_800px.jpg', alt: '', class: 'img-fluid d-block w-100' %>
-    </div>
-    <div class="col-md-6">
-      <h3>Swimming lessons at DSKI</h3>
-      <p>At DSKI, all students take swimming lessons until age 10. Swimming is a skill for life and we place a strong emphasis on safety and fun in the water.</p>
-    </div>
-  </div>
-
-  <div class="row align-items-center mb-5">
-    <div class="col-md-6">
-      <h3>Learn an Instrument at DSKI</h3>
-      <p>At DSKI, students have the opportunity to learn a variety of instruments that can help children strengthen their creativity and self-expression. Music can enrich a child's educational experience and we are proud to facilitate this at DSKI.</p>
-    </div>
-    <div class="col-md-6">
-      <%= image_tag 'photos/about_2_800px.jpg', alt: '', class: 'img-fluid d-block w-100' %>
-    </div>
-  </div>
-
-  <div class="row text-center mb-5">
-    <div class="col-md-8 offset-md-2">
-      <h3 class="mt-4">DSKI on Facebook</h3>
-      <p>For everything social and for updates on our school be sure to like our Facebook page. We are very active and would love to have you as a follower. See you on Facebook!</p>
-      <a href="https://www.facebook.com/dskobe.org">
-        <p>Take me to DSKI on Facebook</p>
-        <%= image_tag 'fb_logo.png', alt: 'DSKI on Facebook' %>
-      </a>
-    </div>
+  <div class="col-md-6">
+    <h3>Swimming lessons at DSKI</h3>
+    <p>At DSKI, all students take swimming lessons until age 10. Swimming is a skill for life and we place a strong emphasis on safety and fun in the water.</p>
   </div>
 </div>
 
-<%= partial "includes/get_in_touch", :locals => {
-  :text => 'If you have any questions please get in touch.'
-} %>
+<div class="row align-items-center mb-5">
+  <div class="col-md-6">
+    <h3>Learn an Instrument at DSKI</h3>
+    <p>At DSKI, students have the opportunity to learn a variety of instruments that can help children strengthen their creativity and self-expression. Music can enrich a child's educational experience and we are proud to facilitate this at DSKI.</p>
+  </div>
+  <div class="col-md-6">
+    <%= image_tag 'photos/about_2_800px.jpg', alt: '', class: 'img-fluid d-block w-100' %>
+  </div>
+</div>
+
+<div class="row text-center mb-5">
+  <div class="col-md-8 offset-md-2">
+    <h3 class="mt-4">DSKI on Facebook</h3>
+    <p>For everything social and for updates on our school be sure to like our Facebook page. We are very active and would love to have you as a follower. See you on Facebook!</p>
+    <a href="https://www.facebook.com/dskobe.org">
+      <p>Take me to DSKI on Facebook</p>
+      <%= image_tag 'fb_logo.png', alt: 'DSKI on Facebook' %>
+    </a>
+  </div>
+</div>
