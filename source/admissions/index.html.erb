@@ -3,35 +3,113 @@ title: "Admissions"
 icon: "icons/admissions.png"
 description: ""
 keywords: []
-url:
-  legacy: "/admissions/"
+banner: "banners/8_header_thin.jpg"
 ---
 
-<div class="container-fluid p-0">
-  <%= image_tag 'banners/8_header_thin.jpg', alt: data.config.title, class: 'img-fluid d-block w-100' %>
-</div>
+<h1><%= current_page.data.title %> Process</h1>
 
-<div class="container mt-5">
-  <div class="row">
-    <div class="col-md-12">
-      <h1><%= current_page.data.title %></h1>
+<p>DSK International has two branches: the German Branch and the International Branch.</p>
+<p>For learners in the International Branch the language of instruction is English, children also have the opportunity to learn Japanese and German. For learners in the German Branch, math and language classes are conducted in German, and all other classes are conducted in English except for the Japanese lessons.</p>
+<p>German and International Branch students enjoy inquiry-based learning together as a whole class to encourage community building.</p>
+<p>If you are unsure about languages at DSK International, please see our <%= link_to 'languages page', local_path('about/languages-at-dski') %> for more detailed information.</p>
 
-      <p>DSK International has two branches: the German Branch and the International Branch.</p>
-      <p>For learners in the International Branch the language of instruction is English, children also have the opportunity to learn Japanese and German. For learners in the German Branch, math and language classes are conducted in German, and all other classes are conducted in English except for the Japanese lessons.</p>
-      <p>German and International Branch students enjoy inquiry-based learning together as a whole class to encourage community building.</p>
-      <p>If you are unsure about languages at DSKI, please see our <%= link_to 'languages page', local_path('about/languages-at-dski') %> for more detailed information.</p>
-
-      <%= partial "admissions/enroll", :locals => {} %>
-      <%= partial "admissions/contact", :locals => {} %>
-      <%= partial "admissions/process", :locals => {} %>
-      <%= partial "admissions/placement", :locals => {} %>
-      <%= partial "admissions/fees", :locals => {} %>
-      <%= partial "admissions/schedule", :locals => {} %>
-      <%= partial "admissions/downloads", :locals => {} %>
-    </div>
+<div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative mt-4">
+  <div class="col-auto d-none d-lg-block">
+    <svg class="bd-placeholder-img" width="230" height="170" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Step One"><title>Step One</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="15%" y="50%" fill="#eceeef" dy=".3em" font-size="34" font-weight="4">Step One</text></svg>
+  </div>
+  <div class="col p-4 d-flex flex-column position-static">
+    <h3><button type="button" class="btn btn-outline-secondary btn-sm d-lg-none">Step One</button> Make an Enquiry</h3>
+    <p class="card-text mb-auto">Please email <%= mail_to data.config.contact.mailto, data.config.contact.mailto %> or call +81 (0)78-857-9777 to speak to one of our admission office staff about enrolments. We will organize a date for you to come in and visit us or have a conference call for overseas applicants.</p>
   </div>
 </div>
 
-<%= partial "includes/get_in_touch", :locals => {
-  :text => 'Still have questions about enrolment? Please get in touch.'
-} %>
+<div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+  <div class="col-auto d-none d-lg-block">
+    <svg class="bd-placeholder-img" width="230" height="170" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Step Two"><title>Step Two</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="15%" y="50%" fill="#eceeef" dy=".3em" font-size="34" font-weight="4">Step Two</text></svg>
+  </div>
+  <div class="col p-4 d-flex flex-column position-static">
+    <h3><button type="button" class="btn btn-outline-secondary btn-sm d-lg-none">Step Two</button> Pre-Admission Questionnaire</h3>
+    <p class="card-text mb-auto">Please submit this to the school office. It provides us with some basic information in advance of us meeting you, so we can have a more focused conversation on how to best help your child.</p>
+  </div>
+</div>
+
+<div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+  <div class="col-auto d-none d-lg-block">
+    <svg class="bd-placeholder-img" width="230" height="300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Step Three"><title>Step Three</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="15%" y="50%" fill="#eceeef" dy=".3em" font-size="34" font-weight="4">Step Three</text></svg>
+  </div>
+  <div class="col p-4 d-flex flex-column position-static">
+    <h3><button type="button" class="btn btn-outline-secondary btn-sm d-lg-none">Step Three</button> Visit Us</h3>
+    <div class="text-muted">In Japan</div>
+    <p class="card-text mb-auto">Please come to visit us and have a guided school tour. You can meet with the principal and also get to meet the teachers, see how our programme works and ask any questions you may have. You'll learn a lot about DSK International!</p>
+
+    <div class="text-muted mt-3">Outside Japan</div>
+    <p class="card-text mb-auto">We are very happy to have video conference calls or phone calls with interested families. If you are not in Japan yet, we would be happy to set up an appointment at a time that is convenient to you.</p>
+  </div>
+</div>
+
+<div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+  <div class="col-auto d-none d-lg-block">
+    <svg class="bd-placeholder-img" width="230" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Step Four"><title>Step Four</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="15%" y="50%" fill="#eceeef" dy=".3em" font-size="34" font-weight="4">Step Four</text></svg>
+  </div>
+  <div class="col p-4 d-flex flex-column position-static">
+    <h3><button type="button" class="btn btn-outline-secondary btn-sm d-lg-none">Step Four</button> Submit an Application Form and Report Cards</h3>
+    <p class="card-text mb-auto">After the initial visit or call we would need from you:</p>
+    <ul class="mb-0">
+      <li>Application Form</li>
+      <li>Three of the most recent report cards from your current school/kindergarten.<br><span class="small">Please include translations if the documents are in a language other than English, German, French or Japanese.</span></li>
+    </ul>
+    <span>or</span>
+    <ul>
+      <li>Confidential School Report Form/Early Years Recommendation Form</li>
+    </ul>
+  </div>
+</div>
+
+<div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+  <div class="col-auto d-none d-lg-block">
+    <svg class="bd-placeholder-img" width="230" height="400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Step Five"><title>Step Five</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="15%" y="50%" fill="#eceeef" dy=".3em" font-size="34" font-weight="4">Step Five</text></svg>
+  </div>
+  <div class="col p-4 d-flex flex-column position-static">
+    <h3><button type="button" class="btn btn-outline-secondary btn-sm d-lg-none">Step Five</button> Attend a Trial Day</h3>
+    <p class="card-text mb-auto">We don't use entrance exams but we do like to meet the student, get to know them and see if they would be happy in our school.</p>
+
+    <div class="text-muted mt-3">In Japan</div>
+    <p class="card-text mb-auto">The trial for students aged 2 - 5 years old is from 9.00am to 1.00pm. For students aged 6  and over it is 8.30am to 3.30pm. Teachers will observe the student and assess their language skills, academic level and general aptitude.<br>
+    Following the trial day, an interview will take place or the school office will telephone you to notify about the child’s trial result.</p>
+
+    <div class="text-muted mt-3">Outside Japan</div>
+    <p class="card-text mb-auto">We understand that not all families are able to have the child attend for a trial day in advance of enrolment. In the case of overseas families, we will pass this step, and make admissions decisions based on the report cards and confidential reference.</p>
+  </div>
+</div>
+
+<div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+  <div class="col-auto d-none d-lg-block">
+    <svg class="bd-placeholder-img" width="230" height="300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Step Six"><title>Step Six</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="15%" y="50%" fill="#eceeef" dy=".3em" font-size="34" font-weight="4">Step Six</text></svg>
+  </div>
+  <div class="col p-4 d-flex flex-column position-static">
+    <h3><button type="button" class="btn btn-outline-secondary btn-sm d-lg-none">Step Six</button> Accept an Offer</h3>
+    <p class="card-text mb-auto">Parents wishing to enroll their child at DSK International, after the child has been accepted by the school, need to provide:</p>
+    <ul>
+      <li>Registration Form</li>
+      <li>Declaration Form</li>
+      <li>Student Information Form</li>
+      <li>Vaccination records (if not submitted at a trial)</li>
+      <li>Physical Examination Form (by doctor)</li>
+      <li>A copy of the student’s passport (photo page)</li>
+    </ul>
+  </div>
+</div>
+
+<h2 class="mt-5">Document Downloads</h2>
+<ul class="">
+  <li><%= link_to 'Fee Breakdown', '/media/fees/Fee-Structure-20192020.pdf' %></li>
+  <li><%= link_to 'Access Application', '/media/forms/Application-Form-2019.pdf' %></li>
+  <li><%= link_to 'Registration', '/media/forms/Registration-Form-2018-2019.pdf' %></li>
+  <li><%= link_to 'Student Information', '/media/forms/Student-Information-Form-2018-2019.pdf' %></li>
+  <li><%= link_to 'Physical Examination', '/media/forms/Physical-examination-form-2018-2019.pdf' %></li>
+  <li><%= link_to 'Declaration', '/media/forms/Declaration-Form-2018-2019.pdf' %></li>
+  <li><%= link_to 'Apply via online', 'https://docs.google.com/forms/d/e/1FAIpQLSeOV2SL358ecQ_8i1o7xeYMlcK41EQUaKghBHU_yG142AD8Og/viewform?usp=sf_link' %></li>
+  <li><%= mail_to data.config.contact.mailto + '?Subject=My application form is attached', 'Submit Application' %></li>
+</ul>
+
+<p class="lead mt-4">If you would like any information about the process please don't hesitate to <%= link_to "contact us", "contact" %>.</p>
