@@ -1,58 +1,36 @@
 ---
 title: "English Programme"
+icon: "icons/noun/english.png"
 description: ""
 keywords: []
-url:
-  legacy: "/saturdayschool/english-programme/"
+banner: "banners/5_header_thin.jpg"
 ---
 
-<div class="container-fluid p-0">
-  <%= image_tag 'banners/5_header_thin.jpg', alt: data.config.title, class: 'img-fluid d-block w-100' %>
+<h1><%= current_page.data.title %></h1>
+
+<h2>Objectives</h2>
+<ol>
+  <li>Provide comprehensive and total language support for students in English.</li>
+  <li>Focus solely on further enhancing the language levels of a student so that any child who joins any of our programmes will have more confidence and better skills in the application and usage of English by the end of the programme.</li>
+</ol>
+
+<h2>Curriculum</h2>
+<p>The curriculum includes any or all of the following; speaking and communication, questions and answers, vocabulary building, reading, writing, grammar, comprehension, individual writing tasks, making and giving presentations, public speaking, etc. depending on the level of the class.</p>
+
+<h2>Eligibility</h2>
+<p>Any child who already has a fair ability in English and is between the ages of 5~12 with at least one English speaking parent or member of the family.</p>
+
+<div class="row mb-4">
+  <div class="col-md-4"><%= link_to 'Online Application Form', data.forms.saturday.apply.en, class: 'btn btn-lg btn-outline-info btn-block', role: 'button' %></div>
 </div>
 
-<div class="container mt-5 mb-5">
-  <div class="row">
-    <div class="col-md-8">
-      <h1 class="mb-4"><%= current_page.data.title %></h1>
-
-      <h2>Objectives</h2>
-      <ol>
-        <li>Provide comprehensive and total language support for students in English.</li>
-        <li>Focus solely on further enhancing the language levels of a student so that any child who joins any of our programmes will have more confidence and better skills in the application and usage of English by the end of the programme.</li>
-      </ol>
-
-      <h2>Curriculum</h2>
-      <p>The curriculum includes any or all of the following; speaking and communication, questions and answers, vocabulary building, reading, writing, grammar, comprehension, individual writing tasks, making and giving presentations, public speaking, etc. depending on the level of the class.</p>
-
-      <h2>Eligibility</h2>
-      <p>Any child who already has a fair ability in English and is between the ages of 5~12 with at least one English speaking parent or member of the family.</p>
-
-      <h2>Some Important English Programme Details</h2>
-      <ul>
-        <li>There are 30 class days in a one year programme (Sep. to Jun.); each class day is of three hours duration, starting at 9.00 a.m. and ending at 12.00 p.m.</li>
-        <li>Five or more classes are usually set up at different levels each year, so that each student can be in a class with other students similar or close to their level, depending on the total number of students joining the programme.</li>
-        <li>Children are placed in a level of class, according to their ability, not their age.</li>
-        <li>A minimum of five students is required to run any class level. Student and teacher ratios are kept at conducive levels. In the case of a class having a very large number of students, we might at the school’s discretion, consider having an assistant teacher also in the class to assist the main class teacher in teaching.</li>
-        <li>Homework is usually given to the students at every class, parents are informed about this and are expected to help and support their child in completing this at home (if the child has any difficulties doing it).</li>
-        <li>Twice a year a Term Report is prepared for every child assessing their strengths, growth, levels and performance during that period.</li>
-        <li>Children who continue the programme over the next year, are assessed at the end of the year, as to their suitability in moving up to the next level or staying in the same level for another year, depending on their progress.</li>
-      </ul>
-
-    </div>
-
-    <div class="col-md-3 offset-md-1">
-      <%= image_tag 'icons/download.png', alt: data.config.title, class: 'rounded img-fluid mb-2' %>
-      <h3>Application Forms</h3>
-
-      <p class="lead font-weight-bold">English School</p>
-      <ul class="list-unstyled">
-        <li><%= link_to 'Online Application Form', 'https://docs.google.com/forms/d/e/1FAIpQLScUw8IAmcfToZcrf8FgHNKFIgvrC3GOL4vNgReF1if-gaO7uQ/viewform?usp=sf_link' %></li>
-      </ul>
-
-      <h3 class="mt-3">Go back</h3>
-      <ul class="list-unstyled">
-        <li><%= link_to 'Back to main Saturday School page', local_path('saturdayschool') %></li>
-      </ul>
-    </div>
-  </div>
-</div>
+<h2>Some Important English Programme Details</h2>
+<ul>
+  <li>There are 30 class days in a one year programme (Sep. to Jun.); each class day is of three hours duration, starting at 9.00 a.m. and ending at 12.00 p.m.</li>
+  <li>Five or more classes are usually set up at different levels each year, so that each student can be in a class with other students similar or close to their level, depending on the total number of students joining the programme.</li>
+  <li>Children are placed in a level of class, according to their ability, not their age.</li>
+  <li>A minimum of five students is required to run any class level. Student and teacher ratios are kept at conducive levels. In the case of a class having a very large number of students, we might at the school’s discretion, consider having an assistant teacher also in the class to assist the main class teacher in teaching.</li>
+  <li>Homework is usually given to the students at every class, parents are informed about this and are expected to help and support their child in completing this at home (if the child has any difficulties doing it).</li>
+  <li>Twice a year a Term Report is prepared for every child assessing their strengths, growth, levels and performance during that period.</li>
+  <li>Children who continue the programme over the next year, are assessed at the end of the year, as to their suitability in moving up to the next level or staying in the same level for another year, depending on their progress.</li>
+</ul>
