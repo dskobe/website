@@ -102,14 +102,17 @@ banner: "banners/8_header_thin.jpg"
 
 <h2 class="mt-5">Document Downloads</h2>
 <ul class="">
-  <li><%= link_to 'Fee Breakdown', '/media/fees/Fee-Structure-20192020.pdf' %></li>
-  <li><%= link_to 'Access Application', '/media/forms/Application-Form-2019.pdf' %></li>
-  <li><%= link_to 'Registration', '/media/forms/Registration-Form-2018-2019.pdf' %></li>
-  <li><%= link_to 'Student Information', '/media/forms/Student-Information-Form-2018-2019.pdf' %></li>
-  <li><%= link_to 'Physical Examination', '/media/forms/Physical-examination-form-2018-2019.pdf' %></li>
-  <li><%= link_to 'Declaration', '/media/forms/Declaration-Form-2018-2019.pdf' %></li>
-  <li><%= link_to 'Apply via online', 'https://docs.google.com/forms/d/e/1FAIpQLSeOV2SL358ecQ_8i1o7xeYMlcK41EQUaKghBHU_yG142AD8Og/viewform?usp=sf_link' %></li>
-  <li><%= mail_to data.config.contact.mailto + '?Subject=My application form is attached', 'Submit Application' %></li>
+  <li>Pre-admission Questionnaire (for <%= link_to 'Early Years', '/media/forms/Pre-admission-Questionnaire-KG-2020.pdf' %>; for <%= link_to 'Primary Years', '/media/forms/Pre-admission-Questionnaire-Primary-School-2020.pdf' %>. Playgroup doesn't require)</li>
+  <li><%= link_to 'Application Form', '/media/forms/Application-Form-2019.pdf' %></li>
+  <li><%= link_to 'Registration Form', '/media/forms/Registration-Form-2018-2019.pdf' %></li>
+  <li><%= link_to 'Declaration Form', '/media/forms/Declaration-Form-2018-2019.pdf' %></li>
+  <li><%= link_to 'Student Information Form', '/media/forms/Student-Information-Form-2018-2019.pdf' %></li>
+  <li><%= link_to 'Physical Examination Form (by doctor)', '/media/forms/Physical-examination-form-2018-2019.pdf' %></li>
+  <li><%= link_to 'Vaccination records (if not submitted at a trial)', '/media/fees/Fee-Structure-20192020.pdf' %></li>
 </ul>
+
+<div class="row mb-4 mt-4">
+  <div class="col-md-4"><%= mail_to data.config.contact.mailto + '?Subject=My application form is attached', 'Submit Application', class: 'btn btn-lg btn-outline-info btn-block', role: 'button' %></div>
+</div>
 
 <p class="lead mt-4">If you would like any information about the process please don't hesitate to <%= link_to "contact us", "contact" %>.</p>
