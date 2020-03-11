@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row text-center">
       <%
-        cols = 4
+        cols = 6
         items = []
         sub_pages(current_resource.path.split('/')[0]).each do |item|
           if item.path != current_resource.path
@@ -12,9 +12,9 @@
         # items.shuffle.take(cols).each do |resource|
         items.shuffle.each do |resource|
       %>
-      <div class="col-md-<%= 12/cols %> p-3">
+      <div class="col-md-<%= 12/cols %> p-4">
         <% link_to resource.url, class: 'stretched-link' do %>
-          <%= image_tag resource.data.icon, alt: resource.data.title, class: 'rounded img-fluid mb-2', style: 'height:120px;' %>
+          <%= image_tag resource.data.icon, alt: resource.data.title, class: 'rounded img-fluid mb-2', style: 'height:80px;' %>
           <p class="lead"><%= resource.data.title %></p>
         <% end %>
       </div>
