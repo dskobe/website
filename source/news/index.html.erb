@@ -1,50 +1,39 @@
 ---
 title: "DSKI Event Calendar"
+icon: "icons/dsk.png"
 description: ""
 keywords: []
-url:
-  legacy: "/about-us/school-calendar/"
+banner: "banners/3_header_thin.jpg"
 ---
 
-<div class="container-fluid p-0">
-  <%= image_tag 'banners/3_header_thin.jpg', alt: data.config.title, class: 'img-fluid d-block w-100' %>
-</div>
+<h1><%= current_page.data.title %></h1>
 
-<div class="container mt-5 mb-5">
-  <div class="row">
-    <div class="col-12">
-      <h1><%= current_page.data.title %></h1>
+<p>Please <%= link_to 'click here to view', '/media/calendars/Events-2019-2020.pdf' %> the events calendar.</p>
 
-      <p class="mt-4">Please <%= link_to 'click here to view', '/media/calendars/Events-2019-2020.pdf' %> the events calendar.</p>
+<h2>Upcoming Events</h2>
 
-      <h2 class="mt-4">Upcoming Events</h2>
+<h3>Open Day</h3>
+<p class="lead text-muted">11th February 9:30am-12:00pm</p>
+<ul>
+  <li>School Tour</li>
+  <li>Meet the Teachers</li>
+  <li>Parent Cafe</li>
+</ul>
+<p>All nationalities welcome!<br>Just come along on the day, no registration needed!</p>
 
-      <h3 class="mt-4">Open Day</h3>
-      <p class="lead text-muted">11th February 9:30am-12:00pm</p>
-      <ul>
-        <li>School Tour</li>
-        <li>Meet the Teachers</li>
-        <li>Parent Cafe</li>
-      </ul>
-      <p>All nationalities welcome!<br>Just come along on the day, no registration needed!</p>
+<hr class="featurette-divider">
 
-      <hr class="featurette-divider">
+<h2>Past Events</h2>
 
-      <h2 class="mt-4">Past Events</h2>
+<h3>Oktoberfest</h3>
+<p>Join us for Oktoberfest on the 19th of October for a memorable day with students, parents, teachers, staff and friends. We have a range of activities planned and also beer and sausages!</p>
+<ul>
+  <li>Beer</li>
+  <li>Live Music</li>
+  <li>Homemade Cakes</li>
+  <li>German Food</li>
+  <li>Tombola with Great Prizes</li>
+  <li>Games & Fun for Kids</li>
+</ul>
 
-      <h3 class="mt-4">Oktoberfest</h3>
-      <p>Join us for Oktoberfest on the 19th of October for a memorable day with students, parents, teachers, staff and friends. We have a range of activities planned and also beer and sausages!</p>
-      <ul>
-        <li>Beer</li>
-        <li>Live Music</li>
-        <li>Homemade Cakes</li>
-        <li>German Food</li>
-        <li>Tombola with Great Prizes</li>
-        <li>Games & Fun for Kids</li>
-      </ul>
-
-      <%= image_tag '/media/prospectus/octoberfest.jpg', alt: 'Oktoberfest', class: 'img-fluid d-block w-50' %>
-
-    </div>
-  </div>
-</div>
+<%= image_tag '/media/prospectus/octoberfest.jpg', alt: 'Oktoberfest', class: 'img-fluid d-block w-50' %>
