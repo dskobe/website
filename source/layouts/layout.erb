@@ -24,7 +24,19 @@
     <%= partial "includes/header" %>
 
     <main role="main">
-      <%= yield %>
+      <div class="container-fluid p-0">
+        <%= image_tag current_page.data.banner, alt: data.config.title, class: 'img-fluid d-block w-100' %>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <%= yield %>
+          </div>
+        </div>
+      </div>
+
+      <%= partial "includes/related_category", :locals => {} %>
     </main>
 
     <%= partial "includes/footer" %>

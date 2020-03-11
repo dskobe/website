@@ -18,7 +18,14 @@ helpers do
     sitemap.resources
       .select{ |resource| resource.path.include?("#{path}") }
       .first
+  end
+
+  # Returns all pages under a certain directory.
+  def sub_pages(dir)
+    sitemap.resources.select do |resource|
+      resource.path.start_with?(dir)
     end
+  end
 end
 
 activate :external_pipeline,

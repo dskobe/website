@@ -1,0 +1,23 @@
+<div class="jumbotron jumbotron-fluid mt-5 mb-0 p-0">
+  <div class="container">
+    <div class="row text-center">
+      <%
+        cols = 4
+        items = []
+        sub_pages(current_resource.path.split('/')[0]).each do |item|
+          if item.path != current_resource.path
+            items.push(item)
+          end
+        end
+        items.shuffle.take(cols).each do |resource|
+      %>
+      <div class="col-md-<%= 12/cols %> p-5">
+        <% link_to resource.url, class: 'stretched-link' do %>
+          <%= image_tag resource.data.icon, alt: resource.data.title, class: 'rounded img-fluid mb-2', style: 'height:120px;' %>
+          <p class="lead"><%= resource.data.title %></p>
+        <% end %>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>
