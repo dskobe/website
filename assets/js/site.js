@@ -52,6 +52,7 @@ $(document).ready(function () {
   });
 });
 
+// Cookie Consent
 window.cookieconsent.initialise({
   "palette": {
     "popup": {
