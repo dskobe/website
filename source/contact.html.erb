@@ -1,0 +1,67 @@
+---
+title: "Contact Us"
+icon: "icons/contact.png"
+description: ""
+keywords: []
+banner: "banners/school_01.jpg"
+---
+
+<div class="row">
+  <div class="col-md-7">
+    <h1><%= current_page.data.title %></h1>
+
+    <p>DSK International is easily accessible by car or train (Rokko Liner, Island Center Station), approximately 20 minutes from Sannomiya (Kobe's down-town area) and 35 minutes from Umeda (Osaka's down-town area).</p>
+
+    <h2>Enrolment Enquiries</h2>
+
+    <p>Please email <%= mail_to data.config.contact.mailto, data.config.contact.mailto %>
+      or call <strong>+81 <a href="tel:078 857 9777">(0)78-857-9777</a></strong>
+      to speak to one of our office staff about enrolments.</p>
+    <p>Please visit our <%= link_to 'Admissions', local_path('admissions') %> section of the website for further details.</p>
+
+    <h2 class="mt-4">College Tours</h2>
+
+    <p>DSK International offers guided School tours providing an insight into the school on a normal school day.</p>
+    <p>Bookings are required for a school tour and we kindly ask you make your booking below:</p>
+    <p><%= mail_to data.config.contact.mailto + '?subject=School Tour', 'Book a tour »', class: 'btn btn-lg btn-info', role: 'button' %></p>
+
+    <h2 class="mt-4">Open Events</h2>
+
+    <p>Our Open Events provide a fun and unique opportunity to spend time with current students, parents, teachers and staff. We have a variety of open events happening at our school and attendance is free and bookings usually aren't required. Please see a list of our <%= link_to 'events here', local_path('news') %>.</p>
+
+    <h2 class="mt-4">Open Days</h2>
+
+    <p>Our school has two open days every year: one in March and one in November. This is one of the best opportunities to come and explore our school, meet the staff and get a sense for what life is like at DSKI. Details of the next open day will be available on the <%= link_to 'events page', local_path('news') %> very soon. If you are interested in booking your place at the open day please contact us here:</p>
+    <p><%= mail_to data.config.contact.mailto + '?Subject=Open Day', 'Open Day Enquiry »', class: 'btn btn-lg btn-info', role: 'button' %></p>
+
+    <h2 class="mt-4">General Enquiries</h2>
+
+    <p>If you have any other enquiries or questions about our school please get in touch anytime. You can contact us about anything by email</p>
+    <p class="mb-5"><%= mail_to data.config.contact.mailto + '?Subject=General Enquiry', 'General Enquiry »', class: 'btn btn-lg btn-info', role: 'button' %></p>
+  </div>
+
+  <div class="col-md-4 offset-md-1">
+    <h3>Street Address</h3>
+    <ul class="list-unstyled">
+      <li>DSK International</li>
+      <li>Rokko Island 3-2-8 Koyochonaka</li>
+      <li>Higashinada-ku Kobe city</li>
+    </ul>
+
+    <h3 class="mt-4">School Reception</h3>
+    <ul class="list-unstyled">
+      <li>Yasuyo Masada, Office Manager</li>
+      <li><i class="icon ion-md-call"></i> <%= data.config.contact.phone %></li>
+      <li><i class="icon ion-md-paper"></i> <%= data.config.contact.fax %></li>
+      <li><i class="icon ion-md-mail"></i> <%= mail_to data.config.contact.mailto, data.config.contact.mailto %></li>
+    </ul>
+
+    <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=135.26561915874484%2C34.68514302273645%2C135.27429878711703%2C34.68908646655704&amp;layer=transportmap&amp;marker=34.68711476812728%2C135.2699589729309" style="border: 1px solid gray"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=34.68711&amp;mlon=135.26996#map=18/34.68711/135.26996&amp;layers=T">View Larger Map</a></small>
+
+    <h3 class="mt-4">DSKI on Facebook</h3>
+    <p>For everything social and for updates on our school be sure to like our Facebook page. We are very active and would love to have you as a follower. See you on Facebook!</p>
+    <a href="https://www.facebook.com/dskobe.org">
+      <%= image_tag 'fb_logo.png', alt: 'DSKI on Facebook' %>
+    </a>
+  </div>
+</div>

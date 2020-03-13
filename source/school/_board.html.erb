@@ -1,0 +1,27 @@
+---
+title: "Board"
+icon: "icons/campus.png"
+description: ""
+keywords: []
+banner: "banners/7_header_thin.jpg"
+---
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h1>School Board 2019/2020</h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <% data.board.people.each do |person| %>
+    <div class="col-md-4 mt-3">
+      <h3><%= person.name %></h3>
+      <h5><%= person.title %></h5>
+      <%= image_tag person.image, alt: 'Board Member', class: 'img-fluid d-block w-90' %>
+      <p class="font-weight-bold mt-2">Nationality: <%= person.nationality %></p>
+      <p><%= person.abstract %></p>
+    </div>
+    <% end %>
+  </div>
+</div>

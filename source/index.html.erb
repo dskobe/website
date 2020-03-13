@@ -1,0 +1,128 @@
+---
+title: "International School in Kobe"
+icon: "icons/dsk.png"
+description: ""
+keywords: []
+layout: "startpage"
+---
+
+<%= partial "includes/slider", :locals => {
+  :items => [{
+    :image => 'carousel/img_04.jpg',
+    :link => local_path('about'),
+    :title => 'International Education in Kobe',
+    :active => true
+  },{
+    :image => 'carousel/img_06.jpg',
+    :link => local_path('news'),
+    :title => 'Open Day on February 11th',
+    :disabled => true,
+    :active => false
+  },{
+    :image => 'carousel/img_01.jpg',
+    :link => local_path('about'),
+    :title => 'Lifelong Learning'
+  },{
+    :image => 'carousel/img_02.jpg',
+    :link => local_path('programmes'),
+    :title => 'Our Programmes'
+  },{
+    :image => 'carousel/img_03.jpg',
+    :link => local_path('school/clubs'),
+    :text => 'Join one of our clubs and learn new skills, <br>have fun and get active mentally and physically.',
+    :title => 'DSKI Clubs'
+  },{
+    :image => 'carousel/img_05.jpg',
+    :link => local_path('news'),
+    :title => 'Latest News'
+  },{
+    :image => 'carousel/img_07.jpg',
+    :link => local_path('saturdayschool'),
+    :title => 'Saturday School'
+  }]
+} %>
+
+<div class="container text-center mb-5">
+  <div class="col-md-10 offset-md-1">
+    <p class="lead text-muted">Welcome to DSK International, an International School in Kobe for learners 2-11. We are an IB World School and we strive to foster multilingual, internationally minded students.</p>
+    <p>
+      <a href="/media/prospectus/DSKI_Prospectus_V5.pdf" class="btn btn-outline-secondary btn-lg my-2" target="_blank">Download Prospectus</a>
+    </p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row mt-5 mb-5">
+    <div class="col-md-4">
+      <h2>Our <br>Mission</h2>
+      <p>Our mission is built upon our German heritage and European values and beliefs. As a school community we strive to be lifelong inquirers inspired by and challenged through authentic and meaningful learning experiences.</p>
+      <p><%= link_to 'Find out more', local_path('about'), class: 'stretched-link' %></p>
+    </div>
+    <div class="col-md-4">
+      <h2>One Student - <br>Three Languages</h2>
+      <p>DSK International provides a unique, multilingual education to learners ages 2 to 11. To meet the unique needs of our learners, our school provides curriculum in three languages: German, English and Japanese in our two branches.</p>
+      <p><%= link_to 'Find out more', local_path('about/languages-at-dski'), class: 'stretched-link' %></p>
+    </div>
+    <div class="col-md-4">
+      <h2>A True <br>Community</h2>
+      <p>Education is a task we share with their parents and with the wider community.  We are united in our aim to foster life-long inquirers, who are internationally minded, think critically and are willing to act with integrity and compassion. We celebrate our community.</p>
+      <p><%= link_to 'Find out more', local_path('school'), class: 'stretched-link' %></p>
+    </div>
+  </div>
+
+  <div class="row mt-5 mb-5">
+    <div class="col-md-9">
+      <h2>Why Choose DSK International?</h2>
+      <p class="lead">An International IB school in Kobe for learners from 2 - 11 years<br>
+          Excellent student to teacher ratio: class sizes from 6 - 15 students</p>
+      <p>We provide an environment that nurtures the academic, emotional, social, physical and creative growth of children of all ages, cultural backgrounds and experiences. As an IB World School, we strive to ignite a passion for lifelong learning and a desire to make positive change in the world. We offer three languages (English, German and Japanese), an international curriculum (PYP), a German curriculum (Thüringer Lehrplan), small classes allowing for individual support, a quality music program, swimming lessons and an amazing community.</p>
+      <p>To hear a welcome message from our principal, <%= link_to 'click here', local_path('about/welcome'), class: 'stretched-link' %>.</p>
+    </div>
+    <div class="col-md-3 text-center">
+      <%= image_tag 'ib-world-school-logo.png', alt: data.config.title %>
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron jumbotron-fluid bg-dark" style="padding-bottom:0;padding-top:2rem;">
+  <div class="container">
+    <h2 class="text-light d-sm-none d-md-block">Hear from Past Students</h2>
+
+    <%= partial "includes/voices", :locals => {
+      :items => [{
+        :image => 'people/Natalia.png',
+        :name => 'Natalia',
+        :text => '“Fantastic school. Made a lot of great friends and some of my best memories from school. Really wish I could go back.“'
+      },{
+        :image => 'people/Yoona.png',
+        :name => 'Yoona',
+        :text => '“DSK International always made me feel like I was at home, and all my friends and everyone in school were like my family. It was a very comfortable place to be, and I was always excited to go to school. Also, because it is a small school, I was able to ask questions to my teachers easily which helped me learn a lot.“'
+      },{
+        :image => 'people/Dianne.png',
+        :name => 'Dianne',
+        :text => '“DSKI is such an inspirational school to learn in. I have so much to say, but what I would like to emphasize the most is how the teachers support children to be independent learners through a class called the unit of inquiry. The significance of this teaching style is that children are very motivated and excited to learn, develop knowledge, come up with ideas and seek for solutions.“',
+        :active => true
+      }]
+    } %>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row mt-5 mb-5">
+    <div class="col-md-6 text-center">
+      <%= image_tag 'home_image_prog.jpg', alt: data.config.title, class: 'rounded' %>
+    </div>
+
+    <div class="col-md-5 offset-md-1">
+      <h2>Our Programmes</h2>
+      <p>DSK International offers three programmes for learners ages 2-11: Playgroup, Early Years and Primary Years Programme (PYP).</p>
+      <p><%= link_to 'View overview of programs', local_path('programmes'), class: 'stretched-link' %></p>
+    </div>
+  </div>
+</div>
+
+<%= partial "includes/related_icons", :locals => {
+  :items => ['about/index','about/what-we-offer','admissions/index','school/careers']
+} %>
+
+<%= partial "includes/get_in_touch", :locals => {} %>

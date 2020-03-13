@@ -1,0 +1,136 @@
+---
+title: "What We Offer"
+icon: "icons/offer.png"
+description: ""
+keywords: []
+banner: "banners/10_header_thin.jpg"
+---
+
+<h1><%= current_page.data.title %></h1>
+
+<p class="mt-4">At DSKI we offer so much more than a school. We offer an enjoyable and stimulating journey from one year old up to eleven years old. We strive to develop our students into well-rounded, multilingual global citizens who will have a passion for learning for life and a desire to make a change in the world. </p>
+<p>Under the expert guidance and care of our teachers, your child will flourish in an environment incorporating a wide range of subjects through our programmes, and co-curricular activities.</p>
+<p>We offer a wide range of pursuits, activities and services to make sure your child's development and your family's experience is world-class.</p>
+<span id="languages"></span>
+
+<ul class="list-group list-group-horizontal mb-5">
+  <li class="list-group-item"><%= link_to 'Languages', '#languages' %></li>
+  <li class="list-group-item"><%= link_to 'Facilities', '#facilities' %></li>
+  <li class="list-group-item"><%= link_to 'Performing Arts', '#performingarts' %></li>
+  <li class="list-group-item"><%= link_to 'Physical Education', '#physicaleducation' %></li>
+  <li class="list-group-item"><%= link_to 'Clubs', '#clubs' %></li>
+  <li class="list-group-item"><%= link_to 'Technology', '#technology' %></li>
+</ul>
+
+<div class="container mb-5 mt-5">
+  <div class="row">
+    <div class="col-md-6 pr-5">
+      <p class="lead text-uppercase">Languages</p>
+      <h2>One Student - Three Language</h2>
+      <p>At DSKI we are proud to offer three languages to all of our students: English, German and Japanese. We are a true multilingual school and the only primary school in Japan offering three languages with Japanese as a Foreign Language (JFL) and KOKUGO (native language). Research has proven the many benefits of studying and speaking other languages and we are very happy to offer this to your child.</p>
+      <p><%= link_to 'Find out more here', local_path('about/languages-at-dski') %></p>
+      <span id="facilities"></span>
+    </div>
+    <div class="col-md-6">
+      <%= image_tag 'photos/about_1_800px.jpg', alt: data.config.title, class: 'rounded img-fluid' %>
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-md-6">
+        <%= image_tag 'photos/campus4.jpg', alt: data.config.title, class: 'rounded img-fluid' %>
+      </div>
+      <div class="col-md-6 pl-5">
+        <p class="lead text-uppercase">Facilities</p>
+        <h2>An Award-Winning Eco-Friendly Campus</h2>
+        <p>The unique and eco-friendly DSK International schoolhouse was completed in 2009. It is constructed out of a sustainably sourced timber to create a two story wooden modern school building. The classrooms are wonderfully designed and fully-equipped providing an ideal learning learning space. There is a library, Art room, outdoor sports area and an EAL support room and further rooms to cater for specialist classes and project related work.</p>
+        <p><%= link_to 'Find out more here', local_path('about/campus') %></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 pr-5">
+        <h2>DSKI School Shuttle Bus</h2>
+        <p>At DSKI we offer a daily school shuttle bus running from a range of destinations in Kobe. The pick up and return locations are discussed every September and February with parents to ensure the shuttle bus is as convenient as possible. We understand the morning and afternoon school run can be difficult so we hope our shuttle bus can make families' lives a little easier.</p>
+        <p><%= link_to 'Click here to download the 2018 timetable', '/media/schedules/School-Bus-Schedule-全体-2018.pdf' %></p>
+        <span id="performingarts"></span>
+      </div>
+      <div class="col-md-6">
+        <%= image_tag 'photos/about_5_800px.jpg', alt: data.config.title, class: 'rounded img-fluid' %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container mb-5">
+  <div class="row">
+    <div class="col-md-6 mb-5">
+      <%= image_tag 'photos/boy-learning-violin.jpg', alt: data.config.title, class: 'rounded img-fluid' %>
+    </div>
+    <div class="col-md-6 pl-5">
+      <p class="lead text-uppercase">Performing Arts</p>
+      <h2>Learn an Instrument through our Music Programme</h2>
+      <p>At DSKI, students have the opportunity to learn a classical instrument that can help children strengthen their creativity and self-expression. Music can enrich a child's educational experience and we are proud to facilitate this at DSKI. We offer Piano lessons to the Early Years students and Piano and Violin lessons to the Primary Years Students. Being involved in the arts and music is wonderful for children's development and we hope to welcome your child to our music lessons.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 pr-5">
+      <h2>Develop Creativity through our Art Club</h2>
+      <p>The Art Club is open to all students who are interested in developing their artistic talents through art activities. The goal of the club is to help students develop confidence in expressing themselves artistically and creatively. They will have the opportunity to create a portfolio of their artwork as well as a chance to have some of their work exhibited in the school.</p>
+      <span id="physicaleducation"></span>
+    </div>
+    <div class="col-md-6">
+      <%= image_tag 'photos/art-picture.jpg', alt: data.config.title, class: 'rounded img-fluid' %>
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <%= image_tag 'photos/about_3_800px.jpg', alt: data.config.title, class: 'rounded img-fluid' %>
+      </div>
+      <div class="col-md-6 pl-5">
+        <p class="lead text-uppercase">Physical Education</p>
+        <h2>Swimming lessons at DSKI</h2>
+        <p>At DSKI, all students take swimming lessons until age 10. Swimming is a skill for life and we place a strong emphasis on safety and fun in the water. The swimming lessons are incorporated into the timetable and students get used to this as part of their weekly schedule. We have fully-trained instructors teaching swimming at the Kobe Municipal pool which is a short bus ride away. Students are required to bring swimwear and a towel on their swim days.</p>
+        <p><%= link_to 'Find out more here', local_path('about/physical-education') %></p>
+        <span id="clubs"></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container mb-5">
+  <div class="row">
+    <div class="col-md-6 pr-5">
+      <p class="lead text-uppercase">Clubs</p>
+      <h2>After School Extracurricular Clubs at DSKI</h2>
+      <p>At DSKI we offer a range of after school extracurricular​ ​activities​. From performing arts, sports, crafts, calligraphy, coding, cooking and Makers Club we hope we can offer something stimulating, fun and healthy for your child. There is a minimum number of students required in order for the club to run so please let us know the club you would like to join and hopefully we can run it.</p>
+      <p><%= link_to 'Find out more here', local_path('school/clubs') %></p>
+      <span id="technology"></span>
+    </div>
+    <div class="col-md-6">
+      <%= image_tag 'photos/Makers-Camp2.jpg', alt: data.config.title, class: 'rounded img-fluid' %>
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron jumbotron-fluid mb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+          <%= image_tag 'photos/computer-shot.jpg', alt: data.config.title, class: 'rounded img-fluid' %>
+      </div>
+      <div class="col-md-6 pl-5">
+        <p class="lead text-uppercase">Technology</p>
+        <h2>Information Communication Technology at DSKI</h2>
+        <p>Our commitment to the 21st Century Learning and ICT skills development has led the school to invest in a range of new multimedia technologies and hardware. These skills, concepts and competences will be embedded in the Units of Inquiry to enhance learning and presentation opportunities. Hand in hand with these practical skills will be an appropriate Digital Literacy and Citizenship curriculum to explicitly teach the students about Internet safety, security and the issues related to the use of Social Media Technologies.</p>
+        <p><%= link_to 'Find out more here', local_path('about/technology') %></p>
+      </div>
+    </div>
+  </div>
+</div>

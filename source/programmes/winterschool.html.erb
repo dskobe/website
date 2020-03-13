@@ -1,0 +1,74 @@
+---
+title: "Winter School"
+icon: "icons/noun/coding.png"
+description: ""
+keywords: []
+banner: "banners/1_header_thin.jpg"
+---
+
+<h1>Sports and Art Winter Camp</h1>
+
+<p>Our 2018 Winter Camp is fast approaching and we are looking forward to taking part in a range of sports and art activities for all!</p>
+<p>We are excited to see some familiar faces and also to meet some new friends. Please join us!</p>
+
+<h3>Dates:</h3>
+<ul class="list-unstyled">
+  <li>December 17th to 21st</li>
+  <li>Hours: 9:00am - 3:30pm</li>
+</ul>
+
+<h3>Ages:</h3>
+<ul class="list-unstyled">
+  <li>5 - 11 years old</li>
+</ul>
+
+<h3>Costs:</h3>
+<ul class="list-unstyled">
+  <li>1 day: 12,000円</li>
+  <li>Full Week: 50,000円</li>
+</ul>
+
+<p class="mt-3">See below for some of the activities we will be taking part in.</p>
+
+<div class="row text-center mt-5">
+  <div class="col-md-12">
+    <h2>Activities</h2>
+  </div>
+</div>
+<div class="row text-center">
+  <div class="col-md-4 p-3">
+    <%= image_tag 'icons/noun/teamwork.png', alt: data.config.title, class: 'rounded img-fluid', style: 'height:80px;' %>
+    <p class="lead">Team Games</p>
+  </div>
+  <div class="col-md-4 p-3">
+    <%= image_tag 'icons/noun/painting.png', alt: data.config.title, class: 'rounded img-fluid', style: 'height:80px;' %>
+    <p class="lead">Creative Planning</p>
+  </div>
+  <div class="col-md-4 p-3">
+    <%= image_tag 'icons/noun/playground.png', alt: data.config.title, class: 'rounded img-fluid', style: 'height:80px;' %>
+    <p class="lead">Obstacle Courses</p>
+  </div>
+</div>
+<div class="row text-center">
+  <div class="col-md-4 offset-md-2 p-3">
+    <%= image_tag 'icons/noun/castle.png', alt: data.config.title, class: 'rounded img-fluid', style: 'height:80px;' %>
+    <p class="lead">Model Craft</p>
+  </div>
+  <div class="col-md-4 p-3">
+    <%= image_tag 'icons/noun/disco.png', alt: data.config.title, class: 'rounded img-fluid', style: 'height:80px;' %>
+    <p class="lead">End of Camp Disco</p>
+  </div>
+</div>
+
+<div class="row mt-5">
+  <div class="col-md-4">
+    <%= image_tag 'icons/noun/application.png', alt: data.config.title, class: 'rounded img-fluid mb-2' %>
+    <p>Interested in joining us? Simply fill in the below form and book your place.</p>
+  </div>
+
+  <div class="col-md-8">
+    <%= partial "includes/carousel", :locals => {
+      :items => ['photos/Students-enjoying-winter-camp.jpg','photos/Winter-camp-fun.jpg','photos/wintercamp_play.jpg']
+    } %>
+  </div>
+</div>
