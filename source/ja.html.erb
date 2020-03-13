@@ -8,3 +8,127 @@ i18n: "ja"
 ---
 
 <h1><%= current_page.data.title %></h1>
+
+<p class="mt-4">DSKIでは、通常の学校以上のものを提供しています。1歳から11歳のお子様に楽しく刺激的な活動を提供しています。お子様が将来、生涯学習に情熱を抱き、世界を変えたいという強い意欲を持つような多言語で豊かな国際人に育っていくよう努力していきます。教師の熟練した指導ケアの下、お子様は我が校のプログラムや課外活動を通して、幅広いテーマを取り入れた環境で育っていくことになります。お子様の成長とご家族の経験が世界レベルとなるよう、幅広い探求学習、活動、サービスを提供しています。</p>
+<span id="languages"></span>
+
+<ul class="list-group list-group-horizontal mb-5">
+  <li class="list-group-item"><%= link_to '言語', '#languages' %></li>
+  <li class="list-group-item"><%= link_to '施設', '#facilities' %></li>
+  <li class="list-group-item"><%= link_to '舞台芸術', '#performingarts' %></li>
+  <li class="list-group-item"><%= link_to '体育', '#physicaleducation' %></li>
+  <li class="list-group-item"><%= link_to '課外活動', '#clubs' %></li>
+  <li class="list-group-item"><%= link_to 'テクノロジー', '#technology' %></li>
+</ul>
+
+<div class="container mb-5 mt-5">
+  <div class="row">
+    <div class="col-md-6 pr-5">
+      <p class="lead text-uppercase">言語</p>
+      <h2>1人の生徒 – 3言語</h2>
+      <p>DSKIでは英語、ドイツ語と日本語の3言語でのプログラムを全生徒に提供できることを誇りに思っています。我が校は正真正銘の多言語教育校であり、外国語としての日本語(JFL)と国語(母国語としての日本語)を提供する日本で唯一の小学校です。複数の言語を勉強し、話すことの有益性は研究で証明されており、お子様へ多言語教育を提供できることを非常に嬉しく思います。</p>
+      <p><%= link_to '詳細はこちら', '/about/languages-at-dski' %></p>
+      <span id="facilities"></span>
+    </div>
+    <div class="col-md-6">
+      <%= image_tag 'photos/about_1_800px.jpg', alt: data.config.site_name, class: 'rounded img-fluid' %>
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-md-6">
+        <%= image_tag 'photos/campus4.jpg', alt: data.config.site_name, class: 'rounded img-fluid' %>
+      </div>
+      <div class="col-md-6 pl-5">
+        <p class="lead text-uppercase">施設</p>
+        <h2>受賞エコフレンドリーキャンパス</h2>
+        <p>ユニークで環境に優しい神戸ドイツ学院インターナショナルスクールの校舎は2009年に完成しました。木造の近代的な2階建ての校舎を建設するため持続可能な木材で建てられています。教室は素晴らしい設計であり、理想的な学習空間が完備されています。図書館、アートルーム、屋外スポーツエリア、EALサポートルーム、専門授業やプロジェクト作業を行うための特別室があります。</p>
+        <p><%= link_to '詳細はこちら', '/about/school-campus' %></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 pr-5">
+        <h2>DSKIのスクールバス</h2>
+        <p>DSKIでは神戸の様々な場所からスクールバスを毎日運行しています。バス利用の利便性が良くなるよう、乗降場所に関してご家族と一緒に毎年9月、2月にご相談させていただきます。午前と午後の学校送迎がご都合により困難なこともあるかと思いますので、スクールバスでご家族様の生活を少しでも快適になれば幸いです。</p>
+        <p><%= link_to '2017年運行表をこちらでダウンロードしてください', '/media/schedules/School-Bus-Schedule-全体-Oct-2017.pdf' %></p>
+        <span id="performingarts"></span>
+      </div>
+      <div class="col-md-6">
+        <%= image_tag 'photos/about_5_800px.jpg', alt: data.config.site_name, class: 'rounded img-fluid' %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container mb-5">
+  <div class="row">
+    <div class="col-md-6 mb-5">
+      <%= image_tag 'photos/boy-learning-violin.jpg', alt: data.config.site_name, class: 'rounded img-fluid' %>
+    </div>
+    <div class="col-md-6 pl-5">
+      <p class="lead text-uppercase">舞台芸術</p>
+      <h2>音楽プログラムを通して楽器を学ぶ</h2>
+      <p>DSKIでは生徒が創造性と自己表現の力を付けるために、クラシック楽器を学ぶ機会があります。音楽はお子様の学習経験を豊かにする可能性を持ち、我が校でこのようなプログラムを設けていることを嬉しく思っています。幼稚部生徒はピアノ、初等部生徒はピアノとバイオリンレッスンがあります。芸術や音楽と関わることは子供の成長にとって非常に良いものであり、皆さまの音楽プログラムへの参加を楽しみにしています。</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 pr-5">
+      <h2>アートクラブを通して創造性を育む</h2>
+      <p>アートクラブは芸術活動を通して芸術的才能を育むことに関心をお持ちの全生徒に開放しています。クラブの目標は生徒が芸術的、創造的に自分自身を表現する自信をもつことです。生徒は自身の作品集を作り、学校で作品を展示する機会があります。</p>
+      <span id="physicaleducation"></span>
+    </div>
+    <div class="col-md-6">
+      <%= image_tag 'photos/art-picture.jpg', alt: data.config.site_name, class: 'rounded img-fluid' %>
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <%= image_tag 'photos/about_3_800px.jpg', alt: data.config.site_name, class: 'rounded img-fluid' %>
+      </div>
+      <div class="col-md-6 pl-5">
+        <p class="lead text-uppercase">体育</p>
+        <h2>DSKIでの水泳レッスン</h2>
+        <p>DSKIでは10歳までの全生徒が水泳レッスンを受けています。水泳は生涯においてのスキルであり、水中での安全と楽しさを学ぶことを重視しています。水泳レッスンは時間割に組み込まれており、日々のレッスンの一部となっていきます。バスで短時間の距離にある神戸市営プールで熟練インストラクターが水泳を教えています。水泳の日は水着とタオルを持参してください。</p>
+        <span id="clubs"></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container mb-5">
+  <div class="row">
+    <div class="col-md-6 pr-5">
+      <p class="lead text-uppercase">課外活動</p>
+      <h2>DSKIでのアフタースクールケアプログラム</h2>
+      <p>舞台芸術、スポーツ、クラフト、ベーキング、ボードゲーム、日本の歴史や地理を学ぶなど、魅力的で楽しく健康的な活動をお子様に提供したいと考えています。それぞれの課外活動を実施するためのの最小催行人数がありますので参加をご希望の方はご連絡をお願いします。</p>
+      <p><%= link_to '詳細はこちらをご覧ください', '/media/schedules/Extracurricular-Activities-Sept-2017-Term-1.pdf' %></p>
+      <span id="technology"></span>
+    </div>
+    <div class="col-md-6">
+      <%= image_tag 'photos/about_6_800px.jpg', alt: data.config.site_name, class: 'rounded img-fluid' %>
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron jumbotron-fluid mb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+          <%= image_tag 'photos/computer-shot.jpg', alt: data.config.site_name, class: 'rounded img-fluid' %>
+      </div>
+      <div class="col-md-6 pl-5">
+        <p class="lead text-uppercase">テクノロジー</p>
+        <h2>DSKIの情報通信技術</h2>
+        <p>21世紀の教育とICT技術の発達に向けた強い決意のもと、我が校は各種の新しいマルチメディア技術やハードウェアの運用を行っていました。お子様の学習や発表の機会をより一層高めるため、これらの技術、発想や能力は探求の単元の中に組み込まれていくことになります。これら実践的なスキルを身につけることは、適切なデジタルリテラシーや市民社会での振舞い方を育むこととなり、インターネットの安全性、セキュリティそしてソーシャルメディアテクノロジの使用に関連する諸問題について指導することができます。</p>
+        <p><%= link_to '詳細はこちら', '/about/technology' %></p>
+      </div>
+    </div>
+  </div>
+</div>
