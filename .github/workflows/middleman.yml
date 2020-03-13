@@ -41,7 +41,7 @@ jobs:
         AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
       run: |
         pip install awscli --upgrade pip
-        aws s3 sync --sse --delete public s3://${{ secrets.AWS_S3_BUCKET_ID }}/ --acl public-read --exclude 'index.html'
+        aws s3 sync --sse --delete public s3://${{ secrets.AWS_S3_BUCKET_ID }}/ --acl public-read
         aws configure set preview.cloudfront true
         aws cloudfront create-invalidation --distribution-id ${{ secrets.AWS_CLOUDFRONT_DISTRIBUTION_ID }} --paths '/*'
-        
+
