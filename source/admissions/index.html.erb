@@ -19,7 +19,7 @@ banner: "banners/8_header_thin.jpg"
   </div>
   <div class="col p-4 d-flex flex-column position-static">
     <h3><button type="button" class="btn btn-outline-secondary btn-sm d-lg-none">Step One</button> Make an Enquiry</h3>
-    <p class="card-text mb-auto">Please email <%= mail_to data.config.contact.mailto, data.config.contact.mailto %> or call +81 (0)78-857-9777 to speak to one of our admission office staff about enrolments. We will organize a date for you to come in and visit us or have a conference call for overseas applicants.</p>
+    <p class="card-text mb-auto">Please email <%= mail_to data.config.contact.mailto, data.config.contact.mailto %> or call +81 (0)78-857-9777 to speak to one of our admission office staff about enrolments. We will organize a date for you to <%= link_to "come in and visit us", "contact" %> or have a conference call for overseas applicants.</p>
   </div>
 </div>
 
@@ -29,7 +29,7 @@ banner: "banners/8_header_thin.jpg"
   </div>
   <div class="col p-4 d-flex flex-column position-static">
     <h3><button type="button" class="btn btn-outline-secondary btn-sm d-lg-none">Step Two</button> Pre-Admission Questionnaire</h3>
-    <p class="card-text mb-auto">Please submit this to the school office. It provides us with some basic information in advance of us meeting you, so we can have a more focused conversation on how to best help your child.</p>
+    <p class="card-text mb-auto">Please <%= link_to "submit this", "#downloads" %> to the school office. It provides us with some basic information in advance of us meeting you, so we can have a more focused conversation on how to best help your child.</p>
   </div>
 </div>
 
@@ -40,7 +40,7 @@ banner: "banners/8_header_thin.jpg"
   <div class="col p-4 d-flex flex-column position-static">
     <h3><button type="button" class="btn btn-outline-secondary btn-sm d-lg-none">Step Three</button> Visit Us</h3>
     <div class="text-muted">In Japan</div>
-    <p class="card-text mb-auto">Please come to visit us and have a guided school tour. You can meet with the principal and also get to meet the teachers, see how our programme works and ask any questions you may have. You'll learn a lot about DSK International!</p>
+    <p class="card-text mb-auto">Please come to <%= link_to "visit us and have a guided school tour", "contact" %>. You can meet with the principal and also get to meet the teachers, see how our programme works and ask any questions you may have. You'll learn a lot about DSK International!</p>
 
     <div class="text-muted mt-3">Outside Japan</div>
     <p class="card-text mb-auto">We are very happy to have video conference calls or phone calls with interested families. If you are not in Japan yet, we would be happy to set up an appointment at a time that is convenient to you.</p>
@@ -55,7 +55,7 @@ banner: "banners/8_header_thin.jpg"
     <h3><button type="button" class="btn btn-outline-secondary btn-sm d-lg-none">Step Four</button> Submit an Application Form and Report Cards</h3>
     <p class="card-text mb-auto">After the initial visit or call we would need from you:</p>
     <ul class="mb-0">
-      <li>Application Form</li>
+      <li><%= link_to "Application Form", "#downloads" %></li>
       <li>Three of the most recent report cards from your current school/kindergarten.<br><span class="small">Please include translations if the documents are in a language other than English, German, French or Japanese.</span></li>
     </ul>
     <span>or</span>
@@ -99,7 +99,7 @@ banner: "banners/8_header_thin.jpg"
     </ul>
   </div>
 </div>
-
+<span id="downloads"></span>
 <h2 class="mt-5">Document Downloads</h2>
 <ul class="">
   <li>Pre-admission Questionnaire (for <%= link_to 'Early Years', '/media/forms/Pre-admission-Questionnaire-KG-2020.pdf' %>; for <%= link_to 'Primary Years', '/media/forms/Pre-admission-Questionnaire-Primary-School-2020.pdf' %>. Playgroup doesn't require)</li>
