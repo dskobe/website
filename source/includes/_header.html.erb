@@ -11,19 +11,25 @@
     <div class="collapse navbar-collapse flex-column" id="navbarCollapse">
       <ul class="navbar-nav d-flex ml-auto">
         <% if (current_resource.data.i18n != "ja") %>
-        <li class="nav-item pr-2">
+        <li class="nav-item pr-1">
           <%= link_to '<span class="flag-icon flag-icon-jp"></span> 日本語', local_path('ja'), class: 'nav-link' %>
         </li>
         <% end %>
 
         <% if (current_resource.data.i18n != "de") %>
-        <li class="nav-item pr-2">
+        <li class="nav-item pr-1">
           <%= link_to '<span class="flag-icon flag-icon-de"></span> Deutsch', local_path('de'), class: 'nav-link' %>
         </li>
         <% end %>
 
-        <% if ['de', 'ja'].include? current_resource.data.i18n %>
-        <li class="nav-item pr-2">
+        <% if (current_resource.data.i18n != "fr") %>
+        <li class="nav-item pr-1">
+          <%= link_to '<span class="flag-icon flag-icon-fr"></span> Français', local_path('fr'), class: 'nav-link' %>
+        </li>
+        <% end %>
+
+        <% if ['de','fr','ja'].include? current_resource.data.i18n %>
+        <li class="nav-item pr-1">
           <%= link_to '<span class="flag-icon flag-icon-gb"></span> English', local_path(''), class: 'nav-link' %>
         </li>
         <% end %>
