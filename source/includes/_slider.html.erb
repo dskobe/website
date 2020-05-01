@@ -17,7 +17,7 @@
             <div class="carousel-caption text-center">
               <h1 class="display-4 mb-3 strokeme"><%= item[:title] %></h1>
               <p><%= item[:text] %></p>
-              <p><%= link_to data.config.slider.button, item[:link], class: 'btn btn-lg btn-primary', role: 'button' %></p>
+              <p><%= link_to t('slider.button'), item[:link], class: 'btn btn-lg btn-primary', role: 'button' %></p>
             </div>
           </div>
         </div>
@@ -27,10 +27,10 @@
 
   <a class="carousel-control-prev" href="#topCarousel" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only"><%= data.config.slider.previous %></span>
+    <span class="sr-only"><%= t('slider.previous') %></span>
   </a>
   <a class="carousel-control-next" href="#topCarousel" role="button" data-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only"><%= data.config.slider.next %></span>
+    <span class="sr-only"><%= t('slider.next') %></span>
   </a>
 </div>

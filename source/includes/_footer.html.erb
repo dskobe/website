@@ -2,11 +2,11 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        <p><%= data.config.footer.school %></p>
-        <p><%= data.config.footer.address %></p>
+        <p><%= t('footer.school') %></p>
+        <p><%= t('footer.address') %></p>
 
-        <%= image_tag 'ib-world-school-logo_footer.png', alt: data.config.title %>
-        <%= image_tag 'DAS_1500_transparent_V2.png', alt: data.config.title, style: 'margin-left:20px;'  %>
+        <%= image_tag 'ib-world-school-logo_footer.png', alt: t('title') %>
+        <%= image_tag 'DAS_1500_transparent_V2.png', alt: t('title'), style: 'margin-left:20px;'  %>
       </div>
 
       <div class="col-md-3">
@@ -30,7 +30,7 @@
     </div>
 
     <hr>
-    <p class="float-right"><a href="#" class="text-light"><%= data.config.footer.backtotop %></a></p>
-    <p><%= data.config.footer.copyright %></p>
+    <p class="float-right"><a href="#" class="text-light"><%= t('footer.backtotop') %></a></p>
+    <p><%= t('footer.copyright') %></p>
   </div>
 </footer>
