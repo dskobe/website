@@ -4,7 +4,7 @@
       <%
         cols = 6
         items = []
-        sub_pages(current_resource.path.split('/')[0]).each do |item|
+        sub_pages(I18n.locale.to_s + '/' + current_resource.path.split('/')[1]).each do |item|
           if item.path != current_resource.path
             items.push(item)
           end
