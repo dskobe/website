@@ -2,8 +2,8 @@ activate :directory_indexes
 
 activate :i18n do |i18n|
   i18n.path = "/:locale/"
-  i18n.langs = [:en, :ja]
-  i18n.lang_map = { :en => :en, :ja => :ja }
+  i18n.langs = [:en, :ja, :de, :fr]
+  i18n.lang_map = { :en => :en, :ja => :ja, :fr => :fr, :de => :de }
   i18n.templates_dir = "content"
   i18n.mount_at_root = "en"
 end
@@ -19,19 +19,26 @@ page '/*.txt', layout: false
 helpers do
   # Returns a localized path with leading language code
   def local_path(path, options={})
-    # lang = options[:language] ? options[:language] : I18n.locale.to_s
-    # "/#{lang}/#{path}"
-    "/#{path}"
+    lang = options[:language] ? options[:language] : I18n.locale.to_s
+
+    # Fallback for not localized languages
+    if ['de','fr'].include? lang
+      lang = 'en'
+    end
+
+    "/#{lang}/#{path}"
   end
 
   def local_resource(path, options={})
-    # lang = options[:language] ? options[:language] : I18n.locale.to_s
-    # sitemap.resources
-    #   .select{ |resource| resource.path.include?("#{lang}/#{path}") }
-    #   .first
-    # end
+    lang = options[:language] ? options[:language] : I18n.locale.to_s
+
+    # Fallback for not localized languages
+    if ['de','fr'].include? lang
+      lang = 'en'
+    end
+
     sitemap.resources
-      .select{ |resource| resource.path.include?("#{path}") }
+      .select{ |resource| resource.path.include?("#{lang}/#{path}") }
       .first
   end
 

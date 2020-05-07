@@ -10,14 +10,50 @@ ja:
     backtotop: "トップに戻る"
 
   menu:
-    about: "当学院について"
-    offer: "提供するもの"
-    news: "カレンダー"
-    admissions: "入学"
-    programmes: "プログラム"
-    saturday: "サタデースクール"
-    school: "コミュニティ"
     contact: "お問い合わせ"
+    admissions: "入学"
+    overview: "概要"
+
+    about:
+      top: "当学院について"
+      welcome: "Welcome"
+      offer: "提供するもの"
+      languages: "DSKIの言語"
+      physical: "Physical Education"
+      technology: "テクノロジー"
+      campus: "キャンパス"
+
+    news:
+      top: "カレンダー"
+      events: "イベントカレンダー"
+      school: "スクールカレンダー"
+
+    programmes:
+      top: "プログラム"
+      playgroup: "プレイグループ"
+      early: "幼稚教育"
+      pyp: "初等教育"
+      summer: "サマースクール"
+      winter: "Winter School"
+      parent: "Parent Programme"
+
+    school:
+      top: "コミュニティ"
+      clubs: "Clubs"
+      pta: "PTA"
+      alumni: "卒業生"
+      jobs: "Careers"
+      sponsors: "スポンサー"
+
+    saturday:
+      top: "サタデースクール"
+      english: "英語プログラム"
+      german: "ドイツ語プログラム"
+      french: "フランス語プログラム"
+      move: "ムーブ・トウ・ラーン"
+      calendar: "カレンダー"
+      fees: "諸費用"
+      admission: "入学"
 
   slider:
     button: "さらに詳しく"

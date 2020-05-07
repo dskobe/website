@@ -10,27 +10,27 @@
 
     <div class="collapse navbar-collapse flex-column" id="navbarCollapse">
       <ul class="navbar-nav d-flex ml-auto">
-        <% if (current_resource.data.i18n != "ja") %>
+        <% if (I18n.locale.to_s != "ja") %>
         <li class="nav-item pr-1">
-          <%= link_to '<span class="flag-icon flag-icon-jp"></span> 日本語', local_path('ja'), class: 'nav-link' %>
+          <%= link_to '<span class="flag-icon flag-icon-jp"></span> 日本語', current_page.url.sub(I18n.locale.to_s,'ja'), class: 'nav-link' %>
         </li>
         <% end %>
 
-        <% if (current_resource.data.i18n != "de") %>
+        <% if (I18n.locale.to_s != "de") %>
         <li class="nav-item pr-1">
-          <%= link_to '<span class="flag-icon flag-icon-de"></span> Deutsch', local_path('de'), class: 'nav-link' %>
+          <%= link_to '<span class="flag-icon flag-icon-de"></span> Deutsch', '/de', class: 'nav-link' %>
         </li>
         <% end %>
 
-        <% if (current_resource.data.i18n != "fr") %>
+        <% if (I18n.locale.to_s != "fr") %>
         <li class="nav-item pr-1">
-          <%= link_to '<span class="flag-icon flag-icon-fr"></span> Français', local_path('fr'), class: 'nav-link' %>
+          <%= link_to '<span class="flag-icon flag-icon-fr"></span> Français', '/fr', class: 'nav-link' %>
         </li>
         <% end %>
 
-        <% if ['de','fr','ja'].include? current_resource.data.i18n %>
+        <% if (I18n.locale.to_s != "en") %>
         <li class="nav-item pr-1">
-          <%= link_to '<span class="flag-icon flag-icon-gb"></span> English', local_path(''), class: 'nav-link' %>
+          <%= link_to '<span class="flag-icon flag-icon-gb"></span> English', current_page.url.sub(I18n.locale.to_s,'en'), class: 'nav-link' %>
         </li>
         <% end %>
 
