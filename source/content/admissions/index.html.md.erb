@@ -6,12 +6,15 @@ keywords: []
 banner: "banners/8_header_thin.jpg"
 ---
 
-<h1><%= current_page.data.title %> Process</h1>
+# <%= current_page.data.title %> Process
 
-<p>DSK International has three branches the International, German and French branch.</p>
-<p>For learners in the International Branch the language of instruction is English, children also have the opportunity to learn Japanese and German. For learners in the German Branch, math and language classes are conducted in German, and all other classes are conducted in English except for the Japanese lessons.</p>
-<p>German and International Branch students enjoy inquiry-based learning together as a whole class to encourage community building.</p>
-<p>If you are unsure about languages at DSK International, please see our <%= link_to 'languages page', local_path('about/languages-at-dski') %> for more detailed information.</p>
+DSK International has three branches: the International, German and French branch.
+
+For learners in the International Branch the language of instruction is English, children also have the opportunity to learn Japanese and German. For learners in the German Branch, math and language classes are conducted in German, and all other classes are conducted in English except for the Japanese lessons.
+
+German and International Branch students enjoy inquiry-based learning together as a whole class to encourage community building.
+
+If you are unsure about languages at DSK International, please see our <%= link_to 'languages page', local_path('about/languages-at-dski') %> for more detailed information.
 
 <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative mt-4">
   <div class="col-auto d-none d-lg-block">
@@ -71,7 +74,7 @@ banner: "banners/8_header_thin.jpg"
   </div>
   <div class="col p-4 d-flex flex-column position-static">
     <h3><button type="button" class="btn btn-outline-secondary btn-sm d-lg-none">Step Five</button> Attend a Trial Day</h3>
-    <p class="card-text mb-auto">We don't use entrance exams but we do like to meet the student, get to know them and see if they would be happy in our school.</p>
+    <p class="card-text mb-auto">We don't use entrance exams but we do like to meet the students, get to know them and see if they would be happy in our school.</p>
 
     <div class="text-muted mt-3">In Japan</div>
     <p class="card-text mb-auto">The trial for students aged 2 - 5 years old is from 9.00am to 1.00pm. For students aged 6  and over it is 8.30am to 3.30pm. Teachers will observe the student and assess their language skills, academic level and general aptitude.<br>
@@ -82,7 +85,7 @@ banner: "banners/8_header_thin.jpg"
   </div>
 </div>
 
-<div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+<div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative mb-5">
   <div class="col-auto d-none d-lg-block">
     <svg class="bd-placeholder-img" width="230" height="300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Step Six"><title>Step Six</title><rect width="100%" height="100%" fill="#fec10d"></rect><text x="15%" y="50%" fill="#333333" dy=".3em" font-size="34" font-weight="4">Step Six</text></svg>
   </div>
@@ -99,17 +102,18 @@ banner: "banners/8_header_thin.jpg"
     </ul>
   </div>
 </div>
+
 <span id="downloads"></span>
-<h2 class="mt-5">Document Downloads</h2>
-<ul class="">
-  <li>Pre-admission Questionnaire (for <%= link_to 'Early Years', '/media/forms/Pre-admission-Questionnaire-KG-2020.pdf' %>; for <%= link_to 'Primary Years', '/media/forms/Pre-admission-Questionnaire-Primary-School-2020.pdf' %>. Playgroup doesn't require)</li>
-  <li><%= link_to 'Application Form', '/media/forms/Application-Form-2019.pdf' %></li>
-  <li><%= link_to 'Registration Form', '/media/forms/Registration-Form-2018-2019.pdf' %></li>
-  <li><%= link_to 'Declaration Form', '/media/forms/Declaration-Form-2018-2019.pdf' %></li>
-  <li><%= link_to 'Student Information Form', '/media/forms/Student-Information-Form-2018-2019.pdf' %></li>
-  <li><%= link_to 'Physical Examination Form (by doctor)', '/media/forms/Physical-examination-form-2018-2019.pdf' %></li>
-  <li><%= link_to 'Vaccination records (if not submitted at a trial)', '/media/fees/Fee-Structure-20192020.pdf' %></li>
-</ul>
+
+## Document Downloads
+
+* Pre-admission Questionnaire (for <%= link_to 'Early Years', '/media/forms/Pre-admission-Questionnaire-KG-2020.pdf' %>; for <%= link_to 'Primary Years', '/media/forms/Pre-admission-Questionnaire-Primary-School-2020.pdf' %>. Playgroup doesn't require)
+* <%= link_to 'Application Form', '/media/forms/Application-Form-2019.pdf' %>
+* <%= link_to 'Registration Form', '/media/forms/Registration-Form-2018-2019.pdf' %>
+* <%= link_to 'Declaration Form', '/media/forms/Declaration-Form-2018-2019.pdf' %>
+* <%= link_to 'Student Information Form', '/media/forms/Student-Information-Form-2018-2019.pdf' %>
+* <%= link_to 'Physical Examination Form (by doctor)', '/media/forms/Physical-examination-form-2018-2019.pdf' %>
+* Vaccination records (if not submitted at a trial)
 
 <div class="row mb-4 mt-4">
   <div class="col-md-4"><%= mail_to data.config.contact.mailto + '?Subject=My application form is attached', 'Submit Application', class: 'btn btn-lg btn-outline-info btn-block', role: 'button' %></div>

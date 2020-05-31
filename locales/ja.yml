@@ -6,7 +6,7 @@ ja:
   footer:
     school: "DSK International<br>Deutsche Schule Kobe International"
     address: "兵庫県神戸市東灘区<br>向洋町中3丁目2-8"
-    copyright: "DSK International | Deutsche Schule Kobe International // Copyright © 2019"
+    copyright: "DSK International | Deutsche Schule Kobe International // Copyright © 2020"
     backtotop: "トップに戻る"
 
   menu:
@@ -59,3 +59,7 @@ ja:
     button: "さらに詳しく"
     previous: "前"
     next: "次"
+
+  contact:
+    text: "より詳細な情報が必要な場合は、学院にご連絡ください。"
+    button: "お問い合わせ »"

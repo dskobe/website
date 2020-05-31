@@ -1,0 +1,65 @@
+---
+title: "お問い合わせ"
+icon: "icons/contact.png"
+description: ""
+keywords: []
+banner: "banners/school_01.jpg"
+layout: "sidebar"
+---
+
+# <%= current_page.data.title %>
+
+神戸ドイツ学院インターナショナルは、お車又は電車（六甲ライナー・アイランドセ ンター駅より徒歩3分、三ノ宮(神戸の中心街)から約20分、梅田（大阪の中心街)から約３５分）で簡単にアクセスできます。
+
+## 入学に関するお問い合わせ
+
+<%= mail_to data.config.contact.mailto, data.config.contact.mailto %> までメールにて ご連絡いただくか、**+81 <a href="tel:078 857 9777">(0)78-857-9777</a>**にお電話いただければスタッフが対応いたします。
+
+詳細については当サイトの<%= link_to '入学ページ', local_path('admissions') %>をご覧ください。
+
+## 学校見学
+
+DSKIでは通常の授業日に学院内をご案内いたします。
+見学にはご予約が必要です。下記よりご予約をお願いします。
+
+<%= mail_to data.config.contact.mailto + '?subject=学校見学', '学校見学予約 »', class: 'btn btn-lg btn-info', role: 'button' %>
+
+## オープンイベント
+
+オープンイベントでは、在校生、保護者、教師、スタッフと時間を過ごすための楽しくユニークな機会をご用意しています。当学院では様々なオープンイベントを開催しており、参加は無料で通常予約は必要ありません。こちらの<%= link_to 'イベントリスト', local_path('news') %>をご覧ください。
+
+## オープンディ
+
+当学院では年2回オープンディを開催しています(5月、11月に各1回)。学院にお越しいただき、実際の様子をご覧いただき、スタッフと接して、DSKIでの生活がどのようなものなのかを知っていただく最高の機会です。次回オープンディの詳細はすぐに<%= link_to 'イベントページ', local_path('news') %>でご確認いただけるようになります。オープンディのご予約を希望される場合、こちらまでご連絡ください。
+
+<%= mail_to data.config.contact.mailto + '?Subject=オープンディ', 'お問い合わせ »', class: 'btn btn-lg btn-info', role: 'button' %>
+
+## 一般的なお問い合わせ
+
+学院に関するその他のお問い合わせやご質問がある場合は、いつでもご連絡いただけます。Eメールにて何でもお問い合わせください。
+
+<%= mail_to data.config.contact.mailto + '?Subject=一般的なお問い合わせ', 'お問い合わせ »', class: 'btn btn-lg btn-info', role: 'button' %>
+
+<% content_for :sidebar do %>
+<h3>住所</h3>
+<ul class="list-unstyled">
+  <li>神戸ドイツ学院インターナショナル</li>
+  <li>兵庫県神戸市東灘区向洋町中3丁目2-8</li>
+</ul>
+
+<h3 class="mt-4">受付</h3>
+<ul class="list-unstyled">
+  <li>オフィスマネージャー：政田　安代</li>
+  <li><i class="icon ion-md-call"></i> <%= data.config.contact.phone %></li>
+  <li><i class="icon ion-md-paper"></i> <%= data.config.contact.fax %></li>
+  <li><i class="icon ion-md-mail"></i> <%= mail_to data.config.contact.mailto, data.config.contact.mailto %></li>
+</ul>
+
+<iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=135.26561915874484%2C34.68514302273645%2C135.27429878711703%2C34.68908646655704&amp;layer=transportmap&amp;marker=34.68711476812728%2C135.2699589729309" style="border: 1px solid gray"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=34.68711&amp;mlon=135.26996#map=18/34.68711/135.26996&amp;layers=T">大きな地図で見る</a></small>
+
+<h3 class="mt-4">DSKI on Facebook</h3>
+<p>学校での活動や新着情報についてFacebookに投稿していきます。頻繁に更新しており、あなたがフォロワーになってくれることを歓迎します。Facebookでお会いしましょう！</p>
+<a href="https://www.facebook.com/dskobe.org">
+  <%= image_tag 'fb_logo.png', alt: 'DSKI on Facebook' %>
+</a>
+<% end %>

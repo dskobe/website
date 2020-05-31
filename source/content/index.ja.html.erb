@@ -1,17 +1,17 @@
 ---
 title: "神戸のインターナショナルスクール"
+icon: "icons/dsk.png"
 description: ""
 keywords: []
-url:
-  legacy: "/?lang=ja"
+layout: "startpage"
 ---
 
 <%= partial "includes/slider", :locals => {
   :items => [{
-    :image => 'carousel/img_01.jpg',
+    :image => 'carousel/img_04.jpg',
     :link => local_path('about'),
-    :title => '共に知的・道徳的・身体的に学ぶ',
-    :active => true
+    :title => '神戸でのインターナショナルエデュケーション',
+    :active => false
   },{
     :image => 'carousel/img_06.jpg',
     :link => local_path('news'),
@@ -19,9 +19,18 @@ url:
     :disabled => false,
     :active => true
   },{
+    :image => 'carousel/img_01.jpg',
+    :link => local_path('about'),
+    :title => '生涯学習'
+  },{
     :image => 'carousel/img_02.jpg',
     :link => local_path('programmes'),
     :title => '私たちのプログラム'
+  },{
+    :image => 'carousel/img_03.jpg',
+    :link => local_path('school/clubs'),
+    :text => '私たちのクラブに参加して、新しいスキルを学び、楽しんで、精神的および肉体的に活動する',
+    :title => 'DSKIクラブ'
   },{
     :image => 'carousel/img_05.jpg',
     :link => local_path('news'),
@@ -33,44 +42,43 @@ url:
   }]
 } %>
 
-<section class="jumbotron text-center" style="background-color:inherit;">
-  <div class="container">
-    <div class="col-md-10 offset-md-1">
-      <p class="lead text-muted">2-11歳の学習者のための神戸にある国際バカロレア認定校</p>
-    </div>
+<div class="container text-center mb-5">
+  <div class="col-md-10 offset-md-1">
+    <p class="lead text-muted">神戸の2-11歳の学習者のためのインターナショナルスクール、神戸ドイツ学院インターナショナルへようこそ。当学院はIBワールドスクールであり、多言語、国際志向の生徒たちの育成に努めています</p>
+    <p>
+      <a href="/media/prospectus/DSKI_Prospectus_V5.pdf" class="btn btn-outline-secondary btn-lg my-2" target="_blank">Download Prospectus</a>
+    </p>
   </div>
-</section>
+</div>
 
 <div class="container">
-  <div class="row">
+  <div class="row mt-5 mb-5">
     <div class="col-md-4">
       <h2>私たちの使命</h2>
-      <p>私たちの任務は、ドイツの歴史や伝統とヨーロッパの価値観と信念に基づいています。 学校のコミュニティとして、有意義な真の学習経験を通して刺激鼓舞された生涯に渡る探求者になれるよう努めています。</p>
-      <p><%= link_to 'さらに詳しく', local_path('about'), class: 'stretched-link' %></p>
+      <p>私たちの任務は、ドイツの歴史や伝統とヨーロッパの価値観と信念に基づいています。 スクールコミュニティとして、有意義な真の学習経験を通して刺激鼓舞された生涯に渡る探求者になれるよう努めています。</p>
+      <p><%= link_to t('slider.button'), local_path('about'), class: 'stretched-link' %></p>
     </div>
     <div class="col-md-4">
       <h2>1人の生徒 – 3言語</h2>
-      <p>神戸ドイツ学院インターナショナルスクールは2歳から11歳までの学習者に独自の多言語教育を提供しています。学習者それぞれのニーズを満たすために、2つのプログラムでは英語、ドイツ語、日本語の3言語でカリキュラムを提供しています。</p>
-      <p><%= link_to 'さらに詳しく', local_path('about/languages-at-dski'), class: 'stretched-link' %></p>
+      <p>神戸ドイツ学院インターナショナルでは2歳から11歳までの学習者に独自の多言語教育を提供しています。学習者それぞれのニーズを満たすために、当学院のプログラムでは英語、ドイツ語、日本語の3言語でカリキュラムを２つのセクションで提供しています。</p>
+      <p><%= link_to t('slider.button'), local_path('about/languages-at-dski'), class: 'stretched-link' %></p>
     </div>
     <div class="col-md-4">
       <h2>真のコミュニティ</h2>
       <p>教育とは、生徒の両親や更に広いコミュニティと共有する課題です。私たちは学習者に国際性と客観性、誠実さと思いやりをもって行動する生涯の探求心を育成することを目指します。私たちのコミュニティに敬意を表します。</p>
-      <p><%= link_to 'さらに詳しく', local_path('school'), class: 'stretched-link' %></p>
+      <p><%= link_to t('slider.button'), local_path('school'), class: 'stretched-link' %></p>
     </div>
   </div>
 
-  <hr class="featurette-divider">
-
-  <div class="row mb-5">
+  <div class="row mt-5 mb-5">
     <div class="col-md-9">
-      <h2>なぜ神戸ドイツ学院を選ぶのか？</h2>
+      <h2なぜ神戸ドイツ学院インターナショナルを選ぶのか？</h2>
       <p class="lead">2-11歳の学習者のための神戸にある国際バカロレア認定校<br>
-        生徒と教員の優れた人数比率:教員1人当たり6-15人のクラス編成</p>
+      生徒と教員の優れた人数比率:教員1人当たり6-15人のクラス編成</p>
       <p>私たちは、あらゆる年齢や文化的な背景や経験を持っている子供たちの学問的、感情的、社会的、身体的、創造的な成長を育む環境を提供します。国際バカロレア認定校として、生涯学習への情熱と世界に良い変化を起こす強い意志を喚起するよう努めています。3つの言語(英語、ドイツ語、日本語)、国際カリキュラム(PYP)、ドイツ語(チューリンゲン)、個々へのサポートを可能にする少人数授業、質の高い音楽プログラム、水泳レッスンと素敵なコミュニティを提供します。</p>
     </div>
     <div class="col-md-3 text-center">
-      <%= image_tag 'ib-world-school-logo.png', alt: data.config.site_name %>
+      <%= image_tag 'ib-world-school-logo.png', alt: data.config.title %>
     </div>
   </div>
 </div>
@@ -101,23 +109,19 @@ url:
 <div class="container">
   <div class="row mt-5 mb-5">
     <div class="col-md-6 text-center">
-      <%= image_tag 'home_image_prog.jpg', alt: data.config.site_name, class: 'rounded' %>
+      <%= image_tag 'home_image_prog.jpg', alt: data.config.title, class: 'rounded' %>
     </div>
 
     <div class="col-md-5 offset-md-1">
-      <h2>私たちの提供プログラム</h2>
-      <p>神戸ドイツ学院インターナショナルスクールでは、2-11歳にプレイグループ、早期教育、初等教育(PYP)の3つのプログラムを提供しています。</p>
-      <p><%= link_to '詳細はこちら', local_path('programmes'), class: 'stretched-link' %></p>
+      <h2私たちの提供プログラム</h2>
+      <p>神戸ドイツ学院インターナショナルでは、2-11歳の子供たちに、プレイグループ、早期教育、初等教育(PYP)の3つのプログラムを提供しています。</p>
+      <p><%= link_to 'プログラムの概要', local_path('programmes'), class: 'stretched-link' %></p>
     </div>
   </div>
 </div>
 
-<div class="container mb-5">
-  <%= image_tag 'program_chart.png', alt: data.config.site_name, class: 'rounded img-fluid' %>
-</div>
-
 <%= partial "includes/related_icons", :locals => {
-  :items => ['about/what-we-offer','admissions/index','about/campus','contact']
+  :items => ['about/index','about/what-we-offer','admissions/index','school/careers']
 } %>
 
-<%= partial "includes/ja/get_in_touch", :locals => {} %>
+<%= partial "includes/get_in_touch", :locals => {} %>

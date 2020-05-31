@@ -1,0 +1,122 @@
+---
+title: "入学手続き"
+icon: "icons/admissions.png"
+description: ""
+keywords: []
+banner: "banners/8_header_thin.jpg"
+---
+
+# <%= current_page.data.title %>
+
+神戸ドイツ学院インターナショナルにはインターナショナル、ドイツ語、フランス語の３つのセクションがあります。
+
+インターナショナルセクションで使用されるのは英語です。生徒たちは日本語とドイツ語も学びます。ドイツ語セクションでは算数と言語の授業がドイツ語で教授されます。その他のクラスは日本語の授業以外は英語で行われます。
+
+ドイツ語とインターナショナルセクションの生徒たちは、探求を基本とする学習をクラス全体でいっしょに楽しみ、コミュニティを作り上げていきます。
+
+DSKIでの言語についてご不明な点があれば、<%= link_to '言語のページ', local_path('about/languages-at-dski') %>にて詳細をご覧いただけます。
+
+
+<div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative mt-4">
+  <div class="col-auto d-none d-lg-block">
+    <svg class="bd-placeholder-img" width="230" height="170" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="ステップ ステップ１"><title>ステップ１</title><rect width="100%" height="100%" fill="#fec10d"></rect><text x="15%" y="50%" fill="#333333" dy=".3em" font-size="34" font-weight="4">ステップ１</text></svg>
+  </div>
+  <div class="col p-4 d-flex flex-column position-static">
+    <h3><button type="button" class="btn btn-outline-secondary btn-sm d-lg-none">ステップ１</button> 問い合わせ</h3>
+    <p class="card-text mb-auto">ご入学については、Eメールにて <%= mail_to data.config.contact.mailto, data.config.contact.mailto %> か +81 (0)78-857-9777 にお電話いただき、事務局のスタッフに<%= link_to "お問い合わせください", local_path('contact') %>。見学にお越しいただく日を設定させていただきます。海外在住の方にはこちらからご連絡をさせていただきます。</p>
+  </div>
+</div>
+
+<div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+  <div class="col-auto d-none d-lg-block">
+    <svg class="bd-placeholder-img" width="230" height="170" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="ステップ２"><title>ステップ２</title><rect width="100%" height="100%" fill="#fec10d"></rect><text x="15%" y="50%" fill="#333333" dy=".3em" font-size="34" font-weight="4">ステップ２</text></svg>
+  </div>
+  <div class="col p-4 d-flex flex-column position-static">
+    <h3><button type="button" class="btn btn-outline-secondary btn-sm d-lg-none">ステップ２</button> Pre-Admission Questionnaire（入学前アンケート）</h3>
+    <p class="card-text mb-auto">学院事務局にご<%= link_to "提出ください", "#downloads" %>。実際にお会いする前に基本的な情報を得ることができますので、お子供に最も適した事柄についてお話を進めることができます。</p>
+  </div>
+</div>
+
+<div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+  <div class="col-auto d-none d-lg-block">
+    <svg class="bd-placeholder-img" width="230" height="300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="ステップ３"><title>ステップ３</title><rect width="100%" height="100%" fill="#fec10d"></rect><text x="15%" y="50%" fill="#333333" dy=".3em" font-size="34" font-weight="4">ステップ３</text></svg>
+  </div>
+  <div class="col p-4 d-flex flex-column position-static">
+    <h3><button type="button" class="btn btn-outline-secondary btn-sm d-lg-none">ステップ３</button> 学院訪問</h3>
+    <div class="text-muted">日本にお住まいの方</div>
+    <p class="card-text mb-auto"><%= link_to "学院にお越しいただき", local_path('contact') %>、校内をご案内させていただきます。学院長や教師たちとお会いいただき、学習プログラムがどのように作用するのかをご覧いただいたり、ご質問をしていただいたりすることができます。学院について多くを知っていただくことができます！</p>
+
+    <div class="text-muted mt-3">海外にお住まいの方</div>
+    <p class="card-text mb-auto">電話やビデオコールにてご案内をさせていただきます。ご都合に合わせてアポイントメントをお取りいたします</p>
+  </div>
+</div>
+
+<div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+  <div class="col-auto d-none d-lg-block">
+    <svg class="bd-placeholder-img" width="230" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="ステップ４"><title>ステップ４</title><rect width="100%" height="100%" fill="#fec10d"></rect><text x="15%" y="50%" fill="#333333" dy=".3em" font-size="34" font-weight="4">ステップ４</text></svg>
+  </div>
+  <div class="col p-4 d-flex flex-column position-static">
+    <h3><button type="button" class="btn btn-outline-secondary btn-sm d-lg-none">ステップ４</button> </h3>
+    <p class="card-text mb-2">ご訪問いただくかお電話等でお話をさせていただいた後で、以下のものが必要となります:</p>
+    <ul class="mb-0">
+      <li><%= link_to "Application Form（申請書）", "#downloads" %></li>
+      <li>現在通われている学校 / 幼稚園からの成績表・最近の3回分<br><span class="small">もし成績表の記載が英語、ドイツ語、フランス語以外の言語の場合は翻訳文をお願いします。</span></li>
+    </ul>
+    <span>または</span>
+    <ul>
+      <li>Confidential School Report Form（コンフィデンシャル スクールリポート フォーム）Early Years Recommendation Form （アーリーイヤーズ レコメンデーション フォーム）</li>
+    </ul>
+  </div>
+</div>
+
+<div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+  <div class="col-auto d-none d-lg-block">
+    <svg class="bd-placeholder-img" width="230" height="400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="ステップ５"><title>ステップ５</title><rect width="100%" height="100%" fill="#fec10d"></rect><text x="15%" y="50%" fill="#333333" dy=".3em" font-size="34" font-weight="4">ステップ５</text></svg>
+  </div>
+  <div class="col p-4 d-flex flex-column position-static">
+    <h3><button type="button" class="btn btn-outline-secondary btn-sm d-lg-none">ステップ５</button> トライアルへの参加</h3>
+    <p class="card-text mb-auto">入学試験はございませんが、お子様にお会いして、お子様について知り、お子様が当学院で楽しくお過ごしいただくことができるかを見させていただきます</p>
+
+    <div class="text-muted mt-3">日本にお住まいの方</div>
+    <p class="card-text mb-auto">2 – 5 歳のお子様のトライアルは9.00am - 1.00pmです。6歳以上のお子様は8.30am - 3.30pmです。 教師たちはお子様の言語能力、学力レベル、一般的な適性などを観察し見極めます。トライアルの後にインタビューを行うか、学院事務局からお電話にてお子様のトライアルの結果をお知らせさせていただきます。</p>
+
+    <div class="text-muted mt-3">海外にお住まいの方</div>
+    <p class="card-text mb-auto">入学に先立って、全てのご家族がお子様をトライアルに参加させることができるわけではないことは理解しております。海外在住の方に関してはこのステップを省いて、成績表と推薦状にて入学に関する判断をさせていただきます。</p>
+  </div>
+</div>
+
+<div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative mb-5">
+  <div class="col-auto d-none d-lg-block">
+    <svg class="bd-placeholder-img" width="230" height="300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="ステップ６"><title>ステップ６</title><rect width="100%" height="100%" fill="#fec10d"></rect><text x="15%" y="50%" fill="#333333" dy=".3em" font-size="34" font-weight="4">ステップ６</text></svg>
+  </div>
+  <div class="col p-4 d-flex flex-column position-static">
+    <h3><button type="button" class="btn btn-outline-secondary btn-sm d-lg-none">ステップ６</button> 入学</h3>
+    <p class="card-text mb-auto">学院への入学が許可されお子様の入学を決定されたら、以下の書類が必要です:</p>
+    <ul>
+      <li>登録フォーム（Registration Form</li>
+      <li>宣誓フォーム（Declaration Form）</li>
+      <li>生徒インフォメーション フォーム（Student Information Form）</li>
+      <li>予防接種記録（Vaccination records if not submitted at a trial）</li>
+      <li>医師による健康診断表（Physical Examination Form by doctor）</li>
+      <li>パスポート写真ページ（A copy of the student’s passport photo page）</li>
+    </ul>
+  </div>
+</div>
+
+<span id="downloads"></span>
+
+## 書類のダウンロード
+
+* 入学前アンケート（Pre-admission Questionnaire）（<%= link_to '幼稚部Early Years', '/media/forms/Pre-admission-Questionnaire-KG-2020.pdf' %>;  <%= link_to '小学部 Primary Years', '/media/forms/Pre-admission-Questionnaire-Primary-School-2020.pdf' %>. プレイグループは不要）
+* <%= link_to '申請書（Application Form）', '/media/forms/Application-Form-2019.pdf' %>
+* <%= link_to '宣誓フォーム（Declaration Form）', '/media/forms/Declaration-Form-2018-2019.pdf' %>
+* <%= link_to '生徒インフォメーション フォーム（Student Information Form）', '/media/forms/Student-Information-Form-2018-2019.pdf' %>
+* 予防接種記録（Vaccination records if not submitted at a trial
+* <%= link_to '医師による健康診断表（Physical Examination Form by doctor）', '/media/forms/Physical-examination-form-2018-2019.pdf' %>
+* パスポート写真ページ（A copy of the student’s passport photo page）
+
+<div class="row mb-4 mt-4">
+  <div class="col-md-4"><%= mail_to data.config.contact.mailto + '?Subject=My application form is attached', '申込書の提出', class: 'btn btn-lg btn-outline-info btn-block', role: 'button' %></div>
+</div>
+
+<p class="lead mt-4">ご不明な点がございましたら、お気軽に<%= link_to "お問い合わせください", local_path('contact') %>。</p>

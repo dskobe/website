@@ -1,11 +1,11 @@
 <div class="jumbotron jumbotron-fluid text-center bg-warning" style="margin-bottom:0;">
   <div class="container">
-    <p><%= text ||= 'Need more information? Make an inquiry to the school.' %></p>
+    <p><%= text ||= t('contact.text') %></p>
     <p>
       <% if (defined?(mailto)).nil? %>
-        <%= link_to button ||= 'Get in touch »', link ||= local_path('contact'), class: 'btn btn-lg btn-primary', role: 'button' %>
+        <%= link_to button ||= t('contact.button'), link ||= local_path('contact'), class: 'btn btn-lg btn-primary', role: 'button' %>
       <% else %>
-        <%= mail_to mailto, button ||= 'Get in touch »', class: 'btn btn-lg btn-primary', role: 'button' %>
+        <%= mail_to mailto, button ||= t('contact.button'), class: 'btn btn-lg btn-primary', role: 'button' %>
       <% end %>
     </p>
   </div>
