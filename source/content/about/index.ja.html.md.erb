@@ -1,0 +1,62 @@
+---
+title: "当学院について"
+icon: "icons/dsk.png"
+description: ""
+keywords: []
+banner: "banners/5_header_thin.jpg"
+---
+
+# <%= current_page.data.title %>
+
+神戸ドイツ学院インターナショナル（DSKI）は2歳から11歳のお子様を対象とした海外ドイツ人学校でありIBカリキュラム校です。DSKIではドイツの伝統を軸に、学習者と世界の豊かな多様性を受け入れている優れた革新的な教育を提供しています。生徒が知的、道徳的、身体的に学ぶことを確実にするため、全人的な教育アプローチをしています。
+
+私たちの任務は、ドイツの歴史や伝統とヨーロッパの価値観と信念に基づいています。 学校のコミュニティとして、私たちは本物の有意義な学習経験を通して刺激鼓舞された、生涯に渡る尋問者になるよう努めています。 優れた教育を提供することに全力で取り組み、国際性、客観性、多様性を重んじ、誠実さと思いやりをもって行動する意欲を育んでいます。
+
+### 言語のページをご覧ください
+
+<ul class="list-group list-group-horizontal mb-5 mt-3">
+  <li class="list-group-item"><%= link_to '<span class="flag-icon flag-icon-de"></span> ドイツ語', '/de' %></li>
+  <li class="list-group-item"><%= link_to '<span class="flag-icon flag-icon-fr"></span> フランス語', '/fr' %></li>
+  <li class="list-group-item"><%= link_to '<span class="flag-icon flag-icon-gb"></span> 英語', '/en' %></li>
+</ul>
+
+## DSKIが提供していること
+
+<div class="row align-items-center mb-5">
+  <div class="col-md-6">
+    <h3>1人の生徒 – 3言語</h3>
+    <p>DSKIでは生徒たちは英語、ドイツ語と日本語の3言語を学びます。お子様に素晴らしい人生のスタートを与えてあげてはいかがでしょうか。</p>
+    <p><%= link_to t('slider.button'), local_path('about/languages-at-dski'), class: 'stretched-link' %></p>
+  </div>
+  <div class="col-md-6">
+    <%= image_tag 'photos/about_1_800px.jpg', alt: '1人の生徒 – 3言語', class: 'img-fluid d-block w-100' %>
+  </div>
+</div>
+
+<div class="row align-items-center mb-5">
+  <div class="col-md-6">
+    <%= image_tag 'photos/about_3_800px.jpg', alt: 'DSKIでの水泳レッスン', class: 'img-fluid d-block w-100' %>
+  </div>
+  <div class="col-md-6">
+    <h3>DSKIでの水泳レッスン</h3>
+    <p>DSKIでは10歳までの全生徒が水泳レッスンを受けています。水泳は生涯においてのスキルであり、水中での安全と楽しさを学ぶことを重視しています。</p>
+  </div>
+</div>
+
+<div class="row align-items-center mb-5">
+  <div class="col-md-6">
+    <h3>DSKIで楽器を学ぶ</h3>
+    <p>DSKIでは生徒が創造性と自己表現の力を付けるために、楽器を学ぶ機会があります。音楽はお子様の学習経験を豊かにしてくれます。我が校でこのようなプログラムを設けていることを誇りに思っています。</p>
+  </div>
+  <div class="col-md-6">
+    <%= image_tag 'photos/about_2_800px.jpg', alt: 'DSKIで楽器を学ぶ', class: 'img-fluid d-block w-100' %>
+  </div>
+</div>
+
+<div class="row text-center mb-5">
+  <div class="col-md-8 offset-md-2">
+    <h3 class="mt-4">DSKI フェイスブック</h3>
+    <p>学校での活動や新着情報についてFacebookに投稿していきます。頻繁に更新しているので、あなたがフォロワーになってくれると嬉しいです。</p>
+  </div>
+  <div class="col-md-4 offset-md-4"><%= link_to 'DSKI フェイスブック', 'https://www.facebook.com/dskobe.org', class: 'btn btn-lg btn-outline-info btn-block', role: 'button' %></div>
+</div>
