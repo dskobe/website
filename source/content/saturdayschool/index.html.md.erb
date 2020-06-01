@@ -1,0 +1,116 @@
+---
+title: "Saturday School"
+icon: "icons/dsk.png"
+description: ""
+keywords: []
+banner: "banners/7_header_thin.jpg"
+---
+
+# <%= current_page.data.title %>
+
+Saturday school at DSK International is a Saturday morning school open to children with English, German or French speaking backgrounds from the ages of 5 years to 12 years.
+
+There are three regular programmes: <%= link_to 'English', local_path('saturdayschool/english-program'), class: 'font-weight-bold' %>, <%= link_to 'German', local_path('saturdayschool/german-program'), class: 'font-weight-bold' %> and <%= link_to 'French', local_path('saturdayschool/french-program'), class: 'font-weight-bold' %> (Language Based Programs) and one learning and movement based programme: <%= link_to 'Move to Learn', local_path('saturdayschool/move-to-learn'), class: 'font-weight-bold' %>. The 2020 – 2021 year programs start in September 2020. Applications are mainly open from February to June but are also accepted during other months of the year.
+
+We offer unique and educational learning programs not only in English, but in three languages: English, German and French all under one roof. Our teachers in each program are native or basically native, experienced, qualified and or professional language teachers.
+
+Our English, German and French programs are designed to primarily meet the demand from parents who desire a comprehensive language based growth program for their children. The program is structured to the specific needs of bilingual/trilingual children so as to help the children enhance or master their skills in the chosen language.
+
+The school year consists of 30 weeks (30 class days) divided into 2 terms of 15 class days each. Lessons are based on a school proven curriculum designed according to the students’ year level and competency.
+
+We hope to provide an opportunity not only to the children but also to the parents to become a part of the foreign community with their child joining our Saturday School.
+
+Please click below for more information about each language based programme:
+
+<div class="row mb-5">
+  <div class="col-md-4"><%= link_to 'English Programme', local_path('saturdayschool/english-program'), class: 'btn btn-lg btn-outline-info btn-block', role: 'button' %></div>
+  <div class="col-md-4"><%= link_to 'German Programme', local_path('saturdayschool/german-program'), class: 'btn btn-lg btn-outline-info btn-block', role: 'button' %></div>
+  <div class="col-md-4"><%= link_to 'French Programme', local_path('saturdayschool/french-program'), class: 'btn btn-lg btn-outline-info btn-block', role: 'button' %></div>
+</div>
+
+## Move to Learn© (Australian based program)
+
+Please note this program is not a language based program but a learning based movement and activity program.
+
+The primary objective of this new program is to help raise every child’s level of:
+
+* Self-confidence
+* Concentration
+* Appropriate behaviour
+* Spirit of challenging themselves to do things (even those they don’t like or are not interested in)
+* Coordination and communication between the brain and body
+
+These are all part of essential criteria for any child’s future growth, learning and education.
+
+**The uniqueness of this program:**
+
+* It will be conducted primarily in English but Japanese will also be used.
+* It will have an original curriculum created by our Saturday school coordinator Mr. Cecil Burton that includes fun filled movements, activities, music, songs, games, play, arts and crafts, etc.
+* Any child who is between the ages of 5 ~12 can join, there will be one class only.
+* **Special needs children are especially welcome (conditions would apply).**
+* Children without any English ability will also be accepted into this program.
+
+Please note applications are being accepted now and the programme will only be run with a minimum of 6 students. For further details please click below:
+
+<div class="row mb-5">
+  <div class="col-md-4"><%= link_to 'Move to Learn', local_path('saturdayschool/move-to-learn'), class: 'btn btn-lg btn-outline-info btn-block', role: 'button' %></div>
+</div>
+
+## How to Enrol
+
+**English School / Move to Learn**
+
+<dl class="row">
+  <dt class="col-sm-1 text-right">Step 1</dt>
+  <dd class="col-sm-11">Enquire with the school and ask any questions you may have.</dd>
+
+  <dt class="col-sm-1 text-right">Step 2</dt>
+  <dd class="col-sm-11">Submit your <%= link_to 'application form', data.forms.saturday.apply.en %>. The best time for submission is from <strong>March 20th until June 30th</strong> because we will be conducting interviews for prospective students in July. You can also apply at any other time during the year and we will try our best to accommodate your child but cannot guarantee your child a place. Your child would also need to attend a Trial Lesson first.</dd>
+
+  <dt class="col-sm-1 text-right">Step 3</dt>
+  <dd class="col-sm-11">Attend an interview to determine the student’s English proficiency and assess the most suitable class for your child. The Saturday School classes are divided by ability, not by age.</dd>
+
+  <dt class="col-sm-1 text-right">Step 4</dt>
+  <dd class="col-sm-11">Accept your place, be sure to make payment to ensure your child's place and then start Saturday School.</dd>
+</dl>
+
+**German / French school**
+
+<dl class="row">
+  <dt class="col-sm-1 text-right">Step 1</dt>
+  <dd class="col-sm-11">Enquire with the school and ask any questions you have.</dd>
+
+  <dt class="col-sm-1 text-right">Step 2</dt>
+  <dd class="col-sm-11">Submit your application form (<%= link_to 'German', data.forms.saturday.apply.de %>, <%= link_to 'French', data.forms.saturday.apply.fr %>). The best time for submission is from <strong>March 20th until June 30th</strong> because we will be setting up the schedule and also confirming children for classes starting in September 2020. You can also apply at any other time during the year and we will try our best to accommodate your child but cannot guarantee your child a place. Your child would also need to attend a Trial Lesson first.</dd>
+
+  <dt class="col-sm-1 text-right">Step 3</dt>
+  <dd class="col-sm-11">The coordinator will contact you via email to set up a Trial Lesson date.</dd>
+
+  <dt class="col-sm-1 text-right">Step 4</dt>
+  <dd class="col-sm-11">The student attends the trial lesson. The coordinator and teacher will meet with parents after class to discuss the student’s performance during the class.</dd>
+
+  <dt class="col-sm-1 text-right">Step 5</dt>
+  <dd class="col-sm-11">Parents will be informed on the day if the student has been accepted. If so, accept your place, be sure to make your payment and then start Saturday School.</dd>
+</dl>
+
+### Application Forms
+
+* <%= link_to 'English School - Online Application Form', data.forms.saturday.apply.en %>
+* <%= link_to 'German School - Application for trial day', data.forms.saturday.apply.de %>
+* <%= link_to 'French School - Application for trial day', data.forms.saturday.apply.fr %>
+* <%= link_to 'Move to Learn - Online Application Form', data.forms.saturday.apply.move %>
+
+### Contact Details for Enrollment
+
+We want to assist you in any way we can. Our Enrolments Office is open Monday-Friday 8.00am–4.00pm.
+
+Cecil Burton, *Saturday School Coordinator*<br>
+Telephone: [090-2859-7075](tel:09028597075)<br>
+Email: <%= mail_to 'saturday.coordinator@dskobe.org' %>
+
+Yasuyo Masada, *Head of Enrolments / Office Manager*<br>
+Telephone: [078-857-9777](tel:0788579777)<br>
+Fax: [078-857-9775](fax:0788579775)<br>
+Email: <%= mail_to data.config.contact.mailto %>
+
+<p class="lead mt-4">Still have questions about Saturday School? Please <%= mail_to "saturday.coordinator@dskobe.org?Subject=Enquiry about Saturday School", "get in touch" %>.</p>
