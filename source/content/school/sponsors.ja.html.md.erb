@@ -1,0 +1,49 @@
+---
+title: "スポンサー"
+icon: "icons/sponsors.png"
+description: ""
+keywords: []
+banner: "banners/2_header_thin.jpg"
+---
+
+# <%= current_page.data.title %>
+
+神戸ドイツ学院インターナショナルスクールは、以下の企業さま/団体さまよりて多くのご支援をいただき、深く御礼申し上げます。ご支援やご寄付は、質の高い教育の提供に役立っています。
+
+スポンサーシップをご希望いただける場合は[marketing@dskobe.org](mailto:marketing@dskobe.org)までご連絡ください。
+
+<h2 class="mt-5">ゴールドレベル</h2>
+<div class="container">
+<% data.sponsors.gold.each do |item| %>
+  <div class="row">
+    <div class="col-md-6 mt-5 pr-5">
+      <p><%= link_to item.name.ja, item.website, class: 'lead font-weight-bold' %></p>
+      <p><%= item.abstract.ja %></p>
+    </div>
+    <div class="col-md-6">
+    <% link_to item.website do %>
+      <%= image_tag item.image, alt: item.name, class: 'img-fluid d-block w-100' %>
+    <% end %>
+    </div>
+  </div>
+<% end %>
+</div>
+
+<h2 class="mt-5">ブロンズレベル</h2>
+<div class="container">
+  <div class="row">
+  <% data.sponsors.bronze.each do |item| %>
+    <div class="col-md-6">
+      <p><%= link_to item.name.ja, item.website, class: 'lead font-weight-bold' %></p>
+      <p><%= item.abstract.ja %></p>
+    </div>
+  <% end %>
+  </div>
+</div>
+
+<h2 class="mt-5">サポーター</h2>
+<ul>
+<% data.sponsors.supporter.each do |item| %>
+  <li><%= link_to item.name.ja, item.website %></li>
+<% end %>
+</ul>

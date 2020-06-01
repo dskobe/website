@@ -1,0 +1,32 @@
+---
+title: "Alumni"
+icon: "icons/alumni.png"
+description: ""
+keywords: []
+banner: "banners/4_header_thin.jpg"
+---
+
+# <%= current_page.data.title %>
+
+**What happens to DSKI kids after graduation?**
+
+We are very proud of our DSKI Alumni. While the students are at DSKI we love watching them grow academically, socially and emotionally. When the students leave we are confident we have provided them with an excellent education which will help them excel and to continue achieving in life. We are very happy to say that 90% of students are accepted to their 1st choice Kansai secondary school which we think is amazing.
+
+### Meet some of our Alumni
+
+<% data.alumni.each do |item| %>
+<div class="row mt-4">
+  <div class="col-md-3">
+    <%= image_tag item.photo, alt: item.name, class: 'img-fluid d-block w-100' %>
+  </div>
+
+  <div class="col-md-9">
+    <h4><%= item.name.en %></h4>
+    <p><strong>Age: </strong><%= item.age %> years old</p>
+    <p><strong>Current school: </strong><%= item.school.en %></p>
+    <p><strong>Extracurricular Activities: </strong><%= item.activities.en %></p>
+    <p><strong>Future Dream: </strong><%= item.dream.en %></p>
+    <p><strong>What would you like to tell people about DSKI?</strong><br><%= item.message.en %></p>
+  </div>
+</div>
+<% end %>

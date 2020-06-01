@@ -1,0 +1,32 @@
+---
+title: "卒業生"
+icon: "icons/alumni.png"
+description: ""
+keywords: []
+banner: "banners/4_header_thin.jpg"
+---
+
+# <%= current_page.data.title %>
+
+**DSKI卒業後はどうなるの？**
+
+私たちはDSKIの卒業生を非常に誇りに思っています。DSKI在学中に、学問的、社会的、精神的に彼らが成長していく姿を見るのが大好きです。卒業時には、これからの社会の中で彼らが秀でて様々なことを成し遂げることに役立つ教育を提供してきたと自負しています。驚くべきことに卒業生の90％は第一希望の中学校に進学しています。
+
+### 卒業生紹介
+
+<% data.alumni.each do |item| %>
+<div class="row mt-4">
+  <div class="col-md-3">
+    <%= image_tag item.photo, alt: item.name, class: 'img-fluid d-block w-100' %>
+  </div>
+
+  <div class="col-md-9">
+    <h4><%= item.name.ja %></h4>
+    <p><strong>年齢： </strong><%= item.age %>歳</p>
+    <p><strong>現在の学校： </strong><%= item.school.ja %></p>
+    <p><strong>特別課題活動： </strong><%= item.activities.ja %></p>
+    <p><strong>将来の夢： </strong><%= item.dream.ja %></p>
+    <p><strong>DSKIについて伝えたいことはありますか？</strong><br><%= item.message.ja %></p>
+  </div>
+</div>
+<% end %>

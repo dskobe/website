@@ -1,31 +1,71 @@
-- name: "Lisa"
+- name:
+    en: "Lisa"
+    ja: "リサ"
   photo: "people/lisa_alumni.jpg"
   age: 15
-  school: "OIS"
-  activities: "World Scholar Cup"
-  dream: "I'm not sure yet, but I do want to go to college to learn more about archeology."
-  message: "It is a really great school. Since it is small you always have to be around the same people, and people that you might not like. But you get chances to become friends with the people you don't like. I can say with confidence that the 6 years I spent at DSKI was amazing, and that I would recommend this school to everyone who is interested."
+  school:
+    en: "OIS"
+    ja: "OIS（関西学院大阪インターナショナルスクール）"
+  activities:
+    en: "World Scholar Cup"
+    ja: "World Scholar Cup（WSC）"
+  dream:
+    en: "I'm not sure yet, but I do want to go to college to learn more about archeology."
+    ja: "まだはっきりとはしていませんが、考古学を学ぶために大学に進学したいと思います。"
+  message:
+    en: "It is a really great school. Since it is small you always have to be around the same people, and people that you might not like. But you get chances to become friends with the people you don't like. I can say with confidence that the 6 years I spent at DSKI was amazing, and that I would recommend this school to everyone who is interested."
+    ja: "本当に素晴らしい学校です。学校は小さいので常に同じ人と一緒にいなければいけないし、好きでない人もいるはずです。でも、それは好きでない人達と友達になれる機会でもあります。私は自信をもって、DSKIで過ごした6年間が素晴らしかったと言いたいと思います。興味のある人には是非この学校を勧めます。"
 
-- name: "Dianne"
+- name:
+    en: "Dianne"
+    ja: "ダイアン"
   photo: "people/Dianne_alumni.jpg"
   age: 19
-  school: "Ashiya International Secondary School/芦屋国際中等教育学校"
-  activities: "I used to be a part of the chorus club throughout junior high school and high school. In general, though, I enjoy any type of crafting, especially making mini albums."
-  dream: "Attend a university in Ottawa, Canada."
-  message: "DSKI is such an inspirational school to learn in. I have so much to say, but what I would like to emphasize the most is how the teachers support children to be independent learners through a class called the unit of inquiry. The significance of this teaching style is that children are very motivated and excited to learn, develop knowledge, come up with ideas and seek for solutions. I find this unique to this school and feel very lucky to have had the opportunity to spend time in this school with amazing teachers and friends. Oh, and I absolutely love the colourful classrooms with plenty of art and visual aids not only on the walls but also hanging down from the ceilings!!"
+  school:
+    en: "Ashiya International Secondary School/芦屋国際中等教育学校"
+    ja: "芦屋国際中等教育学校"
+  activities:
+    en: "I used to be a part of the chorus club throughout junior high school and high school. In general, though, I enjoy any type of crafting, especially making mini albums."
+    ja: "以前は中学校と高校のコーラスクラブに所属していました。今はミニアルバムの制作など、色々な物を作ることを楽しんでします。"
+  dream:
+    en: "Attend a university in Ottawa, Canada."
+    ja: "カナダのオタワの大学に通う。"
+  message:
+    en: "DSKI is such an inspirational school to learn in. I have so much to say, but what I would like to emphasize the most is how the teachers support children to be independent learners through a class called the unit of inquiry. The significance of this teaching style is that children are very motivated and excited to learn, develop knowledge, come up with ideas and seek for solutions. I find this unique to this school and feel very lucky to have had the opportunity to spend time in this school with amazing teachers and friends. Oh, and I absolutely love the colourful classrooms with plenty of art and visual aids not only on the walls but also hanging down from the ceilings!!"
+    ja: "DSKIは学ぶことのインスピレーションを受けた学校です。伝えたいことはたくさんありますが、私が最も強調したいのは、子供たちが自立した学習者であることを探求の単元と呼ばれる授業を通してどのように先生達がサポートしているかです。この教育スタイルの意義は、子供たちがとても熱心に楽しみながら学び、知識を深め、アイディアを創出し、解決策を模索していることです。この独特の教育をもった学校で、素晴らしい先生や友達ととともに過ごせたことをとても幸せに思います。あぁ、壁だけでなく天井からも掛けられた沢山の芸術的アートに囲まれたカラフルな教室が本当に大好きです。"
 
-- name: "Yoona"
+- name:
+    en: "Yoona"
+    ja: "ユナ"
   photo: "people/Yoona_alumni.jpg"
   age: 16
-  school: "Canadian Academy"
-  activities: "I participate in dance and badminton."
-  dream: "I want to go to an American medical university."
-  message: "Deutsche Schule/European School always made me feel like I was at home, and all my friends and everyone in school were like my family. It was a very comfortable place to be, and I was always excited to go to school. Also, because it is a small school, I was able to ask questions to my teachers easily which helped me learn a lot. The school allowed me to experience a lot of different things such as going on the 4 nights, 5 days trips to Green Echo and events such as Christmas Market in Osaka where I had the chance to perform in front of a large audience. Overall Deutsche Schule Kobe/European School was a place where I created lots of fun memories with the best people."
+  school:
+    en: "Canadian Academy"
+    ja: "カナダ・アカデミー"
+  activities:
+    en: "I participate in dance and badminton."
+    ja: "ダンスやバドミントンに参加しています。"
+  dream:
+    en: "I want to go to an American medical university."
+    ja: "アメリカの医科大学への進学を希望。"
+  message:
+    en: "Deutsche Schule/European School always made me feel like I was at home, and all my friends and everyone in school were like my family. It was a very comfortable place to be, and I was always excited to go to school. Also, because it is a small school, I was able to ask questions to my teachers easily which helped me learn a lot. The school allowed me to experience a lot of different things such as going on the 4 nights, 5 days trips to Green Echo and events such as Christmas Market in Osaka where I had the chance to perform in front of a large audience. Overall Deutsche Schule Kobe/European School was a place where I created lots of fun memories with the best people."
+    ja: "神戸ドイツ学院インターナショナルスクールは我が家にいるような気持ちになれました。そして、友達や学校にいる皆は私の家族のようでした。とても居心地の良い場所で、いつも学校に行くことが楽しみでした。また、小さな学校なので先生に質問しやすく、たくさんのことを学ぶことができました。グリーンエコーへの4泊5日の旅行や、大阪のクリスマスマーケットで大観衆の前でパフォーマンスをしたりと、この学校では色々なことを経験することができました。最後に、神戸ドイツ学院インターナショナルスクールは最高の仲間たちと沢山の楽しい思い出を作った場所でした。"
 
-- name: "Natalia"
+- name:
+    en: "Natalia"
+    ja: "ナタリア"
   photo: "people/Natalia_alumni.jpg"
   age: 17
-  school: "Canadian Academy"
-  activities: "Soccer, Theatre, Volleyball"
-  dream: "Study theatre production and acting."
-  message: "Fantastic school. Made a lot of great friends and some of my best memories from school. Really wish I could go back."
+  school:
+    en: "Canadian Academy"
+    ja: "カナダ・アカデミー"
+  activities:
+    en: "Soccer, Theatre, Volleyball"
+    ja: "サッカー、演劇、バレーボール"
+  dream:
+    en: "Study theatre production and acting."
+    ja: "劇場の演出と演技を勉強します。"
+  message:
+    en: "Fantastic school. Made a lot of great friends and some of my best memories from school. Really wish I could go back."
+    ja: "素晴らしい学校です。素敵な友達と学校で最高の思い出をたくさん作ることができました。あの頃に戻れたらなぁ。"

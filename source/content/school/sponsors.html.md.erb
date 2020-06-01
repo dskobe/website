@@ -6,18 +6,19 @@ keywords: []
 banner: "banners/2_header_thin.jpg"
 ---
 
-<h1><%= current_page.data.title %></h1>
+# <%= current_page.data.title %>
 
-<p>DSK International appreciates the support given to us by the following companies/ organisations. Their support and contributions helps us to deliver quality education to the students.</p>
-<p>If you wish to offer sponsorship as well please contact <%= mail_to 'marketing@dskobe.org', 'marketing@dskobe.org' %>.</p>
+DSK International appreciates the support given to us by the following companies/ organisations. Their support and contributions helps us to deliver quality education to the students.
+
+If you wish to offer sponsorship as well please contact [marketing@dskobe.org](mailto:marketing@dskobe.org).
 
 <h2 class="mt-5">Gold Level</h2>
 <div class="container">
 <% data.sponsors.gold.each do |item| %>
   <div class="row">
     <div class="col-md-6 mt-5 pr-5">
-      <p><%= link_to item.name, item.website, class: 'lead font-weight-bold' %></p>
-      <p><%= item.abstract %></p>
+      <p><%= link_to item.name.en, item.website, class: 'lead font-weight-bold' %></p>
+      <p><%= item.abstract.en %></p>
     </div>
     <div class="col-md-6">
     <% link_to item.website do %>
@@ -33,16 +34,16 @@ banner: "banners/2_header_thin.jpg"
   <div class="row">
   <% data.sponsors.bronze.each do |item| %>
     <div class="col-md-6">
-      <p><%= link_to item.name, item.website, class: 'lead font-weight-bold' %></p>
-      <p><%= item.abstract %></p>
+      <p><%= link_to item.name.en, item.website, class: 'lead font-weight-bold' %></p>
+      <p><%= item.abstract.en %></p>
     </div>
   <% end %>
   </div>
 </div>
 
-<h2 class="mt-5">Supporters</h2>
+<h2 class="mt-5">Supporter</h2>
 <ul>
 <% data.sponsors.supporter.each do |item| %>
-  <li><%= link_to item.name, item.website %></li>
+  <li><%= link_to item.name.en, item.website %></li>
 <% end %>
 </ul>
