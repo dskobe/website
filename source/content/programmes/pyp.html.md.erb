@@ -6,14 +6,18 @@ keywords: []
 banner: "banners/5_header_thin.jpg"
 ---
 
-<h1><%= current_page.data.title %></h1>
+# <%= current_page.data.title %>
 
-<p>The <a href="https://www.ibo.org/en/school/002685">IBO (International Baccalaureate Organisation)</a> is a non-profit organisation based in The Hague, The Netherlands. It provides an educational philosophy and framework to ensure that schools all over the world are providing stimulating, relevant and balanced programmes for their students.</p>
-<p>As an authorised IB PYP (International Baccalaureate Primary Years Programme) world school since 2006 and a German School Abroad, DSKI uses the educational plans from the Thuringia curriculum alongside the PYP Programme of Inquiry to create a comprehensive, inquiry based programme from Kindergarten to Grade 6. The resulting programme focusses on delivering a holistic curriculum encompassing the academic, social, emotional and physical aspects of learning.</p>
-<p>The learning is organised into six Units of Inquiry based around six organising themes about our world and who we are. Through these units, the classroom teachers integrate language, mathematics, science, personal social education, social studies, drama and ICT, while single-subject teachers integrate music, physical education, German/English language and Japanese language.</p>
+The [IBO (International Baccalaureate Organisation)](https://www.ibo.org/en/school/002685) is a non-profit organisation based in The Hague, The Netherlands. It provides an educational philosophy and framework to ensure that schools all over the world are providing stimulating, relevant and balanced programmes for their students.
 
-<p class="mt-3"><a href="https://www.ibo.org/programmes/primary-years-programme/">
-  <%= image_tag 'pyp-programme-logo-en.png', alt: data.config.title, class: 'rounded' %></a></p>
+As an authorised IB PYP (International Baccalaureate Primary Years Programme) world school since 2006 and a German School Abroad, DSKI uses the educational plans from the Thuringia curriculum alongside the PYP Programme of Inquiry to create a comprehensive, inquiry based programme from Kindergarten to Grade 6. The resulting programme focusses on delivering a holistic curriculum encompassing the academic, social, emotional and physical aspects of learning.
+
+<a href="https://www.ibo.org/programmes/primary-years-programme/">
+  <%= image_tag 'pyp-programme-logo-en.png', alt: data.config.title, class: 'rounded' %></a>
+
+The learning is organised into six Units of Inquiry based around six organising themes about our world and who we are. Through these units, the classroom teachers integrate language, mathematics, science, personal social education, social studies, drama and ICT, while single-subject teachers integrate music, physical education, German/English language and Japanese language.
+
+Click here for a more detailed overview of the IB Primary Years Programme.
 
 <div class="row text-center">
   <div class="col-12">
@@ -73,17 +77,15 @@ banner: "banners/5_header_thin.jpg"
   </div>
 </div>
 
-<h3>Sample Timetables</h3>
-<div class="row mt-3">
-  <div class="col-md-8">
-    <%= image_tag '/media/schedules/PYPtimetable_1000.jpg', alt: data.config.title, class: 'img-fluid d-block w-100' %>
-  </div>
-  <div class="col-md-4">
-    <p><strong>PYP Programme</strong><br>School day: 8:30 - 15:30</p>
-    <p class="mt-3"><%= link_to 'Download sample timetable here', '/media/schedules/PYPtimetable_1000.pdf' %></p>
-    <p>After School Programme also available. See below for more information:</p>
-    <p><%= link_to 'Download After School Programme information', '/media/schedules/Extracurricular-Activities-Sept-2017-Term-1.pdf' %></p>
-  </div>
-</div>
+### Sample Timetables
 
-<p class="lead mt-5">Interested in joining our Primary Years Programme or would like more information about enrolment?<br> Head over to our <%= link_to "admissions page", "admissions" %>.</p>
+**PYP Programme**
+
+* School day: 8:30 - 15:30
+* <%= link_to 'Download sample timetable here', '/media/schedules/PYPtimetable_1000.pdf' %>
+
+**After School Programme** also available. See below for more information:
+
+* <%= link_to 'Download After School Programme information', '/media/schedules/Extracurricular-Activities-Sept-2017-Term-1.pdf' %>
+
+<p class="lead mt-5">Interested in joining our Primary Years Programme or would like more information about enrolment?<br> Head over to our <%= link_to "admissions page", local_path("admissions") %>.</p>

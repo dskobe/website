@@ -1,0 +1,69 @@
+---
+title: "スポーツ＆アート　ウィンターキャンプ"
+icon: "icons/noun/coding.png"
+description: ""
+keywords: []
+banner: "banners/1_header_thin.jpg"
+---
+
+# <%= current_page.data.title %>
+
+ウィンターキャンプは間近に迫っています。多くの皆さんに、さまざまなスポーツやアートアクティビティに参加していただけることを楽しみにしています。
+
+おなじみのみなさんにお会いできるのはもちろん、新しい友達にも出会えることを楽しみにしています。 ぜひご参加ください！
+
+**日時:**
+
+* 12月17日～21日
+* 9:00am - 3:30pm
+
+**年齢:**
+
+* 5 – 11歳
+
+**費用:**
+
+* 1 日: 12,000円
+* 1週間: 50,000円
+
+<div class="row text-center mt-5">
+  <div class="col-md-12">
+    <h2>実施されるアクティビティ</h2>
+  </div>
+</div>
+<div class="row text-center">
+  <div class="col-md-4 p-3">
+    <%= image_tag 'icons/noun/teamwork.png', alt: data.config.title, class: 'rounded img-fluid', style: 'height:80px;' %>
+    <p class="lead">ティームゲーム</p>
+  </div>
+  <div class="col-md-4 p-3">
+    <%= image_tag 'icons/noun/painting.png', alt: data.config.title, class: 'rounded img-fluid', style: 'height:80px;' %>
+    <p class="lead">クリエイティブプランニング</p>
+  </div>
+  <div class="col-md-4 p-3">
+    <%= image_tag 'icons/noun/playground.png', alt: data.config.title, class: 'rounded img-fluid', style: 'height:80px;' %>
+    <p class="lead">障害物コース</p>
+  </div>
+</div>
+<div class="row text-center">
+  <div class="col-md-4 offset-md-2 p-3">
+    <%= image_tag 'icons/noun/castle.png', alt: data.config.title, class: 'rounded img-fluid', style: 'height:80px;' %>
+    <p class="lead">モデルクラフト</p>
+  </div>
+  <div class="col-md-4 p-3">
+    <%= image_tag 'icons/noun/disco.png', alt: data.config.title, class: 'rounded img-fluid', style: 'height:80px;' %>
+    <p class="lead">キャンプディスコ</p>
+  </div>
+</div>
+
+<div class="row mt-5">
+  <div class="col-md-4">
+    <p>興味を持っていただけましたか？ 以下のフォームに記入して、ご予約ください。</p>
+  </div>
+
+  <div class="col-md-8">
+    <%= partial "includes/carousel", :locals => {
+      :items => ['photos/Students-enjoying-winter-camp.jpg','photos/Winter-camp-fun.jpg','photos/wintercamp_play.jpg']
+    } %>
+  </div>
+</div>

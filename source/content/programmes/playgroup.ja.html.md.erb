@@ -1,0 +1,70 @@
+---
+title: "プレイグループ プログラム"
+icon: "icons/schoolbag_1.png"
+description: ""
+keywords: []
+banner: "banners/1_header_thin.jpg"
+---
+
+# <%= current_page.data.title %>
+
+DSKIプレイグループは、1-3歳のお子様を対象に毎週木曜日に1時間開催します。母国語が英語であるなしに関わらず、どなたでも楽しめる面白いプログラムです。
+
+たくさんの音楽、絵本、物語、人形や小道具を使用したゲーム、ロールプレイングなどの楽しく刺激的なアクティビティを通じて、お子様は挨拶、色、形、数字、動詞や短文といった目標としている言語を学んでいきます。
+
+クラスでのアクティビティは、小さなお子様に言語理解や言語学習への興味を起こさせる効率的な方法であると広く認知されています。言葉の反復練習が言語学習の成功の鍵であること、音楽が発音やリズムを習得するための効率的で楽しめる手段であると教育者は力説しています。
+
+ご家族はお子様と共に授業へご参加いただきますので、お子様と一緒に音楽やアクティビティや目標としている言語もいっしょに学んでいただけ、ご家庭にて練習していただけます
+
+<div class="row text-center">
+  <div class="col-12">
+    <h2 class="mt-5">プレイグループにご参加いただくことにより...</h2>
+    <p>お子様は：</p>
+  </div>
+</div>
+<div class="row mb-5">
+  <div class="col-md-3">
+    <%= image_tag 'icons/yellow/social1x.png', alt: data.config.title, class: 'rounded img-fluid align-middle mt-3 mb-2', style: 'height:80px;' %>
+    <p>社会性を磨く</p>
+  </div>
+  <div class="col-md-3">
+    <%= image_tag 'icons/yellow/languages1x.png', alt: data.config.title, class: 'rounded img-fluid align-middle mt-3 mb-2', style: 'height:80px;' %>
+    <p>母国語や外国語に対する愛を育む</p>
+  </div>
+  <div class="col-md-3">
+    <%= image_tag 'icons/yellow/confidence1x.png', alt: data.config.title, class: 'rounded img-fluid align-middle mt-3 mb-2', style: 'height:80px;' %>
+    <p>将来の学習への自信を得る</p>
+  </div>
+  <div class="col-md-3">
+    <%= image_tag 'icons/yellow/english1x.png', alt: data.config.title, class: 'rounded img-fluid align-middle mt-3 mb-2', style: 'height:80px;' %>
+    <p>英語でのコミュニケーションにおけるプラスの経験を得る</p>
+  </div>
+</div>
+
+<div class="row mt-5">
+  <div class="col-md-4">
+    <%= image_tag 'icons/schoolbag_1.png', alt: data.config.title, class: 'rounded img-fluid mb-2', style: 'height:80px;' %>
+    <h3 class="text-primary font-weight-bold">プレイグループ</h3>
+    <hr>
+    <ul class="list-unstyled">
+      <li class="lead">1 ー 3歳</li>
+      <li class="font-weight-bold mt-3">時間割：</li>
+      <li>木曜日 - 14:40 - 15:30</li>
+      <li class="font-weight-bold mt-3">プログラム：</li>
+      <li>プレイグループで遊ぶプログラム</li>
+      <li></li>
+      <li class="font-weight-bold mt-3">言語：</li>
+      <li>英語母語話者と非母語話者</li>
+      <li class="font-weight-bold mt-3">IB: あり</li>
+      <li>探究の哲学とIB学習者プロフィールをプログラムに組み込んでいます</li>
+    </ul>
+  </div>
+
+  <div class="col-md-8">
+    <%= partial "includes/carousel", :locals => {
+      :items => ['photos/Playgroup1.jpg','photos/Playgroup2.jpg','photos/Playgroup3.jpg','photos/Playgroup4.jpg']
+    } %>
+  </div>
+</div>
+
+<p class="lead mt-5">プレイグループプログラムへの参加にご興味がある、もしくは入学に関する詳しい情報をお探しですか？<br><%= link_to "入学ページ", local_path("admissions") %>にお進みください。</p>

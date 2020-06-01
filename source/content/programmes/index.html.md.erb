@@ -6,29 +6,31 @@ keywords: []
 banner: "banners/7_header_thin.jpg"
 ---
 
-<h1><%= current_page.data.title %></h1>
+# <%= current_page.data.title %>
 
-<div class="row">
-  <div class="col-md-8">
-    <p class="lead font-weight-bold mt-4 mb-3">DSK International provides a unique, multilingual education to learners ages 2 to 11 in three languages: English, German and Japanese.</p>
-    <p>DSK International is proud to be an <a href="https://www.ibo.org/en/school/002685">International Baccalaureate Organisation (IB) World School</a>. We provide an environment that nurtures the academic, emotional, social, physical and creative growth of children of all ages, cultural backgrounds and experiences. As an IB World School, we strive to ignite a passion for lifelong learning and a desire to make positive change in the world.</p>
-    <p>DSKI has two main branches: German and International (English language). Though learners spend most of their day together in an integrated classroom with both English- and German-speaking homeroom teachers, math and language instruction occurs in either German or English.</p>
-    <p>One aspect that is very unique to our school is our language programme: 3 languages in primary school with English and German (curriculum) and Japanese as JFL (Japanese as a Foreign Language) and KOKUGO (native Japanese Curriculum).</p>
-  </div>
+<p class="lead font-weight-bold mt-4 mb-3">DSK International provides a unique, multilingual education to learners ages 2 to 11 in three languages: English, German and Japanese.</p>
 
-  <div class="col-md-3 offset-md-1 text-center"">
-    <p class="mt-5"><a href="https://www.ibo.org/en/school/002685">
-      <%= image_tag 'ib-world-school-logo_sidebar.png', alt: data.config.title, class: 'rounded' %></a></p>
-    <p class="mt-3"><a href="https://www.ibo.org/programmes/primary-years-programme/">
-      <%= image_tag 'pyp-programme-logo-en.png', alt: data.config.title, class: 'rounded' %></a></p>
-    <blockquote class="blockquote mt-5">
+DSK International is proud to be an [International Baccalaureate Organisation (IB) World School](https://www.ibo.org/en/school/002685). We provide an environment that nurtures the academic, emotional, social, physical and creative growth of children of all ages, cultural backgrounds and experiences. As an IB World School, we strive to ignite a passion for lifelong learning and a desire to make positive change in the world.
+
+<a href="https://www.ibo.org/en/school/002685">
+  <%= image_tag 'ib-world-school-logo_sidebar.png', alt: data.config.title, class: 'rounded' %></a>
+<a href="https://www.ibo.org/programmes/primary-years-programme/">
+  <%= image_tag 'pyp-programme-logo-en.png', alt: data.config.title, class: 'rounded' %></a>
+
+DSKI has two main branches: German and International (English language). Though learners spend most of their day together in an integrated classroom with both English- and German-speaking homeroom teachers, math and language instruction occurs in either German or English.
+
+One aspect that is very unique to our school is our language programme: 3 languages in primary school with English and German (curriculum) and Japanese as JFL (Japanese as a Foreign Language) and KOKUGO (native Japanese Curriculum).
+
+<div class="row text-center mt-5 mb-5">
+  <div class="col-md-8 offset-md-2">
+    <blockquote class="blockquote">
       <p class="lead font-weight-bold mb-2">"Learning by heart, head and hand"</p>
       <footer class="blockquote-footer">Johann Heinrich Pestalozzi</footer>
     </blockquote>
   </div>
 </div>
 
-<h2 class="mt-5">Our Programmes</h2>
+## Our Programmes
 
 <div class="row">
   <div class="col-md-4">
@@ -44,7 +46,7 @@ banner: "banners/7_header_thin.jpg"
       <li></li>
       <li class="font-weight-bold mt-3">Languages:</li>
       <li>Native & Non-native English speakers</li>
-      <li class="font-weight-bold mt-3">IB: No</li>
+      <li class="font-weight-bold mt-3">IB: Yes</li>
       <li>IB PYP units of Inquiry</li>
       <li>start in Early Years Programme</li>
     </ul>
@@ -92,4 +94,4 @@ banner: "banners/7_header_thin.jpg"
   </div>
 </div>
 
-<p class="lead mt-5">Need more information? Make an <%= link_to "inquiry to the school", "contact" %> or go straight to our <%= link_to "admissions page", "admissions" %>.</p>
+<p class="lead mt-5">Need more information? Make an <%= link_to "inquiry to the school", local_path("contact") %> or go straight to our <%= link_to "admissions page", local_path("admissions") %>.</p>

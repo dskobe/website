@@ -1,0 +1,95 @@
+---
+title: "プログラム"
+icon: "icons/programmes.png"
+description: ""
+keywords: []
+banner: "banners/7_header_thin.jpg"
+---
+
+# <%= current_page.data.title %>
+
+<p class="lead font-weight-bold mt-4 mb-3">神戸ドイツ学院インターナショナルスクールは2歳から11歳までの学習者に英語、ドイツ語、日本語の3つの言語で、独自の多言語教育を提供しています。</p>
+
+神戸ドイツ学院[インターナショナルは国際バカロレア認定校(IB)](https://www.ibo.org/en/school/002685)であることを誇りに思います。あらゆる年齢や文化的な背景や経験を持っている子供たちの学問的、感情的、社会的、身体的、創造的な成長を育む環境を提供します。国際バカロレア認定校として、生涯学習への情熱と世界に良い変化を起こす強い意志を喚起するよう努めています。
+
+<a href="https://www.ibo.org/en/school/002685">
+  <%= image_tag 'ib-world-school-logo_sidebar.png', alt: data.config.title, class: 'rounded' %></a>
+<a href="https://www.ibo.org/programmes/primary-years-programme/">
+  <%= image_tag 'pyp-programme-logo-en.png', alt: data.config.title, class: 'rounded' %></a>
+
+DSKIには主に2つのプログラムがあります：ドイツ語と国際語（英語）。
+生徒は総合教室で英語とドイツ語を話す教師と共に多くの時間を過ごしますが、数学と語学の授業はドイツ語と英語の各々で行われます。
+
+我が校の非常にユニークな点は言語プログラムです。英語、ドイツ語、日本語 (JFL(外国語としての日本語)と国語(日本語を母国語とするカリキュラム））の3言語を使用します。
+
+<div class="row text-center mt-5 mb-5">
+  <div class="col-md-8 offset-md-2">
+    <blockquote class="blockquote">
+      <p class="lead font-weight-bold mb-2">"共に知的、道徳的、身体的に学ぶ"</p>
+      <footer class="blockquote-footer">ヨハン　ハインリッヒ　ペスタロッチ</footer>
+    </blockquote>
+  </div>
+</div>
+
+## 私たちの提供するプログラム
+
+<div class="row">
+  <div class="col-md-4">
+    <%= image_tag 'icons/schoolbag_1.png', alt: data.config.title, class: 'rounded img-fluid mb-2', style: 'height:120px;' %>
+    <h3 class="text-primary font-weight-bold">プレイグループ</h3>
+    <hr>
+    <ul class="list-unstyled">
+      <li class="lead">1 ー 3歳</li>
+      <li class="font-weight-bold mt-3">時間割：</li>
+      <li>木曜日 - 14:40 - 15:30</li>
+      <li class="font-weight-bold mt-3">プログラム：</li>
+      <li>プレイグループで遊ぶ</li>
+      <li class="font-weight-bold mt-3">言語：</li>
+      <li>英語母語話者と非母語話者</li>
+      <li class="font-weight-bold mt-3">IB: なし</li>
+      <li>国際バカロレアPYPプログラムは幼稚部から開始します</li>
+    </ul>
+    <%= link_to t('slider.button'), local_path('programmes/playgroup'), class: 'btn btn-lg btn-outline-primary', role: 'button' %>
+  </div>
+
+  <div class="col-md-4">
+    <%= image_tag 'icons/schoolbag_2.png', alt: data.config.title, class: 'rounded img-fluid mb-2', style: 'height:120px;' %>
+    <h3 class="text-primary font-weight-bold">幼稚教育</h3>
+    <hr>
+    <ul class="list-unstyled">
+      <li class="lead">2 ー 5歳</li>
+      <li class="font-weight-bold mt-3">時間割：</li>
+      <li>月曜日－金曜日</li>
+      <li class="font-weight-bold mt-3">プログラム：</li>
+      <li>プリ幼稚園クラス(2歳)と、幼稚部/幼稚園(3-5歳)</li>
+      <li class="font-weight-bold mt-3">言語：</li>
+      <li>英語、ドイツ語、日本語</li>
+      <li class="font-weight-bold mt-3">IB: あり</li>
+      <li>幼稚部/幼稚園修了</li>
+      <li>UOI 8単位</li>
+    </ul>
+    <%= link_to t('slider.button'), local_path('programmes/early-years'), class: 'btn btn-lg btn-outline-primary', role: 'button' %>
+  </div>
+
+  <div class="col-md-4">
+    <%= image_tag 'icons/schoolbag_3.png', alt: data.config.title, class: 'rounded img-fluid mb-2', style: 'height:120px;' %>
+    <h3 class="text-primary font-weight-bold">初等教育</h3>
+    <hr>
+    <ul class="list-unstyled">
+      <li class="lead">5 ー 11歳</li>
+      <li class="font-weight-bold mt-3">時間割：</li>
+      <li>月曜日－金曜日</li>
+      <li class="font-weight-bold mt-3">プログラム：</li>
+      <li>チューリンゲンカリキュラム</li>
+      <li>PYPプログラムの単元</li>
+      <li class="font-weight-bold mt-3">言語：</li>
+      <li>英語、ドイツ語、日本語</li>
+      <li class="font-weight-bold mt-3">IB: あり</li>
+      <li>国際バカロレアPYP全て</li>
+      <li>探求の単元</li>
+    </ul>
+    <%= link_to t('slider.button'), local_path('programmes/pyp'), class: 'btn btn-lg btn-outline-primary', role: 'button' %>
+  </div>
+</div>
+
+<p class="lead mt-5">もっと詳しい情報が必要ですか？学校に<%= link_to "ご質問いただく", local_path("contact") %>か、ホームページ上の<%= link_to "入学ページ", local_path("admissions") %>にお進みください。</p>
