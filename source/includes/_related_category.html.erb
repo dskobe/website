@@ -5,8 +5,17 @@
         cols = 6
         items = []
         sub_pages(I18n.locale.to_s + '/' + current_resource.path.split('/')[1]).each do |item|
+          target_lang = "en"
+          target_file = item.target.split('/').last.split('.')
+
+          if target_file.length > 2
+            target_lang = target_file[1]
+          end
+
           if item.path != current_resource.path
-            items.push(item)
+            if target_lang.to_s === item.options[:locale].to_s
+              items.push(item)
+            end
           end
         end
         # items.shuffle.take(cols).each do |resource|
