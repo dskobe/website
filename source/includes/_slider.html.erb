@@ -1,4 +1,4 @@
-<div id="topCarousel" class="carousel slide pointer-event" data-ride="carousel" data-interval="7000">
+<div id="topCarousel" class="carousel slide pointer-event" data-ride="carousel-off" data-interval="7000">
 
   <ol class="carousel-indicators">
     <% items.each_with_index do |item, index| %>
@@ -17,7 +17,9 @@
             <div class="carousel-caption text-center">
               <h1 class="display-4 mb-3 strokeme"><%= item[:title] %></h1>
               <p><%= item[:text] %></p>
-              <p><%= link_to t('slider.button'), item[:link], class: 'btn btn-lg btn-primary', role: 'button' %></p>
+              <% if item.key?(:link) && item[:link] %>
+                <p><%= link_to t('slider.button'), item[:link], class: 'btn btn-lg btn-primary', role: 'button' %></p>
+              <% end %>
             </div>
           </div>
         </div>
