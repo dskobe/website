@@ -22,7 +22,7 @@ If you are unsure about languages at DSK International, please see our <%= link_
   </div>
   <div class="col p-4 d-flex flex-column position-static">
     <h3><button type="button" class="btn btn-outline-secondary btn-sm d-lg-none">Step One</button> Make an Enquiry</h3>
-    <p class="card-text mb-auto">Please email <%= mail_to data.config.contact.mailto, data.config.contact.mailto %> or call +81 (0)78-857-9777 to speak to one of our admission office staff about enrolments. We will organize a date for you to <%= link_to "come in and visit us", "contact" %> or have a conference call for overseas applicants.</p>
+    <p class="card-text mb-auto">Please email <%= mail_to data.config.contact.mailto, data.config.contact.mailto %> or call +81 (0)78-857-9777 to speak to one of our admission office staff about enrolments. We will organize a date for you to <%= link_to "come in and visit us", local_path("contact") %> or have a conference call for overseas applicants.</p>
   </div>
 </div>
 
@@ -43,7 +43,7 @@ If you are unsure about languages at DSK International, please see our <%= link_
   <div class="col p-4 d-flex flex-column position-static">
     <h3><button type="button" class="btn btn-outline-secondary btn-sm d-lg-none">Step Three</button> Visit Us</h3>
     <div class="text-muted">In Japan</div>
-    <p class="card-text mb-auto">Please come to <%= link_to "visit us and have a guided school tour", "contact" %>. You can meet with the principal and also get to meet the teachers, see how our programme works and ask any questions you may have. You'll learn a lot about DSK International!</p>
+    <p class="card-text mb-auto">Please come to <%= link_to "visit us and have a guided school tour", local_path("contact") %>. You can meet with the principal and also get to meet the teachers, see how our programme works and ask any questions you may have. You'll learn a lot about DSK International!</p>
 
     <div class="text-muted mt-3">Outside Japan</div>
     <p class="card-text mb-auto">We are very happy to have video conference calls or phone calls with interested families. If you are not in Japan yet, we would be happy to set up an appointment at a time that is convenient to you.</p>
@@ -119,4 +119,4 @@ If you are unsure about languages at DSK International, please see our <%= link_
   <div class="col-md-4"><%= mail_to data.config.contact.mailto + '?Subject=My application form is attached', 'Submit Application', class: 'btn btn-lg btn-outline-info btn-block', role: 'button' %></div>
 </div>
 
-<p class="lead mt-4">If you would like any information about the process please don't hesitate to <%= link_to "contact us", "contact" %>.</p>
+<p class="lead mt-4">If you would like any information about the process please don't hesitate to <%= link_to "contact us", local_path("contact") %>.</p>
