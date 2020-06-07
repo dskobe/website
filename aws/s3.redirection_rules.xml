@@ -1,16 +1,6 @@
 <RoutingRules>
   <RoutingRule>
     <Condition>
-      <KeyPrefixEquals>de/</KeyPrefixEquals>
-      <HttpErrorCodeReturnedEquals>403</HttpErrorCodeReturnedEquals>
-    </Condition>
-    <Redirect>
-      <HostName>www.dskobe.org</HostName>
-      <ReplaceKeyWith>de/error/</ReplaceKeyWith>
-    </Redirect>
-  </RoutingRule>
-  <RoutingRule>
-    <Condition>
       <KeyPrefixEquals>ja/</KeyPrefixEquals>
       <HttpErrorCodeReturnedEquals>403</HttpErrorCodeReturnedEquals>
     </Condition>
