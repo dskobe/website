@@ -3,8 +3,13 @@ title: "Remote Learning Programme"
 icon: "icons/programmes.png"
 description: ""
 keywords: []
-banner: "banners/school_01.jpg"
+banner: "rlp_header.png"
+layout: "nobanner"
 ---
+
+<div class="container-fluid p-0 mb-4">
+  <%= image_tag current_page.data.banner, alt: data.config.title, class: 'img-fluid d-block w-100' %>
+</div>
 
 ## Implementing remote learning
 
@@ -24,9 +29,13 @@ Being a Google school with the Google Suite as our main operating tool in the da
 
 ## Google Classroom
 
+<div class="container-fluid p-0 my-4">
+  <%= image_tag "google_classroom.png", alt: data.config.title, class: 'col-md-8 img-fluid d-block w-100 mx-auto' %>
+</div>
+
 Google Classroom offers to have multiple classrooms at the same time, to keep an organized and well structured working environment that can be accessed from everywhere in the world at any time. Our students are able to stay in a foreign country while still participating in the daily school life of our remote learning. The classrooms are organized into subjects and cover all of the subjects that are also taught in the normal school day.
 
-<%= image_tag '/media/news/kobe_shimbun.jpg', alt: data.config.title, style: "float:left;", class: "mr-4 mb-4 col-md-6" %>
+<%= image_tag '/media/news/kobe_shimbun.jpg', alt: data.config.title, style: "float:left;", class: "mr-4 my-2 col-md-4" %>
 
 DSKI was mentioned in the Kobe Newspaper for being a modern school able to maintain a strong learning environment via remote learning for all of it's students, even in a crisis. For future happenings like natural disasters our school will offer students professional education, when they have to stay at home.
 
@@ -42,9 +51,18 @@ A big selection of useful apps with pedagogical value is already part of our nor
 
 Keeping track of a student’s learning progress and making transparent what the learner has achieved over a school year is a very important aspect for parents when they choose a school. To make it possible, that students' work and progress can be accessed at any time from anywhere, we implemented a digital portfolio, which tracks and presents the learners' development their whole time at our school, from Pre-Kindergarten to Grade 6. Parents are able to share their child’s achievement with the whole family world wide over the internet. Family and friends are able to comment on the child’s achievement.
 
+<div class="row my-5">
+  <%= image_tag "apps/brainpop.png", alt: data.config.title, class: 'col-md-2 col-4 img-fluid d-block w-100' %>
+  <%= image_tag "apps/razkids.png", alt: data.config.title, class: 'col-md-2 col-4 img-fluid d-block w-100' %>
+  <%= image_tag "apps/seesaw.png", alt: data.config.title, class: 'col-md-2 col-4 img-fluid d-block w-100' %>
+  <%= image_tag "apps/gsuite.png", alt: data.config.title, class: 'col-md-6 col-12 img-fluid d-block w-100' %>
+</div>
+
 ## Communication and safety as key concept
 
 As a fundamental concept for DSKI’s remote learning communication is a big focus for the daily routine of the remote programme. To make sure that our students are safe to use the video and voice chats, all of our applications are in line with the GDPR. We set a high bar for privacy and data protection allowing only the use of apps that have been approved by the GDPR (General Data Protection Regulation) and were tested by our own coordinators. We protect your children and teach them a safe use of the internet, chatrooms and social media. At the same time each learner is taught right online manners and the understanding for other users. Our video chats between students and teachers are a daily thing, providing a daily routine for children in difficult times like the corona pandemic. To communicate with each other our  students learn to create video chat rooms to stay connected with their classmates and friends, everything in our own, safe system, that is hosted by the school. DSKI also offers families to lend our school laptops, so that each child in the family is able to take part in our remote learning programme.
+
+<%= image_tag 'photos/remote_kids.jpg', alt: data.config.title, style: "float:left;", class: "mr-4 my-2 col-md-5" %>
 
 ## What happens, when the school starts again?
 
