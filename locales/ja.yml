@@ -17,10 +17,10 @@ ja:
 
     about:
       top: "当学院について"
-      welcome: "Welcome"
+      welcome: "DSKIへようこそ"
       offer: "提供するもの"
       languages: "DSKIの言語"
-      physical: "Physical Education"
+      physical: "体育"
       technology: "テクノロジー"
       campus: "キャンパス"
 
@@ -34,16 +34,17 @@ ja:
       playgroup: "プレイグループ"
       early: "幼稚教育"
       pyp: "初等教育"
+      remote: "リモートラーニング"
       summer: "サマースクール"
-      winter: "Winter School"
-      parent: "Parent Programme"
+      winter: "ウィンターキャンプ"
+      parent: "保護者向けプログラム"
 
     school:
       top: "コミュニティ"
-      clubs: "Clubs"
+      clubs: "クラブ"
       pta: "PTA"
       alumni: "卒業生"
-      jobs: "Careers"
+      jobs: "キャリア"
       sponsors: "スポンサー"
 
     saturday:
