@@ -13,4 +13,8 @@ twitter:
   card: "summary"
   description: ""
 
-blog: "https://dski-jp.blogspot.com/"
+blog:
+  fr: "https://dskiweekendnews.blogspot.com/"
+  ja: "https://dski-jp.blogspot.com/"
+  de: "https://dskiweekendnews.blogspot.com/"
+  en: "https://dskiweekendnews.blogspot.com/"

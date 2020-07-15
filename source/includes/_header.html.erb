@@ -35,7 +35,7 @@
         <% end %>
 
         <li class="nav-item pr-1 pb-1">
-          <%= link_to t('menu.blog'), data.config.blog, class: 'btn btn-outline-info', target: '_blank' %>
+          <%= link_to t('menu.blog'), data.config.blog[I18n.locale.to_s], class: 'btn btn-outline-info', target: '_blank' %>
         </li>
 
         <li class="nav-item pr-1 pb-1">
