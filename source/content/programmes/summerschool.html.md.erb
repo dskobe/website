@@ -4,6 +4,7 @@ icon: "icons/noun/skateboard.png"
 description: ""
 keywords: []
 banner: "banners/1_header_thin.jpg"
+signup: "https://docs.google.com/forms/d/e/1FAIpQLSf_vGS5MRBSsRuSw7z1nhWgkHD_8A3cZpgLbPm1-KJ8YgjfyQ/viewform"
 ---
 
 # <%= current_page.data.title %>
@@ -14,17 +15,13 @@ In an intentionally set-up space, makers will learn to manage their time, resour
 
 A linguistic component has been added to our camp this year to provide a fun platform for creative expression.
 
-JOIN US FOR A SUMMER OF POSSIBILITIES!
+[JOIN US FOR A SUMMER OF POSSIBILITIES](<%= current_page.data.signup %>)!
 
 <div class="row">
-  <div class="col-md-4 my-2 mb-5">
-    <%= image_tag '/media/camps/summer_flyer.png', alt: current_page.data.title, class: 'img-fluid d-block w-100' %>
+  <div class="col-md-6 my-2 mb-5">
+    <%= image_tag '/media/camps/summer_camp_flyer.jpg', alt: current_page.data.title, class: 'img-fluid d-block w-100' %>
   </div>
-  <div class="col-md-4 my-2 mb-5">
-    <%= image_tag '/media/camps/summer_flyer1.jpg', alt: current_page.data.title, class: 'img-fluid d-block w-100' %>
-  </div>
-  <div class="col-md-4 my-2 mb-5">
-    <%= image_tag '/media/camps/summer_flyer2.jpg', alt: current_page.data.title, class: 'img-fluid d-block w-100' %>
+  <div class="col-md-6 my-2 mb-5">
   </div>
 </div>
 
@@ -178,7 +175,7 @@ Field trips are included to provide campers a chance to extend their learning ou
   <div class="row">
     <div class="col-md-4">
       <h3>Join our Summer Camp</h3>
-      <p>Would you like to join us for our 2019 Summer Camp? Simply sign up from the link below to reserve your place now.</p>
+      <p>Would you like to join us for our Summer Camp? <a href="<%= current_page.data.signup %>">Simply sign up to reserve your place now</a>.</p>
     </div>
 
     <div class="col-md-8">

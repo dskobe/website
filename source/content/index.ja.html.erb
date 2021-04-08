@@ -9,10 +9,14 @@ sitemap_priority: 1.0
 
 <%= partial "includes/slider", :locals => {
   :items => [{
+    :image => 'banners/1_header_thin.jpg',
+    :link => local_path('programmes/summerschool'),
+    :title => '2021のサマーキャンプ<br>6月21日〜7月16日',
+    :active => true
+  },{
     :image => 'carousel/img_04.jpg',
     :link => local_path('about'),
-    :title => '神戸でのインターナショナルエデュケーション',
-    :active => true
+    :title => '神戸でのインターナショナルエデュケーション'
   },{
     :image => 'carousel/img_06.jpg',
     :link => local_path('news'),

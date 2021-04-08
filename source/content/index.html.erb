@@ -9,10 +9,14 @@ sitemap_priority: 1.0
 
 <%= partial "includes/slider", :locals => {
   :items => [{
+    :image => 'banners/1_header_thin.jpg',
+    :link => local_path('programmes/summerschool'),
+    :title => 'Summer Camp 2021<br>21st June - 16th July',
+    :active => true
+  },{
     :image => 'carousel/img_04.jpg',
     :link => local_path('about'),
-    :title => 'International Education in Kobe',
-    :active => true
+    :title => 'International Education in Kobe'
   },{
     :image => 'carousel/img_06.jpg',
     :link => local_path('news'),
