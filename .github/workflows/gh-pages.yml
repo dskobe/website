@@ -2,7 +2,7 @@ name: GH Pages
 
 on:
   push:
-    branches: [main]
+    branches: [main-disabled]
 
 jobs:
   build_and_deploy:
