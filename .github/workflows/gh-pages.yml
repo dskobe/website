@@ -2,7 +2,7 @@ name: GH Pages
 
 on:
   push:
-    branches: [main-disabled]
+    branches: [main]
 
 jobs:
   build_and_deploy:
@@ -15,4 +15,4 @@ jobs:
           REMOTE_BRANCH: gh-pages
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         uses: yurikoval/middleman-gh-pages-action@master
-        
+
