@@ -1,7 +1,6 @@
 MIT License
 
-Copyright (c) 2019 Georepublic (Website)
-Copyright (c) 2018 Chris Earls and Stone Ward (Middleman Boilerplate)
+Copyright (c) 2021 Georepublic (Website)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

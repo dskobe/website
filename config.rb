@@ -8,9 +8,9 @@ activate :i18n do |i18n|
   i18n.mount_at_root = "en"
 end
 
-set :css_dir, 'assets/css'
-set :js_dir, 'assets/js'
-set :images_dir, 'assets/images'
+set :css_dir, '/assets'
+set :js_dir, '/assets'
+set :images_dir, '/assets/images'
 
 page '/*.xml', layout: false
 page '/*.json', layout: false
@@ -56,6 +56,7 @@ activate :external_pipeline,
   source: ".tmp/dist",
   latency: 1
 
+# Dev environment
 configure :development do
   activate :livereload do |reload|
     reload.no_swf = true
@@ -64,5 +65,5 @@ end
 
 configure :production do
   activate :minify_html
-  activate :asset_hash, ignore: [/\.jpg\Z/, /\.png\Z/, /\.svg\Z/]
+  # activate :asset_hash, ignore: [/\.jpg\Z/, /\.png\Z/, /\.svg\Z/]
 end
