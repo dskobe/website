@@ -1,0 +1,69 @@
+---
+fr:
+  title: "DSK International - International School in Kobe"
+  description: "Welcome to DSK International, an International School in Kobe for learners 2-11. We are an IB World School and offer the PYP curriculum to foster multilingual, internationally minded students."
+
+  footer:
+    school: "DSK International"
+    address: "Rokko Island 3-2-8 Koyochonaka<br>Higashinada-ku Kobe city"
+    copyright: "Deutsche Schule Kobe International | All rights reserved © 2021"
+    backtotop: "Back to top"
+
+  menu:
+    blog: "Blog"
+    contact: "Contact Us"
+    admissions: "Admissions"
+    overview: "Overview"
+
+    about:
+      top: "About Us"
+      welcome: "Welcome"
+      history: "Our History and Heritage"
+      offer: "What We Offer"
+      languages: "Languages at DSKI"
+      physical: "Physical Education"
+      technology: "Technology"
+      campus: "School Campus"
+
+    news:
+      top: "Calendar"
+      events: "Event Calendar"
+      school: "School Calendar"
+
+    programmes:
+      top: "Our Programmes"
+      playgroup: "Playgroup"
+      early: "Early Years"
+      pyp: "PYP"
+      remote: "Remote Learning"
+      summer: "Summer School"
+      winter: "Winter School"
+      parent: "Parent Programme"
+
+    school:
+      top: "Community"
+      clubs: "Clubs"
+      pta: "PTA"
+      alumni: "Alumni"
+      jobs: "Careers"
+      sponsors: "Sponsors"
+
+    saturday:
+      top: "Saturday School"
+      english: "English Program"
+      german: "German Program"
+      french: "French Program"
+      move: "Move to Learn Program"
+      calendar: "Calendar"
+      fees: "Fees"
+      admission: "Admissions"
+
+  slider:
+    button: "Find out more"
+    previous: "Previous"
+    next: "Next"
+
+  contact:
+    text: "Need more information? Make an inquiry to the school."
+    button: "Get in touch »"
+
