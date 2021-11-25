@@ -10,6 +10,12 @@ sitemap_priority: 1.0
 <%= partial "includes/slider", :locals => {
   :items => [{
     :image => 'banners/1_header_thin.jpg',
+    :link => local_path('programmes/winterschool'),
+    :title => 'Winter Camp 2021<br>20th - 23rd December',
+    :disabled => false,
+    :active => true
+  },{
+    :image => 'banners/1_header_thin.jpg',
     :link => local_path('programmes/summerschool'),
     :title => 'Summer Camp 2021<br>21st June - 16th July',
     :disabled => true,
@@ -18,7 +24,7 @@ sitemap_priority: 1.0
     :image => 'carousel/img_04.jpg',
     :link => local_path('about'),
     :title => 'International Education in Kobe',
-    :active => true
+    :active => false
   },{
     :image => 'carousel/img_08.jpg',
     :link => local_path('news'),

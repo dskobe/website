@@ -10,6 +10,12 @@ sitemap_priority: 1.0
 <%= partial "includes/slider", :locals => {
   :items => [{
     :image => 'banners/1_header_thin.jpg',
+    :link => local_path('programmes/winterschool'),
+    :title => '2021のウィンターキャンプ<br>2月20日〜12月23日',
+    :disabled => false,
+    :active => true
+  },{
+    :image => 'banners/1_header_thin.jpg',
     :link => local_path('programmes/summerschool'),
     :title => '2021のサマーキャンプ<br>6月21日〜7月16日',
     :disabled => true,
@@ -18,7 +24,7 @@ sitemap_priority: 1.0
     :image => 'carousel/img_04.jpg',
     :link => local_path('about'),
     :title => '神戸でのインターナショナルエデュケーション',
-    :active => true
+    :active => false
   },{
     :image => 'carousel/img_08.jpg',
     :link => local_path('news'),
