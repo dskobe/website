@@ -321,16 +321,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.dskobe.org/en/school/sponsors_next/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.dskobe.org/ja/school/sponsors_next/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://www.dskobe.org/en/news/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -507,11 +497,6 @@
   </url>
   <url>
     <loc>https://www.dskobe.org/ja/school/pta/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.dskobe.org/ja/school/sponsors_next/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
