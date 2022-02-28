@@ -1,45 +1,61 @@
-gold:
+sponsor:
   - name:
-      en: "The Entente: <br> A Complete Residence"
-      ja: "ジ アンダンテ: <br> 全てを完備した住居"
-    website: "http://www.the-entente.jp/"
-    abstract:
-      en: "Rokko Island is only 15 minutes from the center of the international city of Kobe. It is truly an ideal place to live - a waterfront zone full of bright open spaces and greenery. THE ENTENTE offers rental homes to meet your every need. As soon as you step under our entrance arch, you will discover you have found your “home away from home” in Kobe."
-      ja: "六甲アイランドは国際都市神戸の中心部からわずか15分です。 明るいオープンスペースと緑に満ちたウォーターフロントゾーンは、まさに理想的な居住場所です。 THE ENTENTEは、あらゆるニーズに対応する賃貸住宅を提供しています。 エントランスアーチの下を歩くとすぐに、神戸で「古郷から離れた我が家」を見つけたことがわかります。"
-    image: "/media/sponsors/the_entente.jpg"
+      en: "The Entente:"
+      ja: "ジ アンダンテ:"
+    website: "https://www.the-entente.jp/"
+    image: "/assets/images/sponsors/the_entente.png"
 
   - name:
-      en: "Kobe Porsche"
-      ja: "神戸ポルシェ"
-    website: "http://www.porsche.co.jp/dealers/kobe/"
-    abstract:
-      en: "Opened in 1999 as a Porsche authorized dealer in the sophisticated international city of Kobe. The showroom along Route 2 is a new landmark in the Kobe and Higashinada areas. All staff are experienced experts who know Porsche thoroughly. Delivering trust and safety with meticulous service from purchase to aftercare."
-      ja: "洗練の国際都市・神戸に、ポルシェ正規販売店として1999年にオープン。早くも、国道2号線沿いのショールームは神戸・東灘地域の新たなランドマークとなっています。スタッフはいずれもポルシェを知り尽くした経験豊富なエキスパート。ご購入からアフターケアに至るまで、きめ細やかなサービスで信頼と安全をお届けします。"
-    image: "/media/sponsors/kobe_porsche.jpg"
+      en: "Decathlon"
+      ja: "Decathlon"
+    website: "https://www.decathlon.co.jp/"
+    image: "/assets/images/sponsors/decathlon.png"
 
-silver:
-
-bronze:
-  - name:
-      en: "TÜV Rheinland"
-      ja: "テュフ ラインランド ジャパン株式会社"
-    website: "https://www.tuv.com/japan/jp/"
-    abstract:
-      en: "TUV Rheinland offers a variety of testing, evaluation and certification services"
-      ja: "テュフ ラインランドは、さまざまな試験・評価・認証サービスを提供します"
-
-supporter:
   - name:
       en: "Georepublic"
       ja: "Georepublic"
     website: "https://georepublic.info/"
+    image: "/assets/images/sponsors/georepublic.svg"
+
+  - name:
+      en: "Miele"
+      ja: "Miele"
+    website: "https://www.miele.co.jp/"
+    image: "/assets/images/sponsors/miele.svg"
+
+  - name:
+      en: "Yanmar"
+      ja: "Yanmar"
+    website: "https://www.yanmar.com/"
+    image: "/assets/images/sponsors/yanmar.jpg"
+
+supporter:
+  - name:
+      en: "Ganesha Ghar"
+      ja: "Ganesha Ghar"
+    website: "#"
+    image: "/assets/images/sponsors/ganehsa_ghar.jpg"
+
   - name:
       en: "Goethe Institute"
       ja: "Goethe Institute"
-    website: "https://www.goethe.de/ins/jp/ja/sta/osa.html?wt_sc=osaka"
+    website: "https://www.goethe.de/ins/jp/ja/sta/osa.html"
+    image: "/assets/images/sponsors/goethe_institute.svg"
+
   - name:
       en: "Peace and Nature"
       ja: "Peace and Nature"
     website: "https://www.peace-and-nature.com/"
+    image: "/assets/images/sponsors/peace_nature.jpg"
 
-oktoberfest:
+  - name:
+      en: "Rote Rose"
+      ja: "Rote Rose"
+    website: "http://roterose-kobe.co.jp/"
+    image: "/assets/images/sponsors/rote_rose.jpg"
+
+  # - name:
+  #     en: ""
+  #     ja: ""
+  #   website: ""
+  #   image: "/assets/images/sponsors/"
