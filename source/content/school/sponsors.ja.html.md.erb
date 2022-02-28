@@ -19,7 +19,7 @@ banner: "banners/2_header_thin.jpg"
     <% data.sponsors.sponsor.each do |item| %>
     <div class="col mb-4">
       <div class="card card-body h-100 justify-content-center p-3">
-        <% link_to item.website, class: 'mx-auto' do %>
+        <% link_to item.website, class: '' do %>
           <%= image_tag item.image, alt: item.name.ja, class: 'card-img-top' %>
         <% end %>
       </div>
@@ -35,7 +35,7 @@ banner: "banners/2_header_thin.jpg"
     <% data.sponsors.supporter.each do |item| %>
     <div class="col mb-4">
       <div class="card card-body h-100 justify-content-center p-2">
-        <% link_to item.website, class: 'mx-auto' do %>
+        <% link_to item.website, class: '' do %>
           <%= image_tag item.image, alt: item.name.en, class: 'card-img-top' %>
         <% end %>
       </div>
