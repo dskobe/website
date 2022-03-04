@@ -6,6 +6,12 @@ sponsor:
     image: "/assets/images/sponsors/the_entente.png"
 
   - name:
+      en: "Chicco"
+      ja: "Chicco"
+    website: "https://chicco.jp/"
+    image: "/assets/images/sponsors/chicco.jpg"
+
+  - name:
       en: "Decathlon"
       ja: "Decathlon"
     website: "https://www.decathlon.co.jp/"
@@ -16,6 +22,12 @@ sponsor:
       ja: "Georepublic"
     website: "https://georepublic.info/"
     image: "/assets/images/sponsors/georepublic.svg"
+
+  - name:
+      en: "Recaro"
+      ja: "Recaro"
+    website: "https://www.recaro-automotive.com/"
+    image: "/assets/images/sponsors/recaro.jpg"
 
   - name:
       en: "Miele"
