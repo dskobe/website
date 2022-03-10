@@ -41,6 +41,12 @@ sponsor:
     website: "https://www.yanmar.com/"
     image: "/assets/images/sponsors/yanmar.jpg"
 
+  - name:
+      en: "Yukai"
+      ja: "Yukai"
+    website: "https://yukai-co.com/"
+    image: "/assets/images/sponsors/yukai.png"
+
 supporter:
   - name:
       en: "Ganesha Ghar"
