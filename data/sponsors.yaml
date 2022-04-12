@@ -30,6 +30,12 @@ sponsor:
     image: "/assets/images/sponsors/recaro.jpg"
 
   - name:
+      en: "MAN Energy Solutions SE"
+      ja: "MAN Energy Solutions SE"
+    website: "https://www.man-es.com/"
+    image: "/assets/images/sponsors/man.svg"
+
+  - name:
       en: "Miele"
       ja: "Miele"
     website: "https://www.miele.co.jp/"
