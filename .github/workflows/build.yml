@@ -26,7 +26,8 @@ jobs:
     - name: Build the Middleman site
       run: |
         gem install bundler
-        bundle install --path vendor --jobs 4 --retry 3 && npm i
+        bundle config set --local path 'vendor'
+        bundle install --retry 5 && npm i
         bundle exec middleman build --build-dir=public --clean
 
     - name: Deploy site to gh-pages branch
