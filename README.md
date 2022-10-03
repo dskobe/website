@@ -18,7 +18,7 @@ Run development server with:
 bundle exec middleman server
 ```
 
-Open URL http://localhost:4567/ as preview.
+Open URL [http://localhost:4567/](http://localhost:4567/) as preview.
 
 ## Build & Deploy
 
