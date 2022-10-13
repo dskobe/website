@@ -5,12 +5,11 @@
   "dependencies": {
     "bootstrap": "^4.6.2",
     "jquery": "^3.6.1",
-    "object-fit-polyfill": "^0.1.0",
     "popper.js": "^1.16.1"
   },
   "devDependencies": {
     "@babel/core": "^7.19.3",
-    "@babel/preset-env": "^7.19.3",
+    "@babel/preset-env": "^7.19.4",
     "@webpack-cli/generators": "^2.5.0",
     "babel-loader": "^8.2.5",
     "copy-webpack-plugin": "^11.0.0",

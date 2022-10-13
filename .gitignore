@@ -25,4 +25,3 @@ vendor/
 # Ignore Webpack directories
 node_modules/
 .tmp/
-source.bak/
