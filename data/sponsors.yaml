@@ -55,6 +55,12 @@ sponsor:
 
 supporter:
   - name:
+      en: "CrossPhysio"
+      ja: "CrossPhysio"
+    website: "https://www.crossphysio-coach.com/"
+    image: "/assets/images/sponsors/cross_physio.png"
+
+  - name:
       en: "Ganesha Ghar"
       ja: "Ganesha Ghar"
     website: "#"
