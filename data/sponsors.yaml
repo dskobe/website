@@ -84,6 +84,12 @@ supporter:
     website: "http://roterose-kobe.co.jp/"
     image: "/assets/images/sponsors/rote_rose.jpg"
 
+  - name:
+      en: "Von Baron Music"
+      ja: "Von Baron Music"
+    website: "https://vonbaronmusic.com/"
+    image: "/assets/images/sponsors/von_baron.jpg"
+
   # - name:
   #     en: ""
   #     ja: ""
