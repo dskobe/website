@@ -4,12 +4,12 @@
       <%= image_tag 'logo_header.png', alt: data.config.title %>
     <% end %>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse flex-column" id="navbarCollapse">
-      <ul class="navbar-nav d-flex ml-auto">
+      <ul class="navbar-nav d-flex ml-auto list-inline">
         <% if (I18n.locale.to_s != "ja") %>
         <li class="nav-item pr-1">
           <%= link_to '<span class="flag-icon flag-icon-jp"></span> 日本語', current_page.url.sub(I18n.locale.to_s,'ja'), class: 'nav-link' %>
