@@ -12,7 +12,8 @@
       <ul class="navbar-nav d-flex ml-auto list-inline">
         <% if (I18n.locale.to_s != "ja") %>
         <li class="nav-item pr-1">
-          <%= link_to '<span class="flag-icon flag-icon-jp"></span> 日本語', current_page.url.sub(I18n.locale.to_s,'ja'), class: 'nav-link' %>
+          <% $link = current_page.url.sub(/(?<=\/)#{I18n.locale}(?=\/)/, 'ja') %>
+          <a href="<%= $link %>" class="nav-link"><span class="flag-icon flag-icon-jp"></span> 日本語</a>
         </li>
         <% end %>
 
@@ -30,7 +31,8 @@
 
         <% if (I18n.locale.to_s != "en") %>
         <li class="nav-item pr-1">
-          <%= link_to '<span class="flag-icon flag-icon-gb"></span> English', current_page.url.sub(I18n.locale.to_s,'en'), class: 'nav-link' %>
+          <% $link = current_page.url.sub(/(?<=\/)#{I18n.locale}(?=\/)/, 'en') %>
+          <a href="<%= $link %>" class="nav-link"><span class="flag-icon flag-icon-gb"></span> English</a>
         </li>
         <% end %>
 
