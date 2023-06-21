@@ -1,34 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.dskobe.org/en/news/</loc>
+    <loc>https://www.dskobe.org/en/contact/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.dskobe.org/ja/news/</loc>
+    <loc>https://www.dskobe.org/ja/contact/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.dskobe.org/en/news/calendar/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.dskobe.org/ja/news/calendar/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.dskobe.org/en/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.dskobe.org/ja/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.dskobe.org/en/index.ja.html.md.erb.news</loc>
@@ -41,22 +21,22 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.dskobe.org/en/programmes/winterschool/</loc>
+    <loc>https://www.dskobe.org/en/admissions/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.dskobe.org/ja/admissions/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.dskobe.org/en/programmes/parent-programme/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.dskobe.org/ja/programmes/winterschool/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.dskobe.org/en/programmes/playgroup/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.dskobe.org/ja/programmes/playgroup/</loc>
+    <loc>https://www.dskobe.org/ja/programmes/parent-programme/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -71,22 +51,32 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.dskobe.org/en/programmes/parent-programme/</loc>
+    <loc>https://www.dskobe.org/en/programmes/summerschool/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.dskobe.org/ja/programmes/parent-programme/</loc>
+    <loc>https://www.dskobe.org/ja/programmes/summerschool/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.dskobe.org/en/programmes/early-years/</loc>
+    <loc>https://www.dskobe.org/en/programmes/playgroup/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.dskobe.org/ja/programmes/early-years/</loc>
+    <loc>https://www.dskobe.org/ja/programmes/playgroup/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dskobe.org/en/programmes/winterschool/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dskobe.org/ja/programmes/winterschool/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -101,12 +91,12 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.dskobe.org/en/programmes/summerschool/</loc>
+    <loc>https://www.dskobe.org/en/programmes/early-years/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.dskobe.org/ja/programmes/summerschool/</loc>
+    <loc>https://www.dskobe.org/ja/programmes/early-years/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -121,14 +111,44 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.dskobe.org/en/admissions/</loc>
+    <loc>https://www.dskobe.org/en/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.dskobe.org/ja/admissions/</loc>
+    <loc>https://www.dskobe.org/ja/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.dskobe.org/en/school/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dskobe.org/ja/school/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dskobe.org/en/school/alumni/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dskobe.org/ja/school/alumni/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dskobe.org/en/school/pta/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dskobe.org/ja/school/pta/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.dskobe.org/en/school/careers/</loc>
@@ -151,52 +171,12 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.dskobe.org/en/school/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.dskobe.org/ja/school/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://www.dskobe.org/en/school/clubs/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.dskobe.org/ja/school/clubs/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.dskobe.org/en/school/pta/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.dskobe.org/ja/school/pta/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.dskobe.org/en/school/alumni/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.dskobe.org/ja/school/alumni/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.dskobe.org/en/about/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.dskobe.org/ja/about/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -221,12 +201,22 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.dskobe.org/en/about/languages-at-dski/</loc>
+    <loc>https://www.dskobe.org/en/about/what-we-offer/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.dskobe.org/ja/about/languages-at-dski/</loc>
+    <loc>https://www.dskobe.org/ja/about/what-we-offer/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dskobe.org/en/about/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dskobe.org/ja/about/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -241,22 +231,22 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.dskobe.org/en/about/what-we-offer/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.dskobe.org/ja/about/what-we-offer/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://www.dskobe.org/en/about/welcome/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.dskobe.org/ja/about/welcome/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dskobe.org/en/about/languages-at-dski/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dskobe.org/ja/about/languages-at-dski/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -271,12 +261,22 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.dskobe.org/en/saturdayschool/admission/</loc>
+    <loc>https://www.dskobe.org/en/saturdayschool/french-program/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.dskobe.org/ja/saturdayschool/admission/</loc>
+    <loc>https://www.dskobe.org/ja/saturdayschool/french-program/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dskobe.org/en/saturdayschool/re-enroll/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dskobe.org/ja/saturdayschool/re-enroll/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -291,22 +291,22 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.dskobe.org/en/saturdayschool/fees/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.dskobe.org/ja/saturdayschool/fees/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://www.dskobe.org/en/saturdayschool/english-program/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.dskobe.org/ja/saturdayschool/english-program/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dskobe.org/en/saturdayschool/admission/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dskobe.org/ja/saturdayschool/admission/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -331,26 +331,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.dskobe.org/en/saturdayschool/re-enroll/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.dskobe.org/ja/saturdayschool/re-enroll/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.dskobe.org/en/saturdayschool/french-program/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.dskobe.org/ja/saturdayschool/french-program/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://www.dskobe.org/en/saturdayschool/schedule/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -361,17 +341,17 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.dskobe.org/en/contact/</loc>
+    <loc>https://www.dskobe.org/en/saturdayschool/fees/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.dskobe.org/ja/contact/</loc>
+    <loc>https://www.dskobe.org/ja/saturdayschool/fees/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.dskobe.org/ja/news/calendar/</loc>
+    <loc>https://www.dskobe.org/en/news/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -381,12 +361,32 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.dskobe.org/ja/programmes/winterschool/</loc>
+    <loc>https://www.dskobe.org/en/news/calendar/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.dskobe.org/ja/programmes/playgroup/</loc>
+    <loc>https://www.dskobe.org/ja/news/calendar/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dskobe.org/ja/admissions/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.dskobe.org/ja/programmes/summerschool/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dskobe.org/ja/programmes/early-years/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dskobe.org/ja/programmes/parent-programme/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -401,37 +401,12 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.dskobe.org/ja/programmes/parent-programme/</loc>
+    <loc>https://www.dskobe.org/ja/programmes/playgroup/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.dskobe.org/ja/programmes/early-years/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.dskobe.org/ja/programmes/summerschool/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.dskobe.org/ja/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.dskobe.org/ja/admissions/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.dskobe.org/ja/contact/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.dskobe.org/ja/school/alumni/</loc>
+    <loc>https://www.dskobe.org/ja/programmes/winterschool/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -441,12 +416,12 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.dskobe.org/ja/school/pta/</loc>
+    <loc>https://www.dskobe.org/ja/school/alumni/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.dskobe.org/ja/school/</loc>
+    <loc>https://www.dskobe.org/ja/school/pta/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -456,19 +431,19 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.dskobe.org/ja/school/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.dskobe.org/ja/school/careers/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.dskobe.org/ja/about/technology/</loc>
+    <loc>https://www.dskobe.org/ja/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.dskobe.org/ja/about/languages-at-dski/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.dskobe.org/ja/about/history/</loc>
@@ -481,12 +456,17 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.dskobe.org/ja/about/welcome/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.dskobe.org/ja/about/physical-education/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.dskobe.org/ja/about/welcome/</loc>
+    <loc>https://www.dskobe.org/ja/about/languages-at-dski/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -501,27 +481,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.dskobe.org/ja/saturdayschool/fees/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.dskobe.org/ja/saturdayschool/move-to-learn/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.dskobe.org/ja/saturdayschool/french-program/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.dskobe.org/ja/saturdayschool/german-program/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.dskobe.org/ja/saturdayschool/schedule/</loc>
+    <loc>https://www.dskobe.org/ja/about/technology/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -536,6 +496,21 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.dskobe.org/ja/saturdayschool/move-to-learn/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dskobe.org/ja/saturdayschool/schedule/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dskobe.org/ja/saturdayschool/german-program/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.dskobe.org/ja/saturdayschool/admission/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -544,5 +519,30 @@
     <loc>https://www.dskobe.org/ja/saturdayschool/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dskobe.org/ja/saturdayschool/fees/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dskobe.org/ja/saturdayschool/french-program/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dskobe.org/ja/news/calendar/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dskobe.org/ja/news/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dskobe.org/ja/contact/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
 </urlset>
