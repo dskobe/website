@@ -38,5 +38,7 @@ window.cookieconsent.initialise({
     "button": {
       "background": "#14a7d0"
     }
-  }
+  },
+  position: "top-right",
+  theme: "classic",
 });
