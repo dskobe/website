@@ -3,6 +3,10 @@
 @import "./bootstrap-variables";
 @import "~bootstrap/scss/bootstrap";
 
+body {
+  background-color: white;
+}
+
 nav.navbar-custom {
   background-color:#ffffff;
   border-top: 10px solid #fec10d;
