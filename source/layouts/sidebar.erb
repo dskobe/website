@@ -18,7 +18,7 @@
     <meta name="theme-color" content="#ffffff">
 
     <meta name="description" content="<%= current_page.data.description + ' ' + t('description') %>">
-    <%= stylesheet_link_tag "https://unpkg.com/ionicons@4.5.10-1/dist/css/ionicons.min.css", "https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css", "styles" %>
+    <%= stylesheet_link_tag "https://unpkg.com/ionicons@4.5.10-1/dist/css/ionicons.min.css", "styles" %>
   </head>
   <body>
     <%= partial "includes/header" %>
@@ -47,7 +47,7 @@
     </main>
 
     <%= partial "includes/footer" %>
-    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
-    <%= javascript_include_tag "styles", "script" %>
+    <script defer data-domain="dskobe.org" src="https://plausible.georepublic.info/js/script.js"></script>
+    <%= javascript_include_tag "script" %>
   </body>
 </html>
