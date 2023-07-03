@@ -8,17 +8,17 @@
     "jquery": "^3.7.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.22.1",
-    "@babel/preset-env": "^7.22.4",
-    "@webpack-cli/generators": "^3.0.4",
+    "@babel/core": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
+    "@webpack-cli/generators": "^3.0.7",
     "babel-loader": "^9.1.2",
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.8.1",
     "mini-css-extract-plugin": "^2.7.6",
-    "sass": "^1.62.1",
-    "sass-loader": "^13.3.1",
+    "sass": "^1.63.6",
+    "sass-loader": "^13.3.2",
     "style-loader": "^3.3.3",
-    "webpack": "^5.85.0"
+    "webpack": "^5.88.1"
   },
   "scripts": {
     "clean": "rm -Rf ./.tmp ./build",
