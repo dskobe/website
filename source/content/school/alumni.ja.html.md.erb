@@ -16,17 +16,13 @@ banner: "banners/4_header_thin.jpg"
 
 <% data.alumni.each do |item| %>
 <div class="row mt-4">
-  <div class="col-md-3">
+  <div class="col-md-2">
     <%= image_tag item.photo, alt: item.name, class: 'img-fluid d-block w-100' %>
   </div>
 
-  <div class="col-md-9">
-    <h4><%= item.name.ja %></h4>
-    <p><strong>年齢： </strong><%= item.age %>歳</p>
-    <p><strong>現在の学校： </strong><%= item.school.ja %></p>
-    <p><strong>特別課題活動： </strong><%= item.activities.ja %></p>
-    <p><strong>将来の夢： </strong><%= item.dream.ja %></p>
-    <p><strong>DSKIについて伝えたいことはありますか？</strong><br><%= item.message.ja %></p>
+  <div class="col-md-10">
+    <h4 class="mt-3"><%= item.name.ja %></h4>
+    <p><%= item.message.ja %></p>
   </div>
 </div>
 <% end %>
