@@ -351,16 +351,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.dskobe.org/en/programmes/parent-programme/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.dskobe.org/ja/programmes/parent-programme/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://www.dskobe.org/ja/saturdayschool/admission/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -492,11 +482,6 @@
   </url>
   <url>
     <loc>https://www.dskobe.org/ja/programmes/winterschool/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.dskobe.org/ja/programmes/parent-programme/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
