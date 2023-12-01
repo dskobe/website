@@ -25,7 +25,11 @@ Please <%= link_to 'click here to download', '/media/calendars/DSKI-2023-24-Even
         <div class="row">
           <div class="col-lg-2 col-md-3 col-xs-6"><%= extract_day_or_range(event[:date]) %></div>
           <div class="col-lg-8 col-md-5 col-xs-12">
-            <%= event[:title][:en] %>
+            <% if event[:link] %>
+              <%= link_to event[:title][:en], event[:link][:en] %>
+            <% else %>
+              <%= event[:title][:en] %>
+            <% end %>
             <% if event[:description] %>
               <br><small><%= event[:description][:en] %></small>
             <% end %>
