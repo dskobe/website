@@ -1,181 +1,187 @@
-- date: 2023/08/28 11:00-12:00
+- date: "2023/08/28"
+  time: "11:00-12:00"
   title:
-    en: Enrollment Party
+    en: "Enrollment Party"
 
-- date: 2023/09/01 18:00
+- date: "2023/09/01"
+  time: "18:00"
   title:
-    en: Information presentation by school board and PTA Parent Teacher Conferences and election of class representatives
+    en: "Information presentation by school board and PTA Parent Teacher Conferences and election of class representatives"
 
-- date: 2023/09/06 18:00
+- date: "2023/09/06"
+  time: "18:00"
   title:
-    en: First PTA meeting for elected class representatives
+    en: "First PTA meeting for elected class representatives"
 
-- date: 2023/09/14 9:00
+- date: "2023/09/14"
+  time: "9:00"
   title:
-    en: First whole school assembly
+    en: "First whole school assembly"
   description:
-    en: Mission statement, welcome new teachers etc.
+    en: "Mission statement, welcome new teachers etc."
 
-- date: 2023/09/25 - 2023/09/29
+- date: "2023/09/25 - 2023/09/29"
   title:
-    en: Assessment Week 1
+    en: "Assessment Week 1"
 
-- date: 2023/09/28 19:00
+- date: "2023/09/28"
+  time: "19:00"
   title:
-    en: School Association Annual General Meeting
+    en: "School Association Annual General Meeting"
 
-- date: 2023/10/02 - 2023/10/06
+- date: "2023/10/02 - 2023/10/06"
   title:
-    en: Tracker Days 1
+    en: "Tracker Days 1"
 
-- date: 2023/10/07
+- date: "2023/10/07"
   title:
-    en: Oktoberfest
+    en: "Oktoberfest"
 
-- date: 2023/10/16 - 2023/10/20
+- date: "2023/10/16 - 2023/10/20"
   title:
-    en: Parent Teacher Conferences
+    en: "Parent Teacher Conferences"
 
-- date: 2023/10/19 9:00
+- date: "2023/10/19"
+  time: "9:00"
   title:
-    en: Assembly (Grade 3)
+    en: "Assembly (Grade 3)"
 
-- date: 2023/10/31
+- date: "2023/10/31"
   title:
-    en: Halloween
+    en: "Halloween"
 
-- date: 2023/11/TBC 17:00
+- date: "2023/11/03"
+  time: "9:00-12:00"
   title:
-    en: Osaka Christmas Market Opening
+    en: "Cross Country G 3 - 6"
 
-- date: 2023/11/03 9:00-12:00
+- date: "2023/11/10"
   title:
-    en: Cross Country G 3 - 6
+    en: "St Martin"
 
-- date: 2023/11/10
+- date: "2023/11/23"
+  time: "9:30-12:00"
   title:
-    en: St Martin
+    en: "Open Day"
 
-- date: 2023/11/23 9:30-12:00
+- date: "2023/11/27"
   title:
-    en: Open Day
+    en: "Christmas Tree Lighting"
 
-- date: 2023/11/27
+- date: "2023/11/30"
+  time: "9:00"
   title:
-    en: Christmas Tree Lighting
+    en: "Assembly (Grade 4)"
 
-- date: 2023/11/30 9:00
+- date: "2023/12/06"
   title:
-    en: Assembly (Grade 4)
+    en: "St Nicholas"
 
-- date: 2023/12/06
+- date: "2023/12/14"
   title:
-    en: St Nicholas
+    en: "Assembly (G1)"
 
-- date: 2023/12/14
+- date: "2023/12/15"
+  time: "9:00-13:00"
   title:
-    en: Assembly (Grade 1)
+    en: "School Christmas Market/Christmas Talent Show/Whole school to sing together at opening of the Christmas market"
 
-- date: 2023/12/15 9:00-13:00
+- date: "2024/01/09 - 2024/01/19"
   title:
-    en: School Christmas Market/Christmas Talent Show/Whole school to sing together at opening of the Christmas market
+    en: "Assessment Week 2"
 
-- date: 2024/01/09 - 2024/01/19
+- date: "2024/01/22 - 2024/01/26"
   title:
-    en: Assessment Week 2
+    en: "Tracker Day 2"
 
-- date: 2024/01/22 - 2024/01/26
+- date: "2024/01/25"
+  time: "9:00"
   title:
-    en: Tracker Day 2
+    en: "Assembly (K1)"
 
-- date: 2024/01/25 9:00
+- date: "2024/01/26"
   title:
-    en: Assembly (K1)
+    en: "End of Term 1 report cards go to parents"
 
-- date: 2024/01/26
+- date: "2024/01/29 - 2024/02/02"
   title:
-    en: End of Term 1 report cards go to parents
+    en: "3-Way Conferences"
 
-- date: 2024/01/29 - 2024/02/02
+- date: "2024/02/07 - 2024/02/09"
   title:
-    en: 3-Way Conferences
+    en: "Winter Trip G 3 - 6"
 
-- date: 2024/02/07 - 2024/02/09
+- date: "2024/02/19 - 2024/02/23"
   title:
-    en: Winter Trip G 3 - 6
+    en: "STEM week"
 
-- date: 2024/02/19-23
+- date: "2024/02/23"
+  time: "9:30-12:00"
   title:
-    en: STEM week
+    en: "Open Day"
 
-- date: 2024/02/23 9:30-12:00
+- date: "2024/02/29"
+  time: "9:00"
   title:
-    en: Open Day
+    en: "Assembly (K2)"
 
-- date: 2024/02/29 9:00
+- date: "2024/03/07"
   title:
-    en: Assembly (K2)
+    en: "International Book Day"
 
-- date: 2024/03/07
+- date: "2024/03/01"
   title:
-    en: International Book Day
+    en: "Shoei Kindergarten Event EY only"
 
-- date: 2024/03/01
+- date: "2024/03/14"
+  time: "9:00"
   title:
-    en: Shoei Kindergarten Event EY only
+    en: "Assembly (G2)"
 
-- date: 2024/03/14 9:00
+- date: "2024/03/26 - 2024/03/29"
   title:
-    en: Assembly (Grade 2)
+    en: "Culture week (Hanami Easter Egg Hunt)"
 
-- date: 2024/03/26-29
+- date: "2024/04/15 - 2024/04/19"
   title:
-    en: Culture week (Hanami Easter Egg Hunt)
+    en: "Assessment Week 3"
 
-- date: 2024/TBA
+- date: "2024/04/22 - 2024/04/26"
   title:
-    en: Whole school performance of Aladdin potentially in a larger hired venue (need to look into booking ASAP). Each class to have one song or dance to perform as part of the performance.
+    en: "Tracker Day 3"
 
-- date: 2024/04/15 - 2024/04/19
+- date: "2024/04/25"
   title:
-    en: Assessment Week 3
+    en: "Assembly (PS)"
 
-- date: 2024/04/22 - 2024/04/26
+- date: "2024/04/19"
+  time: "9:00-13:00"
   title:
-    en: Tracker Day 3
+    en: "Sports Day"
 
-- date: 2024/04/25
+- date: "2024/04/25"
   title:
-    en: Assembly (Preschool)
+    en: "Sleep-over (Pre-School – G 2)"
 
-- date: 2024/04/19 9:00-13:00
+- date: "2024/05/06 - 2024/05/10"
   title:
-    en: Sports Day
+    en: "Exhibition week"
 
-- date: 2024/04/25
+- date: "2024/05/09"
+  time: "9:00"
   title:
-    en: Sleep-over (Pre-School – G 2)
+    en: "Assembly G5/6"
 
-- date: 2024/05/TBC
+- date: "2024/06/13"
+  time: "16:00-20:00"
   title:
-    en: International Kids Day
+    en: "Student Led Conferences/Large Canvas exhibition to be displayed"
 
-- date: 2024/05/06-10
+- date: "2024/06/20"
+  time: "11:00-12:00"
   title:
-    en: Exhibition week
+    en: "G 6 Graduation"
 
-- date: 2024/05/09 9:00
+- date: "2024/06/20"
   title:
-    en: Assembly G5/6
-
-- date: 2024/06/13 16:00-20:00
-  title:
-    en: Student Led Conferences/Large Canvas exhibition to be displayed
-
-- date: 2024/06/20 11:00-12:00
-  title:
-    en: G 6 Graduation
-
-- date: 2024/06/20
-  title:
-    en: Last whole school assembly (End of the year graduation)
+    en: "Last whole school assembly (End of the year graduation)"

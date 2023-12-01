@@ -68,3 +68,6 @@ en:
     text: "Need more information? Make an inquiry to the school."
     button: "Get in touch »"
 
+  date:
+    formats:
+      calendar_headline: '%B %Y'

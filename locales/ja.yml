@@ -67,3 +67,7 @@ ja:
   contact:
     text: "より詳細な情報が必要な場合は、学院にご連絡ください。"
     button: "お問い合わせ »"
+
+  date:
+    formats:
+      calendar_headline: '%Y年%m月'

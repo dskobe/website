@@ -8,47 +8,57 @@ banner: "banners/3_header_thin.jpg"
 
 # <%= current_page.data.title %>
 
-Please <%= link_to 'click here to view', '/media/calendars/DSKI-2023-24-Event-Calendar.pdf' %> the events calendar.
+Please <%= link_to 'click here to download', '/media/calendars/DSKI-2023-24-Event-Calendar.pdf' %> the events calendar.
 
-<br>
+<div class="m-5"></div>
 
 ## Upcoming Events
 
-<br>
+<% today = Date.today %>
+<% grouped_upcoming_events = data.events.select { |event| parse_start_date(event[:date]) && parse_start_date(event[:date]) >= today }.sort_by { |event| parse_start_date(event[:date]) }.group_by { |event| format_month_year(event[:date]) } %>
 
-<div class="">
-  <h3 id="open-day">Online information meeting</h3>
-  <p class="lead text-muted"><%= data.meeting.online.date_en %> at 11.00am via Zoom</p>
-  <p>Join an online meeting to hear about our school programme and have a virtual walkthrough to see the school day.</p>
-  <p><a href="<%= data.meeting.online.form %>">Click here to register</a></p>
-</div>
+<% grouped_upcoming_events.each do |month_year, events| %>
+  <h4 class="mt-4"><%= month_year %></h4>
+  <ul class="list-group">
+    <% events.each do |event| %>
+      <li class="list-group-item">
+        <div class="row">
+          <div class="col-lg-2 col-md-3 col-xs-6"><%= extract_day_or_range(event[:date]) %></div>
+          <div class="col-lg-8 col-md-5 col-xs-12">
+            <%= event[:title][:en] %>
+            <% if event[:description] %>
+              <br><small><%= event[:description][:en] %></small>
+            <% end %>
+          </div>
+          <div class="col-lg-2 col-md-4 col-xs-6"><%= event[:time] || '' %></div>
+        </div>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
 
-<hr class="featurette-divider">
+<div class="m-5"></div>
 
 ## Past Events
-<br>
 
-<div class="border border-info p-3">
-  <h3 id="open-day">Open Day</h3>
-  <p class="lead text-muted">November 23rd</p>
-  <p>10.00am - 12.00pm Open Day Event<br>11.00am School Tour</p>
-  <p>Come along and visit our campus, no prior registration needed.</p>
-  <p>Information session with the principal<br>School tour</p>
-</div>
+<% grouped_past_events = data.events.select { |event| parse_start_date(event[:date]) && parse_start_date(event[:date]) < today }.sort_by { |event| parse_start_date(event[:date]) }.reverse.group_by { |event| format_month_year(event[:date]) } %>
 
-<!--
-
-### Oktoberfest
-
-Join us for Oktoberfest for a memorable day with students, parents, teachers, staff and friends. We have a range of activities planned and also beer and sausages!
-
-* Beer
-* Live Music
-* Homemade Cakes
-* German Food
-* Tombola with Great Prizes
-* Games & Fun for Kids
-
-<%= image_tag '/media/prospectus/octoberfest.jpg', alt: 'Oktoberfest', class: 'img-fluid d-block w-50' %>
-
--->
+<% grouped_past_events.each do |month_year, events| %>
+  <h4 class="mt-4"><%= month_year %></h4>
+  <ul class="list-group">
+    <% events.each do |event| %>
+      <li class="list-group-item">
+        <div class="row">
+          <div class="col-lg-1 col-md-2 col-xs-6"><%= extract_day_or_range(event[:date]) %></div>
+          <div class="col-lg-9 col-md-6 col-xs-12">
+            <%= event[:title][:en] %>
+            <% if event[:description] %>
+              <br><small><%= event[:description][:en] %></small>
+            <% end %>
+          </div>
+          <div class="col-lg-2 col-md-4 col-xs-6"><%= event[:time] || '' %></div>
+        </div>
+      </li>
+    <% end %>
+  </ul>
+<% end %>

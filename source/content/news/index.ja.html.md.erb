@@ -10,45 +10,55 @@ banner: "banners/3_header_thin.jpg"
 
 カレンダーを<%= link_to 'ここからダウンロード', '/media/calendars/DSKI-2023-24-Event-Calendar.pdf' %>する。
 
-<br>
+<div class="m-5"></div>
 
 ## 今後のイベント
 
-<br>
+<% today = Date.today %>
+<% grouped_upcoming_events = data.events.select { |event| parse_start_date(event[:date]) && parse_start_date(event[:date]) >= today }.sort_by { |event| parse_start_date(event[:date]) }.group_by { |event| format_month_year(event[:date], :ja) } %>
 
-<div class="">
-  <h3 id="open-day">オンライン　インフォメーション　ミーティング</h3>
-  <p class="lead text-muted"><%= data.meeting.online.date_ja %> 午前11:00　ズームにて</p>
-  <p>オンラインにて学院のプラグラムについて知っていただき、バーチャルで学院の様子をご覧いただきます。</p>
-  <p><a href="<%= data.meeting.online.form %>">上記リンクをクリックしてください</a></p>
-</div>
+<% grouped_upcoming_events.each do |month_year, events| %>
+  <h4 class="mt-4"><%= month_year %></h4>
+  <ul class="list-group">
+    <% events.each do |event| %>
+      <li class="list-group-item">
+        <div class="row">
+          <div class="col-lg-2 col-md-3 col-xs-6"><%= extract_day_or_range(event[:date]) %></div>
+          <div class="col-lg-8 col-md-5 col-xs-12">
+            <%= event[:title][:en] %>
+            <% if event[:description] %>
+              <br><small><%= event[:description][:en] %></small>
+            <% end %>
+          </div>
+          <div class="col-lg-2 col-md-4 col-xs-6"><%= event[:time] || '' %></div>
+        </div>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
 
-<hr class="featurette-divider">
+<div class="m-5"></div>
 
 ## 過去のイベント
-<br>
 
-<div class="border border-info p-3">
-  <h3 id="open-day">学校見学会</h3>
-  <p class="lead text-muted">11月23日</p>
-  <p>10.00am - 12.00pm オープンデイ　イベント<br>11.00am  スクール ツアー</p>
-  <p>事前の登録は必要ありません。学院キャンパスにお越しください。</p>
-  <p>学院長によるインフォメーションセッション<br>スクールツアー</p>
-</div>
+<% grouped_past_events = data.events.select { |event| parse_start_date(event[:date]) && parse_start_date(event[:date]) < today }.sort_by { |event| parse_start_date(event[:date]) }.reverse.group_by { |event| format_month_year(event[:date], :ja) } %>
 
-<!--
-
-### オクトーバーフェスト
-
-ドイツビールや手作りケーキ、ドイツの伝統的な食べ物や抽選会をいっしょに楽しみましょう。
-
-* ドイツビール
-* 生バンド演奏
-* 手作りケーキ
-* ドイツの伝統的な食べ物
-* トンボラ抽選と豪華賞品
-* 子供むけの楽しいゲーム
-
-<%= image_tag '/media/prospectus/octoberfest.jpg', alt: 'Oktoberfest', class: 'img-fluid d-block w-50' %>
-
--->
+<% grouped_past_events.each do |month_year, events| %>
+  <h4 class="mt-4"><%= month_year %></h4>
+  <ul class="list-group">
+    <% events.each do |event| %>
+      <li class="list-group-item">
+        <div class="row">
+          <div class="col-lg-1 col-md-2 col-xs-6"><%= extract_day_or_range(event[:date]) %></div>
+          <div class="col-lg-9 col-md-6 col-xs-12">
+            <%= event[:title][:en] %>
+            <% if event[:description] %>
+              <br><small><%= event[:description][:en] %></small>
+            <% end %>
+          </div>
+          <div class="col-lg-2 col-md-4 col-xs-6"><%= event[:time] || '' %></div>
+        </div>
+      </li>
+    <% end %>
+  </ul>
+<% end %>

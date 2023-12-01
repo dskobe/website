@@ -48,6 +48,39 @@ helpers do
       resource.path.start_with?(dir)
     end
   end
+
+  # Extracts the start date from a string.
+  def parse_start_date(date_str)
+    # Handle date ranges by extracting only the start date
+    start_date_str = date_str.split(' - ').first
+    begin
+      # Parse the start date
+      Date.strptime(start_date_str, '%Y/%m/%d') rescue nil
+    rescue ArgumentError
+      nil
+    end
+  end
+
+  def format_month_year(date_str, locale = :en)
+    I18n.locale = locale
+    # Extract the start date from a range or a single date
+    start_date_str = date_str.split(' - ').first
+    begin
+      # Format the start date to "Month Year" based on the locale
+      Date.strptime(start_date_str, '%Y/%m/%d').strftime(I18n.t('date.formats.calendar_headline')) rescue date_str
+    rescue ArgumentError
+      date_str
+    end
+  end
+
+  def extract_day_or_range(date_str)
+    if date_str.include?('-')
+      start_date, end_date = date_str.split(' - ').map { |d| d.split('/').last }
+      "#{start_date} - #{end_date}"
+    else
+      date_str.split('/').last
+    end
+  end
 end
 
 activate :external_pipeline,
