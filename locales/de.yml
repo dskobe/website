@@ -70,3 +70,4 @@ de:
   date:
     formats:
       calendar_headline: '%B %Y'
+      day_format: '%A, %d'
