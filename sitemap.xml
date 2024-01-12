@@ -21,12 +21,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.dskobe.org/en/about/technology/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.dskobe.org/ja/about/technology/</loc>
+    <loc>https://www.dskobe.org/ja/about/welcome/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -71,7 +66,12 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.dskobe.org/ja/programmes/winterschool/</loc>
+    <loc>https://www.dskobe.org/en/about/technology/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dskobe.org/ja/about/technology/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -107,11 +107,6 @@
   </url>
   <url>
     <loc>https://www.dskobe.org/en/about/welcome/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.dskobe.org/ja/about/welcome/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -156,11 +151,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.dskobe.org/en/programmes/summerschool/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://www.dskobe.org/ja/programmes/summerschool/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -197,6 +187,11 @@
   </url>
   <url>
     <loc>https://www.dskobe.org/en/programmes/winterschool/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dskobe.org/ja/programmes/winterschool/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -361,6 +356,11 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://www.dskobe.org/en/saturdayschool/english-program/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.dskobe.org/ja/saturdayschool/english-program/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -396,12 +396,7 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.dskobe.org/en/school/alumni/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.dskobe.org/ja/school/alumni/</loc>
+    <loc>https://www.dskobe.org/en/school/pta/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -446,7 +441,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.dskobe.org/en/saturdayschool/english-program/</loc>
+    <loc>https://www.dskobe.org/ja/school/pta/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -471,12 +466,17 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.dskobe.org/en/index.ja.html.md.erb.news</loc>
+    <loc>https://www.dskobe.org/en/programmes/summerschool/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.dskobe.org/ja/index.ja.html.md.erb.news</loc>
+    <loc>https://www.dskobe.org/en/school/alumni/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dskobe.org/ja/school/alumni/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -507,16 +507,6 @@
   </url>
   <url>
     <loc>https://www.dskobe.org/ja/school/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.dskobe.org/en/school/pta/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.dskobe.org/ja/school/pta/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
