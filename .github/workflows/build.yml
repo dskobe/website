@@ -28,7 +28,7 @@ jobs:
         gem install bundler
         bundle config set --local path 'vendor'
         bundle install --jobs 4 --retry 3 && npm i
-        bundle exec middleman build --build-dir=public --clean
+        bundle exec middleman build --build-dir=public --clean --environment=production
 
     - name: Deploy site to gh-pages branch
       uses: peaceiris/actions-gh-pages@v3
