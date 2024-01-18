@@ -12,12 +12,6 @@ sponsor:
     image: "/assets/images/sponsors/chicco.jpg"
 
   - name:
-      en: "Decathlon"
-      ja: "Decathlon"
-    website: "https://www.decathlon.co.jp/"
-    image: "/assets/images/sponsors/decathlon.png"
-
-  - name:
       en: "Georepublic"
       ja: "Georepublic"
     website: "https://georepublic.info/"
