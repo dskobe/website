@@ -61,12 +61,12 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.dskobe.org/en/programmes/pyp/</loc>
+    <loc>https://www.dskobe.org/en/programmes/pyp-cambridge/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.dskobe.org/ja/programmes/pyp/</loc>
+    <loc>https://www.dskobe.org/ja/programmes/pyp-cambridge/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -361,7 +361,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.dskobe.org/ja/programmes/pyp/</loc>
+    <loc>https://www.dskobe.org/ja/programmes/pyp-cambridge/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
