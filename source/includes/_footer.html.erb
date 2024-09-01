@@ -1,8 +1,9 @@
 <footer class="jumbotron jumbotron-fluid bg-secondary text-light pt-5 pb-3 mb-0">
   <div class="container">
     <div class="row">
-      <div class="col-lg-2 mb-4">
-        <%= image_tag 'ib-world-school-logo_footer.png', alt: t('title') %>
+      <div class="col-lg-3 pt-2 pb-sm-4">
+        <%= image_tag 'ib-world-school-logo_footer.png', alt: 'IB World School ', style: 'height:60px;padding-right:20px;' %>
+        <%= image_tag 'cambridge-logo-white.png', alt: 'Cambridge International School', style: 'height:48px;' %>
       </div>
 
       <div class="col-lg-2 col-sm-6">
@@ -25,7 +26,7 @@
         <p><b><%= t('footer.school') %></b><br><%= t('footer.address') %></p>
       </div>
 
-      <div class="col-lg-3 col-md-6">
+      <div class="col-lg-2 col-md-6">
         <ul class="list-unstyled">
           <li><i class="icon ion-md-call"></i> <%= data.config.contact.phone %></li>
           <li><i class="icon ion-md-paper"></i> <%= data.config.contact.fax %></li>
