@@ -1,5 +1,5 @@
 ---
-title: "Our Sponsors"
+title: "Our Supporters"
 icon: "icons/sponsors.png"
 description: ""
 keywords: []
@@ -16,7 +16,7 @@ If you wish to offer sponsorship as well please contact [marketing@dskobe.org](m
 
 <div class="container">
   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
-    <% data.sponsors.sponsor.each do |item| %>
+    <% data.supporter.sponsor.each do |item| %>
     <div class="col mb-4">
       <div class="card card-body h-100 justify-content-center p-3">
         <% link_to item.website, class: '' do %>
@@ -33,7 +33,23 @@ If you wish to offer sponsorship as well please contact [marketing@dskobe.org](m
 
 <div class="container">
   <div class="row row-cols-1 row-cols-sm-3 row-cols-md-4">
-    <% data.sponsors.supporter.each do |item| %>
+    <% data.supporter.supporter.each do |item| %>
+    <div class="col mb-4">
+      <div class="card card-body h-100 justify-content-center p-2">
+        <% link_to item.website, class: '' do %>
+          <%= image_tag item.image, alt: item.name.en, class: 'card-img-top' %>
+        <% end %>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
+
+<h2 class="mt-5">Partners</h2>
+
+<div class="container">
+  <div class="row row-cols-1 row-cols-sm-3 row-cols-md-4">
+    <% data.supporter.partner.each do |item| %>
     <div class="col mb-4">
       <div class="card card-body h-100 justify-content-center p-2">
         <% link_to item.website, class: '' do %>

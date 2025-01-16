@@ -84,8 +84,9 @@ supporter:
     website: "https://vonbaronmusic.com/"
     image: "/assets/images/sponsors/von_baron.jpg"
 
-  # - name:
-  #     en: ""
-  #     ja: ""
-  #   website: ""
-  #   image: "/assets/images/sponsors/"
+partner:
+  - name:
+      en: "DSTY"
+      ja: "DSTY"
+    website: "https://dsty.ac.jp/"
+    image: "/assets/images/partners/DSTY.png"
