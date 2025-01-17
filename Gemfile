@@ -6,5 +6,5 @@ gem "middleman-minify-html"
 
 gem "middleman-blog"
 
-# Temporary fix for https://github.com/middleman/middleman/issues/2569
-gem 'haml', '~> 5.0'
+# Workaround for https://github.com/middleman/middleman/issues/2788
+gem 'concurrent-ruby', '1.3.4'
