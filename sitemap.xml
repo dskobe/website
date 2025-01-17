@@ -151,6 +151,16 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.dskobe.org/en/school/supporter/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dskobe.org/ja/school/supporter/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.dskobe.org/en/school/clubs/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -197,16 +207,6 @@
   </url>
   <url>
     <loc>https://www.dskobe.org/ja/school/alumni/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.dskobe.org/en/school/sponsors/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.dskobe.org/ja/school/sponsors/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -436,6 +436,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.dskobe.org/ja/school/supporter/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.dskobe.org/ja/school/careers/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -447,11 +452,6 @@
   </url>
   <url>
     <loc>https://www.dskobe.org/ja/school/clubs/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.dskobe.org/ja/school/sponsors/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
