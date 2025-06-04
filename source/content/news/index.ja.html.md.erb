@@ -51,28 +51,8 @@ banner: "banners/3_header_thin.jpg"
   </ul>
 <% end %>
 
-<div class="m-5"></div>
-
-## 過去のイベント
-
-<% grouped_past_events = data.events.select { |event| parse_start_date(event[:date]) && parse_start_date(event[:date]) < today }.sort_by { |event| parse_start_date(event[:date]) }.reverse.group_by { |event| format_month_year(event[:date], :ja) } %>
-
-<% grouped_past_events.each do |month_year, events| %>
-  <h4 class="mt-4"><%= month_year %></h4>
-  <ul class="list-group">
-    <% events.each do |event| %>
-      <li class="list-group-item">
-        <div class="row">
-          <div class="col-lg-1 col-md-2 col-xs-6"><%= extract_day_or_range(event[:date]) %></div>
-          <div class="col-lg-9 col-md-6 col-xs-12">
-            <%= event[:title][:en] %>
-            <% if event[:description] %>
-              <br><small><%= event[:description][:en] %></small>
-            <% end %>
-          </div>
-          <div class="col-lg-2 col-md-4 col-xs-6"><%= event[:time] || '' %></div>
-        </div>
-      </li>
-    <% end %>
-  </ul>
-<% end %>
+<div class="row">
+  <div class="col-xl-9 mt-4">
+    <%= image_tag '/media/calendars/events_25_26.png', alt: '2025/2026 Event Calendar', class: 'img-fluid d-block w-100' %>
+  </div>
+</div>
